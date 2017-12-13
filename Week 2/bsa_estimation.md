@@ -9,8 +9,10 @@ Haycock BSA Estimate: (value)
 ```
 
 The **Haycock** formula, for a person of mass *M* (kg) and height *H* (cm) is as follows:
+
 BSA = 0.024265 x H<sup>0.3964</sup> x M<sup>0.5378</sup>
 
+## Program
 ```python
 from pylab import *
 
