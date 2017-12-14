@@ -1,0 +1,29 @@
+# The Input Function
+
+When writing programs, it is often useful to prompt the user for input from the keyboard - this way, a program can be written so that it solves some general problem, and the user can enter different values each time the program is run. 
+
+To take user input from the keyboard, the `(input("message")` function can be used - Python will display the `message`, and allow the user to enter a value in response. 
+
+To assign this input to a variable, we use the following code:
+
+```python
+variable = eval(input("message"))
+```
+
+Python will *evaluate* the input, and assign the evaluated value to the `variable`.
+
+**Task:** Modify this program so that it will take the `width` and `height` of a rectangle as user input, before calculating and printing the area of the rectangle.
+
+## Program:
+```python
+from pylab import *
+
+# Take width as input:
+
+# Take height as input:
+
+
+area = width*height
+print("The area of the rectangle is:", area)
+
+```
