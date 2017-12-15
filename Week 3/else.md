@@ -54,3 +54,19 @@ else:
 
 print("Finished!")
 ```
+
+Here are some examples of what happens when the program is run:
+```
+What mark did you receive? 92
+Congratulations! You got a 7!
+Finished!
+
+What mark did you receive? 32
+You failed. Better luck next time!
+Finished!
+
+What mark did you receive? 73
+Congratulations! You got a 5!
+Finished!
+
+```
