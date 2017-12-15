@@ -70,3 +70,15 @@ Congratulations! You got a 5!
 Finished!
 
 ```
+
+**Task:** Modify this program so that it prints out the following messages:
+"You can legally drink, even in America!" if the age is over or equal to 21.
+"You can legally drink in Australia!" if the age is over or equal to 18.
+"You are under the legal drinking age." if the age is under 18.
+
+## Program
+
+```python
+age = eval(input("What is your age? "))
+
+```
