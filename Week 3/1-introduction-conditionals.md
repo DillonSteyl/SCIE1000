@@ -50,7 +50,7 @@ Here are some examples of conditions that can be used.
 
 **Note:** the operating for checking equality is `==`, NOT `=`. This because `=` is reserved for variable assignment!
 
-**Task:** Modify this program so that it prints the message "You are not tall enough to ride!" if the value of the `height` variable is less than or equal to 130.
+**Task:** Modify this program so that it prints the message "You are not tall enough to ride!" if the value of the `height` variable is less than 130.
 
 ## Program
 
