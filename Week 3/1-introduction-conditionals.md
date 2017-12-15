@@ -48,7 +48,7 @@ Here are some examples of conditions that can be used.
 | 'Equal to'                 | a == b |
 | 'Not equal to'             | a != b |
 
-**Note:** the operating for checking equality is `==`, NOT `=`. This because `=` is reserved for variable assignment!
+**Note:** the operation for checking equality is `==`, NOT `=`. This because `=` is reserved for variable assignment!
 
 **Task:** Modify this program so that it prints the message "You are not tall enough to ride!" if the value of the `height` variable is less than 130.
 
