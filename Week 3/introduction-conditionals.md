@@ -20,7 +20,7 @@ Here is an example of a program that uses a simple conditional:
 from pylab import *
 
 marks = eval(input("What mark did you receive? "))
-if marks >= 40:
+if marks >= 50:
     print("Congratulations. You passed!")
 
 print("Finished!")
