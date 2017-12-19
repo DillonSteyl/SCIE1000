@@ -10,9 +10,18 @@ To assign this input to a variable, we use the following code:
 variable = eval(input("message"))
 ```
 
-Python will *evaluate* the input, and assign the evaluated value to the `variable`.
+Python will *evaluate* the input, and assign the evaluated value to the `variable`. Let's take a look at a simple example:
+```python
+number = eval(input("Give me a number: "))
+print(number, "squared is", number**2)
+```
+This program asks the user for numerical input, and squares that number in response. Here is example output from this program:
+```
+Give me a number: 4
+4 squared is 16
+```
 
-**Task:** Modify this program so that it will take the `width` and `height` of a rectangle as user input, before calculating and printing the area of the rectangle.
+**Task:** Modify this program so that it will take the `width` and `height` of a rectangle as user input, and store those values in variables called `width` and `height`, respectively.
 
 ## Program:
 ```python
