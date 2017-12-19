@@ -29,7 +29,7 @@ Count: 5
 Finished!
 ```
 
-Take special note of this line in the program: `i = i + 1`. This line of code simply increments the value of `i`. Without this line of code, the loop would continue forever, continuously printing "Count: 1". This is because nothing in the loop changes the value of i, and the *while condition* `i <= 5` would never be false!
+Take special note of this line in the program: `i = i + 1`. This line of code simply increments the value of `i`. Without this line of code, the loop would continue forever, continuously printing "Count: 1". This is because nothing in the loop would change the value of i, and the *while condition* `i <= 5` would never be false!
 
 **Task:** Modify the following program so that it prints the squares of all the numbers from 1 to 4. Your output should be:
 ```
