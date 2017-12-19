@@ -1,4 +1,4 @@
-# Variables
+# Introduction to Variables
 
 Variables are absolutely fundamental to programming. They allow the program to remember a value, which is associated with a certain name. This name is used to access, modify, and use the variable. It is good practice to choose *meaningful* and *simple* names for your variables. Variable names cannot contain spaces or other "special" characters - and it is important to note that variable names are also *case sensitive*.
 
