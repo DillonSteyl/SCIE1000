@@ -17,8 +17,6 @@ Some important notes:
 Here is an example of a program that uses a simple conditional:
 
 ```python
-from pylab import *
-
 marks = eval(input("What mark did you receive? "))
 if marks >= 50:
     print("Congratulations. You passed!")
