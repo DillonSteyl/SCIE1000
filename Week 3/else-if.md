@@ -45,5 +45,11 @@ Finished!
 
 ```python
 age = eval(input("What is your age? "))
+if age >= 21:
+    print("You can legally drink, even in America!")
+elif age >= 18:
+    print("You can legall drink in Australia!")
+else:
+    print("You are under the legal drinking age.")
 
 ```
