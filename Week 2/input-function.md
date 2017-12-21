@@ -36,3 +36,17 @@ area = width*height
 print("The area of the rectangle is:", area)
 
 ```
+
+## Solution:
+```python
+from pylab import *
+
+# Take width as input:
+width = eval(input("Enter width: "))
+# Take height as input:
+height = eval(input("Enter height: "))
+
+area = width*height
+print("The area of the rectangle is:", area)
+
+```
