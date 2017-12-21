@@ -43,13 +43,13 @@ Finished!
 
 ## Program
 ```python
-age = eval(input("What is your age? "))
+age = eval(input("Enter your age: "))
 
 ```
 
 ## Solution
 ```python
-age = eval(input("What is your age? "))
+age = eval(input("Enter your age: "))
 if age >= 21:
     print("You can legally drink, even in America!")
 elif age >= 18:
