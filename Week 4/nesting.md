@@ -28,11 +28,20 @@ This can be very useful when writing more complex programs.
 **Task:** This program counts down from 20 to 0. Modify the program so that it prints the line "Only one digit now..." when the count-down reaches 10.
 
 ## Program
-
 ```python
 i = 20
 while i >= 0:
     print(i)
     
+    i = i - 1
+```
+
+## Solution
+```python
+i = 20
+while i >= 0:
+    print(i)
+    if i == 10:
+        print("Only one digit now...")
     i = i - 1
 ```
