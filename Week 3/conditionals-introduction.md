@@ -53,7 +53,13 @@ Here are some examples of conditions that can be used.
 ## Program
 
 ```python
-height = eval(input("Enter your height. "))
+height = eval(input("Enter your height: "))
 
+```
 
+## Solution
+```python
+height = eval(input("Enter your height: "))
+if height < 130:
+    print("You are not tall enough to ride!")
 ```
