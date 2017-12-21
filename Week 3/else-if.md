@@ -42,7 +42,12 @@ Finished!
 * "You are under the legal drinking age." if the age is under 18.
 
 ## Program
+```python
+age = eval(input("What is your age? "))
 
+```
+
+## Solution
 ```python
 age = eval(input("What is your age? "))
 if age >= 21:
