@@ -11,13 +11,15 @@ BSA = 0.024265 x H<sup>0.3964</sup> x M<sup>0.5378</sup>
 ```
 Haycock BSA Estimate: (value)
 ```
-In addition, you will need to modify the program below so that it prompts the user to input mass and height.
+In addition, you will need to modify the program below so that it prompts the user to input mass and height, respectively.
 
 ## Program
 ```python
 from pylab import *
 
-# Input mass and height:
+# Input mass:
+
+# Input height:
 
 
 # Calculate BSA Estimates
@@ -28,5 +30,25 @@ dubois_bsa = 0.007184 * mass**0.425 * height**0.725
 print("Mostellar BSA Estimate:", mostellar_bsa)
 print("Dubois BSA Estimate:", dubois_bsa)
 
+```
+
+## Solution
+```python
+from pylab import *
+
+# Input mass:
+mass = eval(input("Enter mass: "))
+# Input height:
+height = eval(input("Enter height: "))
+
+# Calculate BSA Estimates
+mostellar_bsa = 0.0167*sqrt(mass*height)
+dubois_bsa = 0.007184 * mass**0.425 * height**0.725
+haycock_bsa = 0.024265 * height**0.3964 * mass**0.5378
+
+# Print BSA Estimates
+print("Mostellar BSA Estimate:", mostellar_bsa)
+print("Dubois BSA Estimate:", dubois_bsa)
+print("Haycock BSA Estimate:", haycock_bsa)
 
 ```
