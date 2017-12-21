@@ -9,3 +9,14 @@ To get you more comfortable with while loops, let's write one from scratch!
 1
 Happy New Year!
 ```
+
+## Solution
+```
+i = 3
+while i >= 1:
+    print(i)
+    i = i - 1
+    
+print("Happy New Year!")
+
+```
