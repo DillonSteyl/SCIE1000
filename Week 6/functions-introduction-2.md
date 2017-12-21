@@ -16,6 +16,7 @@ number = eval(input("Give me a number: "))
 ```python
 
 def double(x):
+    # doubles the input
     ans = 2*x
     return(ans)
     
