@@ -1,4 +1,4 @@
-# Multiple Inputs (3) - Devine Formula
+# Devine Formula
 
 The *Devine* formula is a commonly used formula to calculate 'ideal' body weight based on the height of a person. It was first published by Dr. BJ Devine, and was intended to be used to calculate the dosage of certain medications. However, it has become the most popular formula on the internet for calculating ideal body weight. It appears on a vast number of websites, including websites which suggest using it as a goal for weight loss.
 
@@ -19,7 +19,7 @@ If you copy the finished program and test it elsewhere, you might notice that th
 # Do not modify:
 sex = eval(input("Enter 1 for female, 0 for male: "))
 height = eval(input("Enter height in cm: "))
-print( IBW(sex,height) )
+print("Ideal weight:", IBW(sex,height), "kg.")
 ```
 
 ## Solution
@@ -30,9 +30,10 @@ def IBW(s,h):
         ibw = 45.5 + (0.9 * (h - 152) )
     elif s == 0:
         ibw = 50 + (0.9 * (h - 152) )
+    return(ibw)
 
 # Do not modify:
 sex = eval(input("Enter 1 for female, 0 for male: "))
 height = eval(input("Enter height in cm: "))
-print( IBW(sex,height) )
+print("Ideal weight:", IBW(sex,height), "kg.")
 ```
