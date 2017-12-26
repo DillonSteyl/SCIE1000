@@ -21,6 +21,7 @@ X = arange(0,4.1,1)
 # y-coordinates:
 Y = X**2
 
+# Plot:
 plot(X,Y)
 show()
 ```
@@ -29,6 +30,35 @@ The `plot(X,Y)` command plots the points defined by the two arrays, `X` and `Y`.
 
 ![graph1](graph1.png)
 
-We can make this graph look a lot smoother by introducing more x-coordinates. The lines that Python uses to join points together will be shorter and less noticeable. Here's the graph we get when we use `X = arange(0, 4.1, 0.1)`:
+We can make this graph look a lot smoother by introducing more x-coordinates. The lines that Python uses to join points together will be shorter and less noticeable. Here's the graph we get when we use `X = arange(0, 4.1, 0.1)` instead:
 
 ![graph2](graph2.png)
+
+**Task:** Modify this program to plot the function y=sin(x).
+
+## Program
+```python
+from pylab import *
+
+# x-coordinates:
+X = arange(0,2*pi,0.1)
+# y-coordinates:
+
+
+# Plot:
+
+```
+
+## Solution
+```python
+from pylab import *
+
+# x-coordinates:
+X = arange(0,2*pi,0.1)
+# y-coordinates:
+Y = sin(X)
+
+# Plot:
+plot(X,Y)
+show()
+```
