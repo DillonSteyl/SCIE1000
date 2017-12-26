@@ -45,6 +45,11 @@ plot(X,Y1,'r--', label='sin(x)')
 # Green line for cos(x)
 plot(X,Y2,'g', label='cos(x)')
 
+# Titles and labels
+title("sin(x) and cos(x)")
+xlabel("x")
+ylabel("y")
+
 # Draw grid, create legend, and show the graph.
 grid(True)
 legend()
@@ -55,7 +60,7 @@ The output graph is given below:
 
 ![graph4](images/graph4.png)
 
-**Task:** Modify this program to also plot another function, `Y2 = X**2 + sin(X)`. Label the Y1 plot with "y = x^2" and the Y2 plot with "y = x^2 + sin(x)". Customize the plot further if you wish!
+**Task:** Modify this program to also plot another function, `Y2 = X**2 + sin(X)`. Label the Y1 plot with "y = x^2" and the Y2 plot with "y = x^2 + sin(x)". Give it the title "x^2 and x^2+sin(12x)", and label the x-axis with "x" and y-axis with "y".
 
 ## Program
 ```python
@@ -72,7 +77,10 @@ Y1 = X**2
 plot(X,Y1)
 
 
+# Titles and labels:
 
+
+legend()
 show()
 ```
 
@@ -90,6 +98,11 @@ Y2 = X**2+sin(12*X)
 # Plot:
 plot(X,Y1,label="y = x^2")
 plot(X,Y2,label="y = x^2 + sin(x)")
+
+# Titles and labels:
+title("x^2 and x^2+sin(12x)")
+xlabel("x")
+ylabel("y")
 
 legend()
 show()
