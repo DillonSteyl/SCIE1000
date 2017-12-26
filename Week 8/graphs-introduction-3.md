@@ -107,3 +107,7 @@ ylabel("y")
 legend()
 show()
 ```
+
+**Output:**
+
+[!graph5](images/graph5.png)
