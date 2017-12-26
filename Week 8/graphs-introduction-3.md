@@ -55,21 +55,22 @@ The output graph is given below:
 
 ![graph4](images/graph4.png)
 
-**Task:** Modify this program to also plot another function, `Y2 = X + sin(X)`. Label the Y1 plot with "y=x" and the Y2 plot with "y=x+sin(x)". Customize the plot further if you wish!
+**Task:** Modify this program to also plot another function, `Y2 = X**2 + sin(X)`. Label the Y1 plot with "y = x^2" and the Y2 plot with "y = x^2 + sin(x)". Customize the plot further if you wish!
 
 ## Program
 ```python
 from pylab import *
 
 # x-coordinates
-X = arange(0, 2*pi, 0.1)
+X = arange(-2*pi, 2*pi, 0.1)
 # function 1
-Y1 = X
+Y1 = X**2
 # function 2
 
 
 # Plot:
 plot(X,Y1)
+
 
 
 show()
@@ -80,15 +81,15 @@ show()
 from pylab import *
 
 # x-coordinates
-X = arange(0, 2*pi, 0.1)
+X = arange(-2*pi, 2*pi, 0.1)
 # function 1
-Y1 = X
+Y1 = X**2
 # function 2
-Y2 = X+sin(X)
+Y2 = X**2+sin(12*X)
 
 # Plot:
-plot(X,Y1,label="y=x")
-plot(X,Y2,label="y=x+sin(x)")
+plot(X,Y1,label="y = x^2")
+plot(X,Y2,label="y = x^2 + sin(x)")
 
 legend()
 show()
