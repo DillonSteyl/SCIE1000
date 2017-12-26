@@ -28,11 +28,11 @@ show()
 
 The `plot(X,Y)` command plots the points defined by the two arrays, `X` and `Y`. The first array will be used to define the x-coordinates, and the second array will define the y-coordinates. The `show()` command will display the graph. Here's the output from the program: 
 
-![graph1](graph1.png)
+![graph1](images/graph1.png)
 
 We can make this graph look a lot smoother by introducing more x-coordinates. The lines that Python uses to join points together will be shorter and less noticeable. Here's the graph we get when we use `X = arange(0, 4.1, 0.1)` instead:
 
-![graph2](graph2.png)
+![graph2](images/graph2.png)
 
 **Task:** Modify this program to plot the function y=sin(x).
 
