@@ -110,4 +110,4 @@ show()
 
 **Output:**
 
-[!graph5](images/graph5.png)
+![graph5](images/graph5.png)
