@@ -18,7 +18,7 @@ X = arange(0, 10.1, 0.1)
 # function 1
 Y1 = -0.2*X + 2
 # function 2
-Y2 = 0.2*X-2
+Y2 = 0.2*X - 2
 # function 3
 Y3 = (-0.2*X+2)*(sin(X))
 # function 4
