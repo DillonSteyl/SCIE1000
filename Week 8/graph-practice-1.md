@@ -1,4 +1,4 @@
-# Graph Practice
+# Practice Plotting!
 
 Time for you to try writing program to plot functions from scratch!
 
