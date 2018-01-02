@@ -32,3 +32,6 @@ plot(X,Y4)
 
 show()
 ```
+
+## Output
+![bounded-trig](images/bounded-trig.png)
