@@ -14,5 +14,5 @@ while i < 10:
     fibbonachi_array[i] = fibbonachi_array[i-2] + fibbonachi_array[i-1]
     i = i + 1
     
-print("The first 10 Fibbonachi numbers are", fibbonachi_array")
+print("The first 10 Fibbonachi numbers are", fibbonachi_array)
 ```
