@@ -1,4 +1,4 @@
-# Graphing Practice
+# Practice Plotting! (2)
 
 To get you more comfortable with plotting graphs in Python, let's try plotting 4 functions on one set of axes!
 
