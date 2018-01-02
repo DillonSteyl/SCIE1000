@@ -21,7 +21,7 @@ will create an array with the name `X` that contains the values 0, 0.5, 1, 1.5, 
 
 **Task:** Write a program that creates an array (called `X`) which contains all the values from 0 to 10, with a spacing of 0.5.
 
-## Solution:
+## (One) Solution:
 ```python
 X = arange(0, 10.1, 0.5)
 ```
