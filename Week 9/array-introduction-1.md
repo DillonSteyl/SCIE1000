@@ -20,7 +20,7 @@ Some important notes:
 * Printing an array will display all of its contents.
 * The *size* of an array is simply how many values it holds, so the `size` of the `fib` array is 7.
 
-** Task: ** Create and print an array called *squares* which contains the first 5 square numbers (1, 4, 9, 16, 25).
+**Task:** Create and print an array called *squares* which contains the first 5 square numbers (1, 4, 9, 16, 25).
 
 ## Solution
 ```python
