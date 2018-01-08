@@ -2,7 +2,7 @@
 
 **Task:** Find an fix the error in the following code
 
-**Hint:** 
+**Hint:** Take a closer look at the functions
 
 ## Program
 ```python
