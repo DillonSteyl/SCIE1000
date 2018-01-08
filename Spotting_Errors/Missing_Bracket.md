@@ -28,7 +28,7 @@ c = eval(input("the value of c: "))
 quad_pos = quad_formula_pos(a, b, c)
 quad_neg = quad_formula_neg(a, b, c)
     
-print("The solution for x is", quadrat_pos, "or", quad_neg)
+print("The solution for x is", quad_pos, "or", quad_neg)
 ```
 
 ## Solution
@@ -56,6 +56,6 @@ c = eval(input("the value of c: "))
 quad_pos = quad_formula_pos(a, b, c)
 quad_neg = quad_formula_neg(a, b, c)
     
-print("The solution for x is", quadrat_pos, "or", quad_neg)
+print("The solution for x is", quad_pos, "or", quad_neg)
 
 ```
