@@ -4,6 +4,8 @@ Now you're familiar with all the programming concepts in this course, let's look
 
 **Task:** The first 10 Fibbonachi numbers are 1, 1, 2, 3, 5, 8, 13, 21, 34, 55. Edit the following program so it outputs an array with the correct numbers in it.
 
+**Hint:** You will need to index the two previous array elements. e.g. 'fibbonachi_array[0] + fibbonachi_array[1]' is equal to the third Fibbonachi number
+
 ## Program
 ```python
 fibbonachi_array = zeros(10)
