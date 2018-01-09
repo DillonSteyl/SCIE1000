@@ -1,1 +1,3 @@
-A group of exercises with common errors the students may face, so they can learn to spot and fix them
+A group of exercises with common errors the students may face, so they can learn to spot and fix them.
+
+--This is a really good idea.
