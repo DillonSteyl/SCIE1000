@@ -5,10 +5,6 @@ from contextlib import redirect_stdout
 from os import devnull
 import io
 
-##with open(devnull, "w") as f:
-##    with redirect_stdout(f):
-##        # Redirect the stdout in case the student has global print statements
-##        import attempt
 f = io.StringIO()
 with redirect_stdout(f):
     import attempt
