@@ -21,9 +21,10 @@ Give me a number: 4
 4 squared is 16
 ```
 
-**Task:** Modify this program so that it will take the `width` and `height` of a rectangle as user input, and store those values in variables called `width` and `height`, respectively.
+**Task:** Modify this program so that it will take the `width` and `height` of a rectangle as user input, and store those values in variables called `width` and `height`, respectively. Use the following *messages*:
 
-
+* "Enter width: " for width
+* "Enter height: " for height
 
 ## Solution:
 ```python
