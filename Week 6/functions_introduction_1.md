@@ -58,21 +58,10 @@ This is a lot to take in - so take your time to make sure you understand everyth
 
 **Task:** To start us off, we'll just practice *using* functions. This program has a function which converts inches to centimetres. Modify the program so that it converts `height_inches` to centimetres using the function `toCentimetres`, and assigns it to the variable `height_cm`.
 
-## Program
-```python
-def toCentimetres(inches):
-    # converts inches to centimetres
-    cm = inches * 2.54
-    return(cm)
-
-height_inches = eval(input("Enter your height in inches: "))
-# height_cm = ?? 
-
-print("You are", height_cm, "cm tall!")
-
-```
 ## Solution
 ```python
+from pylab import *
+
 def toCentimetres(inches):
     # converts inches to centimetres
     cm = inches * 2.54

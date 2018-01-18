@@ -22,19 +22,10 @@ print("The sum of the two numbers is:", sum(a,b) )
 
 **Task:** Modify this program so that it uses the `prod` function to return the product of the two numbers that are input by the user.
 
-## Program
-```python
-def prod(x,y):
-    return(x*y)
-    
-a = eval(input("Give me the first number: "))
-b = eval(input("Give me the second number: "))
-# print product:
-
-```
-
 ## Solution
 ```python
+from pylab import *
+
 def prod(x,y):
     return(x*y)
     

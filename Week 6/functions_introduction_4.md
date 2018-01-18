@@ -7,19 +7,9 @@
 
 To do this, you will need to nest a conditional in the function.
 
-## Program
-```python
-# Write function here:
-
-
-
-# Do not modify:
-num = eval(input("Enter a number: "))
-print( sign(num) )
-```
-
 ## Solution
 ```python
+from pylab import *
 # Write function here:
 def sign(num):
     if num > 0:

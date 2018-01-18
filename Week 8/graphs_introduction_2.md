@@ -36,19 +36,6 @@ We can make this graph look a lot smoother and more accurate by using more point
 
 **Task:** Modify this program to plot the function y=sin(x).
 
-## Program
-```python
-from pylab import *
-
-# x-coordinates:
-X = arange(0,2*pi,0.1)
-# y-coordinates:
-
-
-# Plot:
-
-```
-
 ## Solution
 ```python
 from pylab import *

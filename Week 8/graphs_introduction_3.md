@@ -62,28 +62,6 @@ The output graph is given below:
 
 **Task:** Modify this program to also plot another function, `Y2 = X**2 + sin(12*X)`. Label the Y1 plot with "y = x^2" and the Y2 plot with "y = x^2 + sin(12x)". Give it the title "x^2 and x^2+sin(12x)", and label the x-axis with "x" and y-axis with "y".
 
-## Program
-```python
-from pylab import *
-
-# x-coordinates
-X = arange(-2*pi, 2*pi, 0.1)
-# function 1
-Y1 = X**2
-# function 2
-
-
-# Plot:
-plot(X,Y1)
-
-
-# Titles and labels:
-
-
-legend()
-show()
-```
-
 ## Solution
 ```python
 from pylab import *

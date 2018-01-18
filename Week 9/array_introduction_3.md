@@ -27,20 +27,6 @@ The output is:
 
 **Task:** Write a while loop to fill the array `squares` with the first 10 square numbers (use a similar strategy to above)
 
-# Program
-```python
-from pylab import *
-
-squares = zeros(10)
-i = 0
-# while loop here:
-
-
-
-    
-print(squares)
-```
-
 # Solution
 ```python
 from pylab import *
