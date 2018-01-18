@@ -40,16 +40,10 @@ Take special note of this line in the program: `i = i + 1`. This line of code si
 ```
 Make sure the program doesn't loop forever!
 
-## Program
-```python
-i = 0
-while i <= 10:
-    print(i, "squared:", i+2)
-    
-```
-
 ## Solution
 ```python
+from pylab import *
+
 i = 1
 while i <= 4:
     print(i, "squared:", i**2)

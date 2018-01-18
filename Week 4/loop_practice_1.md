@@ -4,6 +4,8 @@
 
 ## Solution:
 ```python
+from pylab import *
+
 sum = 0
 i = 1
 

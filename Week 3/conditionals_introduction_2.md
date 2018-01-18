@@ -6,8 +6,9 @@ To get you more familiar with basic conditionals, here's another simple exercise
 
 ## Solution
 ```python
+from pylab import *
+
 number = eval(input("Give me a number: "))
 if number < 0:
     print("Don't be so negative!")
-
 ```

@@ -50,13 +50,6 @@ Here are some examples of conditions that can be used.
 
 **Task:** Modify this program so that it prints the message "You are not tall enough to ride!" if the value of the `height` variable is less than 130.
 
-## Program
-
-```python
-height = eval(input("Enter your height: "))
-
-```
-
 ## Solution
 ```python
 height = eval(input("Enter your height: "))
