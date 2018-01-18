@@ -23,19 +23,7 @@ Give me a number: 4
 
 **Task:** Modify this program so that it will take the `width` and `height` of a rectangle as user input, and store those values in variables called `width` and `height`, respectively.
 
-## Program:
-```python
-from pylab import *
 
-# Take width as input:
-
-# Take height as input:
-
-
-area = width*height
-print("The area of the rectangle is:", area)
-
-```
 
 ## Solution:
 ```python
@@ -48,5 +36,4 @@ height = eval(input("Enter height: "))
 
 area = width*height
 print("The area of the rectangle is:", area)
-
 ```
