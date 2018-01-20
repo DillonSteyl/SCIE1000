@@ -2,8 +2,8 @@
 A patient’s cardiac output is estimated using the dye dilution method. A total of 8 mg of dye is injected into her heart, and the following arrays shows the measured concentrations of dye in her blood at given times as it leaves her heart.
 
 ```
-t = array([0, 1, 2, 3, 4, 6, 10])
-c = array([0, 34, 48, 19, 8, 1.2, 0])
+t = array([0, 1, 2, 3, 4, 6, 10]) # seconds
+c = array([0, 34, 48, 19, 8, 1.2, 0]) # mg/L
 ```
 
 Our goal is to write a program that will find the area under the curve of the data obtained from the dye dilution method, which can then be used to calculate the patient’s cardiac output.
