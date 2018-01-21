@@ -11,7 +11,10 @@ BSA = 0.024265 x H<sup>0.3964</sup> x M<sup>0.5378</sup>
 ```
 Haycock BSA Estimate: (value)
 ```
-In addition, you will need to modify the program below so that it prompts the user to input mass and height, respectively.
+In addition, you will need to modify the program below so that it prompts the user to input mass and height, respectively. Use the following input messages:
+
+* "Enter mass: " for mass
+* "Enter height: " for height
 
 ## Solution
 ```python

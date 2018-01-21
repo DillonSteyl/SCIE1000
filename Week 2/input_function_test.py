@@ -11,6 +11,12 @@ class Tests(PythonTestCase):
 		except KeyError:
 			pass
 			
+	def test_calls(self):
+		""" Correct input messages are used """
+		with patch("builtins.input", return_value="1") as input_call:
+			import attempt
+			input_call.assert_has_calls([call("Enter width: "), call("Enter height: ")])
+			
 	def test_output(self):
 		""" Correct area is printed """
 		user_input = ["2", "8"]
@@ -19,12 +25,6 @@ class Tests(PythonTestCase):
 			with patch("sys.stdout", new=StringIO()) as output:
 				import attempt
 				self.assertEqual(output.getvalue().strip(), expected)
-				
-	def test_calls(self):
-		""" Correct input messages are used """
-		with patch("builtins.input", return_value="1") as input_call:
-			import attempt
-			input_call.assert_has_calls([call("Enter width: "), call("Enter height: ")])
 
 # Run the unit tests
 if __name__ == "__main__":
