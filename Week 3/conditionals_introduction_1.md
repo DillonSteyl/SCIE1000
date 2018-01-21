@@ -26,7 +26,7 @@ print("Finished!")
 
 Here are two examples of what can happen when this program is run. Take note of the input!
 ```
-What mark did you recieve? 42
+What mark did you recieve? 52
 Congratulations. You passed!
 Finished!
 
