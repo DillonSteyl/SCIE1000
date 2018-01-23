@@ -24,6 +24,7 @@ class Tests(PythonTestCase):
                 with patch("builtins.input", side_effect=user_input) as input_call:
                         with patch("sys.stdout", new=StringIO()) as output:
                                 import attempt
+                                self.assertEqual(attempt.quad_pos, -1.0)
                                 self.assertEqual(output.getvalue().strip(), expected)
 
 
