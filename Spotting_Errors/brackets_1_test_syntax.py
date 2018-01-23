@@ -32,5 +32,7 @@ class Tests(PythonTestCase):
 if __name__ == "__main__":
         try:
             run_tests(Tests)
-        except:
-            print("SyntaxError-: invalid syntax")
+        except TypeError:
+            print("SyntaxError- invalid syntax")
+        except SyntaxError:
+            print("SyntaxError- invalid syntax")
