@@ -1,3 +1,5 @@
+from pylab import *
+
 ''' calc function, used to implement the trapezoidal rule for one trapezoid
 in a data set. '''
 def calc(x1, x2, y1, y2):
