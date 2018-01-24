@@ -18,13 +18,23 @@ class Tests(PythonTestCase):
                         self.assertMethodDefined(attempt, "quad_formula_pos", 3)
                         
         def test_output(self):
-                """ Correct value for x is calculated and printed """
+                """ Correct value for x is calculated and printed (case 1, negative result) """
                 user_input = ["1", "2", "1"]
                 expected = "The solution for x is -1.0"
                 with patch("builtins.input", side_effect=user_input) as input_call:
                         with patch("sys.stdout", new=StringIO()) as output:
                                 import attempt
                                 self.assertEqual(attempt.quad_pos, -1.0)
+                                self.assertEqual(output.getvalue().strip(), expected)
+
+        def test_output_case2(self):
+                """ Correct value for x is calculated and printed (case 2, positive result) """
+                user_input = ["1", "-2", "1"]
+                expected = "The solution for x is 1.0"
+                with patch("builtins.input", side_effect=user_input) as input_call:
+                        with patch("sys.stdout", new=StringIO()) as output:
+                                import attempt
+                                self.assertEqual(attempt.quad_pos, 1.0)
                                 self.assertEqual(output.getvalue().strip(), expected)
 
 
