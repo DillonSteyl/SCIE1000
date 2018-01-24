@@ -11,14 +11,24 @@ class Tests(PythonTestCase):
                 except KeyError:
                         pass
                         
-        def test_output(self):
-                """ Correct value for the hypotenuse is calculated and printed """
+        def test_output_case1(self):
+                """ Correct value for the hypotenuse is calculated and printed (case 1)"""
                 user_input = ["3", "4"]
                 expected = "The third side length of the triangle is 5.0"
                 with patch("builtins.input", side_effect=user_input) as input_call:
                         with patch("sys.stdout", new=StringIO()) as output:
                                 import attempt
                                 self.assertEqual(attempt.h, 5.0)
+                                self.assertEqual(output.getvalue().strip(), expected)
+
+        def test_output_case2(self):
+                """ Correct value for the hypotenuse is calculated and printed (case 2)"""
+                user_input = ["6", "8"]
+                expected = "The third side length of the triangle is 10.0"
+                with patch("builtins.input", side_effect=user_input) as input_call:
+                        with patch("sys.stdout", new=StringIO()) as output:
+                                import attempt
+                                self.assertEqual(attempt.h, 10.0)
                                 self.assertEqual(output.getvalue().strip(), expected)
 
 
