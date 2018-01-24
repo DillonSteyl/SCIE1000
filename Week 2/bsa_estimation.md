@@ -7,11 +7,11 @@ The Haycock formula, for a person of mass *M* (kg) and height *H* (cm) is as fol
 
 BSA = 0.024265 x H<sup>0.3964</sup> x M<sup>0.5378</sup>
 
-**Task:** Modify this program so that it also calculates their estimated BSA using the **Haycock** formula. Your program should also print out the Haycock estimation below the other two estimations, with the following format:
+**Task:** Modify this program so that it also calculates the estimated BSA using the **Haycock** formula. Your program should also print out the Haycock estimation below the other two estimations, with the following format:
 ```
 Haycock BSA Estimate: (value)
 ```
-In addition, you will need to modify the program below so that it prompts the user to input mass and height, respectively. Use the following input messages:
+In addition, you will need to modify the program on the left so that it prompts the user to input mass and height, respectively. Use the following input messages:
 
 * "Enter mass: " for mass
 * "Enter height: " for height

@@ -12,7 +12,7 @@ with redirect_stdout(f):
 class Tests(PythonTestCase):
 
 	def test_output(self):
-		""" Ensure the line 'SCIE1000 will be great!' is printed """
+		""" Ensure the line 'SCIE1000 will be great!' is printed in the correct location """
 		out = f.getvalue()
 		self.assertEqual("Hello World!\nPython is pretty sweet.\nSCIE1000 will be great!\n", out)
 

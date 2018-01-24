@@ -13,7 +13,7 @@ with redirect_stdout(f):
 class Tests(PythonTestCase):
 
 	def test_output(self):
-		""" All proper values are printed """
+		""" All proper values must be printed, in the correct order"""
 		out = f.getvalue()
 		expected = str(sqrt(6)) + "\n" + str(exp(3)) + "\n" + str(sin(2)) + "\n" + str(log(5)) + "\n"
 		self.assertEqual(out, expected)

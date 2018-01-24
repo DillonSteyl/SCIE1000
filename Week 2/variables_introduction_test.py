@@ -12,12 +12,12 @@ with redirect_stdout(f):
 class Tests(PythonTestCase):
 
 	def test_variables_defined(self):
-		""" Ensure that width and height are defined """
+		""" Width and height are defined """
 		self.assertDefined(attempt, 'width', int)
 		self.assertDefined(attempt, 'height', int)
 	
 	def test_variables_values(self):
-		""" Ensure that the width, height and area variables have the correct values """
+		""" Width, height and area variables have the correct values """
 		self.assertEqual(attempt.width, 13)
 		self.assertEqual(attempt.height, 22)
 		self.assertEqual(attempt.area, 13*22)
