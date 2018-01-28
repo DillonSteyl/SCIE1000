@@ -20,3 +20,5 @@ Write a program below which will determine the equilibrium quantity and price fo
 The equilibrium quantity for game one is **ANSWER** with a price of **ANSWER.**
 
 If the Broncos win game one, the equilibrium quantity will be **ANSWER** with a price of **ANSWER.**
+
+You also need to modify the bound on the while loop to be appropriate for the program.
