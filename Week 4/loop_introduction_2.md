@@ -1,6 +1,6 @@
 # Introduction to Loops (2)
 
-To get you more comfortable with while loops, let's write one from scratch!
+To get you more comfortable with while loops, let's try something different!
 
 **Task:** Use a while loop to write a "Happy New Year!" program, which counts down from 3. Your output should be:
 ```
@@ -9,6 +9,8 @@ To get you more comfortable with while loops, let's write one from scratch!
 1
 Happy New Year!
 ```
+
+**Hint:** You will need to subtract from `i`, instead of adding to it as you did in the last exercise.
 
 ## Solution
 ```

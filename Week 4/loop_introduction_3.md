@@ -1,5 +1,4 @@
-# Loop Writing
-
+# Introduction to Loops (3)
 **Task:** Use a while loop to write a program which will print the sum of all the whole numbers from 1 to 100.
 
 ## Solution:

@@ -25,7 +25,32 @@ Finished!
 
 This can be very useful when writing more complex programs.
 
-**Task:** This program counts down from 20 to 0. Modify the program so that it prints the line "Only one digit now..." when the count-down reaches 10
+**Task:** This program counts down from 20 to 0. Modify the program so that it prints the line "Only one digit now..." when the count-down reaches 10. Your output should be:
+
+```
+20
+19
+18
+17
+16
+15
+14
+13
+12
+11
+10
+Only one digit now...
+9
+8
+7
+6
+5
+4
+3
+2
+1
+0
+```
 
 ## Solution
 ```python

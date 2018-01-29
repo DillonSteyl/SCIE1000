@@ -20,7 +20,7 @@ class Tests(PythonTestCase):
 
 	def test_true(self):
 		""" Prints the message 'Don't be so negative!' if the input is less than 0 """
-		user_input = str(randint(-100,0)) # random negative number >100
+		user_input = str(randint(-100,0)) # random negative number >-100
 		with patch("builtins.input", return_value=user_input) as input_call:
 			with patch("sys.stdout", new=StringIO()) as output:
 				import attempt
