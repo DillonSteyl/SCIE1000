@@ -10,18 +10,6 @@ The formula (roughly converted to work with centimetres instead of feet and inch
 
 If you copy the finished program and test it elsewhere, you might notice that there is a big problem with this formula. Fun fact: it isn't based on *any* population data. Apparently, it has been based on the *estimations* of Dr. Devine's mentor. A known issue with the Devine formula is that it suggests an IBW that is far too low for women, especially shorter women. 
 
-## Program
-```python
-# Write function here:
-
-
-
-# Do not modify:
-sex = eval(input("Enter 1 for female, 0 for male: "))
-height = eval(input("Enter height in cm: "))
-print("Ideal weight:", IBW(sex,height), "kg.")
-```
-
 ## Solution
 ```python
 # Write function here:
