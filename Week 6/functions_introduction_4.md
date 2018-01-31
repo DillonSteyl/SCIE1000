@@ -10,7 +10,7 @@ To do this, you will need to nest a conditional in the function.
 ## Solution
 ```python
 from pylab import *
-# Write function here:
+
 def sign(num):
     if num > 0:
         return(1)
@@ -18,8 +18,4 @@ def sign(num):
         return(0)
     else:
         return(-1)
-
-# Do not modify:
-num = eval(input("Enter a number: "))
-print( sign(num) )
 ```

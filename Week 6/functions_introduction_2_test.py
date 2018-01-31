@@ -14,25 +14,25 @@ class Tests(PythonTestCase):
 			pass
 
 	def test_function_defined(self):
-		""" Function 'toCentimetres' is defined """
+		""" Function 'double' is defined """
 		with patch("builtins.input", return_value="1") as input_call:
 			import attempt
-			self.assertMethodDefined(attempt, "toCentimetres", 1)
-		
+			self.assertMethodDefined(attempt, "double", 1)
+			
 	def test_function_behaviour(self):
-		""" Function 'toCentimetres' behaves as expected """
+		""" Function 'double' behaves as expected """
 		with patch("builtins.input", return_value="1") as input_call:
 			import attempt
-			test_val = randint(60,80)
-			self.assertEqual(attempt.toCentimetres(test_val), test_val*2.54)
+			test_val = randint(0,80)
+			self.assertEqual(attempt.double(test_val), test_val*2)
 
 	def test_output(self):
-		""" Correctly uses the toCentimetres function to convert the inputted height """
-		user_input = randint(50,90)
+		""" Correctly uses the 'double' function to print double the inputted number """
+		user_input = randint(0,100)
 		with patch("builtins.input", return_value=str(user_input)) as input_call:
 			with patch("sys.stdout", new=StringIO()) as output:
 				import attempt
-				expected = "You are " + str(attempt.toCentimetres(user_input)) + " cm tall!"
+				expected = str(attempt.double(user_input))
 				self.assertEqual(output.getvalue().strip(), expected)
 				
 # Run the unit tests
