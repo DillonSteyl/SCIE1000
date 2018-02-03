@@ -1,4 +1,4 @@
-# Introduction to Graphs - Arange
+# Introduction to Graphs (1) - Arange
 
 Drawing graphs is very important in any form of computer modelling. It can allow you to easily visualize complex (or simple) behaviour, and provide a form of output for your program that is a lot easier to understand than lines of text. We will only be covering 2D graphs in SCIE1000.
 

@@ -6,3 +6,16 @@ X = arange(0,2*pi,0.1)
 
 
 # Plot:
+
+
+
+
+
+
+
+
+
+
+
+# do not modify (this code is necessary for MyPyTutor to Show Output):
+savefig("output.png")

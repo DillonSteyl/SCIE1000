@@ -1,4 +1,4 @@
-# Introduction to Graphs - Array Operations and Plotting
+# Introduction to Graphs (2) - Array Operations and Plotting
 
 Now that we know how to create an array of x-coordinates (using `arange`), we need to create our y-coordinates in order to plot a graph. It is simple to do this if we are plotting mathematically defined functions. We can perform calculations with arrays the same way as we do with numbers - Python will simply perform the calculation on each element in the array. For example,
 
@@ -28,11 +28,11 @@ show()
 
 The `plot(X,Y)` command plots the points defined by the two arrays, `X` and `Y`. The first array will be used to define the x-coordinates, and the second array will define the y-coordinates. The `show()` command will display the graph. Here's the output from the program: 
 
-![graph1](images/graph1.png)
+![graph1](https://i.imgur.com/QDbUpFT.png)
 
 We can make this graph look a lot smoother and more accurate by using more points. The lines that Python uses to join the points together will be shorter and less noticeable. Here's the graph we get when we use `X = arange(0, 4.1, 0.1)` (spacing of 0.1) instead:
 
-![graph2](images/graph2.png)
+![graph2](https://i.imgur.com/YUfRq0Q.png)
 
 **Task:** Modify this program to plot the function y=sin(x).
 

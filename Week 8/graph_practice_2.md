@@ -34,4 +34,4 @@ show()
 ```
 
 ## Output
-![bounded-trig](images/bounded-trig.png)
+![bounded-trig](https://i.imgur.com/5rURfI6.png)

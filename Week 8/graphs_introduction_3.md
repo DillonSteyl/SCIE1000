@@ -21,7 +21,7 @@ show()
 
 The output is given below.
 
-![graph3](images/graph3.png)
+![graph3](https://i.imgur.com/T9A7EH9.png)
 
 It can also be useful to customize these graphs. We can choose the type of lines/markers we use to plot, line thickness, colour, labelling, and more. If you would like more details on how to customize your plots, you can visit this web page:
 
@@ -58,7 +58,7 @@ show()
 
 The output graph is given below:
 
-![graph4](images/graph4.png)
+![graph4](https://i.imgur.com/0Zbzjs0.png)
 
 **Task:** Modify this program to also plot another function, `Y2 = X**2 + sin(12*X)`. Label the Y1 plot with "y = x^2" and the Y2 plot with "y = x^2 + sin(12x)". Give it the title "x^2 and x^2+sin(12x)", and label the x-axis with "x" and y-axis with "y".
 
@@ -88,4 +88,4 @@ show()
 
 **Output:**
 
-![graph5](images/graph5.png)
+![8-3 Solution](https://i.imgur.com/v5RUJWv.png)
