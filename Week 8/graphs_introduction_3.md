@@ -1,4 +1,4 @@
-# Introduction to Graphs - Multiple Functions and Customization
+# Introduction to Graphs (3) - Multiple Functions and Customization
 
 It can be useful to plot multiple functions at once for comparison or visualization purposes. To do this, we can simply use the `plot` function twice with two different arrays of y-coordinates.
 
@@ -60,7 +60,7 @@ The output graph is given below:
 
 ![graph4](https://i.imgur.com/0Zbzjs0.png)
 
-**Task:** Modify this program to also plot another function, `Y2 = X**2 + sin(12*X)`. Label the Y1 plot with "y = x^2" and the Y2 plot with "y = x^2 + sin(12x)". Give it the title "x^2 and x^2+sin(12x)", and label the x-axis with "x" and y-axis with "y".
+**Task:** Modify this program to also plot another function, `Y2 = X**2 + sin(12*X)`. Label the Y1 plot with "y = x^2" and the Y2 plot with "y = x^2 + sin(12x)". Title the graph "x^2 and x^2+sin(12x)", and label the x-axis with "x" and y-axis with "y".
 
 ## Solution
 ```python

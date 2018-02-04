@@ -18,10 +18,6 @@ class Tests(PythonTestCase):
 		""" Y array contains the correct values """
 		self.assertEqual(attempt.Y.tolist(), sin(attempt.X).tolist())
 		
-	def test_plot(self):
-		""" The plot() function is called correctly - HOW DO I TEST THIS"""
-		
-		
 # Run the unit tests
 if __name__ == "__main__":
     run_tests(Tests)

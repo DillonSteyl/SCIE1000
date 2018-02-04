@@ -14,5 +14,14 @@ plot(X,Y1)
 # Titles and labels:
 
 
-legend()
-show()
+
+
+# Create legend, and show the graph:
+
+
+
+
+
+
+# do not modify (this code is necessary for MyPyTutor to show output):
+savefig("output.png")
