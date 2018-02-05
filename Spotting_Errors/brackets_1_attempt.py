@@ -1,6 +1,6 @@
-#from pylab import *
+from pylab import *
 
-#functions for the quadratic formula
+# functions for the quadratic formula
 def quad_formula_pos(a, b, c):
     ans_pos = ((-b+(b**2-4*a*c)**(1/2)/2*a)
     return(ans_pos)
