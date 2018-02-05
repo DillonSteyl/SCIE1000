@@ -1,9 +1,5 @@
 from python_test_case import PythonTestCase, run_tests
 from pylab import *
-from io import StringIO
-import matplotlib
-
-matplotlib.use('Agg')
 
 class Tests(PythonTestCase):
 

@@ -1,4 +1,4 @@
-# Introduction to Arrays - Creating Arrays
+# Introduction to Arrays (1) - Creating Arrays
 
 Last week, we learned how to plot graphs - to do this, we used the `arange` function to create an *array* which stored x-coordinates.  Apart from this, we have only used Python to store individual values in variables. *Arrays* allow multiple values to be stored in one variable.  Here's a simple example of how you might use an array in Python:
 
@@ -20,12 +20,11 @@ Some important notes:
 * Printing an array will display all of its contents.
 * The *size* of an array is simply how many values it holds, so the `size` of the `fib` array is 7.
 
-**Task:** Create and print an array called *squares* which contains the first 5 square numbers (1, 4, 9, 16, 25).
+**Task:** Create an array called *squares* which contains the first 5 square numbers (1, 4, 9, 16, 25).
 
 ## Solution
 ```python
 from pylab import *
 
 squares = array([1, 4, 9, 16, 25])
-print(squares)
 ```

@@ -1,4 +1,4 @@
-# Looping Through Arrays
+# Introduction to Arrays (3) - Looping Through Arrays
 
 Because of the convenient way that arrays are indexed, we can perform many useful functions by combining loops and arrays. For instance, we can use a loop to access each element of the array individually, and change each entry's value as we please. 
 
@@ -25,7 +25,7 @@ The output is:
   90.  92.  94.  96.  98.]
 ```
 
-**Task:** Write a while loop to fill the array `squares` with the first 10 square numbers (use a similar strategy to above)
+**Task:** Write a while loop to fill the array `squares` with the first 10 square numbers (use a similar strategy to above - perform an operation on the index variable `i`)
 
 # Solution
 ```python
@@ -37,6 +37,4 @@ i = 0
 while i < 10:
     squares[i] = i**2
     i = i + 1
-    
-print(squares)
 ```

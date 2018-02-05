@@ -3,10 +3,6 @@ matplotlib.use('Agg')
 
 from python_test_case import PythonTestCase, run_tests
 from pylab import *
-import sys
-from unittest.mock import patch, call
-import unittest
-from io import StringIO
 
 import attempt
 

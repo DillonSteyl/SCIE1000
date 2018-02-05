@@ -4,6 +4,8 @@ To get you more comfortable with plotting graphs in Python, let's try plotting 4
 
 **Task:** Write a program from scratch to plot the following functions between X=0 and X=10, with a spacing of 0.1 - make sure to **include** the final x-coordinate, X=10.
 
+To ensure MyPyTutor evaluates your work correctly, make sure you use the variable name 'X' for the array containing your x-values, and the variable names given below for each function.
+
 * ` Y1 = -0.2*X + 2`
 * ` Y2 = 0.2*X - 2`
 * ` Y3 = (-0.2*X+2)*(sin(X)) `
@@ -34,4 +36,4 @@ show()
 ```
 
 ## Output
-![bounded-trig](https://i.imgur.com/5rURfI6.png)
+![8-5 Solution](https://imgur.com/v4pakUd.png)

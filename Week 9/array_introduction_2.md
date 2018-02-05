@@ -1,4 +1,4 @@
-# Introduction to Arrays - Accessing Arrays
+# Introduction to Arrays(2) - Accessing Arrays
 
 Now that we know how to create arrays in Python, let's talk about how they can be used (aside from just for plotting graphs). Last week, we briefly covered array operations, and learned that we can perform calculations with arrays, just like we can with numbers. For example, consider:
 
