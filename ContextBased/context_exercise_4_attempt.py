@@ -6,3 +6,7 @@ mL = 15
 t = arange(0,24.25,0.25)
 
 #Write your program below:
+
+
+# Do Not Modify Below This Line
+savefig("output.png")
