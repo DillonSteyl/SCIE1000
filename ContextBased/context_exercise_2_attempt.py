@@ -5,3 +5,7 @@ from pylab import *
 # Create your model for position here:
 
 # Produce your plot here:
+
+
+# Do Not Modify Below This Line
+savefig("output.png")
