@@ -36,11 +36,13 @@ Note, we will not be testing any values of a, b, and c that result in anything l
 ```python
 from pylab import *
 
+#you will learn how this bit of code works in another exercise
 a = eval(input("The value of a: "))
 b = eval(input("The value of b: "))
 c = eval(input("The value of c: "))
+#but for now, do not change it
 
-x1 = (-b + (b**2 - 4*a*c)**0.5)/(2*a)
-x2 = (-b - (b**2 - 4*a*c)**0.5)/(2*a)
+x1 = #put your first expression for x here
+x2 = #put your second expression for x here, order not important
 
 ```
