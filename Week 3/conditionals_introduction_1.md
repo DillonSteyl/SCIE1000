@@ -52,6 +52,8 @@ Here are some examples of conditions that can be used.
 
 ## Solution
 ```python
+from pylab import *
+
 height = eval(input("Enter your height: "))
 if height < 130:
     print("You are not tall enough to ride!")
