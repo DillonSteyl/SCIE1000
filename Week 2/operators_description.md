@@ -26,13 +26,11 @@ interest = new_money - money
 
 Now it's your go. For this exercise, you must write code that will find the two possible values of x that satisfy the following equation given a, b, and c:
 
-`` 0 = a*x**2 + b*x + c ``
+``` 0 = a*x**2 + b*x + c ```
 
-Please assign these two values of x to the variables, x1 and x2. 
+Please assign these two values of x to the variables, x1 and x2. Hint: you can find the square root of a number by putting it to the power of 0.5
 
-Note, we will not be testing any values of a, b, and c that result in anything less than two real values for x, so don't worry about that.
-
-Ideal gas laws
+Note, we will not be testing any values of a, b, and c that result in anything less than two real values for x, so don't worry about that. 
 
 ## Solution
 ```python
