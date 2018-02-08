@@ -20,6 +20,8 @@ Python also includes the `pi` constant, which approximates the value of mathemat
 
 ## Solution
 ```python
+from pylab import *
+
 print( sqrt(6) )
 print( exp(3) )
 print( sin(2) )
