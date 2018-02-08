@@ -18,7 +18,8 @@ Now that we know these operators, we can construct complex mathematical expressi
 ```
 #starting amount
 money = 1000
-#amount in your bank account after 8 years given an annual interest rate of 3%, compounding monthly
+#amount in your bank account after 8 years,
+#given an annual interest rate of 3%, compounding monthly
 new_money = money*(1 + (0.03/12))**(12*8)
 #interest earned
 interest = new_money - money
