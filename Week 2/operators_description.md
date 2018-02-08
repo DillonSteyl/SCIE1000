@@ -11,7 +11,7 @@ exponent = a**b
 ```
 Fun fact: there are actually over 30 operators in Python ( = is also an operator)! You will come across a few more in this course, but for now this will do.
 
-Now that we know these operators, we can construct complex mathematical expressions just like we would on paper or our calculator. The order of operations you learned in school (BOMDAS, PODMAS, etc) is followed in Python, and you can use brackets as much as you like. Here is an example of all these concepts used together:
+Using these operators, you can now construct complex mathematical expressions just like you would on paper or your calculator. The order of operations you learned in school (BOMDAS, PODMAS, etc) is followed in Python, and you can use brackets as much as you like. Here is an example of all these concepts used together:
 
 
 
@@ -29,9 +29,15 @@ Now it's your go. For this exercise, you must write code that will find the two 
 
 ``` 0 = a*x**2 + b*x + c ```
 
-Please assign these two values of x to the variables, x1 and x2. Hint: you can find the square root of a number by putting it to the power of 0.5
+Your formulas should look like this, but using Python's operators.
 
-Note, we will not be testing any values of a, b, and c that result in anything less than two real values for x, so don't worry about that. 
+x1 = (-b + (b<sup>2</sup> - 4ac)<sup>0.5</sup>)/2a
+
+x2 = (-b - (b<sup>2</sup> - 4ac)<sup>0.5</sup>)/2a
+
+Hint: you must use an asterisk (\*) between the variables you are multiplying, you can't leave it out like you can on paper!
+
+Note, we will not be testing any values of a, b, and c that result in imaginary numbers, so don't worry about that. 
 
 ## Solution
 ```python
