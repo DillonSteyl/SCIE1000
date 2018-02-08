@@ -42,7 +42,7 @@ b = eval(input("The value of b: "))
 c = eval(input("The value of c: "))
 #but for now, do not change it
 
-x1 = #put your first expression for x here
-x2 = #put your second expression for x here, order not important
+x1 = (-b + (b**2 - 4*a*c)**0.5)/(2*a)
+x2 = (-b - (b**2 - 4*a*c)**0.5)/(2*a)
 
 ```
