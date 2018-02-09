@@ -13,4 +13,4 @@ This requires implementing the following steps:
 2. Use the calc function to find the area under the curve of the data obtained from the dye dilution method. print your result with the format AUC = **ANSWER**.
 3. Use this result obtained from implementing the trapezoidal rule over all the dye dilution method data to find the cardiac output of the patient, in the units of litres per minute. Remember that the total dye injected into the patient's heart is 8mg. Consider using dimensional analysis to help you understand how to calculate this value. 
 
-Modify the code below as indicated below. 
+Modify the code below as indicated. 
