@@ -6,4 +6,5 @@ We want to write a program that will plot the position of the weight **away** fr
 1.	Create an array for the time you will use in the plot. Hint: A spacing of 0.01 seconds between time points is recommended so that your graph will appear smooth and continuous.
 2.	Create a model to determine the position of the weight. Make use of the sinusoidal model discussed in class to do this. 
 3.	Plot the position as a function of time. Give your graph a title, and labels for the axes that you think are appropriate. 
+
 Write code to perform each of these steps as indicated below.
