@@ -7,14 +7,19 @@ Disease X has been shown to cause death for some people, and is highly infectiou
 
 Infection rate (a): 2.5 per week
 Recovery rate (b): 0.25 per week
-Death rate (d): 0.01 per week
+Death rate (d): 0.001 per week
 Total population of Madagascar (N): 25000000
 Immune population (R): 0
 Infected (I): 1
 Susceptible (S): 24999999
 Dead (D): 0
 
-**Task:*** Use the initial values given to see the effect of a single infected person on the population of Madagascar, using an SIRD model. Use a while loop to calculate the changes in each of the groups over 12 weeks, with a step size of 0.1 week. Then, print the number of deaths and the maximum number of people affected at once. Plot a graph of the population over time, with all necessary labels. 
+**Task:*** Use the initial values given to see the effect of a single infected person on the population of Madagascar, using an SIRD model. Use a while loop to calculate the changes in each of the groups over 12 weeks, with a step size of 0.1 week. Then, print the number of deaths and the maximum number of people affected at once using the print statements provided. Plot a graph of the population over time, with all necessary labels. 
+
+**Hint 1:** If you are having trouble with this task, a similar program is written in the textbook in the SIR section. 
+**Hint 2:** You can find the maximum value of an array, A, by using the max function: max(A). 
+
+
 
 
 
