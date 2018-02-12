@@ -21,7 +21,7 @@ Susceptible (S): 24999999
 
 Dead (D): 0
 
-**Task:*** Use the initial values given to see the effect of a single infected person on the population of Madagascar, using an SIRD model. Use a while loop to calculate the changes in each of the groups over 12 weeks, with a step size of 0.1 week. Then, print the number of deaths and the maximum number of people affected at once using the print statements provided. Plot a graph of the population over time, with all necessary labels. 
+**Task:*** Use the initial values given to see the effect of a single infected person on the population of Madagascar, using an SIRD model. Use a while loop to calculate the changes in each of the groups over 20 weeks, with a step size of 0.1 week. Then, print the number of deaths and the maximum number of people affected at once using the print statements provided. Plot a graph of the population over time, with all necessary labels. 
 
 **Hint 1:** If you are having trouble with this task, a similar program is written in the textbook in the SIR section. 
 **Hint 2:** You can find the maximum value of an array, A, by using the max function: max(A). 
@@ -31,7 +31,7 @@ Dead (D): 0
 ````
 from pylab import *
 
-weeks = 12
+weeks = 20
 N = 25000000
 a = 2.5
 b = 0.5
@@ -40,7 +40,7 @@ stepSize = 0.1
 time = arange(0, weeks+0.1, stepSize)
 numSteps = size(time)
 S = zeros(numSteps)
-I - zeros(numSteps)
+I = zeros(numSteps)
 R = zeros(numSteps)
 D = zeros(numSteps)
 
@@ -54,8 +54,8 @@ while i<numSteps-1:
     S[i+1] = S[i] + stepSize*(-a*S[i]*I[i]/N)
     I[i+1] = I[i] + stepSize*(a*S[i]*I[i]/N - b*I[i] - d*I[i])
     R[i+1] = R[i] + stepSize*(b*I[i])
-    D[i+1] = D[i] + stepSize(d*I[i])
-    i = i+ 2
+    D[i+1] = D[i] + stepSize*(d*I[i])
+    i = i+ 1
     
     
 print("The total number of deaths is", D[numSteps-1])
@@ -64,9 +64,13 @@ print("The maximum number of people infected at once is", max(I))
 plot(time, S, "g-", label="Susceptible")
 plot(time, I, "b-", label="Infected")
 plot(time, R, "k-", label="Recovered")
-plot(time, D, "r-", label-"Dead")
+plot(time, D, "r-", label="Dead")
 legend()
 show()
+
+
+# do not modify (this code is necessary for MyPyTutor to show output):
+savefig("output.png")
 
 
 ````
