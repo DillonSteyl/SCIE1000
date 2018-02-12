@@ -3,7 +3,7 @@ from pylab import *
 # Create your time array here:
 t = 
 # Create your model for position here:
-
+x = 
 # Produce your plot here:
 
 
