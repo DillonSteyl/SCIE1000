@@ -24,7 +24,7 @@ from pylab import *
 
 P = 100
 k = 0.05
-n = 15
+n = 30
 time = arange(0, n)
 
 exponential = zeros(n)
