@@ -9,7 +9,7 @@ Infection rate (a): 2.5 per week
 
 Recovery rate (b): 0.25 per week
 
-Death rate (d): 0.001 per week
+Death rate (d): 0.0001 per week
 
 Total population of Madagascar (N): 25000000
 
@@ -35,7 +35,7 @@ weeks = 20
 N = 25000000
 a = 2.5
 b = 0.5
-d = 0.001
+d = 0.0001
 stepSize = 0.1
 time = arange(0, weeks+0.1, stepSize)
 numSteps = size(time)
