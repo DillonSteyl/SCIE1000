@@ -21,18 +21,33 @@ After passing this exercise, take a moment to think about your results. Are the 
 ````
 from pylab import *
 
-P = 100 # initial population. Don't change this.
-k = # choose a value for the growth rate between 0.01 and 0.2
-n = # choose a value for the number of time steps between 5 and 20
-time = # make an array of values from 0 to n-1 (inclusive)
+P = 100
+k = 0.05
+n = 15
+time = arange(0, n)
 
-exponential = # use exponential to store your population values for the exponential equation
-compounding = # use compounding to store your population values for the compunding equation
+exponential = zeros(n)
+compounding = zeros(n)
 
-# Use any method you like to fill the exponetial and compounding arrays. These arrays will be checked. 
+i = 0
+while i<n:
+    exponential[i] = P*exp(k*i)
+    compounding[i] = P*(1+k)**(i)
+    i = i + 1
 
-# put your print statements here
 
-# plot your graph here
+if compounding[n-1] == exponential[n-1]:
+    print("These two equations are interchangeable when k is constant.")
+else:
+    print("These two equations are not interchangeable.")
+
+plot(time, exponential, label="exponential")
+plot(time, compounding, label="compounding")
+
+title("Exponential vs Compounding)
+xlabel("Time")
+ylabel("Population")
+legend()
+show()
 
 ````
