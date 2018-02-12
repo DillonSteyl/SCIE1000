@@ -2,11 +2,26 @@
 
 from pylab import *
 
-population = 5000000
-growth_rate=0.0016
+#Variables:
+growth_rate = 0.0016
+X = arange(0,10,1)
+population = zeros(10)
+population[0] = 5000000
 
+#Loop to calculate population
 while i<10:
-    population = population * (1+growth_rate)
-    i=i+1
+    population[i] = population[i-1] * (1+growth_rate)
+    i = i+1
 
-print("The population after 10 years in Queensland is", round(population))
+#Using -1 will point to the last element in the array
+print("The population after 10 years in Queensland is", round(population[-1]))
+
+# Plot:
+title("Population of Queensland over 10 years")
+xlabel("Year")
+ylabel("Population")
+plot(X,population)
+show()
+
+# do not modify (this code is necessary for MyPyTutor to Show Output):
+savefig("output.png")
