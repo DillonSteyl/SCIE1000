@@ -14,7 +14,7 @@ To create the bacterial growth curve from these four phases, the bacteria presen
 
 The log of the number of CFU/mL is then plotted against time. This will result in phase B showing a linear curve, rather than an exponential one. The slope of this line is the growth rate of the bacteria population.
 
-We want you to write a program that will determine and plot the bacterial growth curve for a sample of Pseudomonas aeruginosa, a common infectious Pseudomonas species, that has been tested through a batch culture experiment.  Observations from the experiment are as follows:
+We want you to write a program that will determine and plot the bacterial growth curve for a sample of *Pseudomonas aeruginosa*, a common infectious Pseudomonas species, that has been tested through a batch culture experiment.  Observations from the experiment are as follows:
 
 The initial number of CFU present in the 15 millilitre sample of agar was 225,000.
 The lag phase lasted for 6 hours, and following this the bacteria were observed to double every 15 minutes.
