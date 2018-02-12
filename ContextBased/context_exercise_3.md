@@ -8,9 +8,9 @@ Note that these laws have the underlying assumption that other factors that coul
 The two models will have an intersection point. This intersection point, known as the equilibrium point, is the ideal quantity and price for a particular good that will allow for optimal resource allocation, leading to satisfaction for both the supplying company and its customers. For clarification, refer to the first image within the following: https://brilliant.org/wiki/supply-and-demand/.
 
 Castlemaine Perkins, producer of quality beer XXXX Gold, has hired you as an analyst to determine the optimal price and quantity of XXXX Gold they need to supply for the upcoming State of Origin series. Suppose you have found the following models to estimate the supply and demand of cases of beer for the first origin game to be the following:
-``` 
-S = -0.1Q + 451
-D = 0.2Q - 779 
+``` python
+S = -0.1*Q + 451
+D = 0.2*Q - 779 
 ```
 Where S is the supply price, D is the demand price, and Q is the quantity of product produced.
 In the event the Broncos win game one, you have predicted the demand price will increase by 6 units.
