@@ -37,7 +37,7 @@ while i<n:
     i = i + 1
 
 
-if compounding[n-1] == exponential[n-1]:
+if round(compounding[n-1], 5) == round(exponential[n-1], 5):
     print("These two equations are interchangeable when k is constant.")
 else:
     print("These two equations are not interchangeable.")
