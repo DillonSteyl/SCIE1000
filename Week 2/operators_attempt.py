@@ -6,6 +6,7 @@ b = eval(input("The value of b: "))
 c = eval(input("The value of c: "))
 #but for now, do not change it
 
+#you can use the variables a, b, and c in your code
 x1 = #put your first expression for x here
 x2 = #put your second expression for x here, order not important
 
