@@ -2,7 +2,7 @@
 
 After running your simulation, you find that just under 5000 people would die if no action is taken after a single person becomes infected. As well, at the peak of the pandemic, around half the population would be sick. You inform the government about this and they are very alarmed.
 
-The government decides to take action using a public health campaign, which encourages hand washing and reducing contact while sick. Meanwhile, a vaccine is developed in Europe for Disease X. The government says they will vaccinate 1000000 citizens per week, which they hope will be enough to significantly reduce the number of deaths. Will it be enough, or should they close the borders?
+Fortunately, a successful vaccine is developed in Europe for Disease X. The government says they will vaccinate 1000000 citizens per week, which they hope will be enough to significantly reduce the number of deaths. Will it be enough, or should they close the borders?
 
 **Task:** Run your simulation again (you may borrow your code from the last exercise) but taking into account vaccinations. To do this, for each step calculate the new values for each of the groups as usual, and then move the vaccinated people from the Susceptible group to the Recovered group after. Recall, a step in your simulation is 0.1 weeks, so make sure to adjust your vaccination rate accordingly.
 
@@ -13,7 +13,7 @@ Your while loop should look a bit like this:
 ````
  i = start
  while i<end:
-     # calculate new S, I, R, D without vaccinations
+     # calculate new S, I, R, D without vaccinations as in last exercise 
      # then, move vaccinated people from Susceptible to Recovered based on updated values (you need an if statement here)
      # i = i + 1
  
