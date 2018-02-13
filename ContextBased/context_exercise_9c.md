@@ -1,6 +1,6 @@
 When it comes to programming, one of the most important rules is to not repeat yourself too much. If you have to do the same thing multiple times, then there is usually a better way to code it.
 
-To help the Republic of Madagascar solve their infectious disease problem, you will need to run a lot of simulations. Instead of copy pasting your code each time, why not write a function that will take all the input values and tell you everything you need to know. 
+To continue helping the Republic of Madagascar solve their infectious disease problem, you will need to run a lot of simulations. Instead of copy pasting your code each time, why not write a function that will take all the input values and tell you everything you need to know. 
 
 **Task:** Write a function that takes all necessary values as input, and runs the simulation like in the last exercise (with vaccinations). The function should be versatile - you should let the user choose whether or not they want to plot the simulation, and if they want important values printed. Return the number of deaths at the end of the function - this is the most important number. 
 
