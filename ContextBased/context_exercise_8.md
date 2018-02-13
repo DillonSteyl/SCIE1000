@@ -23,7 +23,7 @@ After passing this exercise, take a moment to think about your results. Are the 
 from pylab import *
 
 P = 100
-k = 0.05
+k = 0.1
 n = 30
 time = arange(0, n)
 
