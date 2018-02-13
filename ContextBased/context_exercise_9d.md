@@ -6,7 +6,7 @@ The government was unhappy with the amount of deaths that would occur despite th
 
 
 **Solution:**
-
+````
 from pylab import *
 
 def runSimulation(weeks, N, a, b, d, v, stepSize, message, graph):
@@ -77,3 +77,4 @@ show()
 
 # do not modify (this code is necessary for MyPyTutor to show output):
 savefig("output.png")
+````
