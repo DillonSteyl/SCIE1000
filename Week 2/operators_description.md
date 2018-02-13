@@ -49,6 +49,7 @@ b = eval(input("The value of b: "))
 c = eval(input("The value of c: "))
 #but for now, do not change it
 
+#you can use the variables a, b, and c in your code
 x1 = (-b + (b**2 - 4*a*c)**0.5)/(2*a)
 x2 = (-b - (b**2 - 4*a*c)**0.5)/(2*a)
 
