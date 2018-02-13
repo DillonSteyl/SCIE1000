@@ -35,7 +35,7 @@ x1 = (-b + (b<sup>2</sup> - 4ac)<sup>0.5</sup>)/(2a)
 
 x2 = (-b - (b<sup>2</sup> - 4ac)<sup>0.5</sup>)/(2a)
 
-**Hint:** you must use an asterisk (\*) between the variables you are multiplying, you can't leave it out like you can on paper!
+**Hint:** you must use an asterisk (\*) between the variables and/or numbers you are multiplying, you can't leave it out like you can on paper!
 
 Note, we will not be testing any values of a, b, and c that result in imaginary numbers, so don't worry about that. 
 
