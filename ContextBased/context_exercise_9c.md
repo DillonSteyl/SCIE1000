@@ -4,6 +4,8 @@ To continue helping the Republic of Madagascar solve their infectious disease pr
 
 **Task:** Write a function that takes all necessary values as input, and runs the simulation like in the last exercise (with vaccinations). The function should be versatile - you should let the user choose whether or not they want to plot the simulation, and if they want important values printed. Return the number of deaths at the end of the function - this is the most important number. 
 
+Everything should work the same as in the previous exercise, including the print statements. 
+
 Of course, you may copy your code from the previous exercise. 
 
 **Note:** Yes, this will be a big function! Good luck!
