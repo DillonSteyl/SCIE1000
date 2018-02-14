@@ -12,7 +12,7 @@ where a is the area of a given sample of land, and M and p are constants.
 You anticipate that the number of different species at UQ is lower during the months of Autumn and Winter than it is in Summer and Spring. You predict that during the cooler months, the variety is 40% lower. After consulting with a peer, you believe the species area curve for Spring/Summer can be modelled using
 
 ```python
-S = 3*a**0.5
+SS = 3*a**0.5
 ```
 
 Write a program that plots the species area curve for both Autumn/Winter and Spring/Summer, where the x-axis represents the number of 1,000m square cells of UQ land being considered. Label each of the individual plots as 'Spring/Summer' and 'Autumn/Winter', and give your graph the title 'Species Area Curve'. Label the axes as 'Area (1000m square cells)' and 'Number of Species'. Make sure you include a legend.
