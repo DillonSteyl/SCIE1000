@@ -1,15 +1,15 @@
 The government was unhappy with the amount of deaths that would occur despite the large amount of vaccinations. It is expensive to vaccinate the population at a rate of 1000000 people per week, but they are willing to provide more funding if it will have a big impact. They want you to investigate the effect of vaccination rate on deaths, so they will know how many people to vaccinate per week.
 
-**Task:** Plot a graph of the number of deaths for different vaccination rates. Start with 1000000, increasing by 50000 until 2000000 (inclusive). Do not print anything or graph anything else. 
+**Task:** Plot a graph of the number of deaths for different vaccination rates. Start with 1000000, increasing by 50000 until 2000000 (inclusive).
 
-**Hint:** Now would be a good time to use the function you wrote in the previous exercise (you will have to copy paste it if you want to use it). Make sure you set message and graph to 0, so the function doesn't print or plot anything itself. 
+**Hint:** Now would be a good time to use the function you wrote in the previous exercise (you will have to copy paste it if you want to use it).
 
 
 **Solution:**
 ````
 from pylab import *
 
-def runSimulation(weeks, N, a, b, d, v, stepSize, message, graph):
+def runSimulation(weeks, N, a, b, d, v, stepSize):
     time = arange(0, weeks+0.1, stepSize)
     numSteps = size(time)
     S = zeros(numSteps)
@@ -35,18 +35,6 @@ def runSimulation(weeks, N, a, b, d, v, stepSize, message, graph):
             S[i+1] = S[i+1] - v*stepSize
             R[i+1] = R[i+1] + v*stepSize
         i = i+ 1
-
-    if message==1:
-        print("The total number of deaths is", D[numSteps-1])
-        print("The maximum number of people infected at once is", max(I))
-    
-    if graph==1:
-        plot(time, S, "g-", label="Susceptible")
-        plot(time, I, "b-", label="Infected")
-        plot(time, R, "k-", label="Recovered")
-        plot(time, D, "r-", label="Dead")
-        legend()
-        show()
   
     return D[numSteps-1]
 
