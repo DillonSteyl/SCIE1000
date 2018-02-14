@@ -13,7 +13,7 @@ S = -0.1*Q + 451
 D = 0.2*Q - 779 
 ```
 Where S is the supply price, D is the demand price, and Q is the quantity of product produced.
-In the event the Broncos win game one, you have predicted the demand price will increase by 6 units.
+In the event the Broncos win game one, the demand price will decrease by 6 units, to compensate for a predicted sales increase. 
 
 Write a program below which will determine the equilibrium quantity and price for both demands. Use ND as a variable for the new demand, if game one has been won by the Broncos. Your program should print the following messages to indicate the equilibrium quantities:
 
