@@ -1,6 +1,6 @@
 
 
-After running your simulation, you find that just under 5000 people would die if no action is taken after a single person becomes infected. As well, at the peak of the pandemic, around half the population would be sick. You inform the government about this and they are very alarmed.
+After running your simulation, you find that around 4500 people would die if no action is taken after a single person becomes infected. As well, at the peak of the pandemic, around half the population would be sick. You inform the government about this and they are very alarmed.
 
 Fortunately, a successful vaccine is developed in Europe for Disease X. The government says they will vaccinate 1000000 citizens per week, which they hope will be enough to significantly reduce the number of deaths. Will it be enough, or should they close the borders?
 
@@ -65,12 +65,16 @@ print("The maximum number of people infected at once is", max(I))
 plot(time, S, "g-", label="Susceptible")
 plot(time, I, "b-", label="Infected")
 plot(time, R, "k-", label="Recovered")
-plot(time, D, "r-", label="Dead")
+plot(time, D, "r-", label="Deceased")
+xlabel("Time")
+ylabel("Population")
+title("Disease X with Vaccinations")
 legend()
 show()
 
-
 # do not modify (this code is necessary for MyPyTutor to show output):
 savefig("output.png")
+
+
 
 ````
