@@ -1,4 +1,4 @@
-# Introduction to Loops (2)
+# Introduction to Loops (3)
 
 To get you more comfortable with while loops, let's try something different!
 
