@@ -1,29 +1,4 @@
-# Operators
 
-Now that you know how to create, access, and modify variables, it is time to learn some of the basic arithmetic operators we can use on these variables. You've seen subtraction and multiplication already in the previous exercise. Here are all the basic arithmetic operators you should learn for SCIE1000:
-
-```
-addition = a+b 
-subtraction = a-b 
-multiplication = a*b 
-division = a/b 
-exponent = a**b 
-```
-Fun fact: there are actually over 30 operators in Python ( = is also an operator)! You will come across a few more in this course, but for now this will do.
-
-Using these operators, you can now construct complex mathematical expressions just like you would on paper or your calculator. The order of operations you learned in school (BOMDAS, PODMAS, etc) is followed in Python, and you can use brackets as much as you like. Here is an example of all these concepts used together, using the compound interest formula:
-
-
-
-```
-#starting amount
-money = 1000
-#amount in your bank account after 8 years,
-#given an annual interest rate of 3%, compounding monthly
-new_money = money*(1 + (0.03/12))**(12*8)
-#interest earned
-interest = new_money - money
-```
 
 Now it's your go. For this exercise, you must write code that will find the two possible values of x that satisfy the following equation given a, b, and c:
 
