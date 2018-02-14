@@ -10,7 +10,7 @@ Our goal is to write a program that will find the area under the curve of the da
 
 This requires implementing the following steps:
 1. Write a function that will help us complete this task. Modify this code so that the calc function will implement the trapezoidal rule, for one trapezoid within the data. Note that the parameters x1, x2, y1 and y2 are labelled appropriately to coincide with formulae taught in class.
-2. Use the calc function to find the area under the curve of the data obtained from the dye dilution method. print your result with the format AUC = **ANSWER**.
-3. Use this result obtained from implementing the trapezoidal rule over all the dye dilution method data to find the cardiac output of the patient, in the units of litres per minute. Remember that the total dye injected into the patient's heart is 8mg. Consider using dimensional analysis to help you understand how to calculate this value. 
+2. Use the calc function to find the area under the curve of the data obtained from the dye dilution method. Use the variable name 'AUC' for this value, and print your result with the format AUC = **ANSWER** 
+3. Use this result obtained from implementing the trapezoidal rule over all the dye dilution method data to find the cardiac output of the patient, in the units of litres per minute. Remember that the total dye injected into the patient's heart is 8mg. Consider using dimensional analysis to help you understand how to calculate this value. Use the variable name 'CO' for this value, and print your result with the format Cardiac Output = **ANSWER**.
 
 Modify the code below as indicated. 
