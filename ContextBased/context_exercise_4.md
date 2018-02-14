@@ -29,6 +29,6 @@ Some helpful reminders and guidelines to consider when writing your program are:
 
 3. Think carefully about the order in which you are calculating values in this program. Conditionals will need to be written in a particular order for the program to give the correct output. Remember that your program runs from top to bottom, so steps at the bottom of your program have the potential to override previous steps.
 
-4. Consider using an array of zeros to store your information that you will use to plot the growth curve.
+4. Consider using an array of zeros to store your information that you will use to plot the growth curve. Call this array 'Pop', and the log of this array for your graph 'LPop'.
 
 5. Give your plot the title 'Bacteria Growth Curve' and label the axes as 'Time (hours)' and 'Population (log CFU/mL)'. 
