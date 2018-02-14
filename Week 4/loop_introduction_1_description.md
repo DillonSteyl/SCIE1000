@@ -1,4 +1,4 @@
-### While Loop Practice
+# Introduction to Loops (2)
 
 While loops are a very important part of programming, so have another go writing a simple while loop.
 
