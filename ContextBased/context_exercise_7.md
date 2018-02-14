@@ -12,7 +12,7 @@ A colleague of yours has predicted that the thickness of a patient’s bowel lin
 
 You want to write a program that will predict the chance of receiving a true positive and true negative result from an FOBT screen for bowel cancer, if a patient is within a testing population of 5,000 participants, and the size of their tumour is known. The program should therefore prompt the user to input the tumour size (in mm), along with the patient weight (in kg). Call these variables 'tumoursize' and 'weight' respectively. 
 
-Your program should make use of two functions. The first of which should be called 'ratio', which determines what percentage of the bowel lining size is equivalent to the size of the patients tumour. This should use the variables 'tumoursize' and 'weight'. The second should be called 'stages', which determines the stage of cancer and prints the required output. It should use the return value from the function 'ratio.' 
+Your program should make use of two functions. The first of which should be called 'ratio', which determines what percentage of the bowel lining size is equivalent to the size of the patients tumour, and returns this value as a decimal. This should use the variables 'tumoursize' and 'weight'. The second should be called 'stages', which determines the stage of cancer and prints the required output. It should use the return value from the function 'ratio.' 
 
 The program should display the results as follows:
 
