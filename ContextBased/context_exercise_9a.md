@@ -23,7 +23,7 @@ Deceased (D): 0
 
 **Task:** Use the initial values given to see the effect of a single infected person on the population of Madagascar, using an SIRD model. Use a while loop to calculate the changes in each of the groups over 20 weeks, with a step size of 0.1 week. Then, print the number of deaths and the maximum number of people affected at once using the print statements provided. Plot a graph of the population over time, with all four population groups. 
 
-The title of your graph should be "Disease X ". The lines should be labelled "Susceptible", "Infected", "Recovered", and "Deceased". Your x-axis should be labelled "Time", and your y-axis should be labelled "Population". Make sure you include a legend.
+The title of your graph should be "Disease X". The lines should be labelled "Susceptible", "Infected", "Recovered", and "Deceased". Your x-axis should be labelled "Time", and your y-axis should be labelled "Population". Make sure you include a legend.
 
 **Hint 1:** If you are having trouble with this task, a similar program is written in the textbook in the SIR section. Note that it does not include the Deceased category, so you will have to take that into account.
 
