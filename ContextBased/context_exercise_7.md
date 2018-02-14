@@ -18,7 +18,7 @@ The program should display the results as follows:
 
 If the tumour is predicted to be a stage I or II growth, the output should be:
 
-The chance of receiving a true positive and negative result from the FOBT screen are **ANSWER** and **ANSWER** respectively. 
+The chance of receiving a true positive and negative result from the FOBT screen are **ANSWER**% and **ANSWER**% respectively. 
 
 If the tumour is in stage III or IV, print the following message:
 
