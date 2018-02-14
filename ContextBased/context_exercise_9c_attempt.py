@@ -2,15 +2,10 @@ from pylab import *
 
 # This is the function you will be writing
 # Please do not change the name of the function or any of the input variables or order
-def runSimulation(weeks, N, a, b, d, v, stepSize, message, graph):
+def runSimulation(weeks, N, a, b, d, v, stepSize):
+    
     #initialise and fill SIRD arrays
     
-    #if message is equal to 1, print the following messages:
-    print("The total number of deaths is", yourDeathValueHere)
-    print("The maximum number of people infected at once is", yourMaxValueHere)
-    
-    #if graph is equal to 1, plot the arrays
-  
     return yourDeathValueHere
 
 
