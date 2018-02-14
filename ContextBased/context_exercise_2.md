@@ -5,6 +5,6 @@ Suppose we have a spring that is stretched to 0.5m away from its equilibrium pos
 We want to write a program that will plot the position of the weight **away** from the equilibrium position (in metres) as a function of time, for 10 seconds. This will require the following steps:
 1.	Create an array for the time you will use in the plot. Hint: A spacing of 0.01 seconds between time points is recommended so that your graph will appear smooth and continuous.
 2.	Create a model to determine the position of the weight. Make use of the sinusoidal model discussed in class to do this. You will need to put pen to paper to determine what this model is. Think carefully about the information given to you and how this will affect the way the function looks. 
-3.	Plot the position as a function of time. Give your graph a title, and labels for the axes that you think are appropriate. 
+3.	Plot the position as a function of time. Give your graph the title 'Oscillation of a spring", and label the axes as 't' and 'x' appropriately. 
 
 Write code to perform each of these steps as indicated below.
