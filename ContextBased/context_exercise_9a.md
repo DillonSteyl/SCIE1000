@@ -13,7 +13,7 @@ Death rate (d): 0.0001 per week
 
 Total population of Atlantis (N): 25000000
 
-Immune population (\R): 0
+Immune population (R\): 0
 
 Infected (I): 1
 
