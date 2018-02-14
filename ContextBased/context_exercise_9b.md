@@ -6,6 +6,8 @@ Fortunately, a successful vaccine is developed in Europe for Disease X. The gove
 
 **Task:** Run your simulation again (you may borrow your code from the last exercise) but taking into account vaccinations. To do this, for each step calculate the new values for each of the groups as usual, and then move the vaccinated people from the Susceptible group to the Recovered group after. Recall, a step in your simulation is 0.1 weeks, so make sure to adjust your vaccination rate accordingly.
 
+The title of your graph should be "Disease X with Vaccinations". The lines should be labelled "Susceptible", "Infected", "Recovered", and "Deceased". Your x-axis should be labelled "Time", and your y-axis should be labelled "Population". Make sure you include a legend. 
+
 **Hint:** Make sure you do not vaccinate more people than exist in the Susceptible group - it should not drop below zero! Use an if/else statement to only vaccinate when there are people in the Susceptible group. 
 
 Your while loop should look a bit like this:
