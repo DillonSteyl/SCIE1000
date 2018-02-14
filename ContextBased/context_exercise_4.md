@@ -31,4 +31,4 @@ Some helpful reminders and guidelines to consider when writing your program are:
 
 4. Consider using an array of zeros to store your information that you will use to plot the growth curve.
 
-5. Give your plot a title and label the axes appropriately. 
+5. Give your plot the title 'Bacteria Growth Curve' and label the axes as 'Time (hours)' and 'Population (log CFU/mL)'. 
