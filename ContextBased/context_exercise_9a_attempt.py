@@ -4,7 +4,7 @@ from pylab import *
 weeks = 20
 N = 25000000
 a = 2.5
-b = 0.25
+b = 0.5
 d = 0.0001
 stepSize = 0.1
 
