@@ -13,3 +13,9 @@ A colleague of yours has predicted that the thickness of a patient’s bowel lin
 You want to write a program that will predict the chance of receiving a true positive and true negative result from an FOBT screen for bowel cancer, if a patient is within a testing population of 5,000 participants, and the size of their tumour is known. The program should therefore prompt the user to input the tumour size (in mm), along with the patient weight (in kg). The program should display the results as follows:
 
 The chance of receiving a true positive and negative result from the FOBT screen are **ANSWER** and **ANSWER** respectively. 
+
+User input should be prompted as follows:
+
+Enter the tumour size (mm):
+
+Enter the patient weight (kg):
