@@ -10,7 +10,7 @@ While you are practicing Python outside of class (HINT: you should do this!) wit
 
 **Task:** Investigate your friend's claim. Graph the two equations on the same axis with the same initial values. If the final values rounded to five decimal places are the same, print "These two equations are interchangeable when k is constant." If they are not, print "These two equations are not interchangeable."
 
-Don't forget to label your graph correctly, and use a legend. Don't change any variable names.
+The title of your graph should be 'Exponential vs Compounding". The x-axis should be labelled "Time", and the y-axis should be labelled "Amount". Remember to use a legend with the exponential line labelled "Exponential", and the compounding line labelled "Compounding". Don't change any variable names.
 
 After passing this exercise, take a moment to think about your results. Are the two equations interchangeable? Why or why not? And if not, which equation is most suitable for modelling the growth of a savings account that collects interest monthly, and which is most suitable for modelling a population of bacteria that multiplies rapidly with no limit on resources.
 
@@ -42,12 +42,12 @@ if round(compounding[n-1], 5) == round(exponential[n-1], 5):
 else:
     print("These two equations are not interchangeable.")
 
-plot(time, exponential, label="exponential")
-plot(time, compounding, label="compounding")
+plot(time, exponential, label="Exponential")
+plot(time, compounding, label="Compounding")
 
-title("Exponential vs Compounding)
+title("Exponential vs Compounding")
 xlabel("Time")
-ylabel("Population")
+ylabel("Amount")
 legend()
 show()
 
