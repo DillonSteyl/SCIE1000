@@ -2,7 +2,7 @@
 
 Being able to check conditions in sequence is useful, but there are some situations where it just isn't efficient. Consider a situation where you are in charge of writing code for a theme park. On the roller coasters, all riders must be above 130cm tall, and below 200cm tall. However, riders who are between 110cm and 130cm are allowed on the ride if they are accompanied by an adult.
 
-This is a situation where multiple conditions need to be true at the same time (they are above 110cm AND they need an adult). We could try putting multiple if/else statements in sequence, or we can use the 'and' operator and make our if statements feel more natural. Here is the usual structure of an if statement that includes the 'and' operator:
+This is a situation where multiple conditions need to be true at the same time (they are above 110cm AND they need an adult). We could try putting multiple if/elif/else statements in sequence, or we could use the 'and' operator and make our if statements feel more natural. Here is the usual structure of an if statement that includes the 'and' operator:
 
 ```
 if condition1 and condition2:
