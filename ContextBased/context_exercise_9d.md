@@ -51,7 +51,7 @@ D = zeros(size(V))
 
 i = 0
 while i<size(V):
-    D[i] = runSimulation(weeks, N, a, b, d, V[i], stepSize, 0, 0)
+    D[i] = runSimulation(weeks, N, a, b, d, V[i], stepSize)
     i = i + 1
 
 plot(V, D)
