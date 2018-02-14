@@ -13,7 +13,7 @@ Death rate (d): 0.0001 per week
 
 Total population of Atlantis (N): 25000000
 
-Immune population (R): 0
+Immune population (\R): 0
 
 Infected (I): 1
 
@@ -21,9 +21,10 @@ Susceptible (S): 24999999
 
 Deceased (D): 0
 
-**Task:*** Use the initial values given to see the effect of a single infected person on the population of Madagascar, using an SIRD model. Use a while loop to calculate the changes in each of the groups over 20 weeks, with a step size of 0.1 week. Then, print the number of deaths and the maximum number of people affected at once using the print statements provided. Plot a graph of the population over time, with all necessary labels. 
+**Task:** Use the initial values given to see the effect of a single infected person on the population of Madagascar, using an SIRD model. Use a while loop to calculate the changes in each of the groups over 20 weeks, with a step size of 0.1 week. Then, print the number of deaths and the maximum number of people affected at once using the print statements provided. Plot a graph of the population over time, with all necessary labels. 
 
 **Hint 1:** If you are having trouble with this task, a similar program is written in the textbook in the SIR section. Note that it does not include the Deceased category, so you will have to take that into account.
+
 **Hint 2:** You can find the maximum value of an array, A, by using the max function: max(A). 
 
 **Solution**
@@ -74,6 +75,3 @@ savefig("output.png")
 
 
 ````
-
-
-
