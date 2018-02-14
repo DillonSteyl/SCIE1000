@@ -15,8 +15,10 @@ You anticipate that the number of different species at UQ is lower during the mo
 S = 3*a**0.5
 ```
 
-Write a program that plots the species area curve for both Autumn/Winter and Spring/Summer, where the x-axis represents the number of 1,000m square cells of UQ land being considered. Label each of the individual plots as 'Spring/Summer' and 'Autumn/Winter', and give your graph the title 'Species Area Curve'. Label the axes as 'Area (1,000m square cells)' and 'Number of Species'. Use the following variable names:
+Write a program that plots the species area curve for both Autumn/Winter and Spring/Summer, where the x-axis represents the number of 1,000m square cells of UQ land being considered. Label each of the individual plots as 'Spring/Summer' and 'Autumn/Winter', and give your graph the title 'Species Area Curve'. Label the axes as 'Area (1000m square cells)' and 'Number of Species'. Use the following variable names:
 
 a = area array
+
 SS = Spring/Summer model
+
 AW = Autumn/Winter model
