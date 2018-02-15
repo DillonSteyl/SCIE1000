@@ -55,11 +55,11 @@ Print the message "You can take this course." if they are allowed to take the co
 ````
 from pylab import *
 
-HELP2000 = eval(input("Type 1 if you have taken HELP2000, and 0 otherwise: ")
-HELP2001 = eval(input("Type 1 if you have taken HELP2001, and 0 otherwise: ")
-HELP2500 = eval(input("Type 1 if you have taken HELP2500, and 0 otherwise: ")
-HELP3001 = eval(input("Type 1 if you have taken HELP3001, and 0 otherwise: ")
-permission = eval(input("Type 1 if you have permission from the Head of School, and 0 otherwise: ")
+HELP2000 = eval(input("Type 1 if you have taken HELP2000, and 0 otherwise: "))
+HELP2001 = eval(input("Type 1 if you have taken HELP2001, and 0 otherwise: "))
+HELP2500 = eval(input("Type 1 if you have taken HELP2500, and 0 otherwise: "))
+HELP3001 = eval(input("Type 1 if you have taken HELP3001, and 0 otherwise: "))
+permission = eval(input("Type 1 if you have permission from the Head of School, and 0 otherwise: "))
 
 if permission==1 or ((HELP2000 == 1 or HELP2001 == 1) and HELP2500 == 1 and HELP3001==0):
     print("You can take this course.")
