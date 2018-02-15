@@ -42,9 +42,9 @@ else:
 
 
 
-Ask the student to enter 1 if they have taken these courses, and 0 otherwise: HELP2000, HELP2001, HELP2500, HELP3001. Then ask the student to enter 1 if they have permission from the Head of School, and 0 otherwise. Assign these inputs to variables. That should be 5 input statements.
+Ask the student to enter 1 if they have taken these courses, and 0 otherwise: HELP2000, HELP2001, HELP2500, HELP3001. Then ask the student to enter 1 if they have permission from the Head of School, and 0 otherwise. 
 
-Make sure you ask for these input in order: HELP2000, HELP2001, HELP2500, HELP3001, permission.
+Make sure you ask for these input in order: HELP2000, HELP2001, HELP2500, HELP3001, permission. That should be 5 input statements. Assign these inputs to variables. 
 
 Print the message "You can take this course." if they are allowed to take the course, and "You cannot take this course." otherwise.
 
