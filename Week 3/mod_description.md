@@ -34,7 +34,7 @@ First, Python evaluates 'number%2'. Then, it checks if the result is equal to 0.
 ````
 from pylab import *
 
-number = eval(input(("Enter the number: "))
+number = eval(input("Enter the number: "))
 
 if number%7==0:
     print("This is a happy number.")
