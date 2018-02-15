@@ -41,9 +41,11 @@ Print the message "You can take this course." if they are allowed to take the co
 
 You should be able to do this with just one if statement (and an else statement), using 'and' operators.
 
-##Solution
+## Solution
 
 ````
+from pylab import *
+
 HELP1000 = eval(input("Type 1 if you have taken the course HELP1000, 0 otherwise"))
 HELP1500 = eval(input("Type 1 if you have taken the course HELP1500, 0 otherwise"))
 HELP2001 = eval(input("Type 1 if you have taken the course HELP2001, 0 otherwise"))
