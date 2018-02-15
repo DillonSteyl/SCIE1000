@@ -48,7 +48,7 @@ Make sure you ask for these input in order: HELP2000, HELP2001, HELP2500, HELP30
 
 Print the message "You can take this course." if they are allowed to take the course, and "You cannot take this course." otherwise.
 
-**Hint:** You should be able to solve this problem with just ONE if statement (and an else statement).
+**Hint:** Challenge yourself: you should be able to solve this problem with just ONE if statement (and an else statement).
 
 ## Solution
 
