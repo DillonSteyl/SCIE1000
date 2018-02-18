@@ -3,8 +3,8 @@ Note: before attempting this exercise, make sure you have completed the Modulo O
 For this question, you will write a program that implements an algorithm invented by Euclid, an ancient Greek mathematician. The algorithm is known as Euclid's algorithm, and finds the greatest common divisor (gcd) for any pair of integers. The greatest common divisor for a pair of numbers is the largest number that divides both of them evenly. For example:
 
 ````
-gcd(15,20) = 5
-gcd(14,7) = 7
+gcd(15,25) = 5
+gcd(21,7) = 7
 gcd(9,5) = 1
 gcd(8,12) = 4
 ````
