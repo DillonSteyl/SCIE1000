@@ -10,6 +10,7 @@ When writing numbers in your programs, Python will try to figure out if it shoul
 
 Here are some examples:
 
+````
 1 #int
 1.0 #float
 0 #int
@@ -19,32 +20,33 @@ Here are some examples:
 -15 #int
 .2 #float equal to 0.2
 2. #float equal to 2.0
+````
 
 It is important to remember this difference because some functions in python will only work with integers, and in other cases you have no choice but to use floats. Most mathematical functions (sqrt, log, exp, etc) will only return floats (but you can give them either integers or floats to use). When you divide two numbers, even if they are ints, the answer will always be a float.
 
 So what happens if we are given a float, but we actually need an int? There's a function for that! Here is how it works:
-
+````
 a = 5.0
 b = int(a)
-
+````
 This will make b equal to the integer 5. Great! But what it isn't a whole number? When you use the int() function, Python will give you the integer before the decimal, and discard all numbers after the decimal. For example:
-
+````
 a = 3.8
 b = int(a)
-
+````
 This will make b equal to the integer 3. Not 4. **The int() function does not round properly.** There is a function specifically for rounding numbers (round()), which you will learn about in a different exercise. 
 
 We can also convert an int into a float:
-
+````
 a = 5
 b = float(a)
-
+````
 This will make b equal to the float 5.0. Float won't add anything but 0 for the decimal place, so that's easy. 
 
 **Task:** We will give you a set of numbers, and you must print them in the correct section: int or float.
 
 For example, given the numbers 5, 5.0, -2.38, -12, int(12.5), 10/2, 3., sqrt(2), float(8):
-
+````
 print("These are the integers:")
 print(5)
 print(-12)
@@ -56,7 +58,7 @@ print(10/2)
 print(3.)
 print(sqrt(2))
 print(float(8))
-
+````
 Here are the numbers for you to print:
 
 3, 4/4, -13.2, sqrt(16), int(15.9),  8., .8, 100.0, float(7), -6, int(1), float(1.0);
