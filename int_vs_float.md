@@ -22,7 +22,7 @@ Here are some examples:
 2. #float equal to 2.0
 ````
 
-It is important to remember this difference because some functions in python will only work with integers, and in other cases you have no choice but to use floats. Most mathematical functions (sqrt, log, exp, etc) will only return floats (but you can give them either integers or floats to use). When you divide two numbers, even if they are ints, the answer will always be a float.
+It is important to remember this difference because some functions in python will only work with integers, and in other cases you have no choice but to use floats. Most mathematical functions (sqrt, log, exp, etc) will only return floats (but you can give them either integers or floats to use). When you divide two numbers the answer will always be a float even if the numbers were integers and divide evenly.
 
 So what happens if we are given a float, but we actually need an int? There's a function for that! Here is how it works:
 ````
