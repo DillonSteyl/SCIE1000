@@ -13,7 +13,7 @@ while i < 50:
 print(even_numbers)
 ```
 
-The aim of the program is to create an array filled with even numbers from 0 to 98. This works because `i` will start at 0 and go to 49. By multiplying `i` by 2, we get the even numbers from 0 to 98. Then, we use `i` to edit the correct element of the array. So first it changes the first element of the array to `0*2 = 0`. Then it changes the second element of the array to `1*2=2`, then the third element to `2*2=4`, and so on.
+The aim of the program is to create an array filled with even numbers from 0 to 98. This works because `i` will start at 0 and go to 49. By multiplying `i` by 2, we get the even numbers from 0 to 98. Then, we use `i` to edit the correct element of the array. So first it changes the first element of the array to `0*2 = 0`, then it changes the second element of the array to `1*2=2`, then the third element to `2*2=4`, and so on.
 
 The output is:
 
@@ -24,16 +24,48 @@ The output is:
   90.  92.  94.  96.  98.]
 ```
 
-**Task:** Write a while loop to fill the array `squares` with the first 10 square numbers (use a similar strategy to above - perform an operation on the index variable `i`)
+The reason we may want to use a loop instead of a python function is because the value that is being updated might be too complex to represent with just an equation. For example, the following program will make an array where the ith element is equal to 1 if sin(i) is greater than 0, and -1 otherwise:
+
+```python
+values = zeros(int(20))
+i = 0
+while i < 20:
+    if sin(i)>0:
+        values[i] = 1
+    else:
+        values[i] = -1
+    i = i + 1
+print(values)
+```
+The output is:
+```
+[-1.  1.  1.  1. -1. -1. -1.  1.  1.  1. -1. -1. -1.  1.  1.  1. -1. -1. -1.  1.]
+```
+
+**Task:** You are given two arrays and you must create a new array such that the element at index `i` is equal to 3 if the ith index in the first array has a larger value, 1 if the ith index of the second array has a larger value, and 2 if both the values are equal.
+
+Name the array `win_loss_draw`, and print it at the end of the program with no other text.
+
+**Hint:** Both arrays have a length of 30.
 
 # Solution
 ```python
 from pylab import *
 
-squares = zeros(10)
+array1 = array([1,43,7,12,3,9,2,23,4,5,6,2,3,65,7,43,2,3,4,5,67,8,3,2,345,456,8,2,21,34])
+array2 = array([123,43,6467,12,234,68,2,4,5,5,5,23,543,4576,8678,4,2,3,4,34,53,4,4,4,68,8,8,21,5,67)]
+win_loss_draw = zeros(int(30))
+
 i = 0
-# while loop here:
-while i < 10:
-    squares[i] = i**2
+while i<30:
+    if array[i]>array2[i]:
+        win_loss_draw[i] = 3
+    elif array[i]<array2[i]:
+        win_loss_draw[i] = 1
+    else:
+        win_loss_draw[i] = 2
+
     i = i + 1
+    
+print(win_loss_draw)
 ```
