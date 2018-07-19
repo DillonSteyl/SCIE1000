@@ -1,4 +1,4 @@
-# Introduction to Arrays(2b) - Accessing Arrays
+# Introduction to Arrays(3) - Accessing Arrays
 
 While it's fun to do operations on an entire array, it can often be useful to access *individual entries* in an array. To access an individual entry in an array, we use its **index**, which refers to its position in the array. If we have an array called `A`, and we want to access the entry at position `i` of the array, we use `A[i]`. For example, `A[2]` refers to the entry in position 2 of the array `A`.
 
