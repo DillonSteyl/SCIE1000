@@ -8,7 +8,7 @@ To assign a value to a variable, we use the following command:
 name = expression
 ```
 
-Where `name` is the name of the variable, and `expression` is a value/expression. Python will evaluate the expression on the right hand side, and then assign that value to the variable with the name given on the left. For example, the following code will assign the value `190` to the variable called `height`, and `18` to the variable called `age`.
+Where `name` is the name of the variable, and `expression` is a value/expression. Python will interpret the expression on the right hand side, and then assign that value to the variable with the name given on the left. For example, the following code will assign the value `190` to the variable called `height`, and `18` to the variable called `age`.
 
 ```python
 height = 190
