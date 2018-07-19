@@ -46,7 +46,7 @@ Pretty neat! Multiplication, addition, subtraction, division, and exponentiation
 
 There are three types of assessment: exams, assignments, and attendance. Fortunately, all of the courses were standardised so that each assessment type is worth the same amount. Exams are worth 50% of the total grade, assignments are worth 35%, and attendance is worth 15%. 
 
-So if your friend recieved 90% for their exam, 80% for their assignments, and 95* for their attendance, their total grade will be 87.25%. Check this on paper to make sure you are doing the correct calculation.
+So if your friend recieved 90% for their exam, 80% for their assignments, and 95% for their attendance, their total grade will be 87.25%. Check this on paper to make sure you are doing the correct calculation.
 
 **Task:** Modify this program so that it calculates the total grade for each class your friend is enrolled in. Store the final grades in the variable 'final'.
 
