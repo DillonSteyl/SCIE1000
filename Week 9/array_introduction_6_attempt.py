@@ -7,4 +7,3 @@ win_loss_draw = #define the array here
        
 # while loop here: (don't forget i = i+1)
 
-#print win_loss_draw here
