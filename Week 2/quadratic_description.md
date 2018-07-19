@@ -22,9 +22,9 @@ Note: Python can handle imaginary numbers (where you take the square root of a n
 ```python
 from pylab import *
 
-a = eval(input("The value of a: "))
-b = eval(input("The value of b: "))
-c = eval(input("The value of c: "))
+a = float(input("The value of a: "))
+b = float(input("The value of b: "))
+c = float(input("The value of c: "))
 
 x1 = (-b + (b**2 - 4*a*c)**0.5)/(2*a)
 x2 = (-b - (b**2 - 4*a*c)**0.5)/(2*a)
