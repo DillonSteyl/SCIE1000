@@ -62,6 +62,6 @@ attendance = array([100, 80, 50, 70])
 
 final = exams*0.5+assignments*0.35+attendance*0.15
 
-print("The final marks out of 100 are:", final")
+print("The final marks out of 100 are:", final)
 ```
 
