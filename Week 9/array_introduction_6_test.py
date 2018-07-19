@@ -4,13 +4,15 @@ import attempt
 
 class Tests(PythonTestCase):
 
-	def test_squares(self):
-		""" 'squares' array contains the correct values """
-		self.assertEqual(attempt.squares.tolist(), [0,1,4,9,16,25,36,49,64,81])
+	def test_win_loss_draw(self):
+		""" 'win_loss_draw' array contains the correct values """
+		self.assertEqual(attempt.win_loss_draw.tolist(), [1.0, 2.0, 1.0,\
+		2.0, 1.0, 1.0, 2.0, 3.0, 1.0, 2.0, 3.0, 1.0, 1.0, 1.0, 1.0, \
+		3.0, 2.0, 2.0, 2.0, 1.0, 3.0, 3.0, 1.0, 1.0, 3.0, 3.0, 2.0, 1.0, 3.0, 1.0])
 		
 	def test_i(self):
 		""" 'i' finishes with the correct value """
-		self.assertEqual(attempt.i, 10)
+		self.assertEqual(attempt.i, 30)
 	
 # Run the unit tests
 if __name__ == "__main__":
