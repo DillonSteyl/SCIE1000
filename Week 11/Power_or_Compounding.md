@@ -6,7 +6,7 @@ Expontential: P<sub>i</sub> = P<sub>0</sub> x e<sup>k x i</sup>
 
 Compounding: P<sub>i</sub> = P<sub>i-1</sub> x (1+k)
 
-While you are practicing Python outside of class (HINT: you should do this!) with your study group, your friend argues that these two formulas are interchangeable when k is constant. You aren't quite sure if they're right, because while they are both based on the same concept, why would we even need two different equations if they were essentially the same?
+Here's the situation: while you are studying for SCIE1000 outside of class with your study group, your friend argues that these two formulas are interchangeable when k is constant. You aren't quite sure if they're right, because while they are both based on the same concept, why would we even need two different equations if they were essentially the same?
 
 **Task:** Investigate your friend's claim. Graph the two equations on the same axis with the same initial values. If the final values rounded to five decimal places are the same, print "These two equations are interchangeable when k is constant." If they are not, print "These two equations are not interchangeable."
 
