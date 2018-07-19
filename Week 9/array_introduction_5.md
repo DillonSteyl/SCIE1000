@@ -6,7 +6,7 @@ This first is `arange(start, stop, step)`, that will make an array with numbers 
 
 ```python
 A = arange(0,10,0.5)
-print(primes)
+print(A)
 ```
 The output is:
 
@@ -20,7 +20,7 @@ If your step size is 1, you can leave out the step size value altogether:
 
 ```python
 A = arange(2,10)
-print(primes)
+print(A)
 ```
 The output is:
 
@@ -30,8 +30,8 @@ The output is:
 Again, the array starts at 2, goes all the way up to 10, but doesn't include it. You can also make an array full of zeroes! To do this use the functions: `zeros(int(length))`, where length is how many elements you want in your array. Pay attention to two things here. Firstly, the spelling of `zeros`; there is only one `e`. And secondly, the `int` function. The `int` function will make sure that the `zeros` function behaves properly, otherwise it will sometimes cause errors. Here's how it works:
 
 ```python
-primes = zeros(int(5))
-print(primes)
+z = zeros(int(5))
+print(z)
 ```
 The output is:
 
