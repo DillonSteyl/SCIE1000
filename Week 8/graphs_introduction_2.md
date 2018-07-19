@@ -1,4 +1,4 @@
-# Introduction to Graphs (3) - Multiple Functions and Customization
+# Introduction to Graphs (2) - Multiple Functions and Customization
 
 It can be useful to plot multiple functions at once for comparison or visualization purposes. To do this, we can simply use the `plot` function twice with two different arrays of y-coordinates.
 
