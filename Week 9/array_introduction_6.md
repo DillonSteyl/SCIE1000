@@ -44,7 +44,7 @@ The output is:
 
 **Task:** You are given two arrays and you must create a new array such that the element at index `i` is equal to 3 if the ith index in the first array has a larger value, 1 if the ith index of the second array has a larger value, and 2 if both the values are equal.
 
-Name the array `win_loss_draw`, and print it at the end of the program with no other text.
+Name the array `win_loss_draw`. To recap, the value is 3 if array1's element is bigger, 1 is array2's element is bigger, and 2 if they are equal. 
 
 **Hint:** Both arrays have a length of 30.
 
@@ -67,5 +67,4 @@ while i<30:
 
     i = i + 1
     
-print(win_loss_draw)
 ```
