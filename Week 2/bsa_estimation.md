@@ -1,6 +1,6 @@
 # Body Surface Area Estimation
 
-In the tutorial sheets this week, you learned about some ways to estimate the Body Surface Area (BSA) of a person, based only on their mass (kg) and their height (cm). There are many formulae to do this. 
+In the tutorial sheets this week, you learn about some ways to estimate the Body Surface Area (BSA) of a person, based only on their mass (kg) and their height (cm). There are many formulae to do this. 
 
 This program estimates the BSA of a person of a given height and mass using the **Mostellar** and **Dubois & Dubois** formulae. Another formula that can be used to estimate the BSA of a person is the **Haycock** formula.
 The Haycock formula, for a person of mass *M* (kg) and height *H* (cm) is as follows:
@@ -21,9 +21,9 @@ In addition, you will need to modify the program on the left so that it prompts 
 from pylab import *
 
 # Input mass:
-mass = eval(input("Enter mass: "))
+mass = float(input("Enter mass: "))
 # Input height:
-height = eval(input("Enter height: "))
+height = float(input("Enter height: "))
 
 # Calculate BSA Estimates
 mostellar_bsa = 0.0167*sqrt(mass*height)
