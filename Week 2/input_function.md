@@ -26,6 +26,8 @@ Give me a number: 4
 * "Enter width: " for width
 * "Enter height: " for height
 
+Do not forget the space after the colon!
+
 ## Solution:
 ```python
 from pylab import *
