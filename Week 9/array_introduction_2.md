@@ -1,19 +1,6 @@
-# Introduction to Arrays(2) - Accessing Arrays
+# Introduction to Arrays(2b) - Accessing Arrays
 
-Now that we know how to create arrays in Python, let's talk about how they can be used (aside from just for plotting graphs). Last week, we briefly covered array operations, and learned that we can perform calculations with arrays, just like we can with numbers. For example, consider:
-
-```python
-X = array([1, 2, 3, 4])
-print(2*X)
-```
-
-The output is:
-
-```
-[2, 4, 6, 8]
-```
-
-Python performs the operation on *each* element in the *entire* array. However, it can often be useful to access *individual entries* in an array, instead of dealing with the entire array at once. To access an individual entry in an array, we use its **index**, which refers to its position in the array. If we have an array called `A`, and we want to access the entry at position `i` of the array, we use `A[i]`. For example, `A[2]` refers to the entry in position 2 of the array `A`.
+While it's fun to do operations on an entire array, it can often be useful to access *individual entries* in an array. To access an individual entry in an array, we use its **index**, which refers to its position in the array. If we have an array called `A`, and we want to access the entry at position `i` of the array, we use `A[i]`. For example, `A[2]` refers to the entry in position 2 of the array `A`.
 
 **Important:** In Python, the first element of an array has index `0`. This also means that for an array of size `n`, the *last* element in the array has index `n-1`. Make sure you remember this! Take a look at the following program:
 
