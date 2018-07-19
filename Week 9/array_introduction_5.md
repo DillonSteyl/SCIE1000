@@ -14,7 +14,7 @@ The output is:
 [0. 0.5 1. 1.5 2. 2.5 3. 3.5 4. 4.5 5. 5.5 6. 6.5 7. 7.5 8. 8.5 9. 9.5]
 ```
 
-Notice how the array starts at 0, goes all the way up to 10 but doesn't include it, with a step size of 0.5. (Arange sometimes likes to put periods at the end of integers when it prints them. Don't worry about it!)
+Notice how the array starts at 0, goes all the way up to 10 (but doesn't include it), with a step size of 0.5. (Arange sometimes likes to put periods at the end of integers when it prints them. Don't worry about it!)
 
 If your step size is 1, you can leave out the step size value altogether:
 
