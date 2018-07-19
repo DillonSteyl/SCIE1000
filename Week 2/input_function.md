@@ -2,17 +2,17 @@
 
 When writing programs, it is often useful to prompt the user for input from the keyboard - this way, a program can be written so that it solves some general problem, and the user can enter different values each time the program is run. 
 
-To take user input from the keyboard, the `(input("message")` function can be used - Python will display the `message`, and allow the user to enter a value in response. 
+To take user input from the keyboard, the `float(input("message")` functions can be used - Python will display the `message`, and allow the user to enter a value in response. 
 
 To assign this input to a variable, we use the following code:
 
 ```python
-variable = eval(input("message"))
+variable = float(input("message"))
 ```
 
-Python will *evaluate* the input, and assign the evaluated value to the `variable`. Let's take a look at a simple example:
+Python will take the input from the user, turn it into a number, and assign the number to the `variable`. Let's take a look at a simple example:
 ```python
-number = eval(input("Give me a number: "))
+number = float(input("Give me a number: "))
 print(number, "squared is", number**2)
 ```
 This program asks the user for numerical input, and squares that number in response. Here is example output from this program:
@@ -31,9 +31,9 @@ Give me a number: 4
 from pylab import *
 
 # Take width as input:
-width = eval(input("Enter width: "))
+width = float(input("Enter width: "))
 # Take height as input:
-height = eval(input("Enter height: "))
+height = float(input("Enter height: "))
 
 area = width*height
 print("The area of the rectangle is:", area)
