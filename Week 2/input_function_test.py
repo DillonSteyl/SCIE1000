@@ -20,7 +20,7 @@ class Tests(PythonTestCase):
 	def test_output(self):
 		""" Correct area is printed """
 		user_input = ["2", "8"]
-		expected = "The area of the rectangle is: 16"
+		expected = "The area of the rectangle is: 16.0"
 		with patch("builtins.input", side_effect=user_input) as input_call:
 			with patch("sys.stdout", new=StringIO()) as output:
 				import attempt
