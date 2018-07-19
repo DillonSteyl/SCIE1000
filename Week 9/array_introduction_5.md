@@ -38,7 +38,7 @@ print(z)
 The output is:
 
 ```
-[0 0 0 0 0]
+[0. 0. 0. 0. 0.]
 ```
 
 It may not seem useful at first to have an array full of zeroes, but in future tutorials and exercises, we will want to create an array and then fill in the values later. For this, we will use the zeros function.
