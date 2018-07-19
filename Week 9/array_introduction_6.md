@@ -2,20 +2,19 @@
 
 Because of the convenient way that arrays are indexed, we can perform many useful functions by combining loops and arrays. For instance, we can use a loop to access each element of the array individually, and change each entry's value as we please. 
 
-Imagine we want to create an array containing the first 1000 even numbers (starting from 0). It would be *very* tedious to do this manually. Instead, we could use a loop to make things easier! The following program shows how this would be done for the first 50 even numbers.
-
-**Note:** we use a new function in the following program, `zeros(n)`. This function simply creates an array of size `n`, filled with zeros.
+The following is a simple example that could be replaced by code you learned in the past couple exercises, but it is important to understand this first before moving on to more complex examples:
 
 ```python
-even_numbers = zeros(50) # array of zeros
+even_numbers = zeros(int(50))
 i = 0
 while i < 50:
-    even_numbers[i] = 2*i
+    even_numbers[i] = i*2
     i = i + 1
 print(even_numbers)
 ```
 
-Note that we do this by simply doubling the index, which increases by 1 for each sequential entry. 
+The aim of the program is to create an array filled with even numbers from 0 to 98. This works because `i` will start at 0 and go to 49. By multiplying `i` by 2, we get the even numbers from 0 to 98. Then, we use `i` to edit the correct element of the array. So first it changes the first element of the array to `0*2 = 0`. Then it changes the second element of the array to `1*2=2`, then the third element to `2*2=4`, and so on.
+
 The output is:
 
 ```
