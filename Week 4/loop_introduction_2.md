@@ -2,7 +2,7 @@
 
 While loops are a very important part of programming, so have another go writing a simple while loop.
 
-**Task:** Write a program that estimates and prints out all the average monthly temperatures for Cairns. To do this, construct a while loop that starts at 1 and counts up by 1 all the way to 12 (inclusive). We have given you the print statement (and equation) for you to use. 
+**Task:** Write a program that estimates and prints out all the average monthly temperatures for Cairns. To do this, construct a while loop that starts at 1 and counts up by 1 all the way to 12 (inclusive). We have given you the print statement for you to use, which contains an equation that will estimate the average temperature for month `i`. 
 
 Remember, before you run your code in any exercise, tutorial, or other class, make sure your while loops satisfy these three criteria:
 1. It has a beginning (for this example, it is 1)
