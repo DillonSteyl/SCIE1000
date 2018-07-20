@@ -18,6 +18,14 @@ For this challenge problem, you will need to write a function called `mySort` th
 from pylab import *
 
 def mySort(A):
+    i = 0
     while i<len(A):
-    
-
+        j = 0
+        while j<len(A)-1:
+            if A[j]>A[j+1]:
+                temp = A[j+1]
+                A[j+1] = A[j]
+                A[j] = temp
+            j+=1
+        i+=1
+    return A
