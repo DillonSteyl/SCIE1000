@@ -1,7 +1,7 @@
 from pylab import *
 
 # Do not modify:
-input_radius = eval(input("Enter radius of the circle: "))
+input_radius = float(input("Enter radius of the circle: "))
 # Convert radius to a positive value, in case the input is negative:
 radius = abs(input_radius)
 area = pi*radius**2
