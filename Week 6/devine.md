@@ -4,7 +4,7 @@ The *Devine* formula is a commonly used formula to calculate 'ideal' body weight
 
 The formula (roughly converted to work with centimetres instead of feet and inches) is as follows:
 * **Men:** Ideal Body Weight (kg) = 50 + (0.9 * (height - 152) )
-* **Women:** Ideal Body Weight (kg) = 45.5 + (0.9 * (height - 1 52) )
+* **Women:** Ideal Body Weight (kg) = 45.5 + (0.9 * (height - 152) )
 
 **Task:** Write a function `IBW` which calculates the Ideal Body Weight of a person. It should take two inputs. The first input should be `sex`, with 1 representing female and 0 representing male. The second input should be `height` in centimetres.
 
