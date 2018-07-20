@@ -11,9 +11,9 @@ minimum = min(A) # the min function finds the lowest value in array A
 
 Now use them!
 
-** Task: ** An excited student wrote some code that creates a large array filled with lots of values for an experiment. They want to make sure that the array's values are okay. Given an array `A`, find the mean, minimum, and maximum of the array and use the provided print statements to print them.
+**Task:** An excited student wrote some code that creates a large array filled with lots of values for an experiment. They want to make sure that the array's values are okay. Given an array `A`, find the mean, minimum, and maximum of the array and use the provided print statements to print them.
 
-** Note: ** Do not change the array creation code, otherwise you will not pass the exercise. The array creation code is beyond what we do in SCIE1000, so don't worry if you don't understand it.
+**Note:** Do not change the array creation code, otherwise you will not pass the exercise. The array creation code is beyond what we do in SCIE1000, so don't worry if you don't understand it.
 
 ## Solution
 ```
