@@ -9,7 +9,7 @@ Remember, before you run your code in any exercise, tutorial, or other class, ma
 2. It has an end (for this example, it is 12)
 3. It has a way of getting from the beginning to the end (for this example, we are counting up by 1 and will be sure to reach 12)
 
-If you miss number 3 you may run into an infinite loop!
+If you forget to fulfil the third criteria, you may run into an infinite loop!
 
 ### Solution
 
