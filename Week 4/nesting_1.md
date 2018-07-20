@@ -1,6 +1,6 @@
 # Nesting
 
-It is important to note that we can "nest" loops and conditionals inside each other to create more complex behaviour. Nesting simply requires multiple indents to keep track of structure. For example:
+It is important to note that we can "nest" loops and conditionals inside each other to create more complex programs. Nesting simply requires multiple indents to keep track of structure. For example:
 
 ```python
 i = 1
