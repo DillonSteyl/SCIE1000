@@ -1,6 +1,6 @@
 ## The 'and' operator
 
-In this exercise we will introduce a new operator called `and`. 
+In the following two exercises we will introduce two new operators called `and` and `or`.
 
 Being able to check conditions in sequence is useful, but there are some situations where it just isn't efficient. Consider a situation where you are in charge of writing code for a theme park. On the roller coasters, all riders must be above 130cm tall, and below 200cm tall. However, riders who are between 110cm and 130cm are allowed on the ride if they are accompanied by an adult.
 
