@@ -5,7 +5,7 @@ Sometimes, we would like to check *more* than one condition. We can do this usin
 ```python
 from pylab import *
 
-mark = eval(input("What mark did you receive? "))
+mark = float(input("What mark did you receive? "))
 if mark >= 85:
     print("Congratulations! You got a 7!")
 elif mark >= 75:
@@ -45,7 +45,7 @@ Finished!
 ```python
 from pylab import *
 
-age = eval(input("Enter your age: "))
+age = float(input("Enter your age: "))
 if age >= 21:
     print("You can legally drink, even in America!")
 elif age >= 18:
