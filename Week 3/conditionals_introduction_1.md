@@ -10,14 +10,14 @@ if condition:
 # this code will execute regardless of whether the condition is true or false.
 ```
 Some important notes:
-* The `condition' must be able to evaluated to either true or false.
-* After the first line (`if condition:`), any code that is **indented by four spaces** will only run if the condition is true. You can press the 'tab' key when writing programs to indent by four spaces. 
+* The `condition` must be able to be resolved as true or false (for example, `3<5` is true)
+* After the first line (`if condition:`), any code that is **indented by four spaces (or one tab)** will only run if the condition is true. 'Indented' means that there is a space between the left side, and where code actually starts on the line.
 * Lines of the program that occur after the first line but are **not** indented by four spaces will run regardless of the conditional.
 
 Here is an example of a program that uses a simple conditional:
 
 ```python
-marks = eval(input("What mark did you receive? "))
+marks = float(input("What mark did you receive? "))
 if marks >= 50:
     print("Congratulations. You passed!")
 
@@ -35,7 +35,7 @@ Finished!
 ```
 
 ## Conditions
-Here are some examples of conditions that can be used.
+Here are some examples of operators in Python that resolve to either true or false. Great for conditionals!
 
 | Operation                  | Python |
 |:---------------------------|:------:|
@@ -54,7 +54,7 @@ Here are some examples of conditions that can be used.
 ```python
 from pylab import *
 
-height = eval(input("Enter your height: "))
+height = float(input("Enter your height: "))
 if height < 130:
     print("You are not tall enough to ride!")
 ```
