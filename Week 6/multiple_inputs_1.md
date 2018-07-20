@@ -15,8 +15,8 @@ Inside the function code, we can refer to each variable (`input1`, `input2`, `in
 def sum(a,b):
     return(a+b)
     
-a = eval(input("Give me one number: "))
-b = eval(input("Give me another number: "))
+a = float(input("Give me one number: "))
+b = float(input("Give me another number: "))
 print("The sum of the two numbers is:", sum(a,b) )
 ```
 
@@ -29,8 +29,8 @@ from pylab import *
 def prod(x,y):
     return(x*y)
     
-a = eval(input("Give me the first number: "))
-b = eval(input("Give me the second number: "))
+a = float(input("Give me the first number: "))
+b = float(input("Give me the second number: "))
 # print product:
 print( prod(a,b) )
 ```
