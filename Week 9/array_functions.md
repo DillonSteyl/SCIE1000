@@ -16,7 +16,7 @@ Now use them!
 ** Note: ** Do not change the array creation code, otherwise you will not pass the exercise. The array creation code is beyond what we do in SCIE1000, so don't worry if you don't understand it.
 
 ## Solution
-
+```
 from pylab import *
 
 # array creation code
