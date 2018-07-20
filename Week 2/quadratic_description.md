@@ -1,4 +1,4 @@
-
+#Solving Quadratics
 
 Students in high school often have to find solutions to quadratic formulas many times, and it gets pretty tiring. You're at University now, so let's streamline this. 
 
