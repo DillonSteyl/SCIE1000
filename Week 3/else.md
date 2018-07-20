@@ -16,7 +16,7 @@ Here is an example of how this might be used:
 ```python
 from pylab import *
 
-mark = eval(input("What mark did you receive? "))
+mark = float(input("What mark did you receive? "))
 if mark >= 50:
     print("Congratulations! You passed!")
 else:
@@ -41,7 +41,7 @@ Finished!
 ```python
 from pylab import *
 
-height = eval(input("Enter your height. "))
+height = float(input("Enter your height. "))
 if height < 130:
     print("You are not tall enough to ride!")
 else:
