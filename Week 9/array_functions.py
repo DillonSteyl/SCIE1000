@@ -28,3 +28,4 @@ maximum = max(A)
 minimum = min(A)
 
 print("Mean:",mean,", Max:",maximum,", Min:",minimum)
+```
