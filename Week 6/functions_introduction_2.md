@@ -11,7 +11,7 @@ def double(x):
     ans = 2*x
     return(ans)
     
-number = eval(input("Give me a number: "))
+number = float(input("Give me a number: "))
 print(double(number))
 
 ```
