@@ -10,8 +10,8 @@ def cylVolume(r,h):
     # calculate the volume of the cylinder:
     return( pi*r**2 * h )
 
-radius = eval(input("Enter radius: "))
-height = eval(input("Enter height: "))
+radius = float(input("Enter radius: "))
+height = float(input("Enter height: "))
 # print cylinder volume:
 print( cylVolume(radius, height) )
 ```
