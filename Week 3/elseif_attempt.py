@@ -1,3 +1,3 @@
 from pylab import *
 
-age = eval(input("Enter your age: "))
+age = float(input("Enter your age: "))
