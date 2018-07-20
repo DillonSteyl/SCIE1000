@@ -6,11 +6,12 @@ Sometimes, it is useful to write programs which can run some commands more than 
 while condition:
     # do some stuff if condition is true
     # do some more stuff if condition is true
+    # go back to the while condition line
     
 # this code will run after the loop is complete (once the condition is false)
 ```
 
-The structure is similar to conditionals, in that you need to *indent* the code that is "inside" the loop. Here's an example of how you might use a `while` loop to write a program which counts to 5.
+The structure is similar to conditionals, in that you need to *indent* the code that is "inside" the loop. But, unlike conditionals, the program *loops* back to the condition line after the block of code is complete, to see if it must run it again. Here's an example of how you might use a `while` loop to write a program which counts to 5.
 
 ```python
 i = 1
@@ -29,7 +30,7 @@ Count: 5
 Finished!
 ```
 
-Take special note of this line in the program: `i = i + 1`. This line of code simply increments the value of `i`. Without this line of code, the loop would continue forever, continuously printing "Count: 1". This is because nothing in the loop would change the value of i, and the *while condition* `i <= 5` would never be false!
+Take special note of this line in the program: `i = i + 1`. This line of code simply increments the value of `i`. Without this line of code, the loop would continue forever, continuously printing "Count: 1". This is because nothing in the loop would change the value of i, and the *while condition* `i <= 5` would never be false! You must always have a way to end a while loop.
 
 **Task:** Modify the following program so that it prints the squares of all the numbers from 1 to 4. Your output should be:
 ```
