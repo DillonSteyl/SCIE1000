@@ -2,7 +2,7 @@
 
 In the following two exercises we will introduce two new operators called `and` and `or`.
 
-Being able to check conditions in sequence is useful, but there are some situations where it just isn't efficient. Consider a situation where you are in charge of writing code for a theme park. On the roller coasters, all riders must be above 130cm tall, and below 200cm tall. However, riders who are between 110cm and 130cm are allowed on the ride if they are accompanied by an adult.
+Being able to check conditions in sequence is useful, but there are some situations where it just isn't efficient. Consider a situation where you must check to see if someone is allowed to drive. To drive, the person must hold a valid license, and their BAC must be below 0.05 at the time of driving. The rules can be more complex depending on the license type and other conditions, but we will assume here that only open licenses exist. 
 
 This is a situation where multiple conditions need to be true at the same time. We could try putting multiple if/elif/else statements in sequence, or we could use the `and` operator and make our if statements feel more natural. Here is the usual structure of an if statement that includes the `and` operator:
 
@@ -19,25 +19,23 @@ if condition1 and condition2 and condition3:
     #do a thing if ALL conditions are true.
 ```
 
-We can use this for our rollercoaster problem:
+We can use this for our driving problem:
 
-```
-height = float(input("What is the height (cm) of the rider: "))
-adult = float(input("Type 1 if accompanied by an adult, 0 otherwise: "))
+```python
+BAC = float(input("Enter your BAC (%): "))
+license = float(input("Type 1 if you hold an open license, 0 otherwise: "))
 
-if height>200:
-    print("Sorry, you cannot ride.")
-elif height>=130:
-    print("You may ride. Have fun!")
-elif height>=110 and adult==1:
-    print("You may ride. Have fun!")
+if BAC<0.05 and license==1:
+    print("You can drive!")
 else:
-    print("Sorry, you cannot ride.")
+    print("You are not allowed to drive.")
 ```
+
+So, our program prints "You can drive!" only if their BAC is below 0.05 and they hold an open license. Easy!
 
 **Task:** Write a program to determine if a student is allowed to take the imaginary course HELP2000. A student may only take HELP2000 if they have completed HELP1000 and HELP1500 but haven't completed HELP2001. 
 
-Ask the student using three input functions which courses of the three they have taken, and store their response in the variables HELP1000, HELP1500, and HELP2001. The student will say '1' if they have taken the course, and '0' if they haven't (like the adult variable in the rollercoaster problem).
+Ask the student using three input functions which courses of the three they have taken, and store their response in the variables HELP1000, HELP1500, and HELP2001. The student will say '1' if they have taken the course, and '0' if they haven't (like the license variable in the driving problem).
 
 Print the message "You can take this course." if they are allowed to take the course, and "You cannot take this course, sorry!" otherwise. 
 
@@ -52,7 +50,7 @@ HELP1000 = float(input("Type 1 if you have taken the course HELP1000, 0 otherwis
 HELP1500 = float(input("Type 1 if you have taken the course HELP1500, 0 otherwise"))
 HELP2001 = float(input("Type 1 if you have taken the course HELP2001, 0 otherwise"))
 
-if HELP1000 == 1 and HELP1500 == 1 and HELP2001!=1:
+if HELP1000 == 1 and HELP1500 == 1 and HELP2001 != 1:
     print("You can take this course.")
 else:
     print("You cannot take this course, sorry!")
