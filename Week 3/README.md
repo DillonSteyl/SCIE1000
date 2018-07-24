@@ -7,7 +7,6 @@ Week 3 covers conditionals. This might be a good time to start asking the studen
 1. Intro 1
 2. Intro 2
 3. Intro 3 (This exercise is as easy as Intro 2. Review if we need this.)
-4. If
 5. Else
 6. Elif
 7. And
