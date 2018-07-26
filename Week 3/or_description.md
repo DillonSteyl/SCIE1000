@@ -34,7 +34,7 @@ else:
     print("Sorry, you are not allowed to drive.")
 ````
 
-We solved the problem with just one if statement and an else statement! Notice the brackets, they are used to group conditions together, so `and` and `or` operators work in the order we want. Not it's your turn.
+We solved the problem with just one if statement and an else statement! Notice the brackets, they are used to group conditions together, so `and` and `or` operators work in the order we want. Now it's your turn.
 
 **Task:** Write a program that checks to see if a student is allowed to take the imaginary course HELP3000. Here are the rules:
 
