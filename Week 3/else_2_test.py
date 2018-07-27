@@ -33,6 +33,14 @@ class Tests(PythonTestCase):
 			with patch("sys.stdout", new=StringIO()) as output:
 				import attempt
 				self.assertEqual(output.getvalue().strip(), "Glad to see you're feeling non-negative!")
+				
+	def test_zero(self):
+		""" Prints the message "Glad to see you're feeling non-negative!" if the input is exactly 0 """
+		user_input = str(0) # random number between 0 and 100
+		with patch("builtins.input", return_value=user_input) as input_call:
+			with patch("sys.stdout", new=StringIO()) as output:
+				import attempt
+				self.assertEqual(output.getvalue().strip(), "Glad to see you're feeling non-negative!")
 		
 # Run the unit tests
 if __name__ == "__main__":
