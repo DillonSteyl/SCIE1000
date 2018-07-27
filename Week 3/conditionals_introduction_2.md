@@ -4,6 +4,8 @@ To get you more familiar with basic conditionals, here's another simple exercise
 
 **Task:** Write a program which takes a number as input from the user, and prints out the message "Don't be so negative!" if the number is below 0.
 
+**Hint:** If you can't remember how to take a number as input, go back to week 2!
+
 ## Solution
 ```python
 from pylab import *

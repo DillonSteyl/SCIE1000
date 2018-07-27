@@ -1,6 +1,6 @@
 # What Else?
 
-In the simple case for conditionals, we have written a program so that certain lines of code are executed if a condition is true. However, often we would like the program to run some *different* commands *only* if the condition is false. To do this, we use the `else` keyword as follows:
+In the simple case for conditionals, we have written a program so that certain lines of code are executed if a condition is true. However, often we would like the program to run some *different* commands only if the condition is false. To do this, we use the `else` keyword as follows:
 
 ```python
 if condition:
@@ -34,8 +34,6 @@ What mark did you receive? 75
 Congratulations! You passed!
 Finished!
 ```
-
-Note that in *both* cases, the word "Finished!" is printed. Make sure you understand why this is!
 
 **Task:** Modify this program so that it prints the message "You are not tall enough to ride!" if the value of the `height` variable is less than 130, and prints the message "You are tall enough to ride." otherwise.
 
