@@ -1,4 +1,4 @@
-# What Else?
+# What Else? (1)
 
 In the simple case for conditionals, we have written a program so that certain lines of code are executed if a condition is true. However, often we would like the program to run some *different* commands only if the condition is false. To do this, we use the `else` keyword as follows:
 
@@ -35,7 +35,7 @@ Congratulations! You passed!
 Finished!
 ```
 
-**Task:** Modify this program so that it prints the message "You are not tall enough to ride!" if the value of the `height` variable is less than 130, and prints the message "You are tall enough to ride." otherwise.
+**Task:** Modify this program so that it prints the message "You are not tall enough to ride!" if the value of the `height` variable is strictly *less* than 130, and prints the message "You are tall enough to ride." otherwise.
 
 ## Solution
 ```python

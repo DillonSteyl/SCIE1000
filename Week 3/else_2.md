@@ -1,4 +1,4 @@
-# What Else (2)?
+# What Else? (2)
 
 Here's another example that will let you practice using the `else` statement.
 

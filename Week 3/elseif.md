@@ -1,4 +1,4 @@
-# Else If
+# Else If (1)
 
 Sometimes, we would like to check *more* than one condition. We can do this using the `elif` keyword, which means "else if". This way, we can check for multiple values. The `else` keyword should be included at the *end*, to 'catch' any values we have not explicitly compared against. Study the following example carefully:
 
