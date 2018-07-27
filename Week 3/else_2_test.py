@@ -26,21 +26,13 @@ class Tests(PythonTestCase):
 				import attempt
 				self.assertEqual(output.getvalue().strip(), "Don't be so negative!")
 				
-	def test_false(self):
-		""" Prints nothing if the input is 0 """
-		user_input = "0"
-		with patch("builtins.input", return_value=user_input) as input_call:
-			with patch("sys.stdout", new=StringIO()) as output:
-				import attempt
-				self.assertEqual(output.getvalue().strip(), "")
-				
 	def test_pos(self):
-		""" Prints the message "Glad to see you're feeling positive!" if the input is greater than 0 """
+		""" Prints the message "Glad to see you're feeling non-negative!" if the input is greater than 0 """
 		user_input = str(randint(0,100)) # random number between 0 and 100
 		with patch("builtins.input", return_value=user_input) as input_call:
 			with patch("sys.stdout", new=StringIO()) as output:
 				import attempt
-				self.assertEqual(output.getvalue().strip(), "Glad to see you're feeling positive!")
+				self.assertEqual(output.getvalue().strip(), "Glad to see you're feeling non-negative!")
 		
 # Run the unit tests
 if __name__ == "__main__":
