@@ -24,7 +24,7 @@ if marks >= 50:
 print("Finished!")
 ```
 
-Here are two examples of what can happen when this program is run. Take note of the input!
+Here are two examples of what can happen when this program is run. Take careful note of the input and output!
 ```
 What mark did you recieve? 52
 Congratulations. You passed!
@@ -33,6 +33,7 @@ Finished!
 What mark did you receive? 38
 Finished!
 ```
+In particular, note that the line "Finished!" is printed in *both* cases. Make sure you understand why!
 
 ## Conditions
 Here are some examples of operators in Python that resolve to either true or false. Great for conditionals!
