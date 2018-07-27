@@ -46,7 +46,7 @@ Here are some examples of operators in Python that resolve to either true or fal
 | 'Equal to'                 | a == b |
 | 'Not equal to'             | a != b |
 
-**Note:** the operation for checking equality is `==`, NOT `=`. This because `=` is reserved for variable assignment!
+**Note:** the operation for checking equality is `==`, NOT `=`. This because `=` is reserved for variable assignment. If you are confused about this, ask a tutor in your next class.
 
 **Task:** Modify this program so that it prints the message "You are not tall enough to ride!" if the value of the `height` variable is less than 130.
 
