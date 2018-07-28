@@ -1,3 +1,3 @@
 from pylab import *
 
-number = float(input("Enter your height. "))
+height = float(input("Enter your height. "))
