@@ -5,7 +5,7 @@
 
 Your job is to write some code that asks for the rider's height and whether they are accompanied by an adult. The height will be in cm, and then you will be given the number '1' if the rider is accompanied by an adult, and '0' otherwise. Then, you will print "Enjoy your ride!" if the person is allowed to ride, and "Sorry, you cannot ride this rollercoaster." otherwise. 
 
-Challenge yourself and write the program using only one if statement and an else statement, with the help of 'and' and 'or'. 
+Challenge yourself and write the program using only one if statement and an else statement, with the help of `and` and `or`. 
 
 ## Solution
 
