@@ -1,6 +1,6 @@
 ## The 'and' operator
 
-Being able to check conditions in sequence is useful, but there are some situations where it just isn't efficient. Consider a situation where you must check to see if someone is allowed to drive. To drive, the person must hold a valid license, and their BAC must be below 0.05% at the time of driving. The rules can be more complex depending on the license type and other conditions, but we will assume here that only open licenses exist. 
+Being able to check conditions in sequence is useful, but there are some situations where it just isn't efficient. Consider a situation where you must check to see if someone is allowed to drive. To drive, the person must hold a valid license, and their BAC must be below 0.05% at the time of driving. The rules can be more complex depending on the license type and other conditions, but we will assume for now that only open licenses exist. 
 
 This is a situation where multiple conditions need to be true at the same time. We could try putting multiple if/elif/else statements in sequence, or we could use the `and` operator and make our if statements feel more natural. Here is the usual structure of an if statement that includes the `and` operator:
 
