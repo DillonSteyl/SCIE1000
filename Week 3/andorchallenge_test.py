@@ -13,7 +13,7 @@ class Tests(PythonTestCase):
             pass
 			
     def test_allowed1(self):
-        """Can ride with height=170."""
+        """Can ride with height=170, so "Enjoy your ride!" is printed."""
         user_input = ["170","0"]
         with patch("builtins.input", side_effect=user_input) as input_call:
             with patch("sys.stdout", new=StringIO()) as output:
@@ -21,7 +21,7 @@ class Tests(PythonTestCase):
                 self.assertEqual(output.getvalue().strip(),"Enjoy your ride!")
 
     def test_allowed2(self):
-        """Can ride with height=120 and adult=1"""
+        """Can ride with height=120 and adult=1, so "Enjoy your ride!" is printed."""
         user_input = ["120","1"]
         with patch("builtins.input", side_effect=user_input) as input_call:
             with patch("sys.stdout", new=StringIO()) as output:
@@ -29,7 +29,7 @@ class Tests(PythonTestCase):
                 self.assertEqual(output.getvalue().strip(),"Enjoy your ride!")
                 
     def test_edge_case_1(self):
-        """Can ride with height=200."""
+        """Can ride with height=200, so "Enjoy your ride!" is printed."""
         user_input = ["200","0"]
         with patch("builtins.input", side_effect=user_input) as input_call:
             with patch("sys.stdout", new=StringIO()) as output:
@@ -37,7 +37,7 @@ class Tests(PythonTestCase):
                 self.assertEqual(output.getvalue().strip(),"Enjoy your ride!")
 
     def test_edge_case_2(self):
-        """Can ride with height=130"""
+        """Can ride with height=130, so "Enjoy your ride!" is printed."""
         user_input = ["130","0"]
         with patch("builtins.input", side_effect=user_input) as input_call:
             with patch("sys.stdout", new=StringIO()) as output:
@@ -45,7 +45,7 @@ class Tests(PythonTestCase):
                 self.assertEqual(output.getvalue().strip(),"Enjoy your ride!")
                 
      def test_edge_case_3(self):
-        """Can ride with height=100 and adult=1"""
+        """Can ride with height=100 and adult=1, so "Enjoy your ride!" is printed."""
         user_input = ["100","1"]
         with patch("builtins.input", side_effect=user_input) as input_call:
             with patch("sys.stdout", new=StringIO()) as output:
@@ -54,7 +54,7 @@ class Tests(PythonTestCase):
 				
 
     def test_not_allowed1(self):
-        """Cannot ride with height=90"""
+        """Cannot ride with height=90, so "Sorry, you cannot ride this rollercoaster." is printed."""
         user_input = ["90","0"]
         with patch("builtins.input", side_effect=user_input) as input_call:
             with patch("sys.stdout", new=StringIO()) as output:
@@ -62,7 +62,7 @@ class Tests(PythonTestCase):
                 self.assertEqual(output.getvalue().strip(),"Sorry, you cannot ride this rollercoaster.")
 
     def test_not_allowed2(self):
-        """ Cannot ride with height=201"""
+        """ Cannot ride with height=201, so "Sorry, you cannot ride this rollercoaster." is printed."""
         user_input = ["201","0"]
         with patch("builtins.input", side_effect=user_input) as input_call:
             with patch("sys.stdout", new=StringIO()) as output:
@@ -70,7 +70,7 @@ class Tests(PythonTestCase):
                 self.assertEqual(output.getvalue().strip(),"Sorry, you cannot ride this rollercoaster.")
 
     def test_not_allowed3(self):
-        """ Cannot ride with height=129 and adult=0"""
+        """ Cannot ride with height=129 and adult=0, so "Sorry, you cannot ride this rollercoaster." is printed."""
         user_input = ["129","0"]
         with patch("builtins.input", side_effect=user_input) as input_call:
             with patch("sys.stdout", new=StringIO()) as output:
@@ -78,7 +78,7 @@ class Tests(PythonTestCase):
                 self.assertEqual(output.getvalue().strip(),"Sorry, you cannot ride this rollercoaster.")
 
     def test_not_allowed4(self):
-        """ Cannot ride with height=220 and adult=1"""
+        """ Cannot ride with height=220 and adult=1, so "Sorry, you cannot ride this rollercoaster." is printed."""
         user_input = ["220","1"]
         with patch("builtins.input", side_effect=user_input) as input_call:
             with patch("sys.stdout", new=StringIO()) as output:
