@@ -31,9 +31,9 @@ else:
 
 So, our program prints "You can drive!" only if their BAC is below 0.05 and they hold an open license. Easy!
 
-**Task:** Write a program to determine if a student is allowed to take the imaginary course HELP2000. A student may only take HELP2000 if they have completed HELP1000 and HELP1500 but haven't completed HELP2001. 
+**Task:** Edit this program to determine if a student is allowed to take the imaginary course HELP2000. A student may only take HELP2000 if they have completed HELP1000 and HELP1500 but haven't completed HELP2001. 
 
-Ask the student using three input functions which courses of the three they have taken, and store their response in the variables HELP1000, HELP1500, and HELP2001. The student will say '1' if they have taken the course, and '0' if they haven't (like the license variable in the driving problem).
+The student is asked using three input functions which courses of the three they have taken, and their responses are stored in the variables HELP1000, HELP1500, and HELP2001. The student will say '1' if they have taken the course, and '0' if they haven't (like the license variable in the driving problem).
 
 Print the message "You can take this course." if they are allowed to take the course, and "You cannot take this course, sorry!" otherwise. 
 
