@@ -13,7 +13,7 @@ class Tests(PythonTestCase):
             pass
 			
     def test_allowed1(self):
-        """Student can take the course with HELP2000 and HELP2500."""
+        """Student can take the course with HELP2000 and HELP2500, so "You can take this course." is printed."""
         user_input = ["1","0","1", "0"]
         with patch("builtins.input", side_effect=user_input) as input_call:
             with patch("sys.stdout", new=StringIO()) as output:
@@ -21,7 +21,7 @@ class Tests(PythonTestCase):
                 self.assertEqual(output.getvalue().strip(),"You can take this course.")
 
     def test_allowed2(self):
-        """Student can take the course with HELP2001 and HELP2500."""
+        """Student can take the course with HELP2001 and HELP2500, so "You can take this course." is printed."""
         user_input = ["0","1","1", "0"]
         with patch("builtins.input", side_effect=user_input) as input_call:
             with patch("sys.stdout", new=StringIO()) as output:
@@ -30,7 +30,7 @@ class Tests(PythonTestCase):
 				
 
     def test_00000(self):
-        """ Student has taken no courses"""
+        """ Student has taken no courses, so "You cannot take this course, sorry!" is printed."""
         user_input = ["0","0","0", "0"]
         with patch("builtins.input", side_effect=user_input) as input_call:
             with patch("sys.stdout", new=StringIO()) as output:
@@ -38,7 +38,7 @@ class Tests(PythonTestCase):
                 self.assertEqual(output.getvalue().strip(),"You cannot take this course, sorry!")
 
     def test_10110(self):
-        """ Student has taken HELP3001"""
+        """ Student has taken HELP3001, so "You cannot take this course, sorry!" is printed."""
         user_input = ["1","0","1", "1"]
         with patch("builtins.input", side_effect=user_input) as input_call:
             with patch("sys.stdout", new=StringIO()) as output:
@@ -46,7 +46,7 @@ class Tests(PythonTestCase):
                 self.assertEqual(output.getvalue().strip(),"You cannot take this course, sorry!")
 
     def test_11000(self):
-        """ Student has taken not taken HELP2500"""
+        """ Student has taken not taken HELP2500, so "You cannot take this course, sorry!" is printed."""
         user_input = ["1","1","0", "0"]
         with patch("builtins.input", side_effect=user_input) as input_call:
             with patch("sys.stdout", new=StringIO()) as output:
@@ -54,7 +54,7 @@ class Tests(PythonTestCase):
                 self.assertEqual(output.getvalue().strip(),"You cannot take this course, sorry!")
 
     def test_00100(self):
-        """ Student has taken not taken HELP2000 or HELP2001"""
+        """ Student has taken not taken HELP2000 or HELP2001, so "You cannot take this course, sorry!" is printed."""
         user_input = ["0","0","1", "0"]
         with patch("builtins.input", side_effect=user_input) as input_call:
             with patch("sys.stdout", new=StringIO()) as output:
