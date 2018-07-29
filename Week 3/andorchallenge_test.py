@@ -44,7 +44,7 @@ class Tests(PythonTestCase):
                 import attempt
                 self.assertEqual(output.getvalue().strip(),"Enjoy your ride!")
                 
-     def test_edge_case_3(self):
+    def test_edge_case_3(self):
         """Can ride with height=100 and adult=1, so "Enjoy your ride!" is printed."""
         user_input = ["100","1"]
         with patch("builtins.input", side_effect=user_input) as input_call:
