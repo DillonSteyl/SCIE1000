@@ -7,8 +7,10 @@ Week 3 covers conditionals. This might be a good time to start asking the studen
 1. Intro 1
 2. Intro 2
 3. Intro 3 (This exercise is as easy as Intro 2. Review if we need this.)
-5. Else
-6. Elif
-7. And
-8. Or
-9. And Or Challenge
+5. Else 1
+6. Else 2
+7. Elif 1
+8. Elif 2
+9. And
+10. Or
+11. And Or Challenge
