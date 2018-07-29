@@ -2,7 +2,7 @@ from pylab import *
 
 #This is a program to output the size category of an adult dog based on its weight
 
-weight = eval(input("Enter the weight of the dog in kg: "))
+weight = float(input("Enter the weight of the dog in kg: "))
 
 if weight<0
     print("The weight is negative, this is not valid")
