@@ -50,7 +50,7 @@ We solved the problem with just one if statement and an else statement! Now it's
 
 The student is asked using input statements to enter 1 if they have taken these courses, and 0 otherwise: HELP2000, HELP2001, HELP2500, HELP3001.
 
-Print the message "You can take this course." if they are allowed to take the course, and "You cannot take this course." otherwise.
+Print the message "You can take this course." if they are allowed to take the course, and "You cannot take this course, sorry!" otherwise.
 
 **Hint:** Challenge yourself! You should be able to solve this problem with just ONE if statement (and an else statement).
 
