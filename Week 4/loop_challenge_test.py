@@ -27,18 +27,9 @@ class Tests(PythonTestCase):
             with patch("sys.stdout", new=StringIO()) as output:
                 import attempt
                 self.assertEqual(output.getvalue().strip(),"Team A has the most fans for month 1\nTeam A has the most fans for month 2\nTeam B has the most fans for month 3\nTeam A has the most fans for month 4\nTeam A has the most fans for month 5\nTeam A has the most fans for month 6\nTeam A has the most fans for month 7\nTeam A has the most fans for month 8\nTeam B has the most fans for month 9\nTeam A has the most fans for month 10\nTeam A has the most fans for month 11\nTeam B has the most fans for month 12\nTeam A has the most fans for 9 months.")
-				
+				             
+               
     def test3(self):
-        """ Both teams are equally popular with input"""
-        user_input = ["1000","500","4000", "4500"]
-        with patch("builtins.input", side_effect=user_input) as input_call:
-            with patch("sys.stdout", new=StringIO()) as output:
-                import attempt
-                self.assertEqual(output.getvalue().strip(),"Team B has the most fans for month 1\nTeam A has the most fans for month 2\nTeam B has the most fans for month 3\nTeam B has the most fans for month 4\nTeam A has the most fans for month 5\nTeam B has the most fans for month 6\nTeam B has the most fans for month 7\nTeam A has the most fans for month 8\nTeam B has the most fans for month 9\nTeam B has the most fans for month 10\nTeam B has the most fans for month 11\nTeam B has the most fans for month 12\nTeam B has the most fans for 9 months.")
-                
-               
-               
-    def test4(self):
         """ Team B is the most popular with input -500, 500, 5000, 5000"""
         user_input = ["-500","500","5000", "5000"]
         with patch("builtins.input", side_effect=user_input) as input_call:
@@ -47,15 +38,15 @@ class Tests(PythonTestCase):
                 self.assertEqual(output.getvalue().strip(),"Team B has the most fans for month 1\nTeam B has the most fans for month 2\nTeam A has the most fans for month 3\nTeam A has the most fans for month 4\nBoth teams are equally popular for month 5\nTeam A has the most fans for month 6\nTeam A has the most fans for month 7\nTeam B has the most fans for month 8\nTeam A has the most fans for month 9\nTeam B has the most fans for month 10\nTeam B has the most fans for month 11\nTeam B has the most fans for month 12\nTeam B has the most fans for 6 months.")
     
     
-    def test5(self):
-        """ Team A is the most popular with input -500, 500, 5000, 5000"""
+    def test4(self):
+        """ Team A is the most popular with input 500, 500, 5000, 5000"""
         user_input = ["500","500","5000", "5000"]
         with patch("builtins.input", side_effect=user_input) as input_call:
             with patch("sys.stdout", new=StringIO()) as output:
                 import attempt
                 self.assertEqual(output.getvalue().strip(),"Team B has the most fans for month 1\nTeam A has the most fans for month 2\nTeam B has the most fans for month 3\nTeam A has the most fans for month 4\nTeam A has the most fans for month 5\nTeam A has the most fans for month 6\nTeam A has the most fans for month 7\nTeam A has the most fans for month 8\nTeam B has the most fans for month 9\nTeam B has the most fans for month 10\nBoth teams are equally popular for month 11\nTeam B has the most fans for month 12\nTeam A has the most fans for 6 months.")
                 
-    def test6(self):
+    def test5(self):
         """ Both teams are equally popular with input 0, 0, 10, 10"""
         user_input = ["0","0","10", "10"]
         with patch("builtins.input", side_effect=user_input) as input_call:
