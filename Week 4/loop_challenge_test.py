@@ -71,7 +71,7 @@ class Tests(PythonTestCase):
                 Team B has the most fans for month 12\nTeam B has the most fans for 6 months.")
     
     
-    def test4(self):
+    def test5(self):
         """ Team A is the most popular with input -500, 500, 5000, 5000"""
         user_input = ["500","500","5000", "5000"]
         with patch("builtins.input", side_effect=user_input) as input_call:
@@ -85,7 +85,7 @@ class Tests(PythonTestCase):
                 Team B has the most fans for month 10\nBoth teams are equally popular for month 11\n\
                 Team B has the most fans for month 12\nTeam A has the most fans for 6 months.")
                 
-     def test4(self):
+    def test6(self):
         """ Both teams are equally popular with input 0, 0, 10, 10"""
         user_input = ["0","0","10", "10"]
         with patch("builtins.input", side_effect=user_input) as input_call:
