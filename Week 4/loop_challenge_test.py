@@ -91,7 +91,7 @@ class Tests(PythonTestCase):
         with patch("builtins.input", side_effect=user_input) as input_call:
             with patch("sys.stdout", new=StringIO()) as output:
                 import attempt
-                self.assertEqual(output.getvalue().strip(),"Both teams are equally popular for month 1\n
+                self.assertEqual(output.getvalue().strip(),"Both teams are equally popular for month 1\n\
                 Both teams are equally popular for month 2\nBoth teams are equally popular for month 3\n\
                 Both teams are equally popular for month 4\nBoth teams are equally popular for month 5\n\
                 Both teams are equally popular for month 6\nBoth teams are equally popular for month 7\n\
