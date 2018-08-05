@@ -2,7 +2,7 @@ Challenge: Go Team!
 
 You are in charge of a chain of merchandise stalls at sports facility across Queensland, where Science Ball is played all year round between just two teams. Unfortunately, Science Ball fans are fiercely loyal, and will not buy merchandise from stores that sell goods for the other team that month.
 
-To make the most amount of money, you need to decide when to stock merchandise for Team A and when to stock merchandise for Team B for each of your stalls. Team loyalty is quite volatile for Science Ball fans, but after some research you have figured out how to predict the number of fans for each team using sine waves for any given month. Each sports facility has a different number for the amplitude and horizontal shift, but they all follow the same base equation:
+To make the most amount of money, you need to decide when to stock merchandise for Team A and when to stock merchandise for Team B for each of your stalls. Team loyalty is quite volatile for Science Ball fans, but after some research you have figured out how to predict the number of fans for each team using sine waves for any given month. Each sports facility has a different number for the amplitude and vertical shift, but they all follow the same base equation:
 
 ```
 Number of fans for team A: amplitudeA*sin(2*(i-1)/3)+shiftA
@@ -12,7 +12,7 @@ Number of fans for team B: amplitudeB*sin(2*(i+3)/12)+shiftB
 Where i is the current month, with Janurary being month i=1.
 
 
-**Task:** Four input statements are written that will prompt the user to enter the amplitudes and phase shift values for each team, and store them as variables. 
+**Task:** Four input statements are written that will prompt the user to enter the amplitudes and vertical shift values for each team, and store them as variables. 
 
 For each month (1 to 12), find which team has the most number of fans using the above equations, and print a message with the format "Team X has the most fans for month i". If both teams have the same number of fans, print a message with the format "Both teams are equally popular for month i".
 
@@ -29,8 +29,8 @@ from pylab import *
 #Ask the user to give the amplitudes and middles. Do not edit these lines!
 amplitudeA = float(input("Enter the amplitude for Team A: "))
 amplitudeB = float(input("Enter the amplitude for Team B: "))
-shiftA = float(input("Enter the horizontal shift for Team A: "))
-shiftB = float(input("Enter the horizontal shift for Team B: "))
+shiftA = float(input("Enter the vertical shift for Team A: "))
+shiftB = float(input("Enter the vertical shift for Team B: "))
 
 
 i = 1
