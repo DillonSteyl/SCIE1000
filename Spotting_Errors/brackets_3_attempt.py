@@ -6,10 +6,10 @@ from pylab import *
 r = 0.05
 
 #initial number of fish
-init = eval(input("Input the initial number of fish: "))
+init = float(input("Input the initial number of fish: "))
 
 #number of years to project for
-years = eval(input("Input the number of years to be modelled: "))
+years = float(input("Input the number of years to be modelled: "))
 
 i=0
 
