@@ -3,8 +3,8 @@ from pylab import *
 #Ask the user to give the amplitudes and middles. Do not edit these lines!
 amplitudeA = float(input("Enter the amplitude for Team A: "))
 amplitudeB = float(input("Enter the amplitude for Team B: "))
-middleA = float(input("Enter the middle for Team A: "))
-middleB = float(input("Enter the middle for Team B: "))
+middleA = float(input("Enter the vertical shift for Team A: "))
+middleB = float(input("Enter the vertical shift for Team B: "))
 
 
 
