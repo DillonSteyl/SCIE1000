@@ -2,7 +2,7 @@ from pylab import *
 
 #A program to output whether a number is a perfect square number
 
-number = eval(input("Enter a number: "))
+number = float(input("Enter a number: "))
 
 if number = 0:
     print("Zero is a special case")
