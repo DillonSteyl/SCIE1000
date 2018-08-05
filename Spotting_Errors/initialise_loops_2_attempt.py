@@ -1,7 +1,7 @@
 from pylab import *
 
 #calculating 2 to the power of x (input)
-x = eval(input("Input the number to calculate 2 to the power of "))
+x = float(input("Input the number to calculate 2 to the power of: "))
 
 power = 2
 
