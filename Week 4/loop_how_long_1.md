@@ -32,7 +32,7 @@ The user wants to know the purchasing power of $1000 for particular different ye
 
 `purchasing power for year vs 2018 = 1000*(1.03)**(2018-year)`
 
-Use the message `"The purchasing power:", 1000*(1.03)**(2018-year), "in year", year"`
+Use the message `"The purchasing power:", 1000*(1.03)**(2018-year), "in year", year`
 
 If the user inputs 0, exit the program and print the message `"Thanks, and have a good day!"`
 
