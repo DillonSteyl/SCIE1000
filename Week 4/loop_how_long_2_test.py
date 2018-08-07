@@ -18,14 +18,14 @@ class Tests(PythonTestCase):
         with patch("builtins.input", side_effect=user_input) as input_call:
             with patch("sys.stdout", new=StringIO()) as output:
                 import attempt
-                self.assertEqual(output.getvalue().strip(),"The final answer is 40")			
+                self.assertEqual(output.getvalue().strip(),"The final answer is 40.0")			
     def test2(self):
         """ Answer is 1 with input 1, 0"""
-        user_input = ["1000","500","4500", "4000"]
+        user_input = ["1", "0"]
         with patch("builtins.input", side_effect=user_input) as input_call:
             with patch("sys.stdout", new=StringIO()) as output:
                 import attempt
-                self.assertEqual(output.getvalue().strip(),"The final answer is 1")
+                self.assertEqual(output.getvalue().strip(),"The final answer is 1.0")
                
     def test3(self):
         """ Answer is -32 with input 4, -8, 0"""
@@ -33,7 +33,7 @@ class Tests(PythonTestCase):
         with patch("builtins.input", side_effect=user_input) as input_call:
             with patch("sys.stdout", new=StringIO()) as output:
                 import attempt
-                self.assertEqual(output.getvalue().strip(),"The final answer is -32")
+                self.assertEqual(output.getvalue().strip(),"The final answer is -32.0")
     
     def test4(self):
         """ Answer is 362880 for input 1, 2, 3, 4, 5, 6, 7, 8, 9, 0"""
@@ -41,7 +41,7 @@ class Tests(PythonTestCase):
         with patch("builtins.input", side_effect=user_input) as input_call:
             with patch("sys.stdout", new=StringIO()) as output:
                 import attempt
-                self.assertEqual(output.getvalue().strip(),"The final answer is 362880")
+                self.assertEqual(output.getvalue().strip(),"The final answer is 362880.0")
    
 		
 		
