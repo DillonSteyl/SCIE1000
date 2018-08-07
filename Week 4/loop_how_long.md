@@ -1,6 +1,6 @@
 # Loops of Unknown Length
 
-If you've been paying attention for the last few exercises, you may have noticed that you can work out how many times the loop will repeat just by reading the program. This usually happens when you are counting through a set of values (for example, from 1 to 10). But there are other ways to use while loops.
+If you've been paying attention for the last few exercises, you may have noticed that you can sometimes work out how many times the loop will repeat just by reading the program. This usually happens when you are counting through a set of values (for example, from 1 to 10). But there are other ways to use while loops.
 
 We can make a while loop that ends when the user asks it to. Observe the program below:
 
