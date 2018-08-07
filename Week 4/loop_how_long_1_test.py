@@ -17,7 +17,7 @@ class Tests(PythonTestCase):
         user_input = ["2018","0"]
         year = 1
         string = ""
-        string+="The purchasing power: "+ str(1000*(1.03)**(2018-2018))+  "in year "+ str(2018)
+        string+="The purchasing power: "+ str(1000*(1.03)**(2018-2018))+  " in year "+ str(2018.0)
         string+="\nThanks, and have a good day!"
         with patch("builtins.input", side_effect=user_input) as input_call:
             with patch("sys.stdout", new=StringIO()) as output:
@@ -29,8 +29,8 @@ class Tests(PythonTestCase):
         user_input = ["2020","2030","0"]
         year = 1
         string = ""
-        string+="The purchasing power: "+ str(1000*(1.03)**(2018-2020))+ " in year "+ str(2020)
-        string+="\nThe purchasing power: "+ str(1000*(1.03)**(2018-2030))+ " in year "+ str(2030)
+        string+="The purchasing power: "+ str(1000*(1.03)**(2018-2020))+ " in year "+ str(2020.0)
+        string+="\nThe purchasing power: "+ str(1000*(1.03)**(2018-2030))+ " in year "+ str(2030.0)
         string+="\nThanks, and have a good day!"
         with patch("builtins.input", side_effect=user_input) as input_call:
             with patch("sys.stdout", new=StringIO()) as output:
@@ -42,9 +42,9 @@ class Tests(PythonTestCase):
         user_input = ["1918","2018","2118","0"]
         year = 1
         string = ""
-        string+="The purchasing power: "+ str(1000*(1.03)**(2018-1918))+ " in year "+ str(1918)
-        string+="\nThe purchasing power: "+str(1000*(1.03)**(2018-2018))+ " in year "+ str(2018)
-        string+="\nThe purchasing power: "+str(1000*(1.03)**(2018-2118))+" in year "+ str(2118)
+        string+="The purchasing power: "+ str(1000*(1.03)**(2018-1918))+ " in year "+ str(1918.0)
+        string+="\nThe purchasing power: "+str(1000*(1.03)**(2018-2018))+ " in year "+ str(2018.0)
+        string+="\nThe purchasing power: "+str(1000*(1.03)**(2018-2118))+" in year "+ str(2118.0)
         string+="\nThanks, and have a good day!"
         with patch("builtins.input", side_effect=user_input) as input_call:
             with patch("sys.stdout", new=StringIO()) as output:
