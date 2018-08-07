@@ -23,7 +23,7 @@ So, while the number is not 0, the program will continue to ask the user for a n
 
 This is pretty useful! The program will keep asking the user for new numbers until the user wants the program to end. There's a lot you can do with this, but for now we will just stick with an easy problem.
 
-**Task:** The user wants to multiply many numbers together. Write a program that will keep asking the user for numbers until they enter 0. When they enter 0, exit the loop (and don't multiply the number by 0!). Finally, print their number with the statement `print("The final answer is", number")`.
+**Task:** The user wants to multiply many numbers together. Write a program that will keep asking the user for numbers until they enter 0. When they enter 0, exit the loop (and don't multiply the number by 0!). Finally, print the final large number with the statement `print("The final answer is", number")`.
 
 For example, if the user enters 2, 5, 4, then 0, the answer should be 40. You can calculate this by starting at 1, multiplying that by 2 to get 2. Then multiplying that by 5 to get 10. Then multiplying that by 4 to get 40. 
 
