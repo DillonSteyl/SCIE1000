@@ -1,12 +1,12 @@
 Challenge: Go Team!
 
-You are in charge of a chain of merchandise stalls at sports facility across Queensland, where Science Ball is played all year round between just two teams. Unfortunately, Science Ball fans are fiercely loyal, and will not buy merchandise from stores that sell goods for the other team that month.
+You are in charge of a chain of merchandise stalls at sports facilities across Queensland, where Science Ball is played all year round between just two teams. Unfortunately, Science Ball fans are fiercely loyal, and will not buy merchandise from stores that sell goods for the other team that month.
 
 To make the most amount of money, you need to decide when to stock merchandise for Team A and when to stock merchandise for Team B for each of your stalls. Team loyalty is quite volatile for Science Ball fans, but after some research you have figured out how to predict the number of fans for each team using sine waves for any given month. Each sports facility has a different number for the amplitude and vertical shift, but they all follow the same base equation:
 
 ```
-Number of fans for team A: amplitudeA*sin(2*(i-1)/3)+shiftA
-Number of fans for team B: amplitudeB*sin(2*(i+3)/12)+shiftB
+Number of fans for team A: amplitudeA*sin(2*pi*(i-1)/3)+shiftA
+Number of fans for team B: amplitudeB*sin(2*pi*(i+3)/12)+shiftB
 ```
 
 Where i is the current month, with Janurary being month i=1.
