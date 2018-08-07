@@ -23,6 +23,31 @@ So, while the number is not 0, the program will continue to ask the user for a n
 
 This is pretty useful! The program will keep asking the user for new numbers until the user wants the program to end. There's a lot you can do with this, but for now we will just stick with an easy problem.
 
+
+
+
+**Task:** The user wants to know the purchasing power of $1000 for particular different years. Ask the user for the year using the message "Enter the year you want to know about, or enter 0 to exit the program: ", and use the following equation to tell them the purchasing power for $1000 for that year with a predicted 3% inflation rate. 
+
+`purchasing power for year vs 2018 = 1000*(1.03)**(2018-year)`
+
+Use the message "The purchasing power of $1000 dollars in year", year, "is", value, "compared to 2018."
+
+If the user inputs 0, exit the program and print the message "Thanks, and have a good day!"
+
+```
+from pylab import *
+
+year = 1
+
+while year!=0:
+    year = float(input("Enter the year you want to know about, or enter 0 to exit the program: "))
+    if year!=0:
+        print("The purchasing power of $1000 dollars in year", year, "is", value, "compared to 2018.")
+
+print("Thanks, and have a good day!")
+
+```
+
 **Task:** The user wants to multiply many numbers together. Write a program that will keep asking the user for numbers until they enter 0. When they enter 0, exit the loop (and don't multiply the number by 0!). Finally, print the final large number with the statement `print("The final answer is", number")`.
 
 For example, if the user enters 2, 5, 4, then 0, the answer should be 40. You can calculate this by starting at 1, multiplying that by 2 to get 2. Then multiplying that by 5 to get 10. Then multiplying that by 4 to get 40. 
