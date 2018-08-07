@@ -41,7 +41,7 @@ class Tests(PythonTestCase):
         with patch("builtins.input", side_effect=user_input) as input_call:
             with patch("sys.stdout", new=StringIO()) as output:
                 import attempt
-                self.assertEqual(output.getvalue().strip(),"The final answer is 362880"]
+                self.assertEqual(output.getvalue().strip(),"The final answer is 362880")
    
 		
 		
