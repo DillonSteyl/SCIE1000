@@ -23,7 +23,7 @@ class Tests(PythonTestCase):
         def test_output_case2(self):
                 """ Correct output when the input (x) is 2 (hint- check you are looping the correct number of times) """
                 user_input = "2"
-                expected = "2 to the power of 2 is 4"
+                expected = "2.0 to the power of 2 is 4.0"
                 with patch("builtins.input", side_effect=user_input) as input_call:
                         with patch("sys.stdout", new=StringIO()) as output:
                                 import attempt
@@ -32,7 +32,7 @@ class Tests(PythonTestCase):
         def test_output_case3(self):
                 """ Correct output when the input (x) is more than 2 """
                 user_input = "5"
-                expected = "2 to the power of 5 is 32"
+                expected = "2.0 to the power of 5 is 32.0"
                 with patch("builtins.input", side_effect=user_input) as input_call:
                         with patch("sys.stdout", new=StringIO()) as output:
                                 import attempt
