@@ -32,7 +32,7 @@ class Tests(PythonTestCase):
         def test_output_case3(self):
                 """ Correct output when the number is a perfect square"""
                 user_input = "16"
-                expected = "The number 16 is a perfect square of 4.0"
+                expected = "The number 16.0 is a perfect square of 4.0"
                 with patch("builtins.input", return_value=user_input) as input_call:
                         with patch("sys.stdout", new=StringIO()) as output:
                                 import attempt
