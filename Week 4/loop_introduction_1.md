@@ -1,4 +1,4 @@
-# Introduction to Loops
+# Introduction to Loops (1)
 
 Sometimes, it is useful to write programs which can run some commands more than once. To do this, we use a *loop* structure, which allows Python to run a block of code multiple times. The loop structure we will talk about here is the `while` loop. The structure of a `while` loop is as follows:
 
@@ -32,7 +32,7 @@ Finished!
 
 Take special note of this line in the program: `i = i + 1`. This line of code simply increments the value of `i`. Without this line of code, the loop would continue forever, continuously printing "Count: 1". This is because nothing in the loop would change the value of i, and the *while condition* `i <= 5` would never be false! You must always have a way to end a while loop.
 
-**Task:** Modify the following program so that it prints the squares of all the numbers from 1 to 4. Your output should be:
+**Task:** Modify this program so that it prints the squares of all the numbers from 1 to 4. Your output should be:
 ```
 1 squared: 1
 2 squared: 4
