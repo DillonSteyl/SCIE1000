@@ -15,6 +15,6 @@ else:
     i = 1.0
     while i <= number/2:
         if number / i = i: 
-            print("The number", number, "is a perfect square of ", i)
+            print("The number", number, "is a perfect square of", i)
         i = i + 1
             
