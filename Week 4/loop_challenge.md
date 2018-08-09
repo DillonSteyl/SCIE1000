@@ -1,4 +1,4 @@
-Challenge: Go Team!
+# Challenge: Go Team!
 
 You are in charge of a chain of merchandise stalls at sports facilities across Queensland, where Science Ball is played all year round between just two teams. Unfortunately, Science Ball fans are fiercely loyal, and will not buy merchandise from stores that sell goods for the other team that month.
 
