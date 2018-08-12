@@ -21,7 +21,7 @@ class Tests(PythonTestCase):
 		""" Output is correct """
 		with patch("sys.stdout", new=StringIO()) as output:
 			import attempt
-			expected = "The final marks out of 100 are: [87.5  65.05 57.4  75.65]"
+			expected = "The final marks out of 100 are: [87.5 65.05 57.4 75.65]"
 			self.assertEqual(output.getvalue().strip(), expected)
 	
 # Run the unit tests
