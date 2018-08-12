@@ -15,7 +15,7 @@ class Tests(PythonTestCase):
 	def test_primes(self):
 		""" 'final' array is correct """
 		import attempt
-		self.assertEqual(attempt.final.tolist(), [87.5,  65.05, 57.4,  75.65])
+		self.assertEqual(attempt.final.tolist(), [87.5,  65.05, 57.4,  74.8])
 		
 	def test_out(self):
 		""" Output is correct """
