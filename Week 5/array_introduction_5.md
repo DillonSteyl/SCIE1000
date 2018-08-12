@@ -46,8 +46,6 @@ It may not seem useful at first to have an array full of zeroes, but in future t
 
 **Task:** Make three arrays. First, make an array that goes from 3 to 8 (including 8), with a step size of 0.1. Second, make an array from -3 to 3 (including 3) with a step size of 1. And lastly, ask for input from the user and make an array full of zeroes of that length.
 
-Finally, print all three arrays in order with just one print statement and no other text. Make sure to name the arrays as array1, array2, array3, respectively.
-
 ## Solution
 ```python
 from pylab import *
@@ -58,8 +56,5 @@ array2 = arange(-3,3.1)
 length = float(input("Number of zeroes: "))
 
 array3 = zeros(int(length))
-
-print(array1, array2, array3)
-
 ```
 
