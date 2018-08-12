@@ -44,11 +44,6 @@ The output is:
 
 Pretty neat! Multiplication, addition, subtraction, division, and exponentiation all work on arrays. Just remember to use the array() function!
 
-**Task:** Make an array filled with the values 1, 4, 9, 16 and assign it to the array `squares`. Make another array filled with the values 1, 8, 27, 64 and assign it to the array `cubes`.
-
-Now, take the square root of the `squares` array, take the cube root of the `cubes` array, and add them together and assign them to the variable `result`. 
-
-
 This will become very useful later, but for now lets calculate some grades for a friend. Your friend is enrolled in four classes, so each array will have four elements (the first elements correspond to their first course, the second elements to their second course, and so on). 
 
 There are three types of assessment: exams, assignments, and attendance. Fortunately, all of the courses were standardised so that each assessment type is worth the same amount. Exams are worth 50% of the total grade, assignments are worth 35%, and attendance is worth 15%. 
