@@ -20,12 +20,12 @@ class Tests(PythonTestCase):
     6.6, 6.7, 6.8, 6.9, 7., 7.1, 7.2, 7.3, 7.4, 7.5, 7.6, 7.7, 7.8, 7.9, 8.])
     
     
-  def test_array2(self):
+	def test_array2(self):
 		""" array2 is correct"""
 		import attempt
 		self.assertEqual(attempt.array2.tolist(), [-3, -2, -1, 0, 1, 2, 3])
-  
-  def test_array3(self):
+		
+	def test_array3(self):
 		""" array3 is correct"""
 		import attempt
 		self.assertEqual(attempt.array3.tolist(), [0, 0, 0, 0, 0])
