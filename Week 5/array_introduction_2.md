@@ -44,13 +44,15 @@ The output is:
 
 Pretty neat! Multiplication, addition, subtraction, division, and exponentiation all work on arrays. Just remember to use the array() function!
 
-This will become very useful later, but for now lets calculate some grades for a friend. Your friend is enrolled in four classes, so each array will have four elements (the first elements correspond to their first course, the second elements to their second course, and so on). 
+This will become very useful later, but for now lets calculate some grades for a friend.
+
+**Task:** Your friend is enrolled in four classes, so each array will have four elements (the first elements correspond to their first course, the second elements to their second course, and so on). 
 
 There are three types of assessment: exams, assignments, and attendance. Fortunately, all of the courses were standardised so that each assessment type is worth the same amount. Exams are worth 50% of the total grade, assignments are worth 35%, and attendance is worth 15%. 
 
 So if your friend recieved 90% for their exam, 80% for their assignments, and 95% for their attendance, their total grade will be 87.25%. Check this on paper to make sure you are doing the correct calculation.
 
-**Task:** Modify this program so that it calculates the total grade for each class your friend is enrolled in. Store the final grades in the variable 'final'.
+Modify this program so that it calculates the total grade for each class your friend is enrolled in. Store the final grades in the variable 'final'.
 
 Use the following print statement to end your program: `print("The final marks out of 100 are:", final)`.
 
