@@ -15,13 +15,13 @@ class Tests(PythonTestCase):
 	def test_primes(self):
 		""" 'final' array is correct """
 		import attempt
-		self.assertEqual(attempt.final.tolist(), [87.5,  65.05, 57.4,  75.65])
+		self.assertEqual(attempt.final.tolist(), [87.5,  65.05, 57.4,  74.8])
 		
 	def test_out(self):
 		""" Output is correct """
 		with patch("sys.stdout", new=StringIO()) as output:
 			import attempt
-			expected = "The final marks out of 100 are: [87.5  65.05 57.4  75.65]"
+			expected = "The final marks out of 100 are: [87.5  65.05 57.4  74.8 ]"
 			self.assertEqual(output.getvalue().strip(), expected)
 	
 # Run the unit tests
