@@ -20,8 +20,8 @@ Assuming the trial is run for 30 days, we want to determine the mass of each gro
 4.	The difference between the growth of groups 2 and 3 will also require a while loop. It is up to you how this is structured. Remember that if you have two variables (suppose they are called a and b), the absolute magnitude of the difference can be found by using abs(a-b). 
 5.	When defining the initial array for growth_diff, the zeros() function will be useful.
 
-Solution:
-'''python
+## Solution
+```python
 from pylab import *
 
 trial_days = 30 # A variable you might wish to use in your code
@@ -45,4 +45,4 @@ i = 0
 while (i < 6):
     growth_diff[i] = group2[i]-group3[i]
     i = i + 1
-'''
+```
