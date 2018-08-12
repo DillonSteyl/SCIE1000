@@ -1,0 +1,19 @@
+Let’s now apply all of our knowledge of arrays to solving the following problem.
+
+Suppose you are conducting an experiment based around a growth supplement you have developed and want to determine its effectiveness by testing the hormone on a group of rats. Before doing the experiment you want to model the expected outcome using Python and arrays.
+
+You have three groups of rats, with 6 rats per group. Each group has a rat with each corresponding weight: 100g, 110g, 120g, 130g, 140g, 150g. 
+
+Group 1 will be a control group, meaning they will have no access to the growth supplement. It is expected they will grow at a rate of 0.5g per day.
+
+Group 2 will be given the supplement every day, and are expected to grow by 1% per day.
+
+Group 3 will have occasional access to the supplement. They will be given the supplement on every third day of the trial. For example, they are given the supplement on day 3, 6, 9, etc. There is expected to be a growth of 1.8g every three days for each rat. 
+
+Assuming the trial is run for 30 days, we want to determine the mass of each group of rats at the end of the trial. We also want to define an array containing the difference between the mass of groups 2 and 3, called ‘growth_diff.’ Please do not print the arrays as output, but feel free to print them while testing your code. Some hints are given below:
+
+1.	For group 2, you will have to use a while loop structure to update the masses as they are percentage dependent. Note that you will need a while loop to update the mass each day of the trial, and also another while loop inside of this one to update each individual rat mass. 
+2.	For groups 1 and 3 you don’t have to use a while loop, but can include these in the while loop if you would like. 
+3.	Remember that percentage growth is calculated as follows: If a variable X is 10% larger than it was before, X is now equal to X + (0.1*X), where 0.1 is 10% as a decimal. The percentage growth is added to the initial value.
+4.	The difference between the growth of groups 2 and 3 will also require a while loop. It is up to you how this is structured. Remember that if you have two variables (suppose they are called a and b), the absolute magnitude of the difference can be found by using abs(a-b). 
+5.	When defining the initial array for growth_diff, the zeros() function will be useful.
