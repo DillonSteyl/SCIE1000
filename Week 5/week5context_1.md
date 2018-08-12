@@ -1,4 +1,6 @@
-Let’s now apply all of our knowledge of arrays to solving the following problem.
+# Week 5 - Context Exercise 1
+
+Let’s now apply all of our knowledge of arrays to solve the following problem.
 
 Suppose you are conducting an experiment based around a growth supplement you have developed and want to determine its effectiveness by testing the hormone on a group of rats. Before doing the experiment you want to model the expected outcome using Python and arrays.
 
@@ -17,3 +19,30 @@ Assuming the trial is run for 30 days, we want to determine the mass of each gro
 3.	Remember that percentage growth is calculated as follows: If a variable X is 10% larger than it was before, X is now equal to X + (0.1*X), where 0.1 is 10% as a decimal. The percentage growth is added to the initial value.
 4.	The difference between the growth of groups 2 and 3 will also require a while loop. It is up to you how this is structured. Remember that if you have two variables (suppose they are called a and b), the absolute magnitude of the difference can be found by using abs(a-b). 
 5.	When defining the initial array for growth_diff, the zeros() function will be useful.
+
+Solution:
+'''python
+from pylab import *
+
+trial_days = 30 # A variable you might wish to use in your code
+group1 = array([100.0,110.0,120.0,130.0,140.0,150.0])
+group2 = array([100.0,110.0,120.0,130.0,140.0,150.0])
+group3 = array([100.0,110.0,120.0,130.0,140.0,150.0])
+growth_diff = zeros(int(6))
+
+group1 = group1 + (trial_days*0.5)
+group3 = group3 + ((trial_days/3)*1.8)
+
+i = 0
+while (i < trial_days):
+    j = 0
+    while (j < 6):
+        group2[j] = 0.01*group2[j] + group2[j]
+        j = j + 1
+    i = i + 1
+
+i = 0
+while (i < 6):
+    growth_diff[i] = group2[i]-group3[i]
+    i = i + 1
+'''
