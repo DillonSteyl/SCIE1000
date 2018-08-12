@@ -44,17 +44,21 @@ The output is:
 
 Pretty neat! Multiplication, addition, subtraction, division, and exponentiation all work on arrays. Just remember to use the array() function!
 
-This will become very useful later, but for now lets calculate some grades for a friend.
+This will become very useful later, but for now lets calculate some grades.
 
-**Task:** Your friend is enrolled in four classes, so each array will have four elements (the first elements correspond to their first course, the second elements to their second course, and so on). 
+**Task:** You want to write a program that calculates all the marks for your courses simultaneously. There are three types of assessment: exams, assignments, and attendance. Fortunately, all of the courses were standardised so that each assessment type is worth the same amount. Exams are worth 50% of the total grade, assignments are worth 35%, and attendance is worth 15%. 
 
-There are three types of assessment: exams, assignments, and attendance. Fortunately, all of the courses were standardised so that each assessment type is worth the same amount. Exams are worth 50% of the total grade, assignments are worth 35%, and attendance is worth 15%. 
+So for one of your courses, if you recieved 90% for your exam, 80% for your assignments, and 95% for attendance, your total grade will be 87.25%. Check this on paper to make sure you are doing the correct calculation. It should be `0.5*90 + 0.35*80 + 0.15*95 = 87.25`.
 
-So if your friend recieved 90% for their exam, 80% for their assignments, and 95% for their attendance, their total grade will be 87.25%. Check this on paper to make sure you are doing the correct calculation.
+The program currently has three arrays: `exams`, `assignments`, and `attendance`. The first element of each array corresponds to your first course. The second elements all correspond to your second course, and so on. The `final` array is yet to be defined, and should be the final percentage grade for each course. 
 
-Modify this program so that it calculates the total grade for each class your friend is enrolled in. Store the final grades in the variable 'final'.
+Modify this program so that it calculates the total grade for each course you are is enrolled in, given the marks in the three arrays. Store the final grades in the variable 'final'.
 
-Use the following print statement to end your program: `print("The final marks out of 100 are:", final)`.
+Use the following print statement to end your program: print("The final marks out of 100 are:", final").
+
+**Hint:** Don't try to over complicate it. This question is easier than it seems! You should be able to make the `final` array with juse one line of code.
+
+
 
 ## Solution
 ```python
