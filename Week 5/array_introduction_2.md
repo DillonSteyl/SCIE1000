@@ -52,7 +52,7 @@ So if your friend recieved 90% for their exam, 80% for their assignments, and 95
 
 **Task:** Modify this program so that it calculates the total grade for each class your friend is enrolled in. Store the final grades in the variable 'final'.
 
-Use the following print statement to end your program: print("The final marks out of 100 are:", final").
+Use the following print statement to end your program: `print("The final marks out of 100 are:", final)`.
 
 ## Solution
 ```python
