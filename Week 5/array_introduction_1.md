@@ -1,7 +1,6 @@
 # Introduction to Arrays (1) - Creating Arrays
 
-So far, we have only used Python to store individual values in variables. *Arrays* allow multiple values to be stored in one variable, which can be very useful.
-You can think of an array as simply a *list* of items. It is very convenient to use arrays to store multiple related numbers in a single variable.
+So far, we have only used Python to store individual values in variables. *Arrays* allow multiple values to be stored in one variable, which can be very useful. You can think of an array as simply a *list* of items.
 
 Here's a simple example of an array in Python:
 
@@ -15,6 +14,8 @@ The output of running this program is given below:
 ```
 The first 7 numbers in the fibonnaci sequence are: [0 1 1 2 3 5 8]
 ```
+
+It is very convenient to use arrays to store multiple related numbers with a single variable. Later, we will look at how we can perform calculations with arrays, or access individual elements of arrays.
 
 Some important notes:
 * Just like any other variable, use meaningful names for your arrays.
