@@ -52,7 +52,7 @@ So for one of your courses, if you recieved 90% for your exam, 80% for your assi
 
 The program currently has three arrays: `exams`, `assignments`, and `attendance`. The first element of each array corresponds to your first course. The second elements all correspond to your second course, and so on. The `final` array is yet to be defined, and should be the final percentage grade for each course. 
 
-Modify this program so that it calculates the total grade for each class you are is enrolled in, given the marks in the three arrays. Store the final grades in the variable 'final'.
+Modify this program so that it calculates the total grade for each course you are is enrolled in, given the marks in the three arrays. Store the final grades in the variable 'final'.
 
 Use the following print statement to end your program: print("The final marks out of 100 are:", final").
 
