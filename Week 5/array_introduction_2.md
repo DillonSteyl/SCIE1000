@@ -1,4 +1,4 @@
-# Introduction to Arrays(2) - Operations on Arrays
+# Introduction to Arrays (2) - Operations on Arrays
 
 Now that we know how to create arrays in Python, let's talk about what we can do to them. Some of the operations you have used so far in the course work on arrays too. For example, we can multiply every value in an array like this:
 
