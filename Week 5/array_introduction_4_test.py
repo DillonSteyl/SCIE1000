@@ -20,7 +20,8 @@ class Tests(PythonTestCase):
 		""" Output is correct """
 		with patch("sys.stdout", new=StringIO()) as output:
 			import attempt
-			expected = "[0 4 9 15 25 36 49 64 81 121]\n[1 4 9 16 25 36 49 64 81 100]"
+			expected = ("[  0   4   9  15  25  36  49  64  81 121]\n"
+			"[  1   4   9  16  25  36  49  64  81 100]")
 			self.assertEqual(output.getvalue().strip(), expected)
 	
 # Run the unit tests
