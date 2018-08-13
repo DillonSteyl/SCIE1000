@@ -14,11 +14,10 @@ Group 3 will have occasional access to the supplement. They will be given the su
 
 Assuming the trial is run for 30 days, we want to determine the mass of each group of rats at the end of the trial. We also want to define an array containing the difference between the mass of groups 2 and 3, called ‘growth_diff.’ Please do not print the arrays as output, but feel free to print them while testing your code. Some hints are given below:
 
-1.	For group 2, you will have to use a while loop structure to update the masses as they are percentage dependent. Note that you will need a while loop to update the mass each day of the trial, and also another while loop inside of this one to update each individual rat mass. 
+1.	For group 2, you will have to use a while loop structure to update the masses as they are percentage dependent. 
 2.	For groups 1 and 3 you don’t have to use a while loop, but can include these in the while loop if you would like. 
 3.	Remember that percentage growth is calculated as follows: If a variable X is 10% larger than it was before, X is now equal to X + (0.1*X), where 0.1 is 10% as a decimal. The percentage growth is added to the initial value.
-4.	The difference between the growth of groups 2 and 3 will also require a while loop. It is up to you how this is structured. Remember that if you have two variables (suppose they are called a and b), the absolute magnitude of the difference can be found by using abs(a-b). 
-5.	When defining the initial array for growth_diff, the zeros() function will be useful.
+4.	When defining the initial array for growth_diff, the zeros() function will be useful.
 
 ## Solution
 ```python
@@ -35,14 +34,8 @@ group3 = group3 + ((trial_days/3)*1.8)
 
 i = 0
 while (i < trial_days):
-    j = 0
-    while (j < 6):
-        group2[j] = 0.01*group2[j] + group2[j]
-        j = j + 1
+    group2[i] = 0.01*group2[i] + group2[i]
     i = i + 1
 
-i = 0
-while (i < 6):
-    growth_diff[i] = group2[i]-group3[i]
-    i = i + 1
+growth_diff = abs(group2-group3)
 ```
