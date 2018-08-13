@@ -91,7 +91,7 @@ class Tests(PythonTestCase):
 		with patch("builtins.input", return_value=user_input) as input_call:
 			with patch("sys.stdout", new=StringIO()) as output:
 				import attempt
-				self.assertEqual(attempt.final.tolist(), [20, 13, 5, 25, 20, 17, 8, 7])
+				self.assertEqual(attempt.costs.tolist(), [20, 13, 5, 25, 20, 17, 8, 7])
 		
 	def test_venus_costs(self):
 		""" Input: Venus (1). Costs array updated to [18, 15, 5, 25, 20, 17, 8, 7]"""		
@@ -99,7 +99,7 @@ class Tests(PythonTestCase):
 		with patch("builtins.input", return_value=user_input) as input_call:
 			with patch("sys.stdout", new=StringIO()) as output:
 				import attempt
-				self.assertEqual(attempt.final.tolist(), [18, 15, 5, 25, 20, 17, 8, 7])
+				self.assertEqual(attempt.costs.tolist(), [18, 15, 5, 25, 20, 17, 8, 7])
 
 	def test_earth_costs(self):
 		""" Input: Earth (2). Costs array updated to [18, 13, 7, 25, 20, 17, 8, 7]"""		
@@ -107,7 +107,7 @@ class Tests(PythonTestCase):
 		with patch("builtins.input", return_value=user_input) as input_call:
 			with patch("sys.stdout", new=StringIO()) as output:
 				import attempt
-				self.assertEqual(attempt.final.tolist(), [18, 13, 7, 25, 20, 17, 8, 7])
+				self.assertEqual(attempt.costs.tolist(), [18, 13, 7, 25, 20, 17, 8, 7])
 				
 	def test_mars_costs(self):
 		""" Input: Mars (3). Costs array updated to [18, 13, 5, 27, 20, 17, 8, 7]"""		
@@ -115,7 +115,7 @@ class Tests(PythonTestCase):
 		with patch("builtins.input", return_value=user_input) as input_call:
 			with patch("sys.stdout", new=StringIO()) as output:
 				import attempt
-				self.assertEqual(attempt.final.tolist(), [18, 13, 5, 27, 20, 17, 8, 7])
+				self.assertEqual(attempt.costs.tolist(), [18, 13, 5, 27, 20, 17, 8, 7])
 				
 	def test_jupiter_costs(self):
 		""" Input: Jupiter (4). Costs array updated to [18, 13, 5, 25, 22, 17, 8, 7]"""		
@@ -123,7 +123,7 @@ class Tests(PythonTestCase):
 		with patch("builtins.input", return_value=user_input) as input_call:
 			with patch("sys.stdout", new=StringIO()) as output:
 				import attempt
-				self.assertEqual(attempt.final.tolist(), [18, 13, 5, 25, 22, 17, 8, 7])
+				self.assertEqual(attempt.costs.tolist(), [18, 13, 5, 25, 22, 17, 8, 7])
 				
 	def test_Saturn_costs(self):
 		""" Input: Saturn (5). Costs array updated to [18, 13, 5, 25, 20, 19, 8, 7]"""		
@@ -131,7 +131,7 @@ class Tests(PythonTestCase):
 		with patch("builtins.input", return_value=user_input) as input_call:
 			with patch("sys.stdout", new=StringIO()) as output:
 				import attempt
-				self.assertEqual(attempt.final.tolist(), [18, 13, 5, 25, 20, 19, 8, 7])
+				self.assertEqual(attempt.costs.tolist(), [18, 13, 5, 25, 20, 19, 8, 7])
 				
 	def test_uranus_costs(self):
 		""" Input: Uranus (6). Costs array updated to [18, 13, 5, 25, 20, 17, 10, 7]"""		
@@ -139,7 +139,7 @@ class Tests(PythonTestCase):
 		with patch("builtins.input", return_value=user_input) as input_call:
 			with patch("sys.stdout", new=StringIO()) as output:
 				import attempt
-				self.assertEqual(attempt.final.tolist(), [18, 13, 5, 25, 20, 17, 10, 7])
+				self.assertEqual(attempt.costs.tolist(), [18, 13, 5, 25, 20, 17, 10, 7])
 				
 	def test_neptune_costs(self):
 		""" Input: Neptune (7). Costs array updated to [18, 13, 5, 25, 20, 17, 8, 9]"""		
@@ -147,7 +147,7 @@ class Tests(PythonTestCase):
 		with patch("builtins.input", return_value=user_input) as input_call:
 			with patch("sys.stdout", new=StringIO()) as output:
 				import attempt
-				self.assertEqual(attempt.final.tolist(), [18, 13, 5, 25, 20, 17, 8, 9])
+				self.assertEqual(attempt.costs.tolist(), [18, 13, 5, 25, 20, 17, 8, 9])
 
 	
 # Run the unit tests
