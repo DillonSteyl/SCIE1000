@@ -11,61 +11,86 @@ class Tests(PythonTestCase):
 			del sys.modules["attempt"]
 		except KeyError:
 			pass
+		
+	user_input = "112"
+		expected = "You are not tall enough to ride!"
+		with patch("builtins.input", return_value=user_input) as input_call:
+			with patch("sys.stdout", new=StringIO()) as output:
+				import attempt
+				self.assertEqual(output.getvalue().strip(), expected)
 
 	def test_mercury_out(self):
 		""" Input: Mercury. Expected Output: 18 13, Excellent choice! """
-		with patch("sys.stdout", new=StringIO()) as output:
-			import attempt
-			expected = "18 13\nExcellent choice!"
-			self.assertEqual(output.getvalue().strip(), expected)
+		user_input = "0"
+		expected = "18 13\nExcellent choice!"
+		with patch("builtins.input", return_value=user_input) as input_call:
+			with patch("sys.stdout", new=StringIO()) as output:
+				import attempt
+				self.assertEqual(output.getvalue().strip(), expected)
+	
 	def test_venus_out(self):
 		""" Input: Venus. Expected Output: 18 13 5, Excellent choice! """
-		with patch("sys.stdout", new=StringIO()) as output:
-			import attempt
-			expected = "18 13 5\nExcellent choice!"
-			self.assertEqual(output.getvalue().strip(), expected)
+		user_input = "1"
+		expected = "18 13 5\nExcellent choice!"
+		with patch("builtins.input", return_value=user_input) as input_call:
+			with patch("sys.stdout", new=StringIO()) as output:
+				import attempt
+				self.assertEqual(output.getvalue().strip(), expected)
       
 	def test_earth_out(self):
 		""" Input: Earth. Expected Output: 13 5 25, A popular destination! """
-		with patch("sys.stdout", new=StringIO()) as output:
-			import attempt
-			expected = "13 5 25\nA popular destination!"
-			self.assertEqual(output.getvalue().strip(), expected)
-      
+		user_input = "2"
+		expected = "13 5 25\nA popular destination!"
+		with patch("builtins.input", return_value=user_input) as input_call:
+			with patch("sys.stdout", new=StringIO()) as output:
+				import attempt
+				self.assertEqual(output.getvalue().strip(), expected)
+
 	def test_mars_out(self):
-		""" Input: Mercury. Expected Output: 5 25 20, Excellent choice! """
-		with patch("sys.stdout", new=StringIO()) as output:
-			import attempt
-			expected = "5 25 20\nExcellent choice!"
-			self.assertEqual(output.getvalue().strip(), expected)
+		""" Input: Mars. Expected Output: 5 25 20, Excellent choice! """
+		user_input = "3"
+		expected = "5 25 20\nExcellent choice!"
+		with patch("builtins.input", return_value=user_input) as input_call:
+			with patch("sys.stdout", new=StringIO()) as output:
+				import attempt
+				self.assertEqual(output.getvalue().strip(), expected)
       
 	def test_jupiter_out(self):
-		""" Input: Jupiter. Expected Output: 25 20 17, Excelent choice! """
-		with patch("sys.stdout", new=StringIO()) as output:
-			import attempt
-			expected = "25 20 17\nExcellent choice!"
-			self.assertEqual(output.getvalue().strip(), expected)
+		""" Input: Jupiter. Expected Output: 25 20 17, Excellent choice! """
+		user_input = "4"
+		expected = "25 20 17\nExcellent choice!"
+		with patch("builtins.input", return_value=user_input) as input_call:
+			with patch("sys.stdout", new=StringIO()) as output:
+				import attempt
+				self.assertEqual(output.getvalue().strip(), expected)
       
 	def test_saturn_out(self):
 		""" Input: Saturn. Output: 20 17 8, Excellent choice! """
-		with patch("sys.stdout", new=StringIO()) as output:
-			import attempt
-			expected = "20 17 8\nExcellent choice!"
-			self.assertEqual(output.getvalue().strip(), expected)
+		user_input = "5"
+		expected = "20 17 8\nExcellent choice!"
+		with patch("builtins.input", return_value=user_input) as input_call:
+			with patch("sys.stdout", new=StringIO()) as output:
+				import attempt
+				self.assertEqual(output.getvalue().strip(), expected)
       
 	def test_uranus_out(self):
 		""" Input: Uranus. Output: 17 8 7, A popular destination! """
-		with patch("sys.stdout", new=StringIO()) as output:
-			import attempt
-			expected = "17 8 7\nA popular destination!"
-			self.assertEqual(output.getvalue().strip(), expected)
-      
+		user_input = "6"
+		expected = "17 8 7\nA popular destination!"
+		with patch("builtins.input", return_value=user_input) as input_call:
+			with patch("sys.stdout", new=StringIO()) as output:
+				import attempt
+				self.assertEqual(output.getvalue().strip(), expected)
+
 	def test_neptune_out(self):
 		""" Input: Neptune. Output: 8 7, A popular destination! """
-		with patch("sys.stdout", new=StringIO()) as output:
-			import attempt
-			expected = "8 7\nA popular destination!"
-			self.assertEqual(output.getvalue().strip(), expected)
+		user_input = "7"
+		expected = "8 7\nA popular destination!"
+		with patch("builtins.input", return_value=user_input) as input_call:
+			with patch("sys.stdout", new=StringIO()) as output:
+				import attempt
+				self.assertEqual(output.getvalue().strip(), expected)
+
 	
 # Run the unit tests
 if __name__ == "__main__":
