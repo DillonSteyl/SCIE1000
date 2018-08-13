@@ -44,7 +44,7 @@ The output is:
 It may not seem useful at first to have an array full of zeroes, but in future tutorials and exercises, we will want to create an array and then fill in the values later. For this, we will use the `zeros` function.
 
 
-**Task:** Make three arrays. First, make an array that goes from 3 to 8 (including 8), with a step size of 0.1. Second, make an array from -3 to 3 (including 3) with a step size of 1. And lastly, ask for input from the user and make an array full of zeroes of that length. Make sure to name the arrays array1, array2, and array3, respectively.
+**Task:** Make three arrays. First, make an array that goes from 3 to 8 (including 8), with a step size of 0.25. Second, make an array from -3 to 3 (including 3) with a step size of 1. And lastly, ask for input from the user and make an array full of zeroes of that length. Make sure to name the arrays array1, array2, and array3, respectively.
 
 ## Solution
 ```python
