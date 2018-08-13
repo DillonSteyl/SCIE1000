@@ -29,6 +29,6 @@ loops
 11. not made yet - maybe trees?
 
 
-12. Challenge?
+Challenge? (exercise 12)
 
 to be added: spot the errors.
