@@ -8,6 +8,8 @@ Also, additional market research has shown you how to increase the chance that y
 
 Note that for Mercury, there is no planet closer to the sun, so you should only print the cost of Mercury and Venus. For Neptune, there is no planet further away from the sun (that we know of and is classified as a planet), so you should only print the cost of Uranus and Neptune. 
 
+You can expect all indexes to be valid (as in, between 0 and 7, inclusive).
+
 **Inportant:** When printing, print in the order of closest to sun, to greatest distance away from the sun. Just print the prices with no words, then the message. For example, if they choose Venus then the output should be "18 13 5", then "Excellent choice!".
 
 **Hint:** There are three possibilities: the planet is the closest to the sun, the planet is one of the ones in the middle, and the planet is the greatest distance from the sun. That's three different options, so you will need conditionals!
