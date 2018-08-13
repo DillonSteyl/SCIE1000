@@ -10,7 +10,7 @@ Group 1 will be a control group, meaning they will have no access to the growth 
 
 Group 2 will be given the supplement every day, and are expected to grow by 1% per day.
 
-Group 3 will have occasional access to the supplement. They will be given the supplement on every third day of the trial. For example, they are given the supplement on day 3, 6, 9, etc. There is expected to be an average growth of 1.8g every three days for each rat. 
+Group 3 will have occasional access to the supplement. There is expected to be an average growth of 1.8g every three days for each rat. 
 
 Assuming the trial is run for 30 days, we want to determine the mass of each group of rats at the end of the trial. We also want to define an array containing the difference between the mass of groups 2 and 3, called ‘growth_diff.’ Please do not print the arrays as output, but feel free to print them while testing your code. Some hints are given below:
 
