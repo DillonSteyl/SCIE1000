@@ -4,7 +4,11 @@ You are in charge of alien vacations in our solar system. Each planet has a diff
 
 Also, additional market research has shown you how to increase the chance that your alien customers will upgrade to a luxury package (which includes a stop at Pluto). If the planet they are initially interested in costs more than or equal to 10 billion dollars to visit, print the message "Excellent choice!" after listing prices. Otherwise, print the message "A popular destination!".
 
-**Task:** Edit the program so that it and prints the cost to visit their initial planet choice and adjacent planets, then prints a message depending on their inital planet choice. The costs are stored in the array `costs`, in order of how close they are to the sun. The index of the planets they choose are stored in the variables `planet`.
+You also want to simulate supply and demand, so you update the cost of their initial planet choice by adding 2 billion to the price after you have printed your messages. 
+
+**Task:** Edit the program so that it and prints the cost to visit their initial planet choice and adjacent planets, then prints a message depending on their inital planet choice. Finally, update the cost of their inital planet choice by increasing it by 2 billion dollars. 
+
+The costs are stored in the array `costs`, in order of how close they are to the sun. The index of the planets they choose are stored in the variable `planet`.
 
 Note that for Mercury, there is no planet closer to the sun, so you should only print the cost of Mercury and Venus. For Neptune, there is no planet further away from the sun (that we know of and is classified as a planet), so you should only print the cost of Uranus and Neptune. 
 
@@ -35,6 +39,8 @@ if costs[planet]>=10:
     print("Excellent choice!")
 else:
     print("A popular destination!")
+
+costs[planet] = costs[planet] + 2
 
 ```
 
