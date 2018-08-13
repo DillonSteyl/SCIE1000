@@ -1,7 +1,5 @@
 # Week 5 - Context Exercise 1
 
-Let’s now apply all of our knowledge of arrays to solve the following problem.
-
 Suppose you are conducting an experiment based around a growth supplement you have developed and want to determine its effectiveness by testing the hormone on a group of rats. Before doing the experiment you want to model the expected outcome using Python and arrays.
 
 You have three groups of rats, with 6 rats per group. Each group has a rat with each corresponding weight: 100g, 110g, 120g, 130g, 140g, 150g. 
@@ -12,12 +10,13 @@ Group 2 will be given the supplement every day, and are expected to grow by 1% p
 
 Group 3 will have occasional access to the supplement. There is expected to be an average growth of 1.8g every three days for each rat. 
 
-Assuming the trial is run for 30 days, we want to determine the mass of each group of rats at the end of the trial. We also want to define an array containing the difference between the mass of groups 2 and 3, called ‘growth_diff.’ Please do not print the arrays as output, but feel free to print them while testing your code. Some hints are given below:
+Assuming the trial is run for 30 days, we want to determine the mass of each group of rats at the end of the trial. We also want to define an array containing the difference between the mass of groups 2 and 3 (mass of group 2 minus mass of group 3), called ‘growth_diff.’ Some hints are given below:
 
-1.	For group 2, you will have to use a while loop structure to update the masses as they are percentage dependent. 
-2.	For groups 1 and 3 you don’t have to use a while loop, but can include these in the while loop if you would like. 
-3.	Remember that percentage growth is calculated as follows: If a variable X is 10% larger than it was before, X is now equal to X + (0.1*X), where 0.1 is 10% as a decimal. The percentage growth is added to the initial value.
-4.	When defining the initial array for growth_diff, the zeros() function will be useful.
+1. There are multiple ways to solve this problem, with or without loops. 
+2. The formula for percentage growth rate after one iteration is `X*(1+p)`, where X is your inital population and p is your percentage growth rate expressed as a decimal (for example, 5% is expressed as 0.05). 
+3. The formula for percentage growth rate after n interations is `X*(1+p)**n`.
+
+Remember, store the final values for the mass in the arrays group1, group2, and group3. Store the growth difference array in an array called growth_diff.
 
 ## Solution
 ```python
@@ -30,12 +29,7 @@ group3 = array([100.0,110.0,120.0,130.0,140.0,150.0])
 growth_diff = zeros(int(6))
 
 group1 = group1 + (trial_days*0.5)
+group2 = group2*(1.01)*trial_days
 group3 = group3 + ((trial_days/3)*1.8)
-
-i = 0
-while (i < trial_days):
-    group2 = 0.01*group2 + group2
-    i = i + 1
-
-growth_diff = abs(group2-group3)
+growth_diff = group2-group3
 ```
