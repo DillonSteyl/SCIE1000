@@ -13,10 +13,10 @@ class Tests(PythonTestCase):
       
 	def test_array1(self):
 		""" array1 is correct"""
-		import attempt
 		user_input = "5"
 		with patch("builtins.input", return_value=user_input) as input_call:
 				with patch("sys.stdout", new=StringIO()) as output:
+					import attempt
 					self.assertEqual(attempt.array1.tolist(), [3., 3.1, 3.2, 3.3, 3.4, 3.5,\
     3.6, 3.7, 3.8, 3.9, 4., 4.1, 4.2, 4.3, 4.4, 4.5, 4.6, 4.7, 4.8, 4.9, 5., \
     5.1, 5.2, 5.3, 5.4, 5.5, 5.6, 5.7, 5.8, 5.9, 6., 6.1, 6.2, 6.3, 6.4, 6.5,\
@@ -29,6 +29,7 @@ class Tests(PythonTestCase):
 		user_input = "5"
 		with patch("builtins.input", return_value=user_input) as input_call:
 			with patch("sys.stdout", new=StringIO()) as output:
+				import attempt
 				self.assertEqual(attempt.array2.tolist(), [-3, -2, -1, 0, 1, 2, 3])
 		
 	def test_array3(self):
@@ -37,6 +38,7 @@ class Tests(PythonTestCase):
 		user_input = "5"
 		with patch("builtins.input", return_value=user_input) as input_call:
 			with patch("sys.stdout", new=StringIO()) as output:
+				import attempt
 				self.assertEqual(attempt.array3.tolist(), [0, 0, 0, 0, 0])
 	
 # Run the unit tests
