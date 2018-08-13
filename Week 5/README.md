@@ -15,6 +15,7 @@ Accessing/editing
 6. (not made yet) - just 4 and 5 but with context
 
 functions
+
 7. intro 5
 
 8. functions
@@ -22,6 +23,7 @@ functions
 9. (not made yet) - context version of 7 and 8
 
 loops
+
 10. intro 6
 
 11. not made yet - maybe trees?
