@@ -2,7 +2,7 @@
 
 When we create arrays, it can be tedius to type out every individual element of an array. Imagine if you wanted an array of values 0 to 1000. No one wants to type that! Luckily, for particular number patterns, there are python functions that will create the arrays for us.
 
-This first is `arange(start, stop, step)`, that will make an array with numbers starting from `start`, ending at `stop` (but not including `stop`), with a step size of `step`. Here's how it works:
+This first is `arange(start, stop, step)`, that will make an array with numbers starting from `start` going up to the *largest number less than* `stop`, with a step size of `step`. Here's an example of how it works:
 
 ```python
 A = arange(0,10,0.5)
@@ -14,8 +14,17 @@ The output is:
 [0. 0.5 1. 1.5 2. 2.5 3. 3.5 4. 4.5 5. 5.5 6. 6.5 7. 7.5 8. 8.5 9. 9.5]
 ```
 
-Notice how the array starts at 0, goes all the way up to 10 (but doesn't include it), with a step size of 0.5. (Arange sometimes likes to put periods at the end of integers when it prints them. Don't worry about it!)
+Notice how the array starts at 0, goes all the way up to 10 (but doesn't include it), with a step size of 0.5 (Arange sometimes likes to put periods at the end of integers when it prints them. Don't worry about it!).
 
+ If you wanted to include `10` in the array, you might want to use something like this instead:
+```python
+A = arange(0,10.1,0.5)
+print(A)
+```
+The output here would be:
+```
+[0. 0.5 1. 1.5 2. 2.5 3. 3.5 4. 4.5 5. 5.5 6. 6.5 7. 7.5 8. 8.5 9. 9.5 10.]
+```
 If your step size is 1, you can leave out the step size value altogether:
 
 ```python
@@ -50,7 +59,7 @@ It may not seem useful at first to have an array full of zeroes, but in future t
 ```python
 from pylab import *
 
-array1 = arange(3,8.1,0.1)
+array1 = arange(3,8.1,0.25)
 array2 = arange(-3,3.1)
 
 length = float(input("Number of zeroes: "))
