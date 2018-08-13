@@ -12,12 +12,6 @@ class Tests(PythonTestCase):
 		except KeyError:
 			pass
 		
-	user_input = "112"
-		expected = "You are not tall enough to ride!"
-		with patch("builtins.input", return_value=user_input) as input_call:
-			with patch("sys.stdout", new=StringIO()) as output:
-				import attempt
-				self.assertEqual(output.getvalue().strip(), expected)
 
 	def test_mercury_out(self):
 		""" Input: Mercury. Expected Output: 18 13, Excellent choice! """
