@@ -34,7 +34,7 @@ group3 = group3 + ((trial_days/3)*1.8)
 
 i = 0
 while (i < trial_days):
-    group2[i] = 0.01*group2[i] + group2[i]
+    group2 = 0.01*group2 + group2
     i = i + 1
 
 growth_diff = abs(group2-group3)
