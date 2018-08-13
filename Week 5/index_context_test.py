@@ -125,7 +125,7 @@ class Tests(PythonTestCase):
 				import attempt
 				self.assertEqual(attempt.costs.tolist(), [18, 13, 5, 25, 22, 17, 8, 7])
 				
-	def test_Saturn_costs(self):
+	def test_saturn_costs(self):
 		""" Input: Saturn (5). Costs array updated to [18, 13, 5, 25, 20, 19, 8, 7]"""		
 		user_input = "5"
 		with patch("builtins.input", return_value=user_input) as input_call:
