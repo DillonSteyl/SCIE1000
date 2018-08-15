@@ -1,4 +1,4 @@
-# Introduction to Arrays (5) - Array functions
+# Array Functions (1) - Creating Arrays
 
 When we create arrays, it can be tedius to type out every individual element of an array. Imagine if you wanted an array of values 0 to 1000. No one wants to type that! Luckily, for particular number patterns, there are python functions that will create the arrays for us.
 
