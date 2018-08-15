@@ -42,6 +42,10 @@ The output is:
 [ 5 12 21 32]
 ```
 
+It's important to note how this works. The operations occur one element at a time. When there are multiple arrays in an equation, it does the operation on the first elements, then the second elements, and so on. So first it multiplies 1 by 5, which becomes the first element of Z. Then it multiplies 2 by 6, which becomes the second element of Z. It works the same way as this no matter how complicated your equation is, or how many arrays are used.
+
+**Note:** Having multiple arrays in one equation will only work if the arrays have the same length. 
+
 Pretty neat! Multiplication, addition, subtraction, division, and exponentiation all work on arrays. Just remember to use the array() function!
 
 This will become very useful later, but for now lets calculate some grades.
