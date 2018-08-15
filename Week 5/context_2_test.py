@@ -88,21 +88,21 @@ class Tests(PythonTestCase):
 		with patch("builtins.input") as input_call:
 			with patch("sys.stdout", new=StringIO()) as output:
 				import attempt
-				self.assertEqual(attempt.friendA.toList(), [10., 26., 40., 51., 59., 65., 70., 73.])
+				self.assertEqual(attempt.friendA.tolist(), [10., 26., 40., 51., 59., 65., 70., 73.])
         
 	def test_friendB(self):
 		""" friendB has the correct values."""		
 		with patch("builtins.input") as input_call:
 			with patch("sys.stdout", new=StringIO()) as output:
 				import attempt
-				self.assertEqual(attempt.friendB.toList(), [10., 32., 44., 53., 59., 63., 66., 69.])
+				self.assertEqual(attempt.friendB.tolist(), [10., 32., 44., 53., 59., 63., 66., 69.])
         
 	def test_diff(self):
 		""" diff has the correct values, which are all positive."""		
 		with patch("builtins.input") as input_call:
 			with patch("sys.stdout", new=StringIO()) as output:
 				import attempt
-				self.assertEqual(attempt.diff.toList(), [0., 6., 4., 2., 0., 2., 4., 4.])
+				self.assertEqual(attempt.diff.tolist(), [0., 6., 4., 2., 0., 2., 4., 4.])
 
 	
 # Run the unit tests
