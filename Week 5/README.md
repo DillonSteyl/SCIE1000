@@ -7,7 +7,7 @@ Intros
 
 2. intro 2
 
-3. intro context (rats)
+3. week5 context 1 (rats)
 
 Accessing/editing
 4. intro 3
@@ -20,7 +20,7 @@ functions
 
 7. intro 5
 
-8. functions
+8. array functions
 
 9. (not made yet) - context version of 7 and 8
 
@@ -28,11 +28,10 @@ loops
 
 10. intro 6
 
-11. loops 2 (trees)
+11. Double equals 2 (from spot the error)
+
+12. loops 2 (trees)
 
 
-12. Challenge: Party Time
+13. Challenge: Party Time
 
-
-
-to be added: spot the errors.
