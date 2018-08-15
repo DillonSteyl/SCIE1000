@@ -5,14 +5,14 @@ Proposed order
 Intros
 1. intro 1
 2. intro 2
-3. rats
+3. intro context (rats)
 
 Accessing/editing
 4. intro 3
 
 5. intro 4
 
-6. (not made yet) - just 4 and 5 but with context
+6. index context (solar system)
 
 functions
 
