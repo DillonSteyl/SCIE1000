@@ -1,4 +1,4 @@
-## Indexes (3)
+## Indexes (3) - Alien Tourism
 
 You are in charge of alien vacations in our solar system. Each planet has a different cost to visit. After doing market research, you've found that if you show your alien customers the prices for the planets adjacent to the one they request, they will often change their mind and visit the most expensive planet listed instead. For example, if they ask to visit Jupiter, and you show them the prices for Mars, Jupiter, and Saturn, they will choose Mars - a more expensive vacation. 
 
