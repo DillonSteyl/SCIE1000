@@ -1,4 +1,4 @@
-## Arrays and Loops (2)
+## Arrays and Loops (2) - Filling in Arrays
 
 Loops can also be used to fill in arrays based on values already in the array. This can be useful when you can only calculate the next value, unlike some equations where you can calculate any value (linear, exponential, quadratic, etc). Here is a simple example:
 
