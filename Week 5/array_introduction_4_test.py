@@ -17,7 +17,7 @@ class Tests(PythonTestCase):
 		self.assertEqual(attempt.squares.tolist(), [1, 4, 9, 16, 25, 36, 49, 64, 81, 100])
 		
 	def test_out(self):
-		""" Output is correct """
+		""" Output is correct, prints squares before and after updating """
 		with patch("sys.stdout", new=StringIO()) as output:
 			import attempt
 			expected = ("[  0   4   9  15  25  36  49  64  81 121]\n"
