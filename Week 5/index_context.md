@@ -6,7 +6,7 @@ Also, additional market research has shown you how to increase the chance that y
 
 You also want to simulate supply and demand, so you update the cost of their initial planet choice by adding 2 billion to the price after you have printed your messages. 
 
-**Task:** Edit the program so that it and prints the cost to visit their initial planet choice and adjacent planets, then prints a message depending on their inital planet choice. Finally, update the cost of their inital planet choice by increasing it by 2 billion dollars. 
+**Task:** Edit the program so that it prints the cost to visit their initial planet choice and adjacent planets, then prints a message depending on their initial planet choice. Finally, update the cost of their initial planet choice by increasing it by 2 billion dollars. 
 
 The costs are stored in the array `costs`, in order of how close they are to the sun. The index of the planets they choose are stored in the variable `planet`.
 
@@ -14,7 +14,7 @@ Note that for Mercury, there is no planet closer to the sun, so you should only 
 
 You can expect all indexes to be valid (as in, between 0 and 7, inclusive).
 
-**Inportant:** When printing, print in the order of closest to sun, to greatest distance away from the sun. Just print the prices with no words, then the message. For example, if they choose Venus then the output should be "18 13 5", then "Excellent choice!".
+**Inportant:** When printing, print in the order of closest to sun, to greatest distance away from the sun. Just print the prices with no words, then the message. For example, if they choose Venus then the output should be "18 13 5", then "Excellent choice!". If they initially ask for Neptune, you should print "8 7".
 
 **Hint:** There are three possibilities: the planet is the closest to the sun, the planet is one of the ones in the middle, and the planet is the greatest distance from the sun. That's three different options, so you will need conditionals!
 
