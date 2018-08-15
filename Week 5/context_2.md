@@ -25,4 +25,50 @@ Given that the parties will last 8 hours:
 6. Print the message "Friend X will have the most popular party.", where X is the friend with the heighest slope value. If they are equal, print the message "The parties will be equally popular."
 
 
-**Hint:** Depending on how you implement this, you may use the absolute function on arrays. The absolute function makes all values positive. This function will work on both numbers and arrays. Given an array A, the absolute function is `abs(A)`.
+**Hint 1:** Depending on how you implement this, you may use the absolute function on arrays. The absolute function makes all values positive. This function will work on both numbers and arrays. Given an array A, the absolute function is `abs(A)`.
+
+**Hint 2:** One way of finding the mean is by using sum(A)/len(A). Another way is to use the mean(A) function!
+
+
+
+## Solution
+```
+from pylab import *
+
+A = zeros(int(8))
+B = zeros(int(8))
+
+A[0] = 10
+B[0] = 10
+
+i = 1
+while i<8:
+    A[i] = round(A[i-1]*0.6+18+B[i-1]*(0.2))
+    B[i] = round(B[i-1]*0.4+25+A[i-1]*(0.25))
+    i = i + 1
+
+avgA = mean(A)
+maxA = max(A)
+sumA = sum(A)
+avgB = mean(B)
+maxB = max(B)
+sumB = sum(B)
+
+print("Friend A -- Avg:", avgA, "Max:", maxA, "Sum:", sumA)
+print("Friend B -- Avg:", avgB, "Max:", maxB, "Sum:", sumB)
+
+diff = abs(A-B)
+maxDiff = max(diff)
+
+print("The maximum difference is", maxDiff)
+
+slopeB = (B[7]-B[0])/7
+slopeA = (A[7]-A[0])/7
+
+if slopeA>slopeB:
+    print("Friend A will have the most popular party.")
+elif slopeB>slopeA:
+    print("Friend B will have the most popular party.")
+else:
+    print("The parties will be equally popular.")
+```
