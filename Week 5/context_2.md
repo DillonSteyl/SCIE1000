@@ -18,7 +18,7 @@ These equations are a bit complex, so you also want to simplify them. You decide
 
 Given that the parties will last 8 hours:
 1. Calculate the number of guests for Friend A and B, and store them in the arrays friendA and friendB, respectively.
-2. Calculate the average, max, and sum for each model. Print them using the message provided.
+2. Calculate the average, max, and sum for each model. Print them using the message provided. Store them in the variables provided. 
 3. Calculate the difference between the number of people at each party for each hour. Store this in the array diff. Each value should be positive. 
 4. Print the maximum value in the diff array, using the message provided. Also store it in the variable maxDiff.
 5. Calculate the slopes for both models using the formula: `m = (ylast - yfirst)/(xlast - xfirst)`. In this scenario, y is the number of people, x is the hour. The hours start at 0 and end at 7. Store the slopes in the variables slopeA and slopeB
