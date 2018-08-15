@@ -58,7 +58,7 @@ The program currently has three arrays: `exams`, `assignments`, and `attendance`
 
 Modify this program so that it calculates the total grade for each course you are is enrolled in, given the marks in the three arrays. Store the final grades in the variable 'final'.
 
-Use the following print statement to end your program: print("The final marks out of 100 are:", final").
+Use the following print statement to end your program: print("The final marks out of 100 are:", final).
 
 **Hint:** Don't try to over complicate it. This question is easier than it seems! You should be able to make the `final` array with juse one line of code.
 
