@@ -2,7 +2,7 @@ from pylab import *
 
 #Program to print how many times an inputted number appears in the array
 
-my_array = [1,3,0,0,6,5,5,5,0,6]
+my_array = array([1,3,0,0,6,5,5,5,0,6])
 
 number = float(input("Enter a number: "))
 
