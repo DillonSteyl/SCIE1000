@@ -1,4 +1,4 @@
-# Array Functions
+# Array Functions (2) - Array Statistics
 
 Now that you know how to make arrays using functions, here are some python functions that work *with* arrays:
 
