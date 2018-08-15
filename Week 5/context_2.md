@@ -8,7 +8,7 @@ A[i] = A[i-1]*0.6 + 18 + B[i-1]*(0.2), rounded to 0 decimal places
 B[i] = B[i-1]*0.4 + 25 + A[i-1]*(0.25), rounded to 0 decimal places
 ```
 
-The number of guests for Friend A at hour `i` is `A[i]`. The number of guests for Friend B at hour 'i' is `B[i]`. These equations were made by making the prediction that 60% of Friend A's guests will stay at that party, 18 new guests would join, and 25% of the guests will switch to Friend B's party (the other 15% will go home). The same is said for Friend B, except with different values. 
+The number of guests for Friend A at hour `i` is `A[i]`. The number of guests for Friend B at hour `i` is `B[i]`. These equations were made by making the prediction that 60% of Friend A's guests will stay at that party, 18 new guests would join, and 25% of the guests will switch to Friend B's party (the other 15% will go home). The same is said for Friend B, except with different values. 
 
 You want to analyse these two equations, finding the average, maximum, and total number of guests for both models. You also want to find the largest difference. 
 
@@ -35,35 +35,35 @@ Given that the parties will last 8 hours:
 ```
 from pylab import *
 
-A = zeros(int(8))
-B = zeros(int(8))
+friendA = zeros(int(8))
+friendB = zeros(int(8))
 
-A[0] = 10
-B[0] = 10
+friendA[0] = 10
+friendB[0] = 10
 
 i = 1
 while i<8:
-    A[i] = round(A[i-1]*0.6+18+B[i-1]*(0.2))
-    B[i] = round(B[i-1]*0.4+25+A[i-1]*(0.25))
+    friendA[i] = round(friendA[i-1]*0.6+18+friendB[i-1]*(0.2))
+    friendB[i] = round(friendB[i-1]*0.4+25+friendA[i-1]*(0.25))
     i = i + 1
 
-avgA = mean(A)
-maxA = max(A)
-sumA = sum(A)
-avgB = mean(B)
-maxB = max(B)
-sumB = sum(B)
+avgA = mean(friendA)
+maxA = max(friendA)
+sumA = sum(friendA)
+avgB = mean(friendB)
+maxB = max(friendB)
+sumB = sum(friendB)
 
 print("Friend A -- Avg:", avgA, "Max:", maxA, "Sum:", sumA)
 print("Friend B -- Avg:", avgB, "Max:", maxB, "Sum:", sumB)
 
-diff = abs(A-B)
+diff = abs(friendA-friendB)
 maxDiff = max(diff)
 
 print("The maximum difference is", maxDiff)
 
-slopeB = (B[7]-B[0])/7
-slopeA = (A[7]-A[0])/7
+slopeB = (friendB[7]-friendB[0])/7
+slopeA = (friendA[7]-friendA[0])/7
 
 if slopeA>slopeB:
     print("Friend A will have the most popular party.")
