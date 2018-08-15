@@ -1,29 +1,22 @@
-
 from python_test_case import PythonTestCase, run_tests
-from unittest.mock import patch, call
-import sys
-from io import StringIO
+
+import attempt
 
 class Tests(PythonTestCase):
-	
-	def setUp(self):
-		try:
-			del sys.modules["attempt"]
-		except KeyError:
-			pass
 
-	def test_primes(self):
-		""" 'final' array is correct """
-		import attempt
-		self.assertEqual(attempt.final.tolist(), [87.5,  65.05, 57.4,  74.8])
+	def test_squares(self):
+		""" 'squares' array contains the first 4 square numbers """
+		self.assertEqual(attempt.squares.tolist(), [ 1,  4,  9, 16])
 		
-	def test_out(self):
-		""" Output is correct """
-		with patch("sys.stdout", new=StringIO()) as output:
-			import attempt
-			expected = "The final marks out of 100 are: [87.5  65.05 57.4  74.8 ]"
-			self.assertEqual(output.getvalue().strip(), expected)
+	def test_cubes(self):
+		""" 'cubes' array contains the first 4 cube numbers """
+		self.assertEqual(attempt.cubes.tolist(), [ 1,  8, 27, 64])
 	
+	def test_result(self):
+		""" 'result' array contains the first 4 result numbers """
+		self.assertEqual(attempt.result.tolist(), [2., 4., 6., 8.])
+		
+		
 # Run the unit tests
 if __name__ == "__main__":
     run_tests(Tests)
