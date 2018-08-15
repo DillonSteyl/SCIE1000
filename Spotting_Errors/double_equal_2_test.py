@@ -14,7 +14,7 @@ class Tests(PythonTestCase):
         def test_output_case1(self):
                 """ Correct output when the number doesn't exist in the array """
                 user_input = "2"
-                expected = "The number 2 appears in the array 0 times"
+                expected = "The number 2.0 appears in the array 0 times"
                 with patch("builtins.input", return_value=user_input) as input_call:
                         with patch("sys.stdout", new=StringIO()) as output:
                                 import attempt
@@ -23,7 +23,7 @@ class Tests(PythonTestCase):
         def test_output_case2(self):
                 """ Correct output when the number exists multiple times in the array """
                 user_input = "5"
-                expected = "The number 5 appears in the array 3 times"
+                expected = "The number 5.0 appears in the array 3 times"
                 with patch("builtins.input", return_value=user_input) as input_call:
                         with patch("sys.stdout", new=StringIO()) as output:
                                 import attempt
