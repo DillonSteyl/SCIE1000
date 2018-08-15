@@ -1,4 +1,4 @@
-# Introduction to Arrays (4) - Editing Arrays
+# Indexes (2) - Editing Arrays
 
 Now that we can access individual elements in an array, we can learn how to change them. It works the same way variables are changed, except instead of the variable name you need to write the array name and the index in square brackets. Take a look at the following example:
 
