@@ -2,7 +2,6 @@ from python_test_case import PythonTestCase, run_tests
 from unittest.mock import patch, call
 import sys
 from io import StringIO
-from pylab import *
 
 class Tests(PythonTestCase):
 	
