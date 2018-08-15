@@ -19,7 +19,7 @@ class Tests(PythonTestCase):
 		
     def test_group2(self):
         """ 'group2' array contains the correct values """
-        self.assertEqual(attempt.group2.tolist(), [134.78489153329056, 148.2633806866196, 161.7418698399487, 175.22035899327773, 188.6988481466068, 202.1773372999358])
+        self.assertEqual(attempt.group2.tolist(), [134.78489153, 148.26338069, 161.74186984, 175.22035899, 188.69884815, 202.1773373 ])
         
     def test_group3(self):
         """ 'group3' array contains the correct values """
@@ -27,7 +27,8 @@ class Tests(PythonTestCase):
 
     def test_growth_diff(self):
         """ 'growth_diff' array contains the correct values """
-        self.assertEqual(attempt.growth_diff.tolist(), [16.784891533290562, 20.2633806866196, 23.74186983994869, 27.220358993277728, 30.698848146606792, 34.1773372999358])
+        self.assertEqual(attempt.growth_diff.tolist(), [16.78489153, 20.26338069, 23.74186984, 27.22035899, 30.69884815,
+       34.1773373 ])
 
 # Run the unit tests
 if __name__ == "__main__":
