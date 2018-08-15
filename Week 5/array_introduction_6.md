@@ -65,9 +65,9 @@ win_loss_draw = zeros(int(30))
 
 i = 0
 while i<30:
-    if array[i]>array2[i]:
+    if array1[i]>array2[i]:
         win_loss_draw[i] = 3
-    elif array[i]<array2[i]:
+    elif array1[i]<array2[i]:
         win_loss_draw[i] = 1
     else:
         win_loss_draw[i] = 2
