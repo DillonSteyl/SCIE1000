@@ -15,7 +15,7 @@ The output is:
 
 So the format is `arrayname[index] = new value`. In the example given above, we change element 0 of the primes array from 354 to 2. Recall, array indexing starts at 0, so `primes[0]` refers to the first element in the primes array, `primes[1]` refers to the second element in the array, and so on.
 
-**Task:** Modify this program so that it correctly prints the first 10 squares after it prints the squares incorrectly. 
+**Task:** Modify this program so that it prints the squares array, updates the squares array so it has the correct values, and then prints the squares array again.
 
 ## Solution
 ```python
