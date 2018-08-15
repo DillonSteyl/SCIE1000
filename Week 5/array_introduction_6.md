@@ -1,4 +1,4 @@
-# Introduction to Arrays (6) - Looping Through Arrays
+# Arrays and Loops (1)
 
 Because of the convenient way that arrays are indexed, we can perform many useful functions by combining loops and arrays. For instance, we can use a loop to access each element of the array individually, and change each entry's value as we please. 
 
