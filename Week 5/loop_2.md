@@ -4,9 +4,9 @@ Loops can also be used to fill in arrays based on values already in the array. T
 
 
 ```
+from pylab import *
 A = zeros(int(12))
 A[0] = 10
-
 
 i = 1
 while i<12:
@@ -26,13 +26,14 @@ So the array starts off with its first value as 10, and the rest of its values a
 
 It does this by using `A[i-1]`, which refers to the previous value calculated. Also note that the loop will only iterate 11 times. It starts at 1, and ends at 11. This is because the first value has already been filled in. 
 
+
 **Task:**
 
 You want to calculate the height of your plant throughout the year. The person who sold you the plant said the plant's growth will follow this equation, with `H(i)` being the height (cm) of the plant at month `i`:
 
 `H(i+1) = H(i)*(1.2+0.4*sin(2*pi*i/4))`, rounded to 0 decimal places. 
 
-Given that the plant will start at a height of 10cm (H(0) = 10), write a program that will calculate the plant's height for 12 months. Store it in an array `Height`. Do not print anything.
+Given that the plant will start at a height of 10cm (H(0) = 10), write a program that will calculate the plant's height for 12 months. Store it in an array `height`. Do not print anything.
 
 **Hint:** Recall, to access and edit elements in an array, you must use square brackets `[]`.
 
@@ -41,12 +42,12 @@ Given that the plant will start at a height of 10cm (H(0) = 10), write a program
 ```
 from pylab import *
 
-A = zeros(int(12))
-A[0] = 10
+height = zeros(int(12))
+height[0] = 10
 
 i = 1
 while i<12:
-    A[i] = round(A[i-1]*(1.2+0.4*sin(2*pi*i/4)))
+    height[i] = round(height[i-1]*(1.2+0.4*sin(2*pi*i/4)))
     i = i + 1
 ```
 
