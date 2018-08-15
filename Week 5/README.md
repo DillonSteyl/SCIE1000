@@ -3,8 +3,10 @@
 Proposed order
 
 Intros
-1. intro 1
+1. intro 1 
+
 2. intro 2
+
 3. intro context (rats)
 
 Accessing/editing
@@ -26,9 +28,11 @@ loops
 
 10. intro 6
 
-11. not made yet - maybe trees?
+11. loops 2 (trees)
 
 
-Challenge? (exercise 12)
+12. Challenge: Party Time
+
+
 
 to be added: spot the errors.
