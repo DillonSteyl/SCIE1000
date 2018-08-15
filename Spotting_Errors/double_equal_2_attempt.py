@@ -4,7 +4,7 @@ from pylab import *
 
 my_array = [1,3,0,0,6,5,5,5,0,6]
 
-number = eval(input("Enter a number: "))
+number = float(input("Enter a number: "))
 
 count = 0
 i = 0
