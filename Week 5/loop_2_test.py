@@ -14,4 +14,4 @@ class Tests(PythonTestCase):
 	
 # Run the unit tests
 if __name__ == "__main__":
-    run_tests(Tests)
+	run_tests(Tests)
