@@ -1,6 +1,6 @@
 from pylab import *
 
-my_array = zeros(5)
+my_array = zeros(int(5))
 
 i = 0
 while i < 5:
