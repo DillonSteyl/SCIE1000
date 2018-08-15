@@ -1,6 +1,6 @@
 # Array Functions
 
-Now that you are proficient in using arrays, here are some python functions that work with arrays:
+Now that you know how to make arrays using functions, here are some python functions that work *with* arrays:
 
 ```python
 total = sum(A) # the sum function adds up all the elements of array A
