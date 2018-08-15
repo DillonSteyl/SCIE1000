@@ -48,32 +48,16 @@ It's important to note how this works. The operations occur one element at a tim
 
 Pretty neat! Multiplication, addition, subtraction, division, and exponentiation all work on arrays. Just remember to use the array() function!
 
-This will become very useful later, but for now lets calculate some grades.
-
-**Task:** You want to write a program that calculates all the marks for your courses simultaneously. There are three types of assessment: exams, assignments, and attendance. Fortunately, all of the courses were standardised so that each assessment type is worth the same amount. Exams are worth 50% of the total grade, assignments are worth 35%, and attendance is worth 15%. 
-
-So for one of your courses, if you recieved 90% for your exam, 80% for your assignments, and 95% for attendance, your total grade will be 87.25%. Check this on paper to make sure you are doing the correct calculation. It should be `0.5*90 + 0.35*80 + 0.15*95 = 87.25`.
-
-The program currently has three arrays: `exams`, `assignments`, and `attendance`. The first element of each array corresponds to your first course. The second elements all correspond to your second course, and so on. The `final` array is yet to be defined, and should be the final percentage grade for each course. 
-
-Modify this program so that it calculates the total grade for each course you are is enrolled in, given the marks in the three arrays. Store the final grades in the variable 'final'.
-
-Use the following print statement to end your program: print("The final marks out of 100 are:", final).
-
-**Hint:** Don't try to over complicate it. This question is easier than it seems! You should be able to make the `final` array with juse one line of code.
-
-
+**Task:** Make an array filled with the values 1, 4, 9, 16 and assign it to the array `squares`. Make another array filled with the values 1, 8, 27, 64 and assign it to the array `cubes`.
+Now, take the square root of the `squares` array, take the cube root of the `cubes` array, and add them together and assign them to the variable `result`. 
 
 ## Solution
 ```python
 from pylab import *
 
-exams = array([82, 48, 55, 67])
-assignments = array([90, 83, 64, 88])
-attendance = array([100, 80, 50, 70])
+squares = array([1,4,9,16])
+cubes = array([1,8,27,64])
 
-final = exams*0.5+assignments*0.35+attendance*0.15
-
-print("The final marks out of 100 are:", final)
+result = squares**(1/2) + cubes**(1/3)
 ```
 
