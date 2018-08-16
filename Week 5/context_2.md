@@ -1,6 +1,5 @@
 ## Challenge: Party Time!
 
-
 Two of your friends (who dislike each other) are throwing a party on the same day, on the same street. You've been to many of their parties, and you think you can model the number of guests in each party. The equations are as follows:
 
 ```
