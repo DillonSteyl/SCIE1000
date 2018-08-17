@@ -5,7 +5,7 @@
 * 0 if the number is zero
 * -1 if the number is negative
 
-To do this, you will need to nest a conditional in the function.
+To do this, you will need to nest a conditional in the function. You can have multiple return statements in a function (for example, in each conditional).
 
 ## Solution
 ```python
