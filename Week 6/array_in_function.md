@@ -1,6 +1,6 @@
 # Arrays and functions
 
-The input to functions does not have to be a number, You can also take arrays as input. Here is an example:
+The input to functions does not always have to be a number. You can also take arrays as input. Here is an example:
 
 
 ```
@@ -19,4 +19,4 @@ def multiply(A):
  
  **Task:** Write a function that returns how many times the number n occurs in array A. Name the function `how_many`. 
  
- **Hint:** For this you will need a conditional, inside a while loop, inside a function!
+ **Hint:** For this you will need a conditional, inside a while loop, inside a function! And that function needs to take multiple inputs!
