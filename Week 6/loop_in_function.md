@@ -8,8 +8,8 @@ def mySum(n):
     i = 1
     total = 0
     while i<=n:
-        total+=i
-        i+=1
+        total=total+i
+        i=i+1
     return(n)
 
 ```
