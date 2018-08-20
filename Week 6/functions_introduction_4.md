@@ -7,6 +7,20 @@
 
 To do this, you will need to nest a conditional in the function. You can have multiple return statements in a function (for example, in each conditional).
 
+Here is an example:
+
+```
+from pylab import *
+
+#Returns 1 if the number is 7, 0 otherwise
+def isSeven(n):
+    if n==7:
+        return(1)
+    else:
+        return(0)
+
+```
+
 ## Solution
 ```python
 from pylab import *
