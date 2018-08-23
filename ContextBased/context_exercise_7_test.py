@@ -27,7 +27,7 @@ class Tests(PythonTestCase):
 
     def test_output(self):
         """ Correct output is printed for stage I """
-        user_input = ["3", "61"]
+        user_input = ["1.4", "61"]
         expected = "The chance of receiving a true positive and negative result from the FOBT screen are 50% and 95% respectively."
         with patch("builtins.input", side_effect=user_input) as input_call:
             with patch("sys.stdout", new=StringIO()) as output:
@@ -36,7 +36,7 @@ class Tests(PythonTestCase):
 
     def test_output_2(self):
         """ Correct output is printed for stage II """
-        user_input = ["3", "60"]
+        user_input = ["1.5", "60"]
         expected = "The chance of receiving a true positive and negative result from the FOBT screen are 75% and 95% respectively."
         with patch("builtins.input", side_effect=user_input) as input_call:
             with patch("sys.stdout", new=StringIO()) as output:
