@@ -21,7 +21,7 @@ where r is the monthly interest rate as a decimal.
 3. Functions can return any variables that have been previously defined. 
 
 
-#Solution
+# Solution
 ```python
 GOAL_NOT_MET = 0
 GOAL_MET = 1
