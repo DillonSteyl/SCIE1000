@@ -9,7 +9,7 @@ However, your friend has provided the code without any of the function definitio
 **Task:**
 Your task is to write the function definitions that will make the program work.
 
-**Hints**
+**Hints:**
 1. There are three functions missing, so be sure to write a definition for each of them. Read the code provided carefully to determine 
 what they are called, what variables need to be passed to them, and what they need to return.
 
