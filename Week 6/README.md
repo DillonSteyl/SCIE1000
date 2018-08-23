@@ -8,9 +8,11 @@ To be done:
 1. Write tests for:
  - devine
  - array in function
+ - array as output
  - multi input 2
 
 2. See if any content is missing.
+- multiple functions?
 
 3. Get Emily's context questions ready.
 
