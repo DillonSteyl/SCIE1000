@@ -14,7 +14,7 @@ The stage of bowel cancer can be roughly predicted based on the size of the grow
 
 A colleague of yours has predicted that the thickness of a patient’s bowel lining can be *roughly* approximated as a twentieth of their weight in kilograms. 
 
-You want to write a program that will predict the chance of receiving a true positive and true negative result from an FOBT screen for bowel cancer, if a patient is within a testing population of 5,000 participants, and the size of their tumour is known. The program should therefore prompt the user to input the tumour size (in mm), along with the patient weight (in kg). Call these variables 'tumoursize' and 'weight' respectively. 
+**Task:** You must write a program that will predict the chance of receiving a true positive and true negative result from an FOBT screen for bowel cancer, if a patient is within a testing population of 5,000 participants, and the size of their tumour is known. The program should therefore prompt the user to input the tumour size (in mm), and then the patient weight (in kg). Call these variables 'tumoursize' and 'weight' respectively. 
 
 Your program should make use of a function called 'ratio', which determines what percentage of the bowel lining size is equivalent to the size of the patients tumour, and returns this value as a decimal. The result of this should then be used to determine which stage of cancer is present and print the required output.
 
