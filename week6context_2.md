@@ -24,6 +24,7 @@ where r is the monthly interest rate as a decimal.
 GOAL_NOT_MET = 0
 GOAL_MET = 1
 
+#Write your function definitions here:
 def get_new_savings(savings, interest_rate, debts):
     growth = (1+interest_rate)*savings
     total = growth - debts
