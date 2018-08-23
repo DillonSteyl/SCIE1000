@@ -11,11 +11,11 @@ def my_function(a, b):
     return(c, d)
 
 answer1, answer2 = my_function(2, 3)
-print("Answers: ", answer1, answer2)
+print("Answers: ", answer1, "and", answer2)
 
 ```
 
-The output of this program is "Answers: 5 6". 
+The output of this program is "Answers: 5 and 6". 
 
 For a multiple output function to work, the returned variables need to be separated by a comma. This means that when you call the function, you need two variables to assign the output to. These also need to be separated by a comma. 
 
