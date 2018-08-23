@@ -14,45 +14,61 @@ class Tests(PythonTestCase):
 			pass
 
 	def test_function_defined(self):
-		""" Function 'powers' is defined """
+		""" Function 'primes' is defined """
 		with patch("builtins.input", return_value="1") as input_call:
 			import attempt
-			self.assertMethodDefined(attempt, "powers", 1)
+			self.assertMethodDefined(attempt, "primes", 1)
 			
 	def test_function_behaviour1(self):
-		""" Answer 0.1, 100, 1000 with input 10 """
+		""" Answer -1, -1 with input 1 """
 		with patch("builtins.input", return_value="1") as input_call:
 			import attempt
-			a, b, c = attempt.powers(10)
-			self.assertEqual([a,b,c], [0.1, 100, 1000])
-
+			a, b= attempt.primes(1)
+			self.assertEqual([a,b], [-1, -1])
+			
 	def test_function_behaviour2(self):
-		""" Answer 1, 1, 1 with input 1 """
+		""" Answer -1, -1 with input -3 """
 		with patch("builtins.input", return_value="1") as input_call:
 			import attempt
-			a, b, c = attempt.powers(1)
-			self.assertEqual([a,b,c], [1, 1, 1])
-      
+			a, b= attempt.primes(-3)
+			self.assertEqual([a,b], [-1, -1])
+			
 	def test_function_behaviour3(self):
-		""" Answer 0.5, 4, 8 with input 2 """
+		""" Answer 2, 3 with input 6 """
 		with patch("builtins.input", return_value="1") as input_call:
 			import attempt
-			a, b, c = attempt.powers(2)
-			self.assertEqual([a,b,c], [0.5, 4, 8])
-      
+			a, b= attempt.primes(6)
+			self.assertEqual([a,b], [2, 3])
+			
 	def test_function_behaviour4(self):
-		""" Answer 0.25, 16, 64 with input 4 """
+		""" Answer 3, 5 with input 15 """
 		with patch("builtins.input", return_value="1") as input_call:
 			import attempt
-			a, b, c = attempt.powers(4)
-			self.assertEqual([a,b,c], [0.25, 16, 64])
-      
+			a, b= attempt.primes(15)
+			self.assertEqual([a,b], [3, 5])
+			
 	def test_function_behaviour5(self):
-		""" Answer 0.2, 25, 125 with input 5 """
+		""" Answer 5, 13 with input 65 """
 		with patch("builtins.input", return_value="1") as input_call:
 			import attempt
-			a, b, c = attempt.powers(5)
-			self.assertEqual([a,b,c], [0.2, 25, 125])
+			a, b= attempt.primes(65)
+			self.assertEqual([a,b], [5, 13])
+			
+	def test_function_behaviour6(self):
+		""" Answer 17, 29 with input 493 """
+		with patch("builtins.input", return_value="1") as input_call:
+			import attempt
+			a, b= attempt.primes(493)
+			self.assertEqual([a,b], [17, 29])
+			
+	def test_function_behaviour7(self):
+		""" Answer 11, 23 with input 253 """
+		with patch("builtins.input", return_value="1") as input_call:
+			import attempt
+			a, b= attempt.primes(253)
+			self.assertEqual([a,b], [11, 23])
+
+	
 				
 # Run the unit tests
 if __name__ == "__main__":
