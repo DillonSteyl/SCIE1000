@@ -14,45 +14,88 @@ class Tests(PythonTestCase):
 			pass
 
 	def test_function_defined(self):
-		""" Function 'powers' is defined """
+		""" Function 'factorial' is defined """
 		with patch("builtins.input", return_value="1") as input_call:
 			import attempt
-			self.assertMethodDefined(attempt, "powers", 1)
+			self.assertMethodDefined(attempt, "factorial", 1)
 			
 	def test_function_behaviour1(self):
-		""" Answer 0.1, 100, 1000 with input 10 """
+		""" Answer 1 with input 1 """
 		with patch("builtins.input", return_value="1") as input_call:
 			import attempt
-			a, b, c = attempt.powers(10)
-			self.assertEqual([a,b,c], [0.1, 100, 1000])
+			n = attempt.factorial(1)
+			self.assertEqual(n, 1)
 
 	def test_function_behaviour2(self):
-		""" Answer 1, 1, 1 with input 1 """
+		""" Answer 2 with input 2 """
 		with patch("builtins.input", return_value="1") as input_call:
 			import attempt
-			a, b, c = attempt.powers(1)
-			self.assertEqual([a,b,c], [1, 1, 1])
-      
+			n = attempt.factorial(2)
+			self.assertEqual(n, 2)
+			
 	def test_function_behaviour3(self):
-		""" Answer 0.5, 4, 8 with input 2 """
+		""" Answer 6 with input 3 """
 		with patch("builtins.input", return_value="1") as input_call:
 			import attempt
-			a, b, c = attempt.powers(2)
-			self.assertEqual([a,b,c], [0.5, 4, 8])
-      
+			n = attempt.factorial(3)
+			self.assertEqual(n, 6)
+			
 	def test_function_behaviour4(self):
-		""" Answer 0.25, 16, 64 with input 4 """
+		""" Answer 24 with input 4 """
 		with patch("builtins.input", return_value="1") as input_call:
 			import attempt
-			a, b, c = attempt.powers(4)
-			self.assertEqual([a,b,c], [0.25, 16, 64])
-      
+			n = attempt.factorial(4)
+			self.assertEqual(n, 24)
+			
 	def test_function_behaviour5(self):
-		""" Answer 0.2, 25, 125 with input 5 """
+		""" Answer 120 with input 5 """
 		with patch("builtins.input", return_value="1") as input_call:
 			import attempt
-			a, b, c = attempt.powers(5)
-			self.assertEqual([a,b,c], [0.2, 25, 125])
+			n = attempt.factorial(5)
+			self.assertEqual(n, 120)
+			
+	def test_function_behaviour6(self):
+		""" Answer 720 with input 6 """
+		with patch("builtins.input", return_value="1") as input_call:
+			import attempt
+			n = attempt.factorial(6)
+			self.assertEqual(n, 720)
+			
+	def test_function_behaviour7(self):
+		""" Answer 5040 with input 8 """
+		with patch("builtins.input", return_value="1") as input_call:
+			import attempt
+			n = attempt.factorial(8)
+			self.assertEqual(n, 5040)
+			
+	def test_function_behaviour8(self):
+		""" Answer 40320 with input 8 """
+		with patch("builtins.input", return_value="1") as input_call:
+			import attempt
+			n = attempt.factorial(8)
+			self.assertEqual(n, 40320)
+			
+	def test_function_behaviour9(self):
+		""" Answer 362880 with input 9 """
+		with patch("builtins.input", return_value="1") as input_call:
+			import attempt
+			n = attempt.factorial(9)
+			self.assertEqual(n, 362880)
+			
+	def test_function_behaviour10(self):
+		""" Answer 3628800 with input 10 """
+		with patch("builtins.input", return_value="1") as input_call:
+			import attempt
+			n = attempt.factorial(10)
+			self.assertEqual(n, 3628800)
+			
+	def test_function_behaviour0(self):
+		""" Answer 1 with input 0 """
+		with patch("builtins.input", return_value="1") as input_call:
+			import attempt
+			n = attempt.factorial(0)
+			self.assertEqual(n, 1)
+	
 				
 # Run the unit tests
 if __name__ == "__main__":
