@@ -46,7 +46,7 @@ class Tests(PythonTestCase):
     def test_output_3(self):
         """ Correct output is printed for stage III/IV"""
         user_input = ["10", "60"]
-        expected = "e FOBT screen are 75% and 95% respectively."
+        expected = "The tumour is now in stage III or IV."
         with patch("builtins.input", side_effect=user_input) as input_call:
             with patch("sys.stdout", new=StringIO()) as output:
                 import attempt
