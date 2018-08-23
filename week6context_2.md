@@ -11,11 +11,13 @@ Your task is to write the function definitions that will make the program work. 
 
 1. There are three functions missing, so be sure to write a definition for each of them. Read the code provided carefully to determine 
 what they are called, what variables need to be passed to them, and what they need to return.
+
 2. Remember that the amount of money in the account after each month can be found using the compound interest formula, given by
 ```python
 money = (1+r)*money_last_month
 ```
 where r is the monthly interest rate as a decimal.
+
 3. Functions can return any variables that have been previously defined. 
 
 
