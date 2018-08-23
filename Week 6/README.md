@@ -11,6 +11,7 @@ To be done:
  - array in function
 
 2. See if any content is missing.
+ write another multi input?
 
 3. Get Emily's context questions ready.
 
@@ -23,6 +24,8 @@ To be done:
 Draft order:
 
 Intros
+
+multiple inputs
 
 arrays in functions
 
