@@ -23,7 +23,7 @@ class Tests(PythonTestCase):
 		""" Answer 0.1, 100, 1000 with input 10 """
 		with patch("builtins.input", return_value="1") as input_call:
 			import attempt
-      			a, b, c = attempt.powers(10)
+			a, b, c = attempt.powers(10)
 			self.assertEqual([a,b,c], [0.1, 100, 1000])
 
 	def test_function_behaviour2(self):
