@@ -1,12 +1,15 @@
-# Context 2
+# Fill in the functions!
 
-Lets suppose your in a situation where you want to save some money for an upcoming purchase, but as a broke uni student, you're finding 
-it really difficult. 
+Lets suppose you're in a situation where you want to save some money for an upcoming purchase, but as a broke uni student, you're finding it really difficult. 
 
-A friend has been kind enough to provide a Python program they wrote that calculates how far they are from their savings goal by calculating the amount of money in their savings account each month. The program adds monthly interest and takes away any money spent on debts. However, your friend has provided the code without any of the function definitions.
+A friend has been kind enough to provide a Python program they wrote that calculates how far they are from their savings goal by calculating the amount of money in their savings account each month. The program adds monthly interest and takes away any money spent on debts.
 
-Your task is to write the function definitions that will make the program work. Some hints are suggested below:
+However, your friend has provided the code without any of the function definitions.
 
+**Task:**
+Your task is to write the function definitions that will make the program work.
+
+**Hints**
 1. There are three functions missing, so be sure to write a definition for each of them. Read the code provided carefully to determine 
 what they are called, what variables need to be passed to them, and what they need to return.
 
@@ -17,6 +20,8 @@ money = (1+r)*money_last_month
 where r is the monthly interest rate as a decimal.
 
 3. Functions can return any variables that have been previously defined. 
+
+4. Debts should be removed **after** calculating the new amount of savings each month. 
 
 
 # Solution
