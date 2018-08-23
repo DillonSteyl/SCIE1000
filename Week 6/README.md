@@ -7,11 +7,10 @@ To be done:
 
 1. Write tests for:
  - devine
- - loop in function
  - array in function
+ - multi input 2
 
 2. See if any content is missing.
- write another multi input?
 
 3. Get Emily's context questions ready.
 
