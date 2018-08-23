@@ -2,7 +2,7 @@ The sensitivity and specificity of bowel cancer screening varies depending on th
 
 50% for stage I cancer
 
-70% for stage II cancer
+75% for stage II cancer
 
 The specificity for either of these stages of bowel cancer using this method is 95%. 
 
