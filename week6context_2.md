@@ -1,11 +1,9 @@
-# Money Moves
+# Make money moves
 
 Lets suppose your in a situation where you want to save some money for an upcoming purchase, but as a broke uni student, you're finding 
 it really difficult. 
 
-A friend has been kind enough to provide a Python program they wrote that calculates how much they have in their savings account each 
-month, after adding monthly interest and taking away any money spent on debts. However, your friend is pretty lazy, 
-and they have provided the code without any of the function definitions.
+A friend has been kind enough to provide a Python program they wrote that calculates how far they are from their savings goal by calculating the amount of money in their savings account each month. The program adds monthly interest and takes away any money spent on debts. However, your friend has provided the code without any of the function definitions.
 
 Your task is to write the function definitions that will make the program work. Some hints are suggested below:
 
