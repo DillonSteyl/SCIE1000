@@ -9,10 +9,8 @@ To be done:
  - devine
  - loop in function
  - array in function
- - code challenge
 
 2. See if any content is missing.
- - They haven't written multiple functions in one program.
 
 3. Get Emily's context questions ready.
 
@@ -21,3 +19,18 @@ To be done:
 5. Test everything.
 
 6. Establish order.
+
+Draft order:
+
+Intros
+
+arrays in functions
+
+loops in functions
+
+multiple outputs
+
+context 2
+challenge
+
+need to place: devine, context1, spot the error.
