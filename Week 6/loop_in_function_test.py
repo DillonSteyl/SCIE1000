@@ -62,10 +62,10 @@ class Tests(PythonTestCase):
 			self.assertEqual(n, 720)
 			
 	def test_function_behaviour7(self):
-		""" Answer 5040 with input 8 """
+		""" Answer 5040 with input 7 """
 		with patch("builtins.input", return_value="1") as input_call:
 			import attempt
-			n = attempt.factorial(8)
+			n = attempt.factorial(7)
 			self.assertEqual(n, 5040)
 			
 	def test_function_behaviour8(self):
