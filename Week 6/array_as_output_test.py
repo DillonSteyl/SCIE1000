@@ -17,7 +17,7 @@ class Tests(PythonTestCase):
 		""" Function 'fill_array' is defined """
 		with patch("builtins.input", return_value="1") as input_call:
 			import attempt
-			self.assertMethodDefined(attempt, "fill_array", 1)
+			self.assertMethodDefined(attempt, "fill_array", 2)
 			
 	def test_function_behaviour1(self):
 		""" Answer [0] with input 1, 0 """
