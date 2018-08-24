@@ -35,13 +35,13 @@ class Tests(PythonTestCase):
 			a,b = attempt.getLinearEquation(1,2,3,4)
 			self.assertEqual([a,b], [1.0, 1.0])
 						
-	def test_linear_behaviour1(self):
-		""" Function 'getLinearEquation' outputs 5.0, 7.5 with input 4.5, 30, 5.5, 35 """
-		
-		with patch("builtins.input", return_value="1") as input_call:
-			import attempt
-			a,b = attempt.getLinearEquation(4.5, 30, 5.5, 35)
-			self.assertEqual([a,b], [5.0, 7.5])
+	#def test_linear_behaviour1(self):
+	#	""" Function 'getLinearEquation' outputs 5.0, 7.5 with input 4.5, 30, 5.5, 35 """
+	#	
+	#	with patch("builtins.input", return_value="1") as input_call:
+	#		import attempt
+	#		a,b = attempt.getLinearEquation(4.5, 30, 5.5, 35)
+	#		self.assertEqual([a,b], [5.0, 7.5])
 			
 	def test_exponential_behaviour1(self):
 		return
