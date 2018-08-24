@@ -23,9 +23,9 @@ class Tests(PythonTestCase):
 	def test_exponential_defined(self):
 		""" Function 'getExponentialEquation' is defined """
 
-		with patch("builtins.input", return_value="2") as input_call:
+		with patch("builtins.input", return_value="1") as input_call:
 			import attempt
-			self.assertMethodDefined(attempt, "getExponentialEquation", 4)
+			self.assertMethodDefined(attempt, "getExponentialEquation", 2)
 		
 	def test_linear_behaviour2(self):
 
