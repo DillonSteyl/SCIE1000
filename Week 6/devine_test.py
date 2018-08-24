@@ -18,7 +18,7 @@ class Tests(PythonTestCase):
 		""" Function 'IBW' is defined """
 		with patch("builtins.input", return_value="1") as input_call:
 			import attempt
-			self.assertMethodDefined(attempt, "IBW", 1)
+			self.assertMethodDefined(attempt, "IBW", 2)
 		
 	def test_ibw_behaviour1(self):
 		""" Function 'IBW' outputs 61.7 with input 1, 170 """
