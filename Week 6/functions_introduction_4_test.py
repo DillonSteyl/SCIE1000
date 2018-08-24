@@ -15,16 +15,16 @@ class Tests(PythonTestCase):
 		self.assertMethodDefined(attempt, "my_sign", 1)
 			
 	def test_function_pos(self):
-		""" Function 'sign' returns "1" for positive input """
+		""" Function 'my_sign' returns "1" for positive input """
 		test_val = randint(1,80)
 		self.assertEqual(attempt.my_sign(test_val), 1)
 		
 	def test_function_zero(self):
-		""" Function 'sign' returns "0" for zero input """
+		""" Function 'my_sign' returns "0" for zero input """
 		self.assertEqual(attempt.my_sign(0), 0)
 		
 	def test_function_neg(self):
-		""" Function 'sign' returns "-1" for negative input """
+		""" Function 'my_sign' returns "-1" for negative input """
 		test_val = randint(-80,-1)
 		self.assertEqual(attempt.my_sign(test_val), -1)
 				
