@@ -12,7 +12,7 @@ To be done:
  - looks good
 
 4. Identify relevant spot the error questions.
- - missing brackets 1
+ - brackets 1
 
 5. Test everything.
 
@@ -20,7 +20,10 @@ To be done:
 
 Draft order:
 
-Intros
+1. Intro 1 "Introduction to Functions (1)"
+2. Intro 2 "Introduction to Functions (2)"
+3. Intro 3 "Introduction to Functions (3)"
+4. Intro 4 "Introduction to Functions (4)"
 
 multiple inputs
 
