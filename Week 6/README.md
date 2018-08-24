@@ -6,9 +6,7 @@ Week 6 covers creating and using custom functions.
 To be done:
 
 1. Write tests for:
- - devine
-
-2. See if any content is missing.
+ - It's done?
 
 3. Get Emily's context questions ready.
 
