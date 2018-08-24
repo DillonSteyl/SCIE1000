@@ -13,18 +13,18 @@ class Tests(PythonTestCase):
 		except KeyError:
 			pass
 
-	#def test_linear_defined(self):
-	#	""" Function 'getLinearEquation' is defined """
-	#	with patch("builtins.input", return_value="1") as input_call:
-	#		import attempt
-	#		self.assertMethodDefined(attempt, "getLinearEquation", 4)
-	#		
-	#def test_exponential_defined(self):
-	#	""" Function 'getExponentialEquation' is defined """
-	#	with patch("builtins.input", return_value="1") as input_call:
-	#		import attempt
-	#		self.assertMethodDefined(attempt, "getExponentialEquation", 4)
-	#	
+	def test_linear_defined(self):
+		""" Function 'getLinearEquation' is defined """
+		with patch("builtins.input", return_value="1") as input_call:
+			import attempt
+			self.assertMethodDefined(attempt, "getLinearEquation", 4)
+			
+	def test_exponential_defined(self):
+		""" Function 'getExponentialEquation' is defined """
+		with patch("builtins.input", return_value="1") as input_call:
+			import attempt
+			self.assertMethodDefined(attempt, "getExponentialEquation", 4)
+		
 	def test_linear_behaviour2(self):
 		""" Function 'getLinearEquation' outputs 1.0, 1.0 with input 1,2,3,4 """
 		with patch("builtins.input", return_value="1") as input_call:
@@ -40,6 +40,7 @@ class Tests(PythonTestCase):
 			self.assertEqual([a,b], [5.0, 7.5])
 			
 	def test_exponential_behaviour1(self):
+		pass
 		""" Function 'getExponentialEquation' outputs 100, -0.06931 with input 0, 100, 10, 50"""
 		with patch("builtins.input", return_value="1") as input_call:
 			import attempt
@@ -48,6 +49,7 @@ class Tests(PythonTestCase):
 			
 			
 	def test_exponential_behaviour2(self):
+		pass
 		""" Function 'getExponentialEquation' outputs 3.0, 0.10986 with input 10, 10, 20, 30"""
 		with patch("builtins.input", return_value="1") as input_call:
 			import attempt
@@ -56,6 +58,7 @@ class Tests(PythonTestCase):
 			
 
 	def test_output1(self):
+		pass
 		""" Program prints the correct values -1.0 and 5.0 with input -5, 10, 5, 0, and 1"""
 		user_input = ["-5", "10", "5", "0", "1"]
 		with patch("builtins.input", side_effect=user_input) as input_call:
@@ -65,6 +68,7 @@ class Tests(PythonTestCase):
 				self.assertEqual(output.getvalue().strip(), expected)
 				
 	def test_output2(self):
+		pass
 		""" Program prints the correct values 10000.0 and 0.01833 with input 0, 10000, 50, 25000 and 0"""
 		user_input = ["0", "10000", "50", "25000", "0"]
 		with patch("builtins.input", side_effect=user_input) as input_call:
