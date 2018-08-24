@@ -37,7 +37,7 @@ class Tests(PythonTestCase):
 	def test_output1(self):
 		""" Program prints the correct value 57.2 with input 0, 160"""
 		user_input = ["0", "160"]
-		with patch("builtins.input", return_value=user_input) as input_call:
+		with patch("builtins.input", side_effect=user_input) as input_call:
 			with patch("sys.stdout", new=StringIO()) as output:
 				import attempt
 				expected = "Ideal weight: 57.2 kg."
@@ -46,11 +46,13 @@ class Tests(PythonTestCase):
 	def test_output2(self):
 		""" Program prints the correct value 52.7 with input 1, 160"""
 		user_input = ["1", "160"]
-		with patch("builtins.input", return_value=user_input) as input_call:
+		with patch("builtins.input", side_effect=user_input) as input_call:
 			with patch("sys.stdout", new=StringIO()) as output:
 				import attempt
 				expected = "Ideal weight: 52.7 kg."
 				self.assertEqual(output.getvalue().strip(), expected)
+				
+				
 				
 
 				
