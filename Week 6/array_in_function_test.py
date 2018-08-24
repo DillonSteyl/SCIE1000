@@ -17,7 +17,7 @@ class Tests(PythonTestCase):
 		""" Function 'how_many' is defined """
 		with patch("builtins.input", return_value="1") as input_call:
 			import attempt
-			self.assertMethodDefined(attempt, "how_many", 1)
+			self.assertMethodDefined(attempt, "how_many", 2)
 			
 	def test_function_behaviour1(self):
 		""" Answer 1 with input [1], 1 """
