@@ -2,7 +2,7 @@
 
 A program has been written but the functions have gone missing. Define and write the functions so that the program passes all the tests. 
 
-**Hint:** The returned values for the Exponential Equation need to be rounded. Please round the value of A0 (or P0, or whatever you name it) to 0 decimal places, and round the value of k to 5 decimal places. Use the round function! (`round(num, places)`, where num is the number you want to round and places is the number of decimal places).
+**Note:** The returned values for the Exponential Equation need to be rounded. Please round the value of A0 (or P0, or whatever you name it) to 0 decimal places, and round the value of k to 5 decimal places. Use the round function! (`round(num, places)`, where num is the number you want to round and places is the number of decimal places).
 
 To solve this you may want to try finding the formulas on paper first. Try it yourself before reading the hint below:
 
