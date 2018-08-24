@@ -45,28 +45,28 @@ class Tests(PythonTestCase):
 			a = attempt.toKilograms(154)
 			self.assertEqual(a, 70.0)
 			
-	def test_function_behaviour1(self):
+	def test_function_behaviour3(self):
 		""" Answer 0.16 with call weightOnMoon(2.2) """
 		with patch("builtins.input", return_value="1") as input_call:
 			import attempt
 			a = attempt.weightOnMoon(2.2)
 			self.assertEqual(a, 0.16)
 			
-	def test_function_behaviour1(self):
+	def test_function_behaviour4(self):
 		""" Answer 0.38 with call weightOnMars(2.2) """
 		with patch("builtins.input", return_value="1") as input_call:
 			import attempt
 			a = attempt.weightOnMars(2.2)
 			self.assertEqual(a, 0.38)
 			
-	def test_function_behaviour1(self):
+	def test_function_behaviour5(self):
 		""" Answer 8.16 with call weightOnMoon(112.2) """
 		with patch("builtins.input", return_value="1") as input_call:
 			import attempt
 			a = attempt.weightOnMoon(112.2)
 			self.assertEqual(a, 8.16)
 			
-	def test_function_behaviour1(self):
+	def test_function_behaviour6(self):
 		""" Answer 19.38 with call weightOnMars(112.2) """
 		with patch("builtins.input", return_value="1") as input_call:
 			import attempt
