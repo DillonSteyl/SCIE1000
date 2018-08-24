@@ -1,4 +1,4 @@
-# Devine Formula
+# Multiple Inputs (4) - The Devine Formula
 
 The *Devine* formula is a commonly used formula to calculate 'ideal' body weight based on the height of a person. It was first published by Dr. BJ Devine, and was originally intended to be used to calculate the dosage of certain medications. It has become the most popular formula on the internet for calculating ideal body weight. It appears on a vast number of websites, including websites which suggest using it as a goal for weight loss.
 
