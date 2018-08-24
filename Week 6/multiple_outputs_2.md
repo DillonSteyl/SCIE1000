@@ -49,7 +49,7 @@ def getLinearEquation(x1, y1, x2, y2):
     
 def getExponentialEquation(x1, y1, x2, y2):
     k = log(y1/y2)/(x1-x2)
-    A0 = y2/(exp(k*x2)
+    A0 = y2/(exp(k*x2))
     return(round(A0), round(k,5))
     
     
