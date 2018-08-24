@@ -61,7 +61,9 @@ The output is:
 
 You will also need to check each combination to see if it is correct. You can do this by using a conditional inside the inner while loop to see if the two numbers multiplied together make the input number. This would go in place of the print statement in the example nested while loop. 
 
-Once you have found two numbers that satisfy that condition, you do not need to search anymore. Once you have found them, you just need to return the two numbers. If you have cycled throuhg every combination and have not found them, remember to return -1, -1. This will happen at the end of your function, outside of the while loops. 
+Once you have found two numbers that satisfy that condition, you do not need to search anymore. Once you have found them, you just need to return the two numbers. If you have cycled through every combination and have not found them, remember to return -1, -1. This will happen at the end of your function, outside of the while loops. 
+
+If you are struggling, open up Jupyter and test your code in there!
 
 # Solution
 
