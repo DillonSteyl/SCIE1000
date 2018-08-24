@@ -12,6 +12,7 @@ To be done:
  - looks good
 
 4. Identify relevant spot the error questions.
+ - missing brackets 1
 
 5. Test everything.
 
