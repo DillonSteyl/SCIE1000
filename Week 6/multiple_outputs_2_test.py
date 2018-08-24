@@ -57,7 +57,8 @@ class Tests(PythonTestCase):
 
 	def test_output1(self):
 		""" Program prints the correct values -1.0 and 5.0 with input -5, 10, 5, 0, and 1"""
-		with patch("builtins.input", return_value=str(user_input)) as input_call:
+		user_input = ["-5", "10", "5", "0", "1"]
+		with patch("builtins.input", return_value=user_input) as input_call:
 			with patch("sys.stdout", new=StringIO()) as output:
 				import attempt
 				expected = "The value of m is -1.0 and the value of c is 5.0\nThanks for using this program!"
@@ -65,7 +66,8 @@ class Tests(PythonTestCase):
 				
 	def test_output2(self):
 		""" Program prints the correct values 10000.0 and 0.01833 with input 0, 10000, 50, 25000 and 0"""
-		with patch("builtins.input", return_value=str(user_input)) as input_call:
+		user_input = ["0", "10000", "50", "25000", "0"]
+		with patch("builtins.input", return_value=user_input) as input_call:
 			with patch("sys.stdout", new=StringIO()) as output:
 				import attempt
 				expected = "The value of A0 is 10000.0 and the value of k is 0.01833\nThanks for using this program!"
