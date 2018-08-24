@@ -1,4 +1,4 @@
-# Functions and Arrays (1)
+# Functions and Arrays (1) - Arrays as Input
 
 The input to functions does not always have to be a number. You can also take arrays as input. Here is an example:
 
