@@ -12,7 +12,6 @@ To be done:
  - multi input 2
 
 2. See if any content is missing.
-- multiple functions?
 
 3. Get Emily's context questions ready.
 
