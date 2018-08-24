@@ -1,4 +1,4 @@
-# Multiple Functions
+# Introduction to Functions (5) - Multiple Functions
 
 You aren't limited to just one function per program. You can define many functions in your program and use them wherever you like (so long as you have defined them at the top of your program). Take a look at this example program:
 
