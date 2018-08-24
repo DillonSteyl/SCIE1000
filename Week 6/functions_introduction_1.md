@@ -1,4 +1,4 @@
-# Introduction to Functions
+# Introduction to Functions (1)
 
 We have already covered functions that are **included** in Python, such as the `sqrt` and `exp` functions. It can be very useful to create your own custom functions to use in your programs. Once you have written a function, you can use it in multiple places without having to rewrite the same lines of code over and over again.
 
