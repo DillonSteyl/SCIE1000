@@ -1,4 +1,4 @@
-# Challenge - Crack the Code
+# Challenge: Crack the Code
 
 For computers to communicate with each other they must send messages, and often times these messages must remain a secret. Messages are encrypted by the sender, sent to the recipient, and then unlocked by the recipient using a 'key' that only the sender and recipient know. 
 
