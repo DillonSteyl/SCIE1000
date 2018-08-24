@@ -7,7 +7,6 @@ To be done:
 
 1. Write tests for:
  - devine
- - array as output
 
 2. See if any content is missing.
 
