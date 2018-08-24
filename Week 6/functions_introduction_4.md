@@ -1,6 +1,6 @@
 # Introduction to Functions (4)
 
-**Task:** Write a function called `sign` which takes a number as input, and returns the following:
+**Task:** Write a function called `my_sign` which takes a number as input, and returns the following:
 * 1 if the number is positive
 * 0 if the number is zero
 * -1 if the number is negative
