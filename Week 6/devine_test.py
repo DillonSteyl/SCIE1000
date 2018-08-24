@@ -24,14 +24,14 @@ class Tests(PythonTestCase):
 		""" Function 'IBW' outputs 61.7 with input 1, 170 """
 		with patch("builtins.input", return_value="1") as input_call:
 			import attempt
-			aattempt.getLinearEquation(1,170)
+			a = attempt.IBW(1,170)
 			self.assertEqual(a, 61.7)
 			
 	def test_ibw_behaviour2(self):
 		""" Function 'IBW' outputs 66.2 with input 0, 170 """
 		with patch("builtins.input", return_value="1") as input_call:
 			import attempt
-			aattempt.getLinearEquation(0,170)
+			a = attempt.IBW(0,170)
 			self.assertEqual(a, 66.2)
 			
 	def test_output1(self):
