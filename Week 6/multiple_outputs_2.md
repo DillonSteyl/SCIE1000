@@ -1,4 +1,4 @@
-# Multiple Outputs (2)
+# Fill in the Functions (1)
 
 **Task:** A program has been written but the functions have gone missing. Define and write the functions so that the program passes all the tests. 
 
