@@ -1,4 +1,4 @@
-# Functions with Multiple Inputs
+# Multiple Inputs (1)
 
 It is often useful to write a function which can take *multiple* inputs. These functions are written with a very similar format to single-input functions; the only difference is that multiple variables can be passed into these functions. The structure of a function with 3 inputs is given below.
 
