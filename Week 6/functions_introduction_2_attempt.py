@@ -4,4 +4,4 @@ def double(x):
     # doubles the input
     
 
-number = eval(input("Give me a number: "))
+number = float(input("Give me a number: "))
