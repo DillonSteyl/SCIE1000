@@ -32,7 +32,7 @@ class Tests(PythonTestCase):
 		with patch("builtins.input", return_value=str(user_input)) as input_call:
 			with patch("sys.stdout", new=StringIO()) as output:
 				import attempt
-				expected = str(float(user_input))
+				expected = str(float(user_input*2))
 				self.assertEqual(output.getvalue().strip(), expected)
 				
 # Run the unit tests
