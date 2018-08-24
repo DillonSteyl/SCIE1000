@@ -33,7 +33,11 @@ Draft order:
 11. devine "Multiple Inputs (4)"
 12. multiple outputs 1 "Multiple Outputs (1)"
 13. multiple outputs 2 "Multiple Outputs (2)"
-14. week 6 context 2
+14. week 6 context 2 "Fill in the Functions (1)"
+15. loops in functions "Functions and Loops"
+16. arrays in functions "Functions and Arrays (1)"
+17. arrays as output "Functions and Arrays (2)"
+18. code challenge "Challenge: Crack the Code"
 
 
 
