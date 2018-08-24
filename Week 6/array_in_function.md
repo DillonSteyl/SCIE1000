@@ -21,6 +21,7 @@ def multiply(A):
  
  **Hint:** For this you will need a conditional, inside a while loop, inside a function! And that function needs to take multiple inputs!
 
+# Solution
 
 ```
 from pylab import *
