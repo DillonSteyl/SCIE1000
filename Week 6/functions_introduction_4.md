@@ -1,4 +1,4 @@
-# Introduction to Functions (4)
+# Introduction to Functions (4) - Conditionals
 
 **Task:** Write a function called `my_sign` which takes a number as input, and returns the following:
 * 1 if the number is positive
