@@ -1,4 +1,4 @@
-# Functions and Arrays (2)
+# Functions and Arrays (2) - Arrays as Input
 
 Just like how you can use arrays as input, you can also have arrays as output!
 
