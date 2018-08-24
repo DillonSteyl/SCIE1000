@@ -1,4 +1,4 @@
-# Sensitivity and Specificity
+# Introduction to Functions (6) - Sensitivity and Specificity
 
 This week 6 the topic of sensitivity and specificity are introduced in class, so let's try and apply functions to an example related to this topic.
 
