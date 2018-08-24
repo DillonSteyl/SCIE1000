@@ -16,16 +16,16 @@ class Tests(PythonTestCase):
 	def test_linear_defined(self):
 		""" Function 'getLinearEquation' is defined """
 
-		with patch("builtins.input", return_value="4") as input_call:
+		with patch("builtins.input", return_value="2") as input_call:
 			import attempt
-			self.assertMethodDefined(attempt, "getLinearEquation", 2)
+			self.assertMethodDefined(attempt, "getLinearEquation", 4)
 			
 	def test_exponential_defined(self):
 		""" Function 'getExponentialEquation' is defined """
 
-		with patch("builtins.input", return_value="4") as input_call:
+		with patch("builtins.input", return_value="2") as input_call:
 			import attempt
-			self.assertMethodDefined(attempt, "getExponentialEquation", 2)
+			self.assertMethodDefined(attempt, "getExponentialEquation", 4)
 		
 	def test_linear_behaviour2(self):
 
