@@ -14,54 +14,47 @@ class Tests(PythonTestCase):
 			pass
 
 	def test_function_defined(self):
-		""" Function 'how_many' is defined """
+		""" Function 'fill_array' is defined """
 		with patch("builtins.input", return_value="1") as input_call:
 			import attempt
-			self.assertMethodDefined(attempt, "how_many", 1)
+			self.assertMethodDefined(attempt, "fill_array", 1)
 			
 	def test_function_behaviour1(self):
-		""" Answer 1 with input [1], 1 """
+		""" Answer [0] with input 1, 0 """
 		with patch("builtins.input", return_value="1") as input_call:
 			import attempt
-			a= attempt.how_many([1], 1)
-			self.assertEqual(a, 1)
-			
+			self.assertEqual(attempt.fill_array(1,0).tolist(), [0])
 			
 	def test_function_behaviour2(self):
-		""" Answer 2 with input [1,1], 1 """
+		""" Answer [1] with input 1, 1 """
 		with patch("builtins.input", return_value="1") as input_call:
 			import attempt
-			a= attempt.how_many([1,1], 1)
-			self.assertEqual(a, 2)
+			self.assertEqual(attempt.fill_array(1,1).tolist(), [1])
 			
 	def test_function_behaviour3(self):
-		""" Answer 1 with input [0, 5, 7, 2, 6, 8], 2 """
+		""" Answer [3, 3, 3] with input 3, 3 """
 		with patch("builtins.input", return_value="1") as input_call:
 			import attempt
-			a= attempt.how_many([0,5,7,2,6,8], 2)
-			self.assertEqual(a, 1)
+			self.assertEqual(attempt.fill_array(3,3).tolist(), [3, 3, 3])
 			
 	def test_function_behaviour4(self):
-		""" Answer 3 with input [0, 5, 6, 7, 2, 6, 6, 8], 6 """
+		""" Answer [2, 2, 2, 2, 2] with input 5, 2 """
 		with patch("builtins.input", return_value="1") as input_call:
 			import attempt
-			a= attempt.how_many([0, 5, 6, 7, 2, 6, 6, 8], 6)
-			self.assertEqual(a, 3)
+			self.assertEqual(attempt.fill_array(5,2).tolist(), [2, 2, 2, 2, 2])
 			
 	def test_function_behaviour5(self):
-		""" Answer 0 with input [0, 5, 6, 7, 2, 6, 6, 8], 3 """
+		""" Answer [3.4, 3.4, 3.4, 3.4, 3.4, 3.4] with input 6, 3.4 """
 		with patch("builtins.input", return_value="1") as input_call:
 			import attempt
-			a= attempt.how_many([0, 5, 6, 7, 2, 6, 6, 8], 3)
-			self.assertEqual(a, 0)
+			self.assertEqual(attempt.fill_array(6,3.4).tolist(), [3.4, 3.4, 3.4, 3.4, 3.4, 3.4])
 			
-			
-	def test_function_behaviour5(self):
-		""" Answer 2 with input [8, 5, 6, 7, 2, 6, 6, 8], 8 """
+	def test_function_behaviour6(self):
+		""" Answer [-8, -8, -8, -8, -8] with input 5, -8 """
 		with patch("builtins.input", return_value="1") as input_call:
 			import attempt
-			a= attempt.how_many([8, 5, 6, 7, 2, 6, 6, 8], 8)
-			self.assertEqual(a, 2)
+			self.assertEqual(attempt.fill_array(5,-8).tolist(), [-8, -8, -8, -8, -8])
+		
 			
 				
 # Run the unit tests
