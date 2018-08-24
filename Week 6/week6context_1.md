@@ -1,6 +1,6 @@
 # Sensitivity and Specificity
 
-This week in class we will be introducing the idea of sensitivity and specificity, so let's try and apply functions to an example related to this topic.
+This week 6 the topic of sensitivity and specificity are introduced in class, so let's try and apply functions to an example related to this topic.
 
 The sensitivity and specificity of bowel cancer screening varies depending on the stage of cancer being screened. The recommended screening method for bowel cancer is immunochemical faecal occult blood test (FOBT), which has the following sensitivity ratings, if one sample from a patient is taken:
 
@@ -33,6 +33,10 @@ User input should be prompted as follows:
 Enter the tumour size (mm):
 
 Enter the patient weight (kg):
+
+**Hint:** To do the ratio calculation, first the thickness of the bowel lining needs to be approximated. As mentioned, dividing the weight of the patient by 20 will suffice. Then, the tumorsize divided by the approximated thickness of the bowel lining will give the ration.
+
+You will need a function that will calculate the ration, some input statements to learn about the patient, and some conditionals to print the right message based on the ratio found.
 
 # Solution
 ```python
