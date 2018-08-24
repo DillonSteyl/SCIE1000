@@ -13,18 +13,18 @@ class Tests(PythonTestCase):
 		except KeyError:
 			pass
 
-	def test_linear_defined(self):
-		""" Function 'getLinearEquation' is defined """
-		with patch("builtins.input", return_value="1") as input_call:
-			import attempt
-			self.assertMethodDefined(attempt, "getLinearEquation", 4)
-			
-	def test_exponential_defined(self):
-		""" Function 'getExponentialEquation' is defined """
-		with patch("builtins.input", return_value="1") as input_call:
-			import attempt
-			self.assertMethodDefined(attempt, "getExponentialEquation", 4)
-		
+	#def test_linear_defined(self):
+	#	""" Function 'getLinearEquation' is defined """
+	#	with patch("builtins.input", return_value="1") as input_call:
+	#		import attempt
+	#		self.assertMethodDefined(attempt, "getLinearEquation", 4)
+	#		
+	#def test_exponential_defined(self):
+	#	""" Function 'getExponentialEquation' is defined """
+	#	with patch("builtins.input", return_value="1") as input_call:
+	#		import attempt
+	#		self.assertMethodDefined(attempt, "getExponentialEquation", 4)
+	#	
 	def test_linear_behaviour2(self):
 		""" Function 'getLinearEquation' outputs 1.0, 1.0 with input 1,2,3,4 """
 		with patch("builtins.input", return_value="1") as input_call:
