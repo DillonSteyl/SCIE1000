@@ -1,4 +1,4 @@
-# Loops in functions
+# Functions and Loops
 
 You can also include loops in functions. Here is an example:
 
