@@ -14,7 +14,7 @@ Find m first by using the formula for m. Then, use m and one of the points to fi
 
 For Exponential equations:
 
-You can't guarantee that one of the x values is 0 (which would mean the corresponding y value is A0). But, it will be guaranteed that neither of the y values will be 0. 
+You can't guarantee that one of the x values is 0 (which would mean the corresponding y value is A0). But, we will not give you any y values that are 0, so that means we can do the following maths without worrying about dividing by 0 or calling log(0).
 
 So, if both sets of values are subbed into the Exponential equation you get:
 
