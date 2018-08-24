@@ -25,3 +25,12 @@ class Tests(PythonTestCase):
 			import attempt
 			test_val = randint(60,80)
 			self.assertEqual(attempt.toCentimetres(test_val), test_val*2.54)
+
+	def test_output(self):
+		""" Correctly uses the 'double' function to print double the inputted number """
+		user_input = randint(0,100)
+		with patch("builtins.input", return_value=str(user_input)) as input_call:
+			with patch("sys.stdout", new=StringIO()) as output:
+				import attempt
+				expected = str(attempt.double(user_input))
+				self.assertEqual(output.getvalue().strip(), expected)
