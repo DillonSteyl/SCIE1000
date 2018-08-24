@@ -1,4 +1,4 @@
-# Fill in the functions!
+# Fill in the Functions (2)
 
 You're interested in reaching a savings goal after a number of months, but the calculations to figure out if you will reach your goal are a bit hard. A friend has been kind enough to provide a Python program they wrote that calculates how far they are from their savings goal by calculating the amount of money in their savings account each month. The program adds monthly interest and takes away any money spent on debts.
 
