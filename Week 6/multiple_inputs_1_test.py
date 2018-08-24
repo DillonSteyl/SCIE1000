@@ -25,7 +25,7 @@ class Tests(PythonTestCase):
 			import attempt
 			val1 = randint(1,15)
 			val2 = randint(5,20)
-			self.assertEqual(attempt.prod(val1, val2), val1 * val2)
+			self.assertEqual(attempt.prod(val1, val2), float(val1 * val2))
 			
 	def test_output(self):
 		""" Program correctly prints the product of the two provided numbers"""
@@ -33,7 +33,7 @@ class Tests(PythonTestCase):
 		with patch("builtins.input", side_effect=user_input) as input_call:
 			with patch("sys.stdout", new=StringIO()) as output:
 				import attempt
-				self.assertEqual(output.getvalue().strip(), str( int(user_input[0]) * int(user_input[1]) ))
+				self.assertEqual(output.getvalue().strip(), str( float(int(user_input[0]) * int(user_input[1]) )))
 	
 # Run the unit tests
 if __name__ == "__main__":
