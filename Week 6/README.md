@@ -9,6 +9,7 @@ To be done:
  - It's done?
 
 3. Get Emily's context questions ready.
+ - looks good
 
 4. Identify relevant spot the error questions.
 
