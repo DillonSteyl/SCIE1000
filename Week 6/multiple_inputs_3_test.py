@@ -42,7 +42,7 @@ class Tests(PythonTestCase):
 		with patch("builtins.input", side_effect=user_input) as input_call:
 			with patch("sys.stdout", new=StringIO()) as output:
 				import attempt
-				expected = "The displacement of this object at " + str(t) + " seconds is: " + str(attempt.displacement(v0, a, t)) + " metres."
+				expected = "The displacement of this object at " + str(float(t)) + " seconds is: " + str(attempt.displacement(v0, a, t)) + " metres."
 				self.assertEqual(output.getvalue().strip(), expected)
 				
 # Run the unit tests
