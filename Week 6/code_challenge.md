@@ -63,6 +63,7 @@ You will also need to check each combination to see if it is correct. You can do
 
 Once you have found two numbers that satisfy that condition, you do not need to search anymore. Once you have found them, you just need to return the two numbers. If you have cycled throuhg every combination and have not found them, remember to return -1, -1. This will happen at the end of your function, outside of the while loops. 
 
+# Solution
 
 ```
 from pylab import *
