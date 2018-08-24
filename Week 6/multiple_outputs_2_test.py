@@ -30,7 +30,7 @@ class Tests(PythonTestCase):
 	def test_linear_behaviour2(self):
 
 		""" Function 'getLinearEquation' outputs 1.0, 1.0 with input 1,2,3,4 """
-		with patch("builtins.input", return_value="1") as input_call:
+		with patch("builtins.input", return_value="2") as input_call:
 			import attempt
 			a,b = attempt.getLinearEquation(1,2,3,4)
 			self.assertEqual([a,b], [1.0, 1.0])
@@ -46,7 +46,7 @@ class Tests(PythonTestCase):
 	def test_exponential_behaviour1(self):
 
 		""" Function 'getExponentialEquation' outputs 100, -0.06931 with input 0, 100, 10, 50"""
-		with patch("builtins.input", return_value="1") as input_call:
+		with patch("builtins.input", return_value="4") as input_call:
 			import attempt
 			a,b = attempt.getExponentialEquation(0, 100, 10, 50)
 			self.assertEqual([a,b], [100.0, -0.06931])
@@ -55,7 +55,7 @@ class Tests(PythonTestCase):
 	def test_exponential_behaviour2(self):
 
 		""" Function 'getExponentialEquation' outputs 3.0, 0.10986 with input 10, 10, 20, 30"""
-		with patch("builtins.input", return_value="1") as input_call:
+		with patch("builtins.input", return_value="4") as input_call:
 			import attempt
 			a,b = attempt.getExponentialEquation(10, 10, 20, 30)
 			self.assertEqual([a,b], [3.0, 0.10986])
