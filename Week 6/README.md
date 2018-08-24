@@ -9,7 +9,6 @@ To be done:
  - devine
  - array in function
  - array as output
- - multi input 2
 
 2. See if any content is missing.
 
