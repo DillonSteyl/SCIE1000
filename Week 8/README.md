@@ -12,7 +12,7 @@ Things to be covered:
 3. Make two lines show up with the same x array (Discuss using the plot function twice)
 4. Make two lines with different x arrays on different ranges (briefly discuss ranges of the graph)
 5. Make three lines show up with different step sizes (same equations for each but with a vertical shift so they're sufficiently distinct).
-6. Draw a shape (lines dont have to go left to right).
+6. Draw a shape (lines dont have to go left to right - gives them a slightly deeper understanding of whats going on with graphs).
 7. Changing the linestyle, colour, linewidth, and marker. Should we refer to matplotlib for this? Learn how to learn, etc. 
 8. Adding titles and axis labels
 9. grids and legends
