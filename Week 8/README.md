@@ -1,6 +1,6 @@
 # Week 8
 
-Week 8 covers plotting graphs - a lot needs to be rewritten due to reordering (we can actually make arrays now) and content that should be covered. A reminder that we CAN test for graph elements (titles, legends, labels, colours, data, you name it we can test for it). A good example of this is week 13 Disease X part 2 test.
+Week 8 covers plotting graphs - a lot needs to be rewritten due to reordering (we can actually make arrays now) and content that should be covered. A reminder that we CAN test for graph elements (titles, legends, labels, colours, data, you name it we can test for it) using the gca function. A good example of this is week 13 Disease X part 2 test.
 
 Old exercises will be kept until we are sure if we don't need them. The graphs can be repurposed tho.
 
@@ -18,4 +18,4 @@ Things to be covered:
 9. grids and legends
 10. Challenge question
 
-Plus additional context exercises if you think of any or already exist. 
+Plus additional context exercises if you think of any or already exist.
