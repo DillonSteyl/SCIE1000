@@ -1,6 +1,6 @@
 # Week 8
 
-Week 8 covers plotting graphs - a lot needs to be rewritten due to reordering (we can actually make arrays now), and tests that need to be updated. Old exercises will be kept until we are sure if we don't need them. 
+Week 8 covers plotting graphs - a lot needs to be rewritten due to reordering (we can actually make arrays now), and tests that need to be updated. Old exercises will be kept until we are sure if we don't need them. The graphs can be repurposed tho.
 
 Write your name next to the topic if you are currently covering it. Write DONE to the left of the topic if it has already been covered.
 
