@@ -19,3 +19,4 @@ Things to be covered:
 10. Challenge question
 
 Plus additional context exercises if you think of any or already exist.
+ - Have at least one question that includes drawing single points AND lines on the same graph
