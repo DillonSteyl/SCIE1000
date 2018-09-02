@@ -29,7 +29,7 @@ class Tests(PythonTestCase):
     def test_point(self):
         """It is a single point on the graph"""
         g = gca()
-        self.assertEquals(len(g.get_lines()[0].get_xdata), 1)
+        self.assertEquals(len(g.get_lines()[0].get_xdata()), 1)
 
     def test_x(self):
         """The point has the correct x value: 4"""
