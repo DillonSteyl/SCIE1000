@@ -23,7 +23,7 @@ class Tests(PythonTestCase):
     def test_lines(self):
         """There is something on the graph"""
         g = gca()
-	lines = g.get_lines()
+        lines = g.get_lines()
         self.assertEquals(len(lines), 1)
         
     def test_point(self):
