@@ -15,4 +15,13 @@ show()
 
 ```
 
-This program will plot a single point in the shape of an asterisk (`*`) with its x coordinate as 2 and its y coordinate as 3. 
+This program will plot a single point in the shape of an asterisk (`*`) with its x coordinate as 2 and its y coordinate as 3. The show function takes no input. 
+
+You'll notice that the output of these functions are not assigned to any variables. They are just called on a line by themselves. This is how they are expected to be used, but if you decide to make complex graphs later on in your studies (not in this course), know that the plot function will produce output if you want it to.
+
+**Task:**
+
+Write a program that plots an asterisk with coordinates (4,2), and displays the graph for the user. 
+
+
+**Note:** Once you have passed the exercise, observe the appearance of the graph. The x and y axis have no labels. There is no title. The x and y scales have been generated automatically to fit the point you made. 
