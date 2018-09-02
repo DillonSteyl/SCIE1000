@@ -8,7 +8,7 @@ Write your name next to the topic if you are currently writing it or plan to ver
 
 Things to be covered:
 1. DONE - Make a graph show up with a single point (Discuss the plot function with three arguments (two single numbers and a marker), and the show function).
-2. NEEDS TEST - Make a line show up (Discuss using arrays in the plot function)
+2. DONE - Make a line show up (Discuss using arrays in the plot function)
 3. NEEDS TEST - Make two lines show up with the same x array (Discuss using the plot function twice)
 4. DONE - Make three lines show up with different step sizes (same equations for each but with a vertical shift so they're sufficiently distinct).
 5. NEEDS TEST AND EXERCISE - Draw a shape (lines dont have to go left to right - gives them a slightly deeper understanding of whats going on with graphs).
