@@ -98,7 +98,7 @@ show()
 
 ## Shorthand
 
-If the customisation of your line is fairly simple, you can use shorthand. If you want to style your line with a default colour and some types of popular marks and line styles, you can style your line as follows:
+If the customisation of your line is fairly simple, you can use shorthand. If you want to style your line with a default colour and some types of popular markers and line styles, you can style your line as follows:
 
 
 ```
@@ -111,7 +111,7 @@ plot(x, y, 'ro--')
 show()
 ```
 
-This program draws a red ('r'), dashed ('--') line with circles ('o') as markers. These can be in any order. `'o--r'`, for example, is also acceptable. You do not need to specify all the style options either. Simply using `r--` will draw a red dashed line with no markers, or 'o' will draw a set of markers in the default colour, with no line. 
+This program draws a red ('r'), dashed ('--') line with circles ('o') as markers. These can be in any order. `'--or'`, for example, is also acceptable. You do not need to specify all the style options either. Simply using `'r--'` will draw a red dashed line with no markers, or `'o'` will draw a set of markers in the default colour, with no line. Using just `'r'` will create a solid red line with no markers.
 
 **Task:** 
 
@@ -121,7 +121,7 @@ Draw 5 lines with the provided data, with the following styling:
 2. A solid line with the X11 colour 'purple', with square markers and line width 0.5.
 3. Black octagon markers with no line. 
 4. A solid line with width 5 and no markers
-5. A dash-dot line with width 2, markers in the shape of 'points', and with the xkcd blood orange colour. (Hint: the matplotlib format for xkcd colours is `'xkcd:colour name'`.
+5. A dash-dot line with width 2, markers in the shape of 'points', and with the xkcd colour 'blood orange'. (Hint: the matplotlib format for xkcd colours is `'xkcd:colour name'`.
 
 
 **Hint:** You are welcome to search the internet to see how to achieve the specified styles, including using the matplotlib documentation. 
