@@ -47,3 +47,20 @@ Plot two lines described by the following equations, with the x data provided:
 Plot a point where the two lines intercept (at x = 4, y = 8), using an asterisk as a marker.
 
 **Hint:** That's three times you must use the plot function. Two lines and one point.
+
+
+# Solution
+
+```
+from pylab import *
+
+x = arange(0, 10.1)
+y1 = x + 4
+y2 = -0.5*x + 10
+
+plot(x, y1)
+plot(x, y2)
+plot(4, 8, '*')
+show()
+
+```
