@@ -29,7 +29,7 @@ Write a program that plots the first 6 powers of 2, starting from 2 to the power
 ```
 from pylab import *
 
-x = array([0, 1, 2, 3, 4, 5)]
+x = array([0, 1, 2, 3, 4, 5])
 y = 2**x
 
 plot(x, y)
