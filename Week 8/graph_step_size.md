@@ -9,7 +9,7 @@ We want to write a program that will plot the position of the weight **away** fr
 
 This will require the **following** steps:
 1.	Create an array for each set of sample times you will use for plotting. Note that when using arange to create an array of values, you will need to consider the step size to determine what the end value of your array for each sample size will be.
-2.	Create a model to determine the position of the weight. Make use of the sinusoidal model discussed in class to do this. You will need to put pen to paper to determine what this model is. Think carefully about the information given to you and how this will affect the way the function looks. 
+2.	Create a model to determine the position of the weight. Make use of the sinusoidal model discussed in class to do this. You will need to put pen to paper to determine what this model is. Think carefully about the information given to you and how this will affect the way the function looks. For the purposes of testing, please use a **negative** phase shift, rather than a positive one.
 3.	Plot each function on the same graph. Add a vertical shift of 2 to the function x2 and a vertical shift of 4 to the function x3. This will not change the shape of your models, but will separate them vertically so you can easily see your result. 
 4. Give your graph the title 'Oscillation of a spring", and label the x axis as 'Time (s)'.
 5. Label each line of the plot using the following labels: '0.01s Samples', '0.15s Samples', '0.5s Samples'. 
@@ -42,3 +42,5 @@ show()
 # Do Not Modify Below This Line
 savefig("output.png")
 ```
+
+![graph_step_size_output]
