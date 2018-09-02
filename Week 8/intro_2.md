@@ -1,7 +1,7 @@
 # Introduction to Graphs (1)
 
 
-Often times we want to draw whole lines on a graph, rather than just a single point. To do this, we need a list of x and y points to make up the line and draw them on a graph:
+We often want to draw whole lines on a graph, rather than just a single point. To do this, we need a list of x and y points to make up the line and draw them on a graph:
 
 ```
 from pylab import *
