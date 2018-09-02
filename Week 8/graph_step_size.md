@@ -2,7 +2,7 @@ Oscillatory motion is modelled using trigonometric period functions. The motion 
 
 Suppose we have a spring that is stretched to 0.5m away from its equilibrium position due to the presence of a weight at the end of the spring. Note that this change in displacement is represented as a **negative** value. When released, the weight position oscillates with a period of 0.5 seconds. 
 
-We want to write a program that will plot the position of the weight **away** from the equilibrium position (in metres) as a function of time, for 10 seconds. We also want to investigate the effect of using different step sizes, to implement the plotting. You will need to plot the function with spacings of 0.01, 0.15 and 0.5 seconds. Time arrays holding the corresponding sample times will be labelled t1, t2, and t3 respectively, with corresponding variables x1, x2 and x3 that will map the weight's position.
+We want to write a program that will plot the position of the weight **away** from the equilibrium position (in metres) as a function of time, for 10.5 seconds. We also want to investigate the effect of using different step sizes, to implement the plotting. You will need to plot the function with spacings of 0.01, 0.15 and 0.5 seconds. Time arrays holding the corresponding sample times will be labelled t1, t2, and t3 respectively, with corresponding variables x1, x2 and x3 that will map the weight's position.
 
 This will require the **following** steps:
 1.	Create an array for each set of sample times you will use for plotting. Note that when using arange to create an array of values, you will need to consider the step size to determine what the end value of your array for each sample size will be.
