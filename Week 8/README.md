@@ -7,7 +7,7 @@ Old exercises will be kept until we are sure if we don't need them. The graphs c
 Write your name next to the topic if you are currently writing it or plan to very soon. Write DONE to the left of the topic if it has already been covered.
 
 Things to be covered:
-1. Make a graph show up with a single point (Discuss the plot function with three arguments (two single numbers and a marker), and the show function).
+1. DONE - Make a graph show up with a single point (Discuss the plot function with three arguments (two single numbers and a marker), and the show function).
 2. Make a line show up (Discuss using arrays in the plot function)
 3. Make two lines show up with the same x array (Discuss using the plot function twice)
 4. Make two lines with different x arrays on different ranges (briefly discuss ranges of the graph)
