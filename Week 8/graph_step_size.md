@@ -1,10 +1,11 @@
 Oscillatory motion is modelled using trigonometric period functions. The motion of a spring is considered oscillatory when it is displaced from its equilibrium position. For example, if we have a spring and attach a weight to the end of it so that the spring stretches, and then release it from this position, the position of the weight as a function of time can be modelled as a sinusoidal function. With friction present, this motion is damped and eventually ceases, however for this problem we will assume there is no friction such that the spring follows a simple sinusoidal model.
 
-Suppose we have a spring that is stretched to 0.5m away from its equilibrium position due to the presence of a weight at the end of the spring. Note that typically, this change in displacement is represented as a negative value. When released, the weight position oscillates with a period of 0.5 seconds. 
+Suppose we have a spring that is stretched to 0.5m away from its equilibrium position due to the presence of a weight at the end of the spring. Note that this change in displacement is represented as a **negative** value. When released, the weight position oscillates with a period of 0.5 seconds. 
 
-We want to write a program that will plot the position of the weight **away** from the equilibrium position (in metres) as a function of time, for 10 seconds. This will require the following steps:
-1.	Create an array for the time you will use in the plot. Hint: A spacing of 0.01 seconds between time points is recommended so that your graph will appear smooth and continuous.
+We want to write a program that will plot the position of the weight **away** from the equilibrium position (in metres) as a function of time, for 10 seconds. We also want to investigate the effect of using different step sizes, to implement the plotting. You will need to plot the function with spacings of 0.01, 0.15 and 0.5 seconds. Time arrays holding the corresponding sample times will be labelled t1, t2, and t3 respectively, with corresponding variables x1, x2 and x3 that will map the weight's position.
+
+This will require the **following** steps:
+1.	Create an array for each set of sample times you will use for plotting. Note that when using arange to create an array of values, you will need to consider the step size to determine what the end value of your array for each sample size will be.
 2.	Create a model to determine the position of the weight. Make use of the sinusoidal model discussed in class to do this. You will need to put pen to paper to determine what this model is. Think carefully about the information given to you and how this will affect the way the function looks. 
-3.	Plot the position as a function of time. Give your graph the title 'Oscillation of a spring", and label the axes as 't' and 'x' appropriately. 
-
-Write code to perform each of these steps as indicated below.
+3.	Plot each function on the same graph. Add a vertical shift of 2 to the function x2 and a vertical shift of 4 to the function x3. This will not change the shape of your models, but will separate them vertically so you can easily see your result. 
+4. Give your graph the title 'Oscillation of a spring", and label the x axis as 'Time (s)'.
