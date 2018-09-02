@@ -12,8 +12,8 @@ Things to be covered:
 3. SASKIA - NEEDS TEST - Make two lines show up with the same x array (Discuss using the plot function twice)
 4. EMILY - Make three lines show up with different step sizes (same equations for each but with a vertical shift so they're sufficiently distinct).
 5. Draw a shape (lines dont have to go left to right - gives them a slightly deeper understanding of whats going on with graphs).
-6. SASKIA NEEDS TEST- Changing the linestyle, colour, linewidth, and marker. Should we refer to matplotlib for this? Learn how to learn, etc. DOES THIS NEED TO BE SPLIT INTO SEPARATE EXERCISES?
-7. Adding titles and axis labels
+6. SASKIA - NEEDS TEST- Changing the linestyle, colour, linewidth, and marker. Should we refer to matplotlib for this? Learn how to learn, etc. DOES THIS NEED TO BE SPLIT INTO SEPARATE EXERCISES?
+7. SASKIA - Adding titles and axis labels
 8. grids and legends
 9. Challenge question
 
