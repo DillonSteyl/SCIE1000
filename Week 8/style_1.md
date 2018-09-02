@@ -21,10 +21,14 @@ show()
 
 So the third argument in the plot function is `linestyle='-.'`. This tells Python that the linestyle variable should be set to '-.', which represents a dash-dot line. There are four main line style options:
 
-Solid: '-' (default)
-Dash: '--'
-Dash-Dot: '-.'
-Dot: ':'
+`Solid: '-' (default)`
+
+`Dash: '--'`
+
+`Dash-Dot: '-.'`
+
+`Dot: ':'`
+
 
 Do not forget the quotations. Technically, 'no line' is also an option. You can do this using `linestyle='None'`.
 
