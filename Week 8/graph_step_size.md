@@ -42,5 +42,3 @@ show()
 # Do Not Modify Below This Line
 savefig("output.png")
 ```
-
-![graph_step_size_output]
