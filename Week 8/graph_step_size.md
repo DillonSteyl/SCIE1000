@@ -1,6 +1,6 @@
 # Graphing with Different Step Sizes
 
-Oscillatory motion is modelled using trigonometric period functions. The motion of a spring is considered oscillatory when it is displaced from its equilibrium position. For example, if we have a spring and attach a weight to the end of it so that the spring stretches, and then release it from this position, the position of the weight as a function of time can be modelled as a sinusoidal function. With friction present, this motion is damped and eventually ceases, however for this problem we will assume there is no friction such that the spring follows a simple sinusoidal model.
+Oscillatory motion is modelled using periodic functions. The motion of a spring is considered oscillatory when it is displaced from its equilibrium position. For example, if we have a spring and attach a weight to the end of it so that the spring stretches, and then release it from this position, the position of the weight as a function of time can be modelled as a sinusoidal function. With friction present, this motion is damped and eventually ceases, however for this problem we will assume there is no friction such that the spring follows a simple sinusoidal model.
 
 Suppose we have a spring that is stretched to 0.5m away from its equilibrium position due to the presence of a weight at the end of the spring. Note that this change in displacement is represented as a **negative** value. When released, the weight position oscillates with a period of 0.5 seconds. 
 
