@@ -40,7 +40,7 @@ class Tests(PythonTestCase):
 
     def test_x1_var(self):
         """ x1 array contains the correct values """
-        self.assertEqual(attempt.x1.tolist(), (0.5*sin(4*pi*(attempt.t1-0.125)).tolist() ))
+        self.assertEqual(attempt.x1.tolist(), ((0.5*sin(4*pi*(attempt.t1-0.125))).tolist() ))
 
     def test_x2_var(self):
         """ x2 array contains the correct values """
