@@ -79,7 +79,7 @@ plot(x, y, marker='o', linestyle="--', color='salmon')
 show()
 ```
 
-In this format, just the full colour name is needed in quotations. There are many colours available, including 'salmon'.
+In this format, just the full colour name is needed in quotations. There are many colours available, including 'salmon'. Many colour names you can think of will be accepted for that format, but not all.
 
 ## Line Width
 
