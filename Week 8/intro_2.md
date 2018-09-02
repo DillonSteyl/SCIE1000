@@ -21,7 +21,7 @@ It does not matter how the arrays are made, so long as they are the same length.
 
 **Task:** 
 
-Write a program that plots the first 6 powers of 2, starting from 2 to the power of 0 and finishing with 2 to the power of 5.
+Write a program that plots the first 6 powers of 2, starting from 2 to the power of 0 and finishing with 2 to the power of 5. The variable x should be used to represent the powers, and y should be used to determine the power of 2.
 
 # Solution
 
