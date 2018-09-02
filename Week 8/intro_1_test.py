@@ -40,7 +40,7 @@ class Tests(PythonTestCase):
 
     def test_y(self):
         """The point has the correct y value: 2.5"""
-	g = gca()
+        g = gca()
         lines = g.get_lines() 
         self.assertEqual(lines[0].get_ydata()[0]), 2.5)
 		
