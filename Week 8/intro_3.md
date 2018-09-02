@@ -48,7 +48,7 @@ Plot two lines described by the following equations, with the x data provided:
 
 Plot a point where the two lines intercept (at x = 4, y = 8), using an asterisk as a marker.
 
-**Hint:** That's three times you must use the plot function. Two lines and one point.
+**Hint:** That's three times you must use the plot function. Two lines and one point. For testing purposes, plot the point after the two lines.
 
 
 # Solution
