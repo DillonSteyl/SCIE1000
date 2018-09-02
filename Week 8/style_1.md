@@ -66,7 +66,7 @@ show()
 
 This program draws a red dashed line with red circles on each point. Note the American spelling of colour (unfortunately this is pretty standard for most programming languages). 
 
-There are more colour options available, which you can find by googling 'matplotlib colors' and finding a list of acceptable colour formats. One format is just a set of popular colour names, which can be found by googling `wikipedia X11 color names`. Here is an example of that format being used:
+There are more colour options available, which you can find by googling 'matplotlib colors api' and finding a list of acceptable colour formats. One popular format uses a set of popular colour names, which can be found by googling `wikipedia X11 color names`. Here is an example of that format being used:
 
 
 ```
@@ -78,6 +78,8 @@ y = x**2
 plot(x, y, marker='o', linestyle="--', color='salmon')
 show()
 ```
+
+In this format, just the full colour name is needed in quotations. There are many colours available, including 'salmon'.
 
 ## Line Width
 
