@@ -43,6 +43,12 @@ class Tests(PythonTestCase):
         g = gca()
         lines = g.get_lines() 
         self.assertEqual(lines[0].get_ydata()[0], 2.5)
+	
+    def test_ymarker(self):
+        """The point uses an asterisk (*) as the marker.""
+        g = gca()
+        lines = g.get_lines() 
+        self.assertEqual(lines[0].get_marker, '*')
 		
 # Run the unit tests
 if __name__ == "__main__":
