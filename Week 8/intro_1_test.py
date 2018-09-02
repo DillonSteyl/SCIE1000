@@ -52,5 +52,4 @@ class Tests(PythonTestCase):
 		
 # Run the unit tests
 if __name__ == "__main__":
-    import attempt
     run_tests(Tests)
