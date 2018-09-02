@@ -3,6 +3,7 @@
 Comparing multiple sets of data happens often in science, so it is useful to know how to plot multiple lines on the same graph. Here is a simple example:
 
 ```
+from pylab import *
 
 X = arange(0, 10.1)
 Y1 = X**2
@@ -21,6 +22,7 @@ Plotting multiple lines is pretty simple. You just need to use the plot function
 
 
 ```
+from pylab import *
 
 X1 = arange(0, 10.1)
 Y1 = X1**2
