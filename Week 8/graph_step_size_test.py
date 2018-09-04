@@ -55,6 +55,11 @@ class Tests(PythonTestCase):
         g = gca()
         self.assertEquals(len(g.get_lines()), 3)
 
+    def test_axis_legend(self):
+        """Legend is used"""
+        g = gca()
+        self.assertIsNotNone(g.get_legend())
+
     def test_labels(self):
         """All lines are labelled correctly"""
         g = gca()
