@@ -41,7 +41,7 @@ class Tests(PythonTestCase):
         """TESTING FILE THINGO YO"""
         a = False
         if "show()" in open('attempt.py').read():
-        a = True
+	    a = True
         self.assertEquals(a,True) 
 
     def test_y(self):
