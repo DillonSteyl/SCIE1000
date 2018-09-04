@@ -24,6 +24,11 @@ class Tests(PythonTestCase):
         g = gca()
         lines = g.get_lines()
         self.assertEquals(len(lines), 3)
+		
+    def test_x_var(self):
+        """ x has not been modified """
+        expected = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        self.assertEquals(attempt.x.tolist(), expected)
 
     def test_y1_var(self):
         """ y1 is correct """
