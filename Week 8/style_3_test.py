@@ -59,7 +59,7 @@ class Tests(PythonTestCase):
     def test_file2(self):
         """Grid is used"""
         a = False
-        if "grid()" in open('attempt.py').read():
+        if "grid(True)" in open('attempt.py').read():
             a = True
         self.assertEquals(a,True) 
 
