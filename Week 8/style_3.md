@@ -32,7 +32,7 @@ Second, there is the `legend` function, which tells Python that you want to lege
 
 Third, there is the `grid` function. By default, your graphs will not have any grid lines (vertical and horizontal lines), but you may want to add them to your graph. By calling `grid(True)`, it tells Python that you want grid lines. It's really that simple! But as always, you can customise it.
 
-**Task:**
+# Task
 
 The University of Queensland St. Lucia campus is home to a large variety of wildlife, including student favourites such as the families of ducks seen at UQ Lakes. The university is also home to a range of reptiles, insects and plant species, many of which are Australian fauna and flora. 
 
