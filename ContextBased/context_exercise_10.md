@@ -9,7 +9,7 @@ S(a) = M*a**p
 ```
 where a is the area of a given sample of land, and M and p are constants. 
 
-You anticipate that the number of different species at UQ is lower during the months of Autumn and Winter than it is in Summer and Spring. You predict that during the cooler months, the variety is 40% lower. After consulting with a peer, you believe the species area curve for Spring/Summer can be modelled using
+You anticipate that the number of different species at UQ is lower during the months of Autumn and Winter than it is in Summer and Spring. You predict that during the cooler months, the variety is 32.5% lower. After consulting with a peer, you believe the species area curve for Spring/Summer can be modelled using
 
 ```python
 SS = 3*a**0.5
