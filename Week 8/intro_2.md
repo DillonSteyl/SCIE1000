@@ -14,7 +14,7 @@ show()
  
 ```
 
-Plotting a line works the same way as plotting a line using the plot function. Notice in this example we have not included a third argument in the plot function. This means that Python will use the default line style, which is a solid blue line with no marker. 
+Plotting a line works the same way as plotting a single point using the plot function. Notice in this example we have not included a third argument in the plot function. This means that Python will use the default line style, which is a solid blue line with no marker. 
 
 It does not matter how the arrays are made, so long as they are the same length. If your arrays have different lengths, you will receive an error similar to this in Jupyter: `ValueError: x and y must have same first dimension, but have shapes (A,) and (B,)`, where A is the length of your x data, and B is the length of your y data. This error message will come at the end of a very long error, so don't be scared by it, but you won't see it in MyPyTutor.
 
