@@ -37,14 +37,12 @@ class Tests(PythonTestCase):
         lines = g.get_lines()    
         self.assertEquals(lines[0].get_xdata()[0], 4)
 	
-	def test_file(self):
-		"""TESTING FILE THINGO YO"""
-		a = False
-		if "show()" in open('attempt.py').read():
-    		a = True
-		self.assertEquals(a,True)
-
-        
+    def test_file(self):
+	"""TESTING FILE THINGO YO"""
+	a = False
+	if "show()" in open('attempt.py').read():
+    	a = True
+	self.assertEquals(a,True) 
 
     def test_y(self):
         """The point has the correct y value: 2.5"""
