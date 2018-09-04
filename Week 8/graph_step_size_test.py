@@ -50,6 +50,13 @@ class Tests(PythonTestCase):
         """ x3 array contains the correct values """
         self.assertEqual(attempt.x3.tolist(), ((0.5*sin(4*pi*(attempt.t3-0.125))+4).tolist() ))
 
+    def test_file(self):
+        """Show is used to display plot"""
+        a = False
+        if "show()" in open('attempt.py').read():
+            a = True
+        self.assertEquals(a,True) 
+
     def test_three_lines(self):
         """All three lines on plot"""
         g = gca()

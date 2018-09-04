@@ -19,6 +19,13 @@ class Tests(PythonTestCase):
         except KeyError:
             pass
 
+    def test_file(self):
+        """Show is used to display plot"""
+        a = False
+        if "show()" in open('attempt.py').read():
+            a = True
+        self.assertEquals(a,True) 
+
     def test_one_line(self):
         """One line on the plot"""
         g = gca()
