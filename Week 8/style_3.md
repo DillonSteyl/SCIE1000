@@ -32,7 +32,7 @@ Second, there is the `legend` function, which tells Python that you want to lege
 
 Third, there is the `grid` function. By default, your graphs will not have any grid lines (vertical and horizontal lines), but you may want to add them to your graph. By calling `grid(True)`, it tells Python that you want grid lines. It's really that simple! But as always, you can customise it.
 
-**Task: **
+**Task:**
 
 Modify the program provided to also plot another function, `Y2 = X**2 + 3*sin(12*X)`.
 
