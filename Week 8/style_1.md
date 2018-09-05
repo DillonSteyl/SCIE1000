@@ -83,7 +83,7 @@ In this format, just the full colour name is needed in quotations. There are man
 
 ## Line Width
 
-You can also specify the width of the line. The default line width is `1`. The following program draws two lines, one thick and one thin:
+You can also specify the width of the line. The default line width is `1.5`. The following program draws two lines, one thick and one thin:
 
 ```
 from pylab import *
