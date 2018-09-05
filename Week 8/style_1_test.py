@@ -41,7 +41,7 @@ class Tests(PythonTestCase):
         """Lines use the correct linewidth"""
         g = gca()
         lines = g.get_lines() 
-        self.assertEqual(lines[0].get_linewidth(), 1)
+        self.assertEqual(lines[0].get_linewidth(), 1.5)
         self.assertEqual(lines[1].get_linewidth(), 0.5)
         self.assertEqual(lines[3].get_linewidth(), 5)
         self.assertEqual(lines[4].get_linewidth(), 2)
