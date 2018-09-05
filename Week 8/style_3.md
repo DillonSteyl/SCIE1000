@@ -40,7 +40,7 @@ Label the Y1 plot with `y = x^2` and the Y2 plot with `y = x^2 + 3*sin(12x)`. Re
 
 Use a solid green line for the Y1 line (using the 'g' colour), and a dashed red line for the Y2 (using the 'r' colour).
 
-Title the graph `x^2 and x^2+sin(12x)`, and label the x-axis with "x" and y-axis with "y".
+Title the graph `x^2 and x^2+3*sin(12x)`, and label the x-axis with "x" and y-axis with "y".
 
 ````
 from pylab import *
