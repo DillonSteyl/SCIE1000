@@ -77,8 +77,8 @@ class Tests(PythonTestCase):
         lines = g.get_lines() 
         self.assertEqual(lines[0].get_color(), 'k')
         self.assertEqual(lines[1].get_color(), 'k')
-        self.assertEqual(lines[1].get_color(), 'c')
-        self.assertEqual(lines[1].get_color(), 'c')
+        self.assertEqual(lines[2].get_color(), 'c')
+        self.assertEqual(lines[3].get_color(), 'c')
 
     def test_markers(self):
         """All lines use the correct linestyle"""
