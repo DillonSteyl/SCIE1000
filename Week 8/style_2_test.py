@@ -59,13 +59,13 @@ class Tests(PythonTestCase):
         g = gca()
         self.assertEqual(g.get_ylabel(), "Y value")
 
-    def test_two_lines(self):
+    def test_four_lines(self):
         """Four lines are on the plot"""
         g = gca()
         self.assertEquals(len(g.get_lines()), 4)
 
     def test_markers(self):
-        """Y3 and Y4 use 'x' as a marker"""
+        """Y1 and Y2 use 'x' as a marker"""
         g = gca()
         lines = g.get_lines() 
         self.assertEqual(lines[0].get_marker(), 'x')
