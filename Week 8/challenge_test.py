@@ -84,7 +84,7 @@ class Tests(PythonTestCase):
         """The x coordinates of the second vertical line (AW at 15) is correct."""
         user_input = ["60"]
         with patch("builtins.input", side_effect=user_input) as input_call:
-            with patch("sys.stdout", new=StringIO()) as output:
+            with patch("sys.stdout", new=io.StringIO()) as output:
                 import attempt
                 g = gca()
                 v = [55,55]                
@@ -94,7 +94,7 @@ class Tests(PythonTestCase):
         """The y coordinates of the second vertical line (AW at 15) is correct."""
         user_input = ["60"]
         with patch("builtins.input", side_effect=user_input) as input_call:
-            with patch("sys.stdout", new=StringIO()) as output:
+            with patch("sys.stdout", new=io.StringIO()) as output:
                 import attempt
                 g = gca()
                 v = [0,35]                
@@ -104,7 +104,7 @@ class Tests(PythonTestCase):
         """The x coordinates of the first point (SS at h=64) is correct."""
         user_input = ["64"]
         with patch("builtins.input", side_effect=user_input) as input_call:
-            with patch("sys.stdout", new=StringIO()) as output:
+            with patch("sys.stdout", new=ioStringIO()) as output:
                 import attempt
                 g = gca()
                 v = [64]                
@@ -114,7 +114,7 @@ class Tests(PythonTestCase):
         """The x coordinates of the first point (SS at h=49) is correct."""
         user_input = ["49"]
         with patch("builtins.input", side_effect=user_input) as input_call:
-            with patch("sys.stdout", new=StringIO()) as output:
+            with patch("sys.stdout", new=io.StringIO()) as output:
                 import attempt
                 g = gca()
                 v = [49]                
@@ -124,7 +124,7 @@ class Tests(PythonTestCase):
         """The y coordinates of the first point (SS at h=64) is correct."""
         user_input = ["64"]
         with patch("builtins.input", side_effect=user_input) as input_call:
-            with patch("sys.stdout", new=StringIO()) as output:
+            with patch("sys.stdout", new=io.StringIO()) as output:
                 import attempt
                 g = gca()
                 v = [3*64**0.5]                
@@ -134,7 +134,7 @@ class Tests(PythonTestCase):
         """The y coordinates of the first point (SS at h=49) is correct."""
         user_input = ["49"]
         with patch("builtins.input", side_effect=user_input) as input_call:
-            with patch("sys.stdout", new=StringIO()) as output:
+            with patch("sys.stdout", new=io.StringIO()) as output:
                 import attempt
                 g = gca()
                 v = [3*49**0.5]                
@@ -144,7 +144,7 @@ class Tests(PythonTestCase):
         """The y coordinates of the first point (SS at h=16) is correct."""
         user_input = ["16"]
         with patch("builtins.input", side_effect=user_input) as input_call:
-            with patch("sys.stdout", new=StringIO()) as output:
+            with patch("sys.stdout", new=io.StringIO()) as output:
                 import attempt
                 g = gca()
                 v = [3*16**0.5]                
@@ -154,7 +154,7 @@ class Tests(PythonTestCase):
         """The x coordinates of the first point (SS at h=16) is correct."""
         user_input = ["16"]
         with patch("builtins.input", side_effect=user_input) as input_call:
-            with patch("sys.stdout", new=StringIO()) as output:
+            with patch("sys.stdout", new=io.StringIO()) as output:
                 import attempt
                 g = gca()
                 v = [16]                
@@ -164,7 +164,7 @@ class Tests(PythonTestCase):
         """The x coordinates of the second point (AW at h=64) is correct."""
         user_input = ["64"]
         with patch("builtins.input", side_effect=user_input) as input_call:
-            with patch("sys.stdout", new=StringIO()) as output:
+            with patch("sys.stdout", new=io.StringIO()) as output:
                 import attempt
                 g = gca()
                 v = [64]                
@@ -174,7 +174,7 @@ class Tests(PythonTestCase):
         """The x coordinates of the second point (AW at h=49) is correct."""
         user_input = ["49"]
         with patch("builtins.input", side_effect=user_input) as input_call:
-            with patch("sys.stdout", new=StringIO()) as output:
+            with patch("sys.stdout", new=io.StringIO()) as output:
                 import attempt
                 g = gca()
                 v = [49]                
@@ -184,7 +184,7 @@ class Tests(PythonTestCase):
         """The x coordinates of the second point (AW at h=16) is correct."""
         user_input = ["16"]
         with patch("builtins.input", side_effect=user_input) as input_call:
-            with patch("sys.stdout", new=StringIO()) as output:
+            with patch("sys.stdout", new=io.StringIO()) as output:
                 import attempt
                 g = gca()
                 v = [16]                
@@ -194,7 +194,7 @@ class Tests(PythonTestCase):
         """The y coordinates of the second point (AW at h=64) is correct."""
         user_input = ["64"]
         with patch("builtins.input", side_effect=user_input) as input_call:
-            with patch("sys.stdout", new=StringIO()) as output:
+            with patch("sys.stdout", new=io.StringIO()) as output:
                 import attempt
                 g = gca()
                 v = [3*64**0.5*0.675]                
@@ -204,7 +204,7 @@ class Tests(PythonTestCase):
         """The y coordinates of the second point (AW at h=49) is correct."""
         user_input = ["49"]
         with patch("builtins.input", side_effect=user_input) as input_call:
-            with patch("sys.stdout", new=StringIO()) as output:
+            with patch("sys.stdout", new=io.StringIO()) as output:
                 import attempt
                 g = gca()
                 v = [3*49**0.5*0.675]                
@@ -214,7 +214,7 @@ class Tests(PythonTestCase):
         """The y coordinates of the second point (AW at h=16) is correct."""
         user_input = ["16"]
         with patch("builtins.input", side_effect=user_input) as input_call:
-            with patch("sys.stdout", new=StringIO()) as output:
+            with patch("sys.stdout", new=io.StringIO()) as output:
                 import attempt
                 g = gca()
                 v = [3*16**0.5*0.675]                
@@ -227,7 +227,7 @@ class Tests(PythonTestCase):
         """The colour of the first point (SS at h=64) is black."""
         user_input = ["64"]
         with patch("builtins.input", side_effect=user_input) as input_call:
-            with patch("sys.stdout", new=StringIO()) as output:
+            with patch("sys.stdout", new=io.StringIO()) as output:
                 import attempt
                 g = gca()                
                 self.assertEquals(g.get_lines()[4].get_color(), 'k')
@@ -236,7 +236,7 @@ class Tests(PythonTestCase):
         """The colour of the first point (SS at h=49) is black."""
         user_input = ["49"]
         with patch("builtins.input", side_effect=user_input) as input_call:
-            with patch("sys.stdout", new=StringIO()) as output:
+            with patch("sys.stdout", new=io.StringIO()) as output:
                 import attempt
                 g = gca()
                 v = [49]                
@@ -247,7 +247,7 @@ class Tests(PythonTestCase):
         """The colour of the first point (SS at h=16) is red."""
         user_input = ["16"]
         with patch("builtins.input", side_effect=user_input) as input_call:
-            with patch("sys.stdout", new=StringIO()) as output:
+            with patch("sys.stdout", new=io.StringIO()) as output:
                 import attempt
                 g = gca()                
                 self.assertEquals(g.get_lines()[4].get_color(), 'r')
@@ -256,7 +256,7 @@ class Tests(PythonTestCase):
         """The colour of the second point (AW at h=64) is black."""
         user_input = ["64"]
         with patch("builtins.input", side_effect=user_input) as input_call:
-            with patch("sys.stdout", new=StringIO()) as output:
+            with patch("sys.stdout", new=io.StringIO()) as output:
                 import attempt
                 g = gca()
                 self.assertEquals(g.get_lines()[5].get_color(), 'k')
@@ -265,7 +265,7 @@ class Tests(PythonTestCase):
         """The colour of the second point (AW at h=49) is red."""
         user_input = ["49"]
         with patch("builtins.input", side_effect=user_input) as input_call:
-            with patch("sys.stdout", new=StringIO()) as output:
+            with patch("sys.stdout", new=io.StringIO()) as output:
                 import attempt
                 g = gca()
                 self.assertEquals(g.get_lines()[5].get_color(), 'r')
@@ -274,7 +274,7 @@ class Tests(PythonTestCase):
         """The colour of the second point (AW at h=16) is red."""
         user_input = ["16"]
         with patch("builtins.input", side_effect=user_input) as input_call:
-            with patch("sys.stdout", new=StringIO()) as output:
+            with patch("sys.stdout", new=io.StringIO()) as output:
                 import attempt
                 g = gca()
                 self.assertEquals(g.get_lines()[5].get_color(), 'r')
@@ -283,7 +283,7 @@ class Tests(PythonTestCase):
         """The marker for point 1 is a circle."""
         user_input = ["16"]
         with patch("builtins.input", side_effect=user_input) as input_call:
-            with patch("sys.stdout", new=StringIO()) as output:
+            with patch("sys.stdout", new=io.StringIO()) as output:
                 import attempt
                 g = gca()
                 self.assertEquals(g.get_lines()[4].get_marker(), 'o')
@@ -292,7 +292,7 @@ class Tests(PythonTestCase):
         """The marker for point 2 is a square."""
         user_input = ["16"]
         with patch("builtins.input", side_effect=user_input) as input_call:
-            with patch("sys.stdout", new=StringIO()) as output:
+            with patch("sys.stdout", new=io.StringIO()) as output:
                 import attempt
                 g = gca()
                 self.assertEquals(g.get_lines()[5].get_marker(), 's')
@@ -301,7 +301,7 @@ class Tests(PythonTestCase):
         """The colour for line 1 (SS) is green."""
         user_input = ["16"]
         with patch("builtins.input", side_effect=user_input) as input_call:
-            with patch("sys.stdout", new=StringIO()) as output:
+            with patch("sys.stdout", new=io.StringIO()) as output:
                 import attempt
                 g = gca()
                 self.assertEquals(g.get_lines()[0].get_color(), 'green')
@@ -310,7 +310,7 @@ class Tests(PythonTestCase):
         """The colour for line 2 (AW) is orange."""
         user_input = ["16"]
         with patch("builtins.input", side_effect=user_input) as input_call:
-            with patch("sys.stdout", new=StringIO()) as output:
+            with patch("sys.stdout", new=io.StringIO()) as output:
                 import attempt
                 g = gca()
                 self.assertEquals(g.get_lines()[1].get_color(), 'orange')
@@ -319,7 +319,7 @@ class Tests(PythonTestCase):
         """The colour for vertical line 1 (SS = 15) is red."""
         user_input = ["16"]
         with patch("builtins.input", side_effect=user_input) as input_call:
-            with patch("sys.stdout", new=StringIO()) as output:
+            with patch("sys.stdout", new=io.StringIO()) as output:
                 import attempt
                 g = gca()
                 self.assertEquals(g.get_lines()[2].get_color(), 'red')
@@ -328,7 +328,7 @@ class Tests(PythonTestCase):
         """The colour for vertical line 2 (AW = 15) is red."""
         user_input = ["16"]
         with patch("builtins.input", side_effect=user_input) as input_call:
-            with patch("sys.stdout", new=StringIO()) as output:
+            with patch("sys.stdout", new=io.StringIO()) as output:
                 import attempt
                 g = gca()
                 self.assertEquals(g.get_lines()[3].get_color(), 'red')
@@ -337,7 +337,7 @@ class Tests(PythonTestCase):
         """The width of vertical line 1 (SS = 15) is 3."""
         user_input = ["16"]
         with patch("builtins.input", side_effect=user_input) as input_call:
-            with patch("sys.stdout", new=StringIO()) as output:
+            with patch("sys.stdout", new=io.StringIO()) as output:
                 import attempt
                 g = gca()
                 self.assertEquals(g.get_lines()[2].get_linewidth(), 3)
@@ -346,7 +346,7 @@ class Tests(PythonTestCase):
         """The width of vertical line 2 (AW = 15) is 3."""
         user_input = ["16"]
         with patch("builtins.input", side_effect=user_input) as input_call:
-            with patch("sys.stdout", new=StringIO()) as output:
+            with patch("sys.stdout", new=io.StringIO()) as output:
                 import attempt
                 g = gca()
                 self.assertEquals(g.get_lines()[3].get_linewidth(), 3)
@@ -356,7 +356,7 @@ class Tests(PythonTestCase):
         """The label for line 1 (SS) is Spring/Summer"""
         user_input = ["16"]
         with patch("builtins.input", side_effect=user_input) as input_call:
-            with patch("sys.stdout", new=StringIO()) as output:
+            with patch("sys.stdout", new=io.StringIO()) as output:
                 import attempt
                 g = gca()
                 self.assertEquals(g.get_lines()[0].get_label(), "Spring/Summer")
@@ -365,7 +365,7 @@ class Tests(PythonTestCase):
         """The label for line 2 (AW) is Autumn/Winter"""
         user_input = ["16"]
         with patch("builtins.input", side_effect=user_input) as input_call:
-            with patch("sys.stdout", new=StringIO()) as output:
+            with patch("sys.stdout", new=io.StringIO()) as output:
                 import attempt
                 g = gca()
                 self.assertEquals(g.get_lines()[1].get_label(), "Autumn/Winter")
@@ -375,7 +375,7 @@ class Tests(PythonTestCase):
         """The label for point 1 (SS at h) is 'Number of Species in S/S'"""
         user_input = ["16"]
         with patch("builtins.input", side_effect=user_input) as input_call:
-            with patch("sys.stdout", new=StringIO()) as output:
+            with patch("sys.stdout", new=io.StringIO()) as output:
                 import attempt
                 g = gca()
                 self.assertEquals(g.get_lines()[4].get_label(), 'Number of Species in S/S')
@@ -385,7 +385,7 @@ class Tests(PythonTestCase):
         """The label for point 2 (AW at h) is 'Number of Species in A/W'"""
         user_input = ["16"]
         with patch("builtins.input", side_effect=user_input) as input_call:
-            with patch("sys.stdout", new=StringIO()) as output:
+            with patch("sys.stdout", new=io.StringIO()) as output:
                 import attempt
                 g = gca()
                 self.assertEquals(g.get_lines()[5].get_label(), 'Number of Species in A/W')
@@ -395,7 +395,7 @@ class Tests(PythonTestCase):
         """The line style for the second vertical line is dashed"""
         user_input = ["16"]
         with patch("builtins.input", side_effect=user_input) as input_call:
-            with patch("sys.stdout", new=StringIO()) as output:
+            with patch("sys.stdout", new=io.StringIO()) as output:
                 import attempt
                 g = gca()
                 self.assertEquals(g.get_lines()[3].get_linestyle(), '--')
@@ -425,7 +425,7 @@ class Tests(PythonTestCase):
         """There are 6 lines."""
         user_input = ["60"]
         with patch("builtins.input", side_effect=user_input) as input_call:
-            with patch("sys.stdout", new=StringIO()) as output:
+            with patch("sys.stdout", new=io.StringIO()) as output:
                 import attempt
                 g = gca()
                 lines = g.get_lines()
@@ -435,7 +435,7 @@ class Tests(PythonTestCase):
         """The x axis is labelled 'Area (hectares)'"""
         user_input = ["60"]
         with patch("builtins.input", side_effect=user_input) as input_call:
-            with patch("sys.stdout", new=StringIO()) as output:
+            with patch("sys.stdout", new=io.StringIO()) as output:
                 import attempt
                 g = gca()
                 self.assertEquals(g.get_xlabel(), 'Area (hectares)')
@@ -444,7 +444,7 @@ class Tests(PythonTestCase):
         """The y axis is labelled 'Number of Species'"""
         user_input = ["60"]
         with patch("builtins.input", side_effect=user_input) as input_call:
-            with patch("sys.stdout", new=StringIO()) as output:
+            with patch("sys.stdout", new=io.StringIO()) as output:
                 import attempt
                 g = gca()
                 self.assertEquals(g.get_ylabel(), 'Number of Species')
@@ -453,7 +453,7 @@ class Tests(PythonTestCase):
         """The title is 'Species Area Curve in Different Seasons'"""
         user_input = ["60"]
         with patch("builtins.input", side_effect=user_input) as input_call:
-            with patch("sys.stdout", new=StringIO()) as output:
+            with patch("sys.stdout", new=io.StringIO()) as output:
                 import attempt
                 g = gca()
                 self.assertEquals(g.get_title(), 'Species Area Curve in Different Seasons')
