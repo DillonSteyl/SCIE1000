@@ -7,10 +7,6 @@ import sys
 import io
 from contextlib import redirect_stdout
 
-f = io.StringIO()
-with redirect_stdout(f):
-    import attempt
-
 class Tests(PythonTestCase):
 
 
