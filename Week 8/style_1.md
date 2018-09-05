@@ -60,7 +60,7 @@ from pylab import *
 x = arange(10)
 y = x**2
 
-plot(x, y, marker='o', linestyle="--', color='r')
+plot(x, y, marker='o', linestyle='--', color='r')
 show()
 ```
 
@@ -75,7 +75,7 @@ from pylab import *
 x = arange(10)
 y = x**2
 
-plot(x, y, marker='o', linestyle="--', color='salmon')
+plot(x, y, marker='o', linestyle='--', color='salmon')
 show()
 ```
 
