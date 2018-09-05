@@ -11,6 +11,8 @@ To ensure MyPyTutor evaluates your work correctly, make sure you use the variabl
 * ` Y3 = (-0.2*X+2)*(sin(X)) `
 * ` Y4 = (0.2*X-2)*(sin(X)) `
 
+You should also give the plot the title "Functions of X and Y", and label the axes as "X value" and "Y value" appropriately.
+
 ## Solution
 ```python
 from pylab import *
