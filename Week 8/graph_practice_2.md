@@ -39,6 +39,3 @@ ylabel("Y value")
 
 show()
 ```
-
-## Output
-![8-5 Solution](https://imgur.com/v4pakUd.png)
