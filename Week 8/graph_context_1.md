@@ -20,7 +20,7 @@ Which means the species area curve for Autumn and Winter will be `SS*0.675`.
 
 You want to see the effects of a reduced land area on the number of species during the different seasons using a graph. On your graph you will have the two species area curves, and two red vertical lines where the number of species drops below 15 for each species area curve. You will ask the user for a number of proposed hectares, and plot a single point on both lines corresponding to the number of hectares they gave as input - with different colours depending on the value at that point in the species area curves.
 
-**Task:** You will write a program that uses the variable h giving the number of hectares (generated as a random integer), which displays a graph with 4 lines and 2 points. The details of the lines and points are as follows:
+**Task:** You will write a program that displays a graph with 4 lines and 2 points, given a randomly generated variable `h` (provided for you). The details of the lines and points are as follows:
 
 Line 1: The species area curve for Spring/Summer. The x data will be the hectares, starting with 0 and ending with 114 (inclusive), with a step size of 1. The y data will be the number of species, using the equation given previously. The line will be solid, have no markers, and be coloured with the X11 colour 'green'. This line will be labelled 'Spring/Summer'.
 
@@ -46,19 +46,21 @@ X Axis: The x axis should be labelled 'Area (hectares)'.
 
 Y Axis: The x axis should be labelled 'Number of Species'.
 
-**Note:** Plot the lines in the exact order given, using the exact specifications. The input statement has be provided. 
+**Note:** Plot the lines in the exact order given, using the exact specifications. The code to generate h is also given.
 
 # Solution
 ```python
 from pylab import *
-import random
 
+#These two lines allow h to be random chosen from the range 0 to 114. Do not change these lines. 
+import random
+h = random.randint(0, 114)
 
 # Write your program below:
 a = arange(0,114.1,1)
 SS = 3*a**0.5
 AW = 0.675*SS
-h = random.randint(0, 114)
+
 h_SS = 3*h**0.5
 h_AW = 3*h**0.5*0.675
 
