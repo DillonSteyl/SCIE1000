@@ -35,7 +35,7 @@ plot(X,Y3,marker='x', linestyle='-.', color='c')
 plot(X,Y4,marker='x', linestyle='-.', color='c')
 title("Functions of X and Y")
 xlabel("X value")
-ylabel("Y yalue")
+ylabel("Y value")
 
 show()
 ```
