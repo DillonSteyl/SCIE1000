@@ -33,7 +33,7 @@ class Tests(PythonTestCase):
         g = gca()
         lines = g.get_lines()    
         X = arange(-2*pi, 2*pi, 0.05)
-        self.assertEquals(lines[0].get_xdata(), X)
+        self.assertAllClose(lines[0].get_xdata(), X)
 		
     def test_Y1(self):
         """The first line has the correct Y values"""
@@ -42,7 +42,7 @@ class Tests(PythonTestCase):
         lines = g.get_lines()    
         X = arange(-2*pi, 2*pi, 0.05)
         Y1 = X**2
-        self.assertEquals(lines[0].get_ydata(), Y1)
+        self.assertAllClose(lines[0].get_ydata(), Y1)
 		
     def test_Y2(self):
         """The second line has the correct Y values"""
@@ -51,14 +51,14 @@ class Tests(PythonTestCase):
         lines = g.get_lines()    
         X = arange(-2*pi, 2*pi, 0.05)
         Y2 = X**2 + 3*sin(12*X)
-        self.assertEquals(lines[1].get_ydata(), Y2)
+        self.assertAlmostEquals(lines[1].get_ydata(), Y2)
 		
     def test_X2(self):
         """The second line has the correct X values"""
         g = gca()
         lines = g.get_lines()    
         X = arange(-2*pi, 2*pi, 0.05)
-        self.assertEquals(lines[1].get_xdata(), X)
+        self.assertAlmostEquals(lines[1].get_xdata(), X)
 	
     def test_file_show(self):
         """Show is used to display plot"""
@@ -84,22 +84,22 @@ class Tests(PythonTestCase):
     def test_xlabel(self):
         """The x axis is labelled as 'x'"""
         g = gca() 
-        self.assertEqual(g.get_xlabel, "x")
+        self.assertEqual(g.get_xlabel(), "x")
 		
     def test_ylabel(self):
         """The y axis is labelled as 'y'"""
         g = gca()
-        self.assertEqual(g.get_ylabel, "y")
+        self.assertEqual(g.get_ylabel(), "y")
 		
     def test_Y1_label(self):
         """The first line is labelled as 'y = x^2'"""
         g = gca()
-        self.assertEqual(g.get_legend().get_texts()[0].gettext(), "y = x^2")
+        self.assertEqual(g.get_legend().get_texts()[0].get_text(), "y = x^2")
 		
     def test_Y2_label(self):
         """The first line is labelled as 'y = x^2 + 3*sin(12x)'"""
         g = gca()
-        self.assertEqual(g.get_legend().get_texts()[1].gettext(), "y = x^2 + 3*sin(12x)")
+        self.assertEqual(g.get_legend().get_texts()[1].get_text(), "y = x^2 + 3*sin(12x)")
 		
     def test_second_colour(self):
         """The second line is red"""
