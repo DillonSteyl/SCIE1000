@@ -18,7 +18,7 @@ SS = 3*a**0.5
 ```
 Which means the species area curve for Autumn and Winter will be `SS*0.675`. 
 
-You also want to see the effects of a reduced land area on the number of species during the different seasons using a graph. On your graph you will have the two species area curves, and two red vertical lines where the number of species drops below 15 for each species area curve. You will ask the user for a number of proposed hectares, and plot a single point on both lines corresponding to the number of hectares they gave as input - with different colours depending on the value at that point in the species area curves.
+You want to see the effects of a reduced land area on the number of species during the different seasons using a graph. On your graph you will have the two species area curves, and two red vertical lines where the number of species drops below 15 for each species area curve. You will ask the user for a number of proposed hectares, and plot a single point on both lines corresponding to the number of hectares they gave as input - with different colours depending on the value at that point in the species area curves.
 
 **Task:** You will write a program that takes a single number as input, and displays a graph with 4 lines and 2 points. The details of the lines and points are as follows:
 
