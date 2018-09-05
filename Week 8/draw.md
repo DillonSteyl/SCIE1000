@@ -1,8 +1,8 @@
 # Draw a shape
 
-Fun fact: You can do whatever you like with graphs. The power is in your hands. Do your lines need to always go from left to right? No! You are in control!
+Lines don't just have to go from left to right. You can draw whatever lines you like so long as you specify the coordinates of the points. 
 
-Here is a program that draws a shape. Because we can:
+Here is a program that draws a triangle by specifying the three corners:
 
 ```
 from pylab import *
@@ -25,5 +25,22 @@ Notice that despite having three points, a triangle needs four points to be draw
 
 **Task:**
 
-Draw a square where the top left corner has coordinates (2, 2), and the square has height and width equal to 2. You do not need to print anything.
+Draw a square where the top left corner has coordinates (3, 3), and the square has height and width equal to 2. You do not need to print anything.
+
+
+# Solution
+
+```
+
+from pylab import *
+
+x = array([3, 5, 5, 3, 3])
+y = array([3, 3, 1, 1, 3])
+
+plot(x, y)
+
+show()
+
+
+```
 
