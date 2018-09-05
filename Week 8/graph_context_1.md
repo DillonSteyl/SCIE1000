@@ -53,7 +53,7 @@ from pylab import *
 
 
 # Write your program below:
-a = arange(0,114,1)
+a = arange(0,114.1,1)
 SS = 3*a**0.5
 AW = 0.675*SS
 h = float(input("Enter the number of hectares: "))
