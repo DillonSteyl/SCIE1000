@@ -31,7 +31,7 @@ class Tests(PythonTestCase):
         """The x coordinates of the square are correct."""
         g = gca()
         lines = g.get_lines()    
-        self.assertEquals(lines[0].get_xdata()[0].tolist(), [3, 5, 5, 3, 3])
+        self.assertEquals(lines[0].get_xdata().tolist(), [3, 5, 5, 3, 3])
 	
     def test_file(self):
         """Show is used to display plot"""
@@ -44,7 +44,7 @@ class Tests(PythonTestCase):
         """The y coordinates of the square are correct."""
         g = gca()
         lines = g.get_lines() 
-        self.assertEqual(lines[0].get_ydata()[0], [3, 3, 1, 1, 3])
+        self.assertEqual(lines[0].get_ydata().tolist(), [3, 3, 1, 1, 3])
 	
 		
 # Run the unit tests
