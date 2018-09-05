@@ -24,7 +24,7 @@ You also want to see the effects of a reduced land area on the number of species
 
 Line 1: The species area curve for Spring/Summer. The x data will be the hectares, starting with 0 and ending with 114 (inclusive), with a step size of 1. The y data will be the number of species, using the equation given previously. The line will be solid, have no markers, and be coloured with the X11 colour 'green'. This line will be labelled 'Spring/Summer'.
 
-Line 2: The species area curve for Autumn/Winter. The x data will be the hectares, starting with 0 and wnding with 114 (inclusive), with a step size of 1. The y data will be the number of species, using the equation given previously. The line will be solid, have no markers, and be coloured with the X11 colour 'orange'. This line will be labelled 'Autumn/Winter'.
+Line 2: The species area curve for Autumn/Winter. The x data will be the hectares, starting with 0 and ending with 114 (inclusive), with a step size of 1. The y data will be the number of species, using the equation given previously. The line will be solid, have no markers, and be coloured with the X11 colour 'orange'. This line will be labelled 'Autumn/Winter'.
 
 Line 3: A vertical line corresponding to the point where the species area curve for Spring/Summer reaches 15. To draw this vertical line, make a line that starts at (25, 0) and ends at (25, 35). This line should have the colour 'r', have a width of 3, and be solid. This line will have no label.
 
@@ -46,6 +46,7 @@ X Axis: The x axis should be labelled 'Area (hectares)'.
 
 Y Axis: The x axis should be labelled 'Number of Species'.
 
+**Note:** Plot the lines in the exact order given, using the exact specifications. The input statement has be provided. 
 
 # Solution
 ```python
