@@ -68,7 +68,7 @@ class Tests(PythonTestCase):
                 import attempt
                 g = gca()
                 v = [25,25]                
-                self.assertEquals(g.get_lines()[2].get_xdata().tolist(), v.tolist())
+                self.assertEquals(g.get_lines()[2].get_xdata().tolist(), v)
 
     def test_y_vSS(self):
         """The y coordinates of the first vertical line (SS at 15) is correct."""
@@ -78,147 +78,76 @@ class Tests(PythonTestCase):
                 import attempt
                 g = gca()
                 v = [0, 35]                
-                self.assertEquals(g.get_lines()[2].get_ydata().tolist(), v.tolist())
-##
-##    def test_x_vAW(self):
-##        """The x coordinates of the second vertical line (AW at 15) is correct."""
-##        user_input = ["60"]
-##        with patch("builtins.input", side_effect=user_input) as input_call:
-##            with patch("sys.stdout", new=io.StringIO()) as output:
-##                import attempt
-##                g = gca()
-##                v = [55,55]                
-##                self.assertEquals(g.get_lines()[3].get_xdata().tolist(), v.tolist())
-##
-##    def test_y_vAW(self):
-##        """The y coordinates of the second vertical line (AW at 15) is correct."""
-##        user_input = ["60"]
-##        with patch("builtins.input", side_effect=user_input) as input_call:
-##            with patch("sys.stdout", new=io.StringIO()) as output:
-##                import attempt
-##                g = gca()
-##                v = [0,35]                
-##                self.assertEquals(g.get_lines()[3].get_ydata().tolist(), v.tolist())
-##
-##    def test_point1x64(self):
-##        """The x coordinates of the first point (SS at h=64) is correct."""
-##        user_input = ["64"]
-##        with patch("builtins.input", side_effect=user_input) as input_call:
-##            with patch("sys.stdout", new=ioStringIO()) as output:
-##                import attempt
-##                g = gca()
-##                v = [64]                
-##                self.assertEquals(g.get_lines()[4].get_xdata().tolist(), v.tolist())
-##
-##    def test_point1x49(self):
-##        """The x coordinates of the first point (SS at h=49) is correct."""
-##        user_input = ["49"]
-##        with patch("builtins.input", side_effect=user_input) as input_call:
-##            with patch("sys.stdout", new=io.StringIO()) as output:
-##                import attempt
-##                g = gca()
-##                v = [49]                
-##                self.assertEquals(g.get_lines()[4].get_xdata().tolist(), v.tolist())
-##
-##    def test_point1y64(self):
-##        """The y coordinates of the first point (SS at h=64) is correct."""
-##        user_input = ["64"]
-##        with patch("builtins.input", side_effect=user_input) as input_call:
-##            with patch("sys.stdout", new=io.StringIO()) as output:
-##                import attempt
-##                g = gca()
-##                v = [3*64**0.5]                
-##                self.assertEquals(g.get_lines()[4].get_ydata().tolist(), v.tolist())
-##
-##    def test_point1y49(self):
-##        """The y coordinates of the first point (SS at h=49) is correct."""
-##        user_input = ["49"]
-##        with patch("builtins.input", side_effect=user_input) as input_call:
-##            with patch("sys.stdout", new=io.StringIO()) as output:
-##                import attempt
-##                g = gca()
-##                v = [3*49**0.5]                
-##                self.assertEquals(g.get_lines()[4].get_ydata().tolist(), v.tolist())
-##
-##    def test_point1y16(self):
-##        """The y coordinates of the first point (SS at h=16) is correct."""
-##        user_input = ["16"]
-##        with patch("builtins.input", side_effect=user_input) as input_call:
-##            with patch("sys.stdout", new=io.StringIO()) as output:
-##                import attempt
-##                g = gca()
-##                v = [3*16**0.5]                
-##                self.assertEquals(g.get_lines()[4].get_ydata().tolist(), v.tolist())
-##
-##    def test_point1x16(self):
-##        """The x coordinates of the first point (SS at h=16) is correct."""
-##        user_input = ["16"]
-##        with patch("builtins.input", side_effect=user_input) as input_call:
-##            with patch("sys.stdout", new=io.StringIO()) as output:
-##                import attempt
-##                g = gca()
-##                v = [16]                
-##                self.assertEquals(g.get_lines()[4].get_xdata().tolist(), v.tolist())
-##
-##    def test_point2x64(self):
-##        """The x coordinates of the second point (AW at h=64) is correct."""
-##        user_input = ["64"]
-##        with patch("builtins.input", side_effect=user_input) as input_call:
-##            with patch("sys.stdout", new=io.StringIO()) as output:
-##                import attempt
-##                g = gca()
-##                v = [64]                
-##                self.assertEquals(g.get_lines()[5].get_xdata().tolist(), v.tolist())
-##
-##    def test_point2x49(self):
-##        """The x coordinates of the second point (AW at h=49) is correct."""
-##        user_input = ["49"]
-##        with patch("builtins.input", side_effect=user_input) as input_call:
-##            with patch("sys.stdout", new=io.StringIO()) as output:
-##                import attempt
-##                g = gca()
-##                v = [49]                
-##                self.assertEquals(g.get_lines()[5].get_xdata().tolist(), v.tolist())
-##
-##    def test_point2x16(self):
-##        """The x coordinates of the second point (AW at h=16) is correct."""
-##        user_input = ["16"]
-##        with patch("builtins.input", side_effect=user_input) as input_call:
-##            with patch("sys.stdout", new=io.StringIO()) as output:
-##                import attempt
-##                g = gca()
-##                v = [16]                
-##                self.assertEquals(g.get_lines()[5].get_xdata().tolist(), v.tolist())
-##
-##    def test_point2y64(self):
-##        """The y coordinates of the second point (AW at h=64) is correct."""
-##        user_input = ["64"]
-##        with patch("builtins.input", side_effect=user_input) as input_call:
-##            with patch("sys.stdout", new=io.StringIO()) as output:
-##                import attempt
-##                g = gca()
-##                v = [3*64**0.5*0.675]                
-##                self.assertEquals(g.get_lines()[5].get_ydata().tolist(), v.tolist())
-##
-##    def test_point2y49(self):
-##        """The y coordinates of the second point (AW at h=49) is correct."""
-##        user_input = ["49"]
-##        with patch("builtins.input", side_effect=user_input) as input_call:
-##            with patch("sys.stdout", new=io.StringIO()) as output:
-##                import attempt
-##                g = gca()
-##                v = [3*49**0.5*0.675]                
-##                self.assertEquals(g.get_lines()[5].get_ydata().tolist(), v.tolist())
-##
-##    def test_point2y16(self):
-##        """The y coordinates of the second point (AW at h=16) is correct."""
-##        user_input = ["16"]
-##        with patch("builtins.input", side_effect=user_input) as input_call:
-##            with patch("sys.stdout", new=io.StringIO()) as output:
-##                import attempt
-##                g = gca()
-##                v = [3*16**0.5*0.675]                
-##                self.assertEquals(g.get_lines()[5].get_ydata().tolist(), v.tolist())
+                self.assertEquals(g.get_lines()[2].get_ydata().tolist(), v)
+
+    def test_x_vAW(self):
+        """The x coordinates of the second vertical line (AW at 15) is correct."""
+        user_input = ["60"]
+        with patch("builtins.input", side_effect=user_input) as input_call:
+            with patch("sys.stdout", new=io.StringIO()) as output:
+                import attempt
+                g = gca()
+                v = [55,55]                
+                self.assertEquals(g.get_lines()[3].get_xdata().tolist(), v)
+
+    def test_y_vAW(self):
+        """The y coordinates of the second vertical line (AW at 15) is correct."""
+        user_input = ["60"]
+        with patch("builtins.input", side_effect=user_input) as input_call:
+            with patch("sys.stdout", new=io.StringIO()) as output:
+                import attempt
+                g = gca()
+                v = [0,35]                
+                self.assertEquals(g.get_lines()[3].get_ydata().tolist(), v)
+
+    def test_point1x64(self):
+        """The x coordinates of the first point (SS at h=64) is correct."""
+        user_input = ["64"]
+        with patch("builtins.input", side_effect=user_input) as input_call:
+            with patch("sys.stdout", new=ioStringIO()) as output:
+                import attempt
+                g = gca()
+                v = [64]                
+                self.assertEquals(g.get_lines()[4].get_xdata().tolist(), v)
+
+
+
+
+    def test_point1y16(self):
+        """The y coordinates of the first point (SS at h=16) is correct."""
+        user_input = ["16"]
+        with patch("builtins.input", side_effect=user_input) as input_call:
+            with patch("sys.stdout", new=io.StringIO()) as output:
+                import attempt
+                g = gca()
+                v = [3*16**0.5]                
+                self.assertEquals(g.get_lines()[4].get_ydata().tolist(), v)
+
+  
+
+    def test_point2x64(self):
+        """The x coordinates of the second point (AW at h=64) is correct."""
+        user_input = ["64"]
+        with patch("builtins.input", side_effect=user_input) as input_call:
+            with patch("sys.stdout", new=io.StringIO()) as output:
+                import attempt
+                g = gca()
+                v = [64]                
+                self.assertEquals(g.get_lines()[5].get_xdata().tolist(), v)
+
+
+
+
+    def test_point2y49(self):
+        """The y coordinates of the second point (AW at h=49) is correct."""
+        user_input = ["49"]
+        with patch("builtins.input", side_effect=user_input) as input_call:
+            with patch("sys.stdout", new=io.StringIO()) as output:
+                import attempt
+                g = gca()
+                v = [3*49**0.5*0.675]                
+                self.assertEquals(g.get_lines()[5].get_ydata().tolist(), v)
+
 ##
 ##
 ##    # TEST COLOURS
