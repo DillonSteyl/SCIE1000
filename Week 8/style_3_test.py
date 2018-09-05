@@ -33,7 +33,7 @@ class Tests(PythonTestCase):
         g = gca()
         lines = g.get_lines()    
         X = arange(-2*pi, 2*pi, 0.05)
-        self.assertAllClose(lines[0].get_xdata(), X)
+        self.assertTrue((lines[0].get_xdata() == X).all())
 		
     def test_Y1(self):
         """The first line has the correct Y values"""
@@ -42,7 +42,7 @@ class Tests(PythonTestCase):
         lines = g.get_lines()    
         X = arange(-2*pi, 2*pi, 0.05)
         Y1 = X**2
-        self.assertAllClose(lines[0].get_ydata(), Y1)
+        self.assertTrue((lines[0].get_ydata()== Y1).all())
 		
     def test_Y2(self):
         """The second line has the correct Y values"""
@@ -51,14 +51,14 @@ class Tests(PythonTestCase):
         lines = g.get_lines()    
         X = arange(-2*pi, 2*pi, 0.05)
         Y2 = X**2 + 3*sin(12*X)
-        self.assertAlmostEquals(lines[1].get_ydata(), Y2)
+        self.assertTrue((lines[1].get_ydata() == Y2).all())
 		
     def test_X2(self):
         """The second line has the correct X values"""
         g = gca()
         lines = g.get_lines()    
         X = arange(-2*pi, 2*pi, 0.05)
-        self.assertAlmostEquals(lines[1].get_xdata(), X)
+        self.assertEquals(lines[1].get_xdata().tolist(), X.tolist())
 	
     def test_file_show(self):
         """Show is used to display plot"""
