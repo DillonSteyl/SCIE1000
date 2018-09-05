@@ -17,3 +17,6 @@ plot(X,Y1)
 #add a legend and grid lines
 
 show()
+
+# do not modify (this code is necessary for MyPyTutor to display the graph for you):
+savefig("output.png")
