@@ -60,7 +60,13 @@ The output graph is given below:
 
 ![graph4](https://imgur.com/RFtq2vw.png)
 
-**Task:** Modify this program to also plot another function, `Y2 = X**2 + sin(12*X)`. Label the Y1 plot with "y = x^2" and the Y2 plot with "y = x^2 + sin(12x)". Title the graph "x^2 and x^2+sin(12x)", and label the x-axis with "x" and y-axis with "y".
+**Task:** Modify the program provided to also plot another function, `Y2 = X**2 + sin(12*X)`. 
+
+Label the Y1 plot with "y = x^2" and the Y2 plot with "y = x^2 + sin(12x)". Remember to include the legend, and also display the grid lines. 
+
+Use a solid green line for the y! line (using the 'g' colour), and a dashed red line for the Y2 (using the 'r' colour). 
+
+Title the graph "x^2 and x^2+sin(12x)", and label the x-axis with "x" and y-axis with "y".
 
 ## Solution
 ```python
