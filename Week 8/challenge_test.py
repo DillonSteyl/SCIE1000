@@ -104,7 +104,7 @@ class Tests(PythonTestCase):
         """The x coordinates of the first point (SS at h=64) is correct."""
         user_input = ["64"]
         with patch("builtins.input", side_effect=user_input) as input_call:
-            with patch("sys.stdout", new=ioStringIO()) as output:
+            with patch("sys.stdout", new=io.StringIO()) as output:
                 import attempt
                 g = gca()
                 v = [64]                
