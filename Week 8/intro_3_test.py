@@ -53,13 +53,22 @@ class Tests(PythonTestCase):
         self.assertEqual(lines[2].get_marker(), '*')
 
 
+
+    '''
+    def test_show_called_1(self):
+        """ matplotlib.pyplot.show() method is called """
+        with patch('matplotlib.pyplot.show') as mocked_show:
+            import attempt
+            mocked_show.assert_called()
+    '''
+                
     # This test causes no output to show up!!!
-    def test_show_called(self):
-        """ Show() method is called """
+    def test_show_called_2(self):
+        """ show() method is called """
         with patch('pylab.show') as mocked_show:
             import attempt
             mocked_show.assert_called()
-                
+
 # Run the unit tests
 if __name__ == "__main__":
     import attempt

@@ -1,4 +1,4 @@
-# Introduction to Graphs (1)
+# Introduction to Graphs (2)
 
 
 We often want to draw whole lines on a graph, rather than just a single point. To do this, we need a list of x and y points to make up the line and draw them on a graph:
@@ -13,6 +13,8 @@ plot(x, y)
 show()
  
 ```
+
+The example above will plot an approximation of the equation $y=x^2$. It does this by plotting the point $x^2$ for $x=0,1,2,3,4,5$ and then joining these points together with straight lines. 
 
 Plotting a line works the same way as plotting a single point using the plot function. Notice in this example we have not included a third argument in the plot function. This means that Python will use the default line style, which is a solid blue line with no marker. 
 
