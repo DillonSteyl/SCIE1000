@@ -41,10 +41,10 @@ class Tests(PythonTestCase):
         """Lines use the correct linewidth"""
         g = gca()
         lines = g.get_lines() 
-        self.assertEqual(lines[0].get_linestyle(), 1)
-        self.assertEqual(lines[1].get_linestyle(), 0.5)
-        self.assertEqual(lines[3].get_linestyle(), 5)
-        self.assertEqual(lines[4].get_linestyle(), 2)
+        self.assertEqual(lines[0].get_linewidth(), 1)
+        self.assertEqual(lines[1].get_linewidth(), 0.5)
+        self.assertEqual(lines[3].get_linewidth(), 5)
+        self.assertEqual(lines[4].get_linewidth(), 2)
 
     def test_colors(self):
         """Lines use the correct color"""
