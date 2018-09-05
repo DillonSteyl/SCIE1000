@@ -21,40 +21,109 @@ class Tests(PythonTestCase):
             pass
 
     def test_lines(self):
-        """There is something on the graph"""
+        """There are two lines on the graph."""
         g = gca()
         lines = g.get_lines()
-        self.assertEquals(len(lines), 1)
+        self.assertEquals(len(lines), 2)
         
-    def test_point(self):
-        """It is a single point on the graph"""
-        g = gca()
-        self.assertEquals(len(g.get_lines()[0].get_xdata()), 1)
 
-    def test_x(self):
-        """The point has the correct x value: 4"""
+    def test_X1(self):
+        """The first line has the correct X values"""
+		
         g = gca()
         lines = g.get_lines()    
-        self.assertEquals(lines[0].get_xdata()[0], 4)
+		X = arange(-2*pi, 2*pi, 0.05)
+        self.assertEquals(lines[0].get_xdata(), X)
+		
+	def test_Y1(self):
+        """The first line has the correct Y values"""
+		
+        g = gca()
+        lines = g.get_lines()    
+		X = arange(-2*pi, 2*pi, 0.05)
+		Y1 = X**2
+        self.assertEquals(lines[0].get_ydata(), Y1)
+		
+	def test_Y2(self):
+        """The second line has the correct Y values"""
+		
+        g = gca()
+        lines = g.get_lines()    
+		X = arange(-2*pi, 2*pi, 0.05)
+		Y2 = X**2 + 3*sin(12*X)
+        self.assertEquals(lines[1].get_ydata(), Y2)
+		
+	def test_X2(self):
+        """The second line has the correct X values"""
+        g = gca()
+        lines = g.get_lines()    
+		X = arange(-2*pi, 2*pi, 0.05)
+        self.assertEquals(lines[1].get_xdata(), X)
 	
-    def test_file(self):
+    def test_file_show(self):
         """Show is used to display plot"""
         a = False
         if "show()" in open('attempt.py').read():
             a = True
         self.assertEquals(a,True) 
+		
+	def test_file_grid(self):
+        """There are grid lines."""
+        a = False
+        if "grid(True)" in open('attempt.py').read():
+            a = True
+        self.assertEquals(a,True) 
+		
+	def test_file_legend(self):
+        """There is a legend"""
+        a = False
+        if "legend()" in open('attempt.py').read():
+            a = True
+        self.assertEquals(a,True) 
 
-    def test_y(self):
-        """The point has the correct y value: 2.5"""
+    def test_xlabel(self):
+        """The x axis is labelled as 'x'"""
+        g = gca() 
+        self.assertEqual(g.get_xlabel, "x")
+		
+	def test_ylabel(self):
+        """The y axis is labelled as 'y'"""
+        g = gca()
+        self.assertEqual(g.get_ylabel, "y")
+		
+	def test_Y1_label(self):
+        """The first line is labelled as 'y = x^2'"""
+        g = gca()
+        self.assertEqual(g.get_legend().get_texts()[0].gettext(), "y = x^2")
+		
+	def test_Y2_label(self):
+        """The first line is labelled as 'y = x^2 + 3*sin(12x)'"""
+        g = gca()
+        self.assertEqual(g.get_legend().get_texts()[1].gettext(), "y = x^2 + 3*sin(12x)")
+		
+	def test_second_colour(self):
+        """The second line is red"""
         g = gca()
         lines = g.get_lines() 
-        self.assertEqual(lines[0].get_ydata()[0], 2.5)
+        self.assertEqual(lines[1].get_color(), (1.0, 0.0, 0.0, 1))
+		
+	def test_first_colour(self):
+        """The first line is green"""
+        g = gca()
+        lines = g.get_lines() 
+        self.assertEqual(lines[0].get_color(), (0.0, 0.5, 0.0, 1))
+		
+	def test_title(self):
+        """The title is "x^2 and x^2+3*sin(12x)""""
+        g = gca()
+        self.assertEqual(g.get_title(), "x^2 and x^2+3*sin(12x)")
+		
 	
-    def test_ymarker(self):
-        """The point uses an asterisk (*) as the marker"""
-        g = gca()
-        lines = g.get_lines() 
-        self.assertEqual(lines[0].get_marker(), '*')
+	
+	
+	
+	
+	
 		
 # Run the unit tests
 if __name__ == "__main__":
