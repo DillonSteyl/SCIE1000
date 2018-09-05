@@ -4,7 +4,6 @@ from python_test_case import PythonTestCase, run_tests
 from pylab import *
 from unittest.mock import patch, call
 import sys
-import io
 from io import StringIO
 from contextlib import redirect_stdout
 
