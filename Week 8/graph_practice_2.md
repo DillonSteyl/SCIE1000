@@ -11,7 +11,7 @@ To ensure MyPyTutor evaluates your work correctly, make sure you use the variabl
 * ` Y3 = (-0.2*X+2)*(sin(X)) `
 * ` Y4 = (0.2*X-2)*(sin(X)) `
 
-You should also give the plot the title "Functions of X and Y", and label the axes as "X value" and "Y value" appropriately.
+Plot Y1 and Y2 as black solid lines. Plot Y3 and Y4 as cyan dash-dotted lines, with 'x' as the marker. You should also give the plot the title "Functions of X and Y", and label the axes as "X value" and "Y value" appropriately.
 
 ## Solution
 ```python
@@ -29,10 +29,13 @@ Y3 = (-0.2*X+2)*(sin(X))
 Y4 = (0.2*X-2)*(sin(X))
 
 # Plot:
-plot(X,Y1)
-plot(X,Y2)
-plot(X,Y3)
-plot(X,Y4)
+plot(X,Y1,color='k')
+plot(X,Y2,color='k')
+plot(X,Y3,marker='x', linestyle='-.', color='c')
+plot(X,Y4,marker='x', linestyle='-.', color='c')
+title("Functions of X and Y")
+xlabel("X value")
+ylabel("Y yalue")
 
 show()
 ```
