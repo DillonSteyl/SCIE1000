@@ -51,13 +51,14 @@ Y Axis: The x axis should be labelled 'Number of Species'.
 # Solution
 ```python
 from pylab import *
+import random
 
 
 # Write your program below:
 a = arange(0,114.1,1)
 SS = 3*a**0.5
 AW = 0.675*SS
-h = float(input("Enter the number of hectares: "))
+h = random.randint(0, 114)
 h_SS = 3*h**0.5
 h_AW = 3*h**0.5*0.675
 
