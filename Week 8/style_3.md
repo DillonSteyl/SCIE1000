@@ -31,3 +31,33 @@ There are three things to notice with this program. First, there is a `label` ar
 Second, there is the `legend` function, which tells Python that you want to legend displayed to the user on the graph. If you do not use this function, the legend will not be displayed even if you write labels. The legend function does not need an argument, and Python will try to place it somewhere on the graph where it isn't a bother by default. However, as with any graphing function, there are a lot of customisation options if you are willing to search for it.
 
 Third, there is the `grid` function. By default, your graphs will not have any grid lines (vertical and horizontal lines), but you may want to add them to your graph. By calling `grid(True)`, it tells Python that you want grid lines. It's really that simple! But as always, you can customise it.
+
+**Task: **
+
+
+
+````
+from pylab import *
+
+# x-coordinates
+X = arange(-2*pi, 2*pi, 0.05)
+# function 1
+Y1 = X**2
+# function 2
+Y2 = X**2 + 3*sin(12*X)
+
+# Plot the Y1 line first
+plot(X,Y1, 'g', label="y = x^2")
+# plot the Y2 line second
+plot(X,Y2,'r', label="y = x^2 + 3*sin(12x)")
+
+# Add titles and axis labels
+title("x^2 and x^2+3*sin(12x)")
+xlabel("x")
+ylabel("y")
+
+#add a legend and grid lines
+legend()
+grid(True)
+show()
+````
