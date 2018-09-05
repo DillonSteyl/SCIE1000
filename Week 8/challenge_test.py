@@ -4,7 +4,7 @@ from python_test_case import PythonTestCase, run_tests
 from pylab import *
 from unittest.mock import patch, call
 import sys
-from io import StringIO
+import io
 from contextlib import redirect_stdout
 
 class Tests(PythonTestCase):
@@ -21,7 +21,7 @@ class Tests(PythonTestCase):
         """The x coordinates of the first line (SS) is correct."""
         user_input = ["60"]
         with patch("builtins.input", side_effect=user_input) as input_call:
-            with patch("sys.stdout", new=StringIO()) as output:
+            with patch("sys.stdout", new=io.StringIO()) as output:
                 import attempt
                 g = gca()
                 a = arange(0,114.1,1)
@@ -31,7 +31,7 @@ class Tests(PythonTestCase):
         """The x coordinates of the second line (AW) is correct."""
         user_input = ["60"]
         with patch("builtins.input", side_effect=user_input) as input_call:
-            with patch("sys.stdout", new=StringIO()) as output:
+            with patch("sys.stdout", new=io.StringIO()) as output:
                 import attempt
                 g = gca()
                 a = arange(0,114.1,1)
@@ -41,7 +41,7 @@ class Tests(PythonTestCase):
         """The y coordinates of the first line (SS) is correct."""
         user_input = ["60"]
         with patch("builtins.input", side_effect=user_input) as input_call:
-            with patch("sys.stdout", new=StringIO()) as output:
+            with patch("sys.stdout", new=io.StringIO()) as output:
                 import attempt
                 g = gca()
                 a = arange(0,114.1,1)
@@ -52,7 +52,7 @@ class Tests(PythonTestCase):
         """The y coordinates of the second line (AW) is correct."""
         user_input = ["60"]
         with patch("builtins.input", side_effect=user_input) as input_call:
-            with patch("sys.stdout", new=StringIO()) as output:
+            with patch("sys.stdout", new=io.StringIO()) as output:
                 import attempt
                 g = gca()
                 a = arange(0,114.1,1)
@@ -64,7 +64,7 @@ class Tests(PythonTestCase):
         """The x coordinates of the first vertical line (SS at 15) is correct."""
         user_input = ["60"]
         with patch("builtins.input", side_effect=user_input) as input_call:
-            with patch("sys.stdout", new=StringIO()) as output:
+            with patch("sys.stdout", new=io.StringIO()) as output:
                 import attempt
                 g = gca()
                 v = [25,25]                
@@ -74,7 +74,7 @@ class Tests(PythonTestCase):
         """The y coordinates of the first vertical line (SS at 15) is correct."""
         user_input = ["60"]
         with patch("builtins.input", side_effect=user_input) as input_call:
-            with patch("sys.stdout", new=StringIO()) as output:
+            with patch("sys.stdout", new=io.StringIO()) as output:
                 import attempt
                 g = gca()
                 v = [0, 35]                
