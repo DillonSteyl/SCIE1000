@@ -60,11 +60,11 @@ The output graph is given below:
 
 ![graph4](https://imgur.com/RFtq2vw.png)
 
-**Task:** Modify the program provided to also plot another function, `Y2 = X**2 + sin(12*X)`. 
+**Task:** Modify the program provided to also plot another function, `Y2 = X**2 + 3*sin(12*X)`. 
 
-Label the Y1 plot with "y = x^2" and the Y2 plot with "y = x^2 + sin(12x)". Remember to include the legend, and also display the grid lines. 
+Label the Y1 plot with `y = x^2` and the Y2 plot with `y = x^2 + 3*sin(12x)`. Remember to include the legend, and also display the grid lines. 
 
-Use a solid green line for the y! line (using the 'g' colour), and a dashed red line for the Y2 (using the 'r' colour). 
+Use a solid green line for the Y1 line (using the 'g' colour), and a dashed red line for the Y2 (using the 'r' colour). 
 
 Title the graph "x^2 and x^2+sin(12x)", and label the x-axis with "x" and y-axis with "y".
 
@@ -73,22 +73,25 @@ Title the graph "x^2 and x^2+sin(12x)", and label the x-axis with "x" and y-axis
 from pylab import *
 
 # x-coordinates
-X = arange(-2*pi, 2*pi, 0.1)
+X = arange(-2*pi, 2*pi, 0.05)
 # function 1
 Y1 = X**2
 # function 2
-Y2 = X**2 + sin(12*X)
+Y2 = X**2 + 3*sin(12*X)
 
-# Plot:
-plot(X,Y1,label="y = x^2")
-plot(X,Y2,label="y = x^2 + sin(12x)")
+# Plot the Y1 line first
+plot(X,Y1, 'g', label="y = x^2")
+# plot the Y2 line second
+plot(X,Y2,'r', label="y = x^2 + 3*sin(12x)")
 
-# Titles and labels:
-title("x^2 and x^2+sin(12x)")
+# Add titles and axis labels
+title("x^2 and x^2+3*sin(12x)")
 xlabel("x")
 ylabel("y")
 
+#add a legend and grid lines
 legend()
+grid(True)
 show()
 ```
 
