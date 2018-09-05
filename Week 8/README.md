@@ -11,10 +11,10 @@ Things to be covered:
 2. DONE - Make a line show up (Discuss using arrays in the plot function)
 3. DONE - Make two lines show up with the same x array (Discuss using the plot function twice)
 4. DONE - Make three lines show up with different step sizes (same equations for each but with a vertical shift so they're sufficiently distinct).
-5. NEEDS TEST AND EXERCISE - Draw a shape (lines dont have to go left to right - gives them a slightly deeper understanding of whats going on with graphs).
+5. NEEDS TEST - Draw a shape (lines dont have to go left to right - gives them a slightly deeper understanding of whats going on with graphs).
 6. NEEDS TEST- Changing the linestyle, colour, linewidth, and marker.
 7. NEEDS TEST AND EXERCISE - Adding titles and axis labels
-8. DONE - grids and legends
+8. NEEDS TEST - grids and legends
 9. Challenge question
 
 
