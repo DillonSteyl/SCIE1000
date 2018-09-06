@@ -1,4 +1,4 @@
-# Graphing with Different Step Sizes
+# Step Sizes - Oscillatory Motion
 
 Oscillatory motion is modelled using periodic functions. The motion of a spring is considered oscillatory when it is displaced from its equilibrium position. For example, if we have a spring and attach a weight to the end of it so that the spring stretches, and then release it from this position, the position of the weight as a function of time can be modelled as a sinusoidal function. With friction present, this motion is damped and eventually ceases, however for this problem we will assume there is no friction such that the spring follows a simple sinusoidal model.
 
