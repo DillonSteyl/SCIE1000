@@ -27,28 +27,28 @@ class Tests(PythonTestCase):
         self.assertEqual(g.get_xlabel(), "Time (s)")
     
     def test_t1_var(self):
-        """ t1 array contains the correct values """
-        self.assertEqual(attempt.t1.tolist(), arange(0,10.51,0.01).tolist() )
+        """ The first line contains the corrext y values """
+        self.assertEqual(gca().get_lines()[0].get_ydata().tolist(), arange(0,10.51,0.01).tolist() )
 
     def test_t2_var(self):
-        """ t2 array contains the correct values """
-        self.assertEqual(attempt.t2.tolist(), arange(0,10.65,.15).tolist() )
+        """ The second line contains the correct y values """
+        self.assertEqual(gca().get_lines()[1].get_ydata().tolist(), arange(0,10.65,.15).tolist() )
 
     def test_t3_var(self):
-        """ t3 array contains the correct values """
-        self.assertEqual(attempt.t3.tolist(), arange(0,11,0.5).tolist() )
+        """ The third line contains the correct y values """
+        self.assertEqual(gca().get_lines()[2].get_ydata().tolist(), arange(0,11,0.5).tolist() )
 
     def test_x1_var(self):
-        """ x1 array contains the correct values """
-        self.assertEqual(attempt.x1.tolist(), ((0.5*sin(4*pi*(attempt.t1-0.125))).tolist() ))
+        """ The first line contains the correct x values """
+        self.assertEqual(gca().get_lines()[0].get_xdata().tolist(), ((0.5*sin(4*pi*(attempt.t1-0.125))).tolist() ))
 
     def test_x2_var(self):
-        """ x2 array contains the correct values """
-        self.assertEqual(attempt.x2.tolist(), ((0.5*sin(4*pi*(attempt.t2-0.125))+2).tolist() ))
+        """ The second line contains the correct x values """
+        self.assertEqual(gca().get_lines()[0].get_xdata().tolist(), ((0.5*sin(4*pi*(attempt.t2-0.125))+2).tolist() ))
 
     def test_x3_var(self):
-        """ x3 array contains the correct values """
-        self.assertEqual(attempt.x3.tolist(), ((0.5*sin(4*pi*(attempt.t3-0.125))+4).tolist() ))
+        """ The third line contains the correct x values """
+        self.assertEqual(gca().get_lines()[0].get_xdata().tolist(), ((0.5*sin(4*pi*(attempt.t3-0.125))+4).tolist() ))
 
     '''
     def test_file(self):
