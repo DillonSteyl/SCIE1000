@@ -32,20 +32,12 @@ class Tests(PythonTestCase):
         lines = g.get_lines()    
         self.assertEquals(lines[0].get_xdata()[0], 4)
 	
-    '''
     def test_file(self):
         """Show is used to display plot"""
         a = False
         if "show()" in open('attempt.py').read():
             a = True
         self.assertEquals(a,True) 
-    '''
-
-    def test_show_called(self):
-        """Show() method is called"""
-        with patch('pylab.show') as mock_show:
-            import attempt
-            mock_show.assert_called()
 
     def test_y(self):
         """The point has the correct y value: 2.5"""
