@@ -51,12 +51,13 @@ class Tests(PythonTestCase):
         g = gca()
         lines = g.get_lines() 
         self.assertEqual(lines[2].get_marker(), '*')
-                
-    def test_show_called(self):
-        """ Show() method is called """
-        with patch('pylab.show') as mocked_show:
-            import attempt
-            mocked_show.assert_called()
+
+    def test_file(self):
+        """Show is used to display plot"""
+        a = False
+        if "show()" in open('attempt.py').read():
+            a = True
+        self.assertEquals(a,True) 
 
     def test_plot_call(self):
         """Correct line(s) are plotted"""
