@@ -1,4 +1,4 @@
-# Introduction to Graphs (2)
+# Introduction to Graphs (2) - Plotting Lines
 
 
 We often want to draw whole lines on a graph, rather than just a single point. To do this, we need a list of x and y points to make up the line and draw them on a graph:
