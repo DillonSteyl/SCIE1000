@@ -1,4 +1,4 @@
-# Styling (3) - Grids and Legends
+# Graph Styles (3) - Grids and Legends
 
 It is very important when making graphs that the information is clear to the reader. When drawing multiple lines on a graph, it is helpful to indicate which line corresponds with which set of data. For this we can use a legend. An example program is as follows:
 
