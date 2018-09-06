@@ -12,6 +12,6 @@ Order. file name "Title"
 6. style_2 "Graph Styles (2)"
 7. style_3 "Graph Styles (3)"
 8. graph_step_size "Step Sizes"
-9. graph_context_1 "Challenge: Species Area Curve"
+9. graph_context_1 "Challenge - Species Area Curve"
 
 
