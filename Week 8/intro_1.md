@@ -1,4 +1,4 @@
-# Introduction to Graphs (1)
+# Introduction to Graphs (1) - Making Graphs
 
 In Python, we are not limited to just print statements when we want to show output to users. We are also able to create graphs, which can be very important when communicating in science.
 
