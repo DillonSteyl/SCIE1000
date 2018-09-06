@@ -1,4 +1,4 @@
-# Introduction to Graphs 3 - Multiple Lines
+# Introduction to Graphs (3) - Multiple Lines
 
 Comparing multiple sets of data happens often in science, so it is useful to know how to plot multiple lines on the same graph. Here is a simple example:
 
