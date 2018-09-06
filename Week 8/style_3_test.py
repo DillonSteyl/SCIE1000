@@ -105,15 +105,15 @@ class Tests(PythonTestCase):
         """The second line is red"""
         g = gca()
         lines = g.get_lines() 
-        #self.assertEqual(lines[1].get_color(), (1.0, 0.0, 0.0, 1))
-        self.assertEqual(lines[1].get_color(), 'r')
+        self.assertEqual(lines[1].get_color().to_rgba(), (1.0, 0.0, 0.0, 1))
+        #self.assertEqual(lines[1].get_color(), 'r')
 		
     def test_first_colour(self):
         """The first line is green"""
         g = gca()
         lines = g.get_lines() 
-        #self.assertEqual(lines[0].get_color(), (0.0, 0.5, 0.0, 1))
-        self.assertEqual(lines[0].get_color(), 'g')
+        self.assertEqual(lines[0].get_color().to_rgba(), (0.0, 0.5, 0.0, 1))
+        #self.assertEqual(lines[0].get_color(), 'g')
 		
     def test_title(self):
         """The title is 'x^2 and x^2+3*sin(12x)'"""
