@@ -58,7 +58,7 @@ class Tests(PythonTestCase):
             import attempt
             mocked_show.assert_called()
 
-    def test_plot(self):
+    def test_plot_call(self):
         """Correct line(s) are plotted"""
         with patch('pylab.plot') as mocked_plot:
             import attempt
