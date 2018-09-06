@@ -90,7 +90,7 @@ else:
 title("Species Area Curve in Different Seasons")
 xlabel("Area (hectares)")
 ylabel("Number of Species")
-grid()
+grid(True)
 legend()
 show()
 
