@@ -8,6 +8,7 @@ from unittest.mock import patch, call
 
 import attempt
 
+
 class Tests(PythonTestCase):
 
     def setUp(self):
