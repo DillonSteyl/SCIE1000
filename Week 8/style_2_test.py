@@ -37,14 +37,12 @@ class Tests(PythonTestCase):
         """ Y4 array contains the correct values """
         self.assertEqual(attempt.Y4.tolist(), ((0.2*attempt.X - 2) * sin(attempt.X)).tolist() )
 
-    '''
     def test_file(self):
         """Show is used to display plot"""
         a = False
         if "show()" in open('attempt.py').read():
             a = True
         self.assertEquals(a,True) 
-    '''
 
     def test_show_called(self):
         """Show() method is called"""
