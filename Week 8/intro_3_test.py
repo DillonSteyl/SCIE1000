@@ -51,8 +51,13 @@ class Tests(PythonTestCase):
         g = gca()
         lines = g.get_lines() 
         self.assertEqual(lines[2].get_marker(), '*')
-
-
+                
+    # This test causes no output to show up!!!
+    def test_show_called(self):
+        """ Show() method is called """
+        with patch('pylab.show') as mocked_show:
+            import attempt
+            mocked_show.assert_called()
 
     '''
     def test_show_called_1(self):
@@ -61,13 +66,6 @@ class Tests(PythonTestCase):
             import attempt
             mocked_show.assert_called()
     '''
-                
-    # This test causes no output to show up!!!
-    def test_show_called_2(self):
-        """ show() method is called """
-        with patch('pylab.show') as mocked_show:
-            import attempt
-            mocked_show.assert_called()
 
 # Run the unit tests
 if __name__ == "__main__":
