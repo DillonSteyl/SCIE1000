@@ -119,7 +119,7 @@ class Tests(PythonTestCase):
         if 3*h**0.5<15:
             self.assertIn(g.get_lines()[4].get_color(), ['red', (1.0, 0.0, 0.0, 1.0), 'r'] )
         else:
-            self.assertEquals(g.get_lines()[4].get_color(), ['black', (0.0, 0.0, 0.0, 1.0), 'k'])
+            self.assertIn(g.get_lines()[4].get_color(), ['black', (0.0, 0.0, 0.0, 1.0), 'k'])
             
             
     def test_point2_colour(self):
@@ -179,14 +179,14 @@ class Tests(PythonTestCase):
         self.assertEquals(a,True)
 
     def test_grid(self):
-        """Show is used to display plot"""
+        """grid(True) is called"""
         a = False
         if "grid(True)" in open('attempt.py').read():
             a = True
         self.assertEquals(a,True)
 
     def test_legend(self):
-        """Show is used to display plot"""
+        """There is a legend"""
         a = False
         if "legend()" in open('attempt.py').read():
             a = True
