@@ -1,4 +1,4 @@
-# Styling (2) - Titles Axis Labels
+# Graph Styles (2) - Titles and Axis Labels
 
 For good science communication, your graphs should be labelled and titled. This is very easy to do in Python. Here is an example program that labels both axes, and gives the graph a title:
 
