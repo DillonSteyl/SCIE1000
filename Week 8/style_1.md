@@ -1,4 +1,4 @@
-# Styling (1) - Colours, Lines, and Markers
+# Graph Styles (1) - Colours, Lines, and Markers
 
 So far you have mostly used the default styles that Python uses. There are a lot of customization options on offer for graphs, and this exercise will introduce a few of them to you. 
 
