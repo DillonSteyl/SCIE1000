@@ -1,4 +1,4 @@
-# Applying Graphing - The Species Area Curve
+# Challenge - Species Area Curve
 
 The University of Queensland St. Lucia campus is home to a large variety of wildlife, including student favourites such as the families of ducks seen at UQ Lakes. The university is also home to a range of reptiles, insects and plant species, many of which are Australian fauna and flora. 
 
