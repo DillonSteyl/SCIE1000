@@ -14,6 +14,8 @@ This will require the **following** steps:
 4. Give your graph the title 'Oscillation of a spring", and label the x axis as 'Time (s)'.
 5. Label each line of the plot using the following labels: '0.01s Samples', '0.15s Samples', '0.5s Samples'. Make sure you include a legend.
 
+**Note:** You must plot the lines in the order x1, x2, x3, otherwise some tests may be failed.
+
 ## Solution
 ```python
 from pylab import *
