@@ -95,31 +95,31 @@ class Tests(PythonTestCase):
     def test_SS_colour(self):
         """The first line (SS) has colour green."""
         g = gca()               
-        self.assertEquals(g.get_lines()[0].get_color(), 'green')
+        self.assertIn(g.get_lines()[0].get_color(), ['green', (0.0, 0.5, 0.0, 1.0), 'g'])
         
     def test_AW_colour(self):
         """The second line (AW) has colour orange."""
         g = gca()               
-        self.assertEquals(g.get_lines()[1].get_color(), 'orange')
+        self.assertIn(g.get_lines()[1].get_color(), ['orange', (1.0, 0.65, 0.0, 1.0)])
         
     def test_v1_colour(self):
         """The first vertical line (SS = 15) has colour red."""
         g = gca()               
-        self.assertEquals(g.get_lines()[2].get_color(), (1.0, 0.0, 0.0, 1) )
+        self.assertIn(g.get_lines()[2].get_color(), ['red', (1.0, 0.0, 0.0, 1.0), 'r'])
         
     def test_v2_colour(self):
         """The second vertical line (AW = 15) has colour red."""
         g = gca()               
-        self.assertEquals(g.get_lines()[2].get_color(), (1.0, 0.0, 0.0, 1) )
+        self.assertIn(g.get_lines()[2].get_color(), ['red, (1.0, 0.0, 0.0, 1.0), 'r'] )
         
     def test_point1_colour(self):
         """The first point (SS at h) is black if SS>=15, red otherwise"""
         g = gca()
         h = attempt.h
         if 3*h**0.5<15:
-            self.assertEquals(g.get_lines()[4].get_color(), (1.0, 0.0, 0.0, 1) )
+            self.assertIn(g.get_lines()[4].get_color(), ['red', (1.0, 0.0, 0.0, 1.0), 'r'] )
         else:
-            self.assertEquals(g.get_lines()[4].get_color(), 'k')
+            self.assertEquals(g.get_lines()[4].get_color(), ['black', (0.0, 0.0, 0.0, 1.0), 'k'])
             
             
     def test_point2_colour(self):
@@ -127,9 +127,9 @@ class Tests(PythonTestCase):
         g = gca()
         h = attempt.h
         if 3*h**0.5*0.675<15:
-            self.assertEquals(g.get_lines()[5].get_color(), (1.0, 0.0, 0.0, 1) )
+            self.assertIn(g.get_lines()[5].get_color(), ['red', (1.0, 0.0, 0.0, 1.0), 'r']  )
         else:
-            self.assertEquals(g.get_lines()[5].get_color(), 'k')
+            self.assertIn(g.get_lines()[5].get_color(), ['black', (0.0, 0.0, 0.0, 1.0), 'k'])
             
             
     def test_v1_width(self):
