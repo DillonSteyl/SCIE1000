@@ -1,6 +1,6 @@
-# Draw a shape
+# Introduction to Graphs (4) - Draw a Shape
 
-Lines don't just have to go from left to right. You can draw whatever lines you like so long as you specify the coordinates of the points. 
+Lines don't just have to go from left to right. You can draw whatever lines you like, in whatever direction you like, so long as you specify the coordinates of the points. 
 
 Here is a program that draws a triangle by specifying the three corners:
 
