@@ -52,20 +52,23 @@ class Tests(PythonTestCase):
         lines = g.get_lines() 
         self.assertEqual(lines[2].get_marker(), '*')
                 
-    # This test causes no output to show up!!!
     def test_show_called(self):
         """ Show() method is called """
         with patch('pylab.show') as mocked_show:
             import attempt
             mocked_show.assert_called()
 
-    '''
-    def test_show_called_1(self):
-        """ matplotlib.pyplot.show() method is called """
-        with patch('matplotlib.pyplot.show') as mocked_show:
+    def test_plot(self):
+        """Correct line(s) are plotted"""
+        with patch('pylab.plot') as mocked_plot:
             import attempt
-            mocked_show.assert_called()
-    '''
+            callargs = mocked_plot.call_args_list
+            plot1args = callargs[0][0]
+            plot2args = callargs[1][0]
+            self.assertEqual(plot1args[0].tolist(), attempt.x.tolist())
+            self.assertEqual(plot1args[1].tolist(), attempt.y1.tolist())
+            self.assertEqual(plot2args[0].tolist(), attempt.x.tolist())
+            self.assertEqual(plot2args[1].tolist(), attempt.y2.tolist())
 
 # Run the unit tests
 if __name__ == "__main__":
