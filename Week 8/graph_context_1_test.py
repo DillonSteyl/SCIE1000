@@ -110,7 +110,7 @@ class Tests(PythonTestCase):
     def test_v2_colour(self):
         """The second vertical line (AW = 15) has colour red."""
         g = gca()               
-        self.assertIn(g.get_lines()[2].get_color(), ['red, (1.0, 0.0, 0.0, 1.0), 'r'] )
+        self.assertIn(g.get_lines()[2].get_color(), ['red', (1.0, 0.0, 0.0, 1.0), 'r'] )
         
     def test_point1_colour(self):
         """The first point (SS at h) is black if SS>=15, red otherwise"""
