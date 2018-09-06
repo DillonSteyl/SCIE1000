@@ -66,12 +66,6 @@ class Tests(PythonTestCase):
         if "show()" in open('attempt.py').read():
             a = True
         self.assertEquals(a,True) 
-
-    def test_show_called(self):
-        """Show() method is called"""
-        with patch('pylab.show') as mock_show:
-            import attempt
-            mock_show.assert_called()
 		
     def test_file_grid(self):
         """There are grid lines."""
