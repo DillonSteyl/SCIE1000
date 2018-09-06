@@ -15,11 +15,6 @@ class Tests(PythonTestCase):
         except KeyError:
             pass
 
-    def test_show_called(self):
-        """Show() method is called"""
-        with patch('pylab.show') as mock_show:
-            mock_show.assert_called()
-
     def test_axis_title(self):
         """The graph has the correct title """
         g = gca()
@@ -54,14 +49,12 @@ class Tests(PythonTestCase):
         """ The third line contains the correct y values """
         self.assertEqual(gca().get_lines()[2].get_ydata().tolist(), ((0.5*sin(4*pi*(attempt.t3-0.125))+4).tolist() ))
 
-    '''
     def test_file(self):
         """Show is used to display plot"""
         a = False
         if "show()" in open('attempt.py').read():
             a = True
         self.assertEquals(a,True) 
-    '''
 
     def test_three_lines(self):
         """All three lines on plot"""
