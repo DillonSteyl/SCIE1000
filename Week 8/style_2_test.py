@@ -81,10 +81,10 @@ class Tests(PythonTestCase):
         """All lines use the correct color"""
         g = gca()
         lines = g.get_lines() 
-        self.assertEqual(lines[0].get_color(), 'k')
-        self.assertEqual(lines[1].get_color(), 'k')
-        self.assertEqual(lines[2].get_color(), 'c')
-        self.assertEqual(lines[3].get_color(), 'c')
+        self.assertIn(lines[0].get_color(), [(0.0, 0.0, 0.0, 1), 'k', 'black'])
+        self.assertIn(lines[1].get_color(), [(0.0, 0.0, 0.0, 1), 'k', 'black'])
+        self.assertIn(lines[2].get_color(), [(0.0, 1.0, 1.0, 1), 'c', 'cyan'])
+        self.assertIn(lines[3].get_color(), [(0.0, 1.0, 1.0, 1), 'c', 'cyan'])
 
     def test_markers(self):
         """All lines use the correct linestyle"""
