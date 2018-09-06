@@ -25,7 +25,8 @@ Notice that despite having three points, a triangle needs four points to be draw
 
 **Task:**
 
-Draw a square where the top left corner has coordinates (3, 3), and the square has height and width equal to 2. You do not need to print anything.
+Draw a square where the top left corner has coordinates (3, 3), and the square has height and width equal to 2. Start from the top left corner and go **clockwise**. You do not need to print anything.
+
 
 
 # Solution
