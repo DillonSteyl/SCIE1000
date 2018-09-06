@@ -60,12 +60,20 @@ class Tests(PythonTestCase):
         X = arange(-2*pi, 2*pi, 0.05)
         self.assertEquals(lines[1].get_xdata().tolist(), X.tolist())
 	
+    '''
     def test_file_show(self):
         """Show is used to display plot"""
         a = False
         if "show()" in open('attempt.py').read():
             a = True
         self.assertEquals(a,True) 
+    '''
+
+    def test_show_called(self):
+        """Show() method is called"""
+        with patch('pylab.show') as mock_show:
+            import attempt
+            mock_show.assert_called()
 		
     def test_file_grid(self):
         """There are grid lines."""
