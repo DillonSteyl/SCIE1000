@@ -185,12 +185,20 @@ class Tests(PythonTestCase):
             a = True
         self.assertEquals(a,True)
 
+    '''
     def test_legend(self):
         """Show is used to display plot"""
         a = False
         if "legend()" in open('attempt.py').read():
             a = True
         self.assertEquals(a,True) 
+    '''
+
+    def test_show_called(self):
+        """Show() method is called"""
+        with patch('pylab.show') as mock_show:
+            import attempt
+            mock_show.assert_called()
         
     def test_num_lines(self):
         """There are 6 lines."""
