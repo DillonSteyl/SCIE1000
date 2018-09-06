@@ -50,7 +50,6 @@ class Tests(PythonTestCase):
         """Lines use the correct color"""
         g = gca()
         lines = g.get_lines() 
-        self.assertIn(lines[1].get_color(), [(1.0, 0.0, 0.0, 1), 'r', 'red'])
         self.assertIn(lines[0].get_color(), [(0.0, 0.5, 0.0, 1), 'g', 'green'])
         self.assertIn(lines[1].get_color(), [(0.5, 0.0, 0.5, 1), 'purple'])
         self.assertIn(lines[2].get_color(), [(0.0, 0.0, 0.0, 1), 'k', 'black'])
