@@ -18,7 +18,7 @@ SS = 3*a**0.5
 ```
 Which means the species area curve for Autumn and Winter will be `SS*0.675`. 
 
-You want to see the effects of a reduced land area on the number of species during the different seasons using a graph. On your graph you will have the two species area curves, and two red vertical lines where the number of species drops below 15 for each species area curve. You will ask the user for a number of proposed hectares, and plot a single point on both lines corresponding to the number of hectares they gave as input - with different colours depending on the value at that point in the species area curves.
+You want to see the effects of a reduced land area on the number of species during the different seasons using a graph. On your graph you will have the two species area curves, and two red vertical lines where the number of species drops below 15 for each species area curve. You will be given a randomly generated number, representing the proposed new hectares for UQ, and plot a single point on both lines corresponding to that number - with different colours depending on the value at that point in the species area curves. The following task description will give all necessary details for you to plot the graph. 
 
 **Task:** You will write a program that displays a graph with 4 lines and 2 points, given a randomly generated variable `h` (provided for you). The details of the lines and points are as follows:
 
@@ -30,9 +30,9 @@ Line 3: A vertical line corresponding to the point where the species area curve 
 
 Line 4: A vertical line corresponding to the point where the species area curve for Autumn/Winter reaches 15. To draw this vertical line, make a line that starts at (55, 0) and ends at (55, 35). This line should have the colour 'r', have a width of 3, and be dashed. This line will have no label.
 
-Point 1: Let h be the input from the user. Draw a single point with the marker as a filled in circle ('o') on the Spring/Summer line where `x = h` and `y = 3*h**0.5`. The point should be labelled 'Number of species in S/S'. If this point has a y value below 15, colour it red ('r'). If it is 15 or above, colour it black ('k'). You will need an if statement for this.
+Point 1: Let h be the randomly generated number. Draw a single point with the marker as a filled in circle ('o') on the Spring/Summer line where `x = h` and `y = 3*h**0.5`. The point should be labelled 'Number of species in S/S'. If this point has a y value below 15, colour it red ('r'). If it is 15 or above, colour it black ('k'). You will need an if statement for this.
 
-Point 2: Let h be the input from the user. Draw a single point with the marker as a filled in square ('s') on the Autumn/Winter line where `x = h` and `y = 3*h**0.5*0.675`. The point should be labelled 'Number of species in A/W'. If this point has a y value below 15, colour it red ('r'). If it is 15 or above, colour it black ('k'). You will need an if statement for this.
+Point 2: Let h be the randomly generated number. Draw a single point with the marker as a filled in square ('s') on the Autumn/Winter line where `x = h` and `y = 3*h**0.5*0.675`. The point should be labelled 'Number of species in A/W'. If this point has a y value below 15, colour it red ('r'). If it is 15 or above, colour it black ('k'). You will need an if statement for this.
 
 The graph should be styled as follows:
 
@@ -46,7 +46,7 @@ X Axis: The x axis should be labelled 'Area (hectares)'.
 
 Y Axis: The x axis should be labelled 'Number of Species'.
 
-**Note:** Plot the lines in the exact order given, using the exact specifications. The code to generate h is also given.
+**Note:** Plot the lines in the exact order given, using the exact specifications. The code to generate h is given and you should not change it. Run the test multiple times to see the effect of different h values.
 
 # Solution
 ```python
