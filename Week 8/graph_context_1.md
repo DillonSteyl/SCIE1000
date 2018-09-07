@@ -30,9 +30,9 @@ Line 3: A vertical line corresponding to the point where the species area curve 
 
 Line 4: A vertical line corresponding to the point where the species area curve for Autumn/Winter reaches 15. To draw this vertical line, make a line that starts at (55, 0) and ends at (55, 35). This line should have the colour 'r', have a width of 3, and be dashed. This line will have no label.
 
-Point 1: Let h be the input from the user. Draw a single point with the marker as a filled in circle ('o') on the Spring/Summer line where `x = h` and `y = 3*h**0.5`. The point should be labelled 'Number of species in Spring/Summer'. If this point has a y value below 15, colour it red ('r'). If it is 15 or above, colour it black ('k'). You will need an if statement for this.
+Point 1: Let h be the input from the user. Draw a single point with the marker as a filled in circle ('o') on the Spring/Summer line where `x = h` and `y = 3*h**0.5`. The point should be labelled 'Number of species in S/S'. If this point has a y value below 15, colour it red ('r'). If it is 15 or above, colour it black ('k'). You will need an if statement for this.
 
-Point 2: Let h be the input from the user. Draw a single point with the marker as a filled in square ('s') on the Autumn/Winter line where `x = h` and `y = 3*h**0.5*0.675`. The point should be labelled 'Number of species in Autumn/Winter'. If this point has a y value below 15, colour it red ('r'). If it is 15 or above, colour it black ('k'). You will need an if statement for this.
+Point 2: Let h be the input from the user. Draw a single point with the marker as a filled in square ('s') on the Autumn/Winter line where `x = h` and `y = 3*h**0.5*0.675`. The point should be labelled 'Number of species in A/W'. If this point has a y value below 15, colour it red ('r'). If it is 15 or above, colour it black ('k'). You will need an if statement for this.
 
 The graph should be styled as follows:
 
