@@ -1,9 +1,13 @@
+# Applying Euler's Method
+
 Light emitting diodes (commonly referred to as LEDs) are a key component in electrical circuits. The relationship between the voltage and current through a diode is exponential, such that the current through the diode exponentially increases with its corresponding voltage. If the current passing through a diode is too high, the diode can rupture and break. This particular current value is known as the maximum forward diode current.
 
 You have a diode that has the following equation to represent the **derivative** of its current:
 ```python
 cdash = 0.006*exp(3.2*v)
 ```
+
+**Task:**
 
 You wish to write a program that will apply Euler's method to estimate the diode current. The program will take the following inputs from the user:
 1. The maximum forward diode current
@@ -28,3 +32,5 @@ The program includes the following variables already:
 currentStep - The first step of your Euler's method
 c - The initial current to implement in your first Euler's method step
 v - The initial voltage to implement in your first Euler's method step
+
+# Solution
