@@ -34,7 +34,9 @@ where steps is the number of steps being implemented by Euler's method.
 5. You will also need a condition to check that after Euler's method is completed, if there was no rupture, then you will print the appropriate message.
 
 The program includes the following variables already for you to use:
+
 NO_RUPTURE - Variable to return from the 'check_rupture' function if rupture has not occured
+
 RUPTURE - Variable to return from the 'check_rupture' function if rupture has occured
 
 currentStep - The first step of your Euler's method
