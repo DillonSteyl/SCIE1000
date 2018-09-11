@@ -15,13 +15,13 @@ You wish to write a program that will apply Euler's method to estimate the diode
 3. The step size to implement when using Euler's method (stepsize)
 The program will print the following message if the maximum forward diode current is reached:
 "The diode has ruptured at a voltage of (ANSWER HERE) volts."
-If the maximum forward diode current is not reached, then the program will print:
+The answer for the voltage needs to be rounded to 5 decimal places. If the maximum forward diode current is not reached, then the program will print:
 "The diode has not ruptured."
 
 This will require you to implement the following steps when writing your program:
 1. Prompting the user for the appropriate input. Use the variable names provided above.
 2. Calculating the number of steps the program will iterate over from the user input. Call this variable 'steps'.
-3. Implementing Euler's method at each step. You must use the following functions from the previous Euler's method exercises: the 'fdash' function (modified to use cdash for this question) and the 'one_step' function.
+3. Implementing Euler's method at each step. You must use the following functions from the previous Euler's method exercises: the 'fdash' function (modified to use cdash for this question) and the 'one_step' function. Keep the rounding included in these functions.
 4. Use a while loop to implement multiple steps of Euler's method, similar to the eulers function. At **each** step, check if the current is greater than or equal to the maximum forward diode current. If it is, you need to print the appropriate message, and also stop the program from running. You must write a function called 'check_rupture' 
 to implement at each step of your Euler's method, that will either return a result of RUPTURED or NOT_RUPTURED, depending on if the maximum forward diode current has been met or not. The result from this function 
 can then be checked using a conditional. If rupture has occurred, to stop the program from running after this point, 
@@ -29,7 +29,7 @@ you can change your current step to a value greater than the total number of ste
 ```python
 currentStep = steps+1
 ```
-where steps is the number of steps being implemented by Euler's method.
+where steps is the number of steps being implemented by Euler's method. 
 5. You will also need a condition to check that after Euler's method is completed, if there was no rupture, then you will print the appropriate message.
 
 The program includes the following variables already:
