@@ -12,7 +12,7 @@ In words, the next guess (x(i+1)) is the current guess (x(i)) minus its y value 
 
 **Task:** Write two functions called `f(x)` and `fdash(x)` that calculate the value of the function at `x` and the derivative at `x`, respectively. The function and its derivative are as follows:
 
-`f(x) = e^(0.05x)*(0.05x)`
+`f(x) = e^(0.05x)*(0.05x) - 5`
 
 `fdash(x) = e^(0.05x)*(0.0025x + 0.05)`
 
@@ -26,7 +26,7 @@ Don't print anything or ask for any user input.
 from pylab import *
 
 def f(x):
-    y = round(exp(0.05*x)*(0.05*x),5)
+    y = round(exp(0.05*x)*(0.05*x)-5,5)
     return(y)
     
 def fdash(x):
