@@ -30,13 +30,19 @@ you can change your current step to a value greater than the total number of ste
 currentStep = steps+1
 ```
 where steps is the number of steps being implemented by Euler's method. 
+
 5. You will also need a condition to check that after Euler's method is completed, if there was no rupture, then you will print the appropriate message.
 
 The program includes the following variables already:
+
 NO_RUPTURE - Variable to return from the 'check_rupture' function if rupture has not occured
+
 RUPTURE - Variable to return from the 'check_rupture' function if rupture has occured
+
 currentStep - The first step of your Euler's method
+
 c - The initial current to implement in your first Euler's method step
+
 v - The initial voltage to implement in your first Euler's method step
 
 # Solution
