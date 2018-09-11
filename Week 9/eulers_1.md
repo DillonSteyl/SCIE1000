@@ -13,3 +13,14 @@ If you want to calculate more steps, just reuse the formula but with your new `y
 `fdash = 0.05x * e^(0.05x)`
 
 Round the output to 5 decimal places. Do not print anything, call your function, or ask for any input. 
+
+# Solution
+
+```
+from pylab import *
+
+def fdash(x):
+    d = round(0.05 * x * exp(0.05 * x),5)
+    return(d)
+
+```
