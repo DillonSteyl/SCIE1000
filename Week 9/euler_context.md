@@ -60,9 +60,9 @@ def check_for_rupture(c, cmax):
         result = NO_RUPTURE
     return (result)
 
-cmax = eval(input("Enter the maximum allowed current: "))
-iterationTime = eval(input("Enter what voltage you would like to iterate up to: "))
-stepsize = eval(input("Enter the step size: "))
+cmax = float(input("Enter the maximum allowed current: "))
+iterationTime = float(input("Enter what voltage you would like to iterate up to: "))
+stepsize = float(input("Enter the step size: "))
 
 steps = iterationTime/stepsize
 
