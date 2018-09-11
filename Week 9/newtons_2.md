@@ -16,7 +16,7 @@ Round the answer to 5 decimal places.
 ```from pylab import *
 
 def f(x):
-    y = round(exp(0.05*x)*(0.05*x)+5,5)
+    y = round(exp(0.05*x)*(0.05*x)-5,5)
     return(y)
     
 def fdash(x):
