@@ -33,3 +33,28 @@ Fdash = 2*2.5 + 2 = 5 + 2 = 7
 Value of y at step 3: new y = 9.5 + 7*0.5 = 9.5 + 3.5 = 13
 
 So our final value for y is 13 after 3 steps (at x = 2.5). For interest, one function with this derivative is `y = x**2+2*x+1`. At x = 1, y is equal to 4, like in this example. At x = 2.5 (which is our final x value), the value of y is 12.25. This is pretty close to our approximated value of 13. 
+
+
+
+# Solution
+
+```
+from pylab import *
+
+def fdash(x):
+    d = round(0.05 * x * exp(0.05 * x),5)
+    return(d)
+
+def onestep(x, y, h):
+    nexty = round(y + fdash(x)*h,5)
+    return(nexty)
+    
+def eulers(x, y, h, n):
+    currentStep = 1
+    while currentStep<=n:
+       x = x + h
+       y = onestep(x, y, h)
+       currentStep = currentStep + 1
+    return(y)
+
+```
