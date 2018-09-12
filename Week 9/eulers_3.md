@@ -1,3 +1,5 @@
+# Euler's Method (3)
+
 **Task:** Write a function called eulers(x, y, h, n) that uses euler’s method `n` times with the given x, y and h values. It will return the final y value. Remember to copy paste your `onestep` and `fdash` functions. You are encouraged to use them in your `eulers` function, but it is up to you. 
 
 The `fdash` and `onestep` functions already round their output, so you will not need to do any rounding inside the `eulers` function.

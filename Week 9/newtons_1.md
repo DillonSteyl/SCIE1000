@@ -1,4 +1,4 @@
-# Newton's Method
+# Newton's Method (1)
 
 For the following exercises you will write a program that implements Newton's method. Newton's method can be found in Chapter 8.4 of your lecture notes, which gives a description of why this method works. For our purposes you only need to know the algorithm itself.
 
