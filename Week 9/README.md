@@ -15,3 +15,5 @@ order. file_name "Title"
 8. newtons_3 "Newton's Method (3)"
 9. newtons_4 "Newton's Method (4)"
 10. (newtons context)
+11. population_1 "Modelling an Alien Invasion (1)"
+12. population_2 "Modelling an Alien Invasion (2)"
