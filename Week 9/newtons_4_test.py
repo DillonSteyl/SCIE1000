@@ -69,9 +69,9 @@ class Tests(PythonTestCase):
 		self.assertEqual(b, 5)
 		
 	def test_function_zero4(self):
-		""" Function 'newtons' returns "83.44563, 2" for input "0, 2, 0.5" """
-		a,b = attempt.newtons(0,2,0.5)
-		self.assertEqual(a, 83.44563)
+		""" Function 'newtons' returns "74.45343, 2" for input "1, 2, 0.5" """
+		a,b = attempt.newtons(1,2,0.5)
+		self.assertEqual(a, 74.45343)
 		self.assertEqual(b, 2)
 		
 	def test_function_neg154(self):
