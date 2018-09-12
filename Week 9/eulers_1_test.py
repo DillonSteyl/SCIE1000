@@ -16,15 +16,15 @@ class Tests(PythonTestCase):
 			
 	def test_function_10(self):
 		""" Function 'fdash' returns "0.82436" for input "10" """
-		self.assertEqual(attempt.negate(10), 0.82436)
+		self.assertEqual(attempt.fdash(10), 0.82436)
 		
 	def test_function_zero(self):
 		""" Function 'fdash' returns "0" for input "0""""
-		self.assertEqual(attempt.negate(0), 0)
+		self.assertEqual(attempt.fdash(0), 0)
 		
 	def test_function_neg15(self):
 		""" Function 'fdash' returns "-0.35427" for input "-15" """
-		self.assertEqual(attempt.negate(-15), -0.35427)
+		self.assertEqual(attempt.fdash(-15), -0.35427)
 				
 # Run the unit tests
 if __name__ == "__main__":
