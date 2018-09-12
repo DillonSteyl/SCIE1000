@@ -19,7 +19,7 @@ class Tests(PythonTestCase):
 		self.assertEqual(attempt.fdash(10), 0.82436)
 		
 	def test_function_zero(self):
-		""" Function 'fdash' returns "0" for input "0""""
+		""" Function 'fdash' returns "0" for input "0" """
 		self.assertEqual(attempt.fdash(0), 0)
 		
 	def test_function_neg15(self):
