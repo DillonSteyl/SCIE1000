@@ -19,7 +19,7 @@ class Tests(PythonTestCase):
 		self.assertEqual(attempt.fdash(10), 0.82436)
 		
 	def test_function_zero(self):
-		""" Function 'fdash' returns "0" for input "0" """
+		""" Function 'fdash' returns "0" for input "0""""
 		self.assertEqual(attempt.fdash(0), 0)
 		
 	def test_function_neg15(self):
@@ -47,16 +47,16 @@ class Tests(PythonTestCase):
 		self.assertMethodDefined(attempt, "eulers", 4)
 			
 	def test_function_one(self):
-		""" Function 'eulers' returns "10.8205" for input "0,10,0.5,10" """
-		self.assertEqual(attempt.eulers(0,10,0.5,10), 10.8205)
+		""" Function 'eulers' returns "10.66" for input "0,10,0.5,10" """
+		self.assertEqual(attempt.eulers(0,10,0.5,10), 10.66)
 		
 	def test_function_two(self):
-		""" Function 'eulers' returns "13.42957" for input "12,12,0.1,12" """
-		self.assertEqual(attempt.eulers(12,12,0.1,12), 13.42957)
+		""" Function 'eulers' returns "13.41121" for input "12,12,0.1,12" """
+		self.assertEqual(attempt.eulers(12,12,0.1,12), 13.41121)
 		
 	def test_function_three(self):
-		""" Function 'eulers' returns "287.669" for input "38.2,95.9,0.1,100" """
-		self.assertEqual(attempt.eulers(38.2,95.9,0.1,100), 287.669)
+		""" Function 'eulers' returns "286.27554" for input "38.2,95.9,0.1,100" """
+		self.assertEqual(attempt.eulers(38.2,95.9,0.1,100), 286.27554)
 				
 # Run the unit tests
 if __name__ == "__main__":
