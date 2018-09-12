@@ -4,7 +4,7 @@ An asteroid has been spotted travelling through our solar system. One astrophysi
 
 For an asteroid to collide with Earth, it needs to have the same x, y, and z coordinates as the Earth in 215 days (x, y, and z represent the three dimensions. Because solar systems are three dimensional!). If any of the final predicted x, y, and z values are different to the Earth's, then that will mean the asteroid will not collide with Earth in 215 days. 
 
-It has already been proven that the asteroid will have the same x and z coordinates as Earth in 215 days. So, you only need tow orry about the `y` dimension.
+It has already been proven that the asteroid will have the same x and z coordinates as Earth in 215 days. So, you only need to worry about the `y` dimension.
 
 The equation for the change in y at day t after the asteroid was discovered is:
 
@@ -12,7 +12,7 @@ The equation for the change in y at day t after the asteroid was discovered is:
 
 The starting `y` position of the asteroid is 160.195 million kilometers, which occurs at `t = 0`. The `y` position of Earth in 215 days (`t = 215`) is 150 million kilometers. 
 
-**Task:** Write a function called will_it_hit(h), that returns the number `1` if the asteroid is going to hit Earth in 215 days, and 0 otherwise - along with the prediction. The Earth will be considered 'hit' if the asteroid gets within 0.01 million kilometers of Earth (so abs(earthy - asteroidy)<=0.1). The input for the function is `h`, which indicates the step size in days. So `h = 0.5` indicates that there are two steps of Euler's method per day, resulting in `215/0.5 = 530` steps of Euler's method.  Do not print anything. 
+**Task:** Write a function called will_it_hit(h), that returns the number `1` if the asteroid is going to hit Earth in 215 days, and 0 otherwise - along with the euler's method prediction of the asteroid's `y` poistion. The Earth will be considered 'hit' if the asteroid gets within 0.01 million kilometers of Earth (so `abs(earthy - asteroidy)<=0.1`). The input for the function is `h`, which indicates the step size in days. So `h = 0.5` indicates that there are two steps of Euler's method per day, resulting in `215/0.5 = 530` steps of Euler's method.  Do not print anything. 
 
 As with the previous exercises, the output for the fdash and onestep functions should be rounded to 5 decimal places. 
 
