@@ -13,9 +13,13 @@ You wish to write a program that will apply Euler's method to estimate the diode
 1. The maximum forward diode current (cmax)
 2. The voltage to iterate up to when performing Euler's method (iterationTime)
 3. The step size to implement when using Euler's method (stepsize)
+
 The program will print the following message if the maximum forward diode current is reached:
+
 "The diode has ruptured at a voltage of (ANSWER HERE) volts."
+
 The answer for the voltage needs to be rounded to 5 decimal places. If the maximum forward diode current is not reached, then the program will print:
+
 "The diode has not ruptured."
 
 This will require you to implement the following steps when writing your program:
