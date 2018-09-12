@@ -14,4 +14,4 @@ order. file_name "Title"
 7. newtons_2 "Newton's Method (2)"
 8. newtons_3 "Newton's Method (3)"
 9. newtons_4 "Newton's Method (4)"
-10 (newtons context)
+10. (newtons context)
