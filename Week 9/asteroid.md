@@ -8,10 +8,44 @@ It was already been proven that the asteroid will have the same x and z coordina
 
 The equation for the change in y at day t after the asteroid was discovered is:
 
-`y'(t) = aksjdhalsjhd`
+`y'(t) = (-0.05t+5)*exp(0.002t)*0.05`
 
-The starting `y` position of the asteroid is 100 million kilometers. The `y` position of Earth in 215 days is 150 million kilometers. 
+The starting `y` position of the asteroid is 160.195 million kilometers, which occurs at `t = 0`. The `y` position of Earth in 215 days (`t = 215`) is 150 million kilometers. 
 
-**Task:** Write a function called will_it_hit(h), that returns the number `1` if the asteroid is going to hit Earth in 215 days, and 0 otherwise. The Earth will be considered 'hit' if the asteroid gets within 0.01 million kilometers of Earth (so abs(earthy - asteroidy)<=0.1). The input for the function is `h`, which indicates the step size in days. So `h = 0.5` indicates that there are two steps of Euler's method per day, resulting in `215/0.5 = 530` steps of Euler's method.  Do not print anything. 
+**Task:** Write a function called will_it_hit(h), that returns the number `1` if the asteroid is going to hit Earth in 215 days, and 0 otherwise - along with the prediction. The Earth will be considered 'hit' if the asteroid gets within 0.01 million kilometers of Earth (so abs(earthy - asteroidy)<=0.1). The input for the function is `h`, which indicates the step size in days. So `h = 0.5` indicates that there are two steps of Euler's method per day, resulting in `215/0.5 = 530` steps of Euler's method.  Do not print anything. 
+
+As with the previous exercises, the output for the fdash and onestep functions should be rounded to 5 decimal places. 
 
 Use your code from the previous exercises. The only thing you will need to change is fdash. We have written tests for each of your functions (fdash, onestep, eulers, will_it_hit), to help you understand where errors might be. Good luck!
+
+**Hint:** For example, will_it_hit(5) should give output (0, 148.26465).
+
+```
+from pylab import *
+
+def fdash(x):
+    d = round( (-0.05*x+5)*exp(0.002*x)*0.05,5)
+    return(d)
+
+def onestep(x, y, h):
+    nexty = round(y + fdash(x)*h,5)
+    return(nexty)
+    
+def eulers(x, y, h, n):
+    currentStep = 1
+    while currentStep<=n:
+        x = x + h
+        y = onestep(x, y, h)
+        currentStep = currentStep + 1
+    return(y)
+    
+ def will_it_hit(h):
+     prediction = eulers(0, 160.195, h, 215/h)
+     if abs(prediction - 150)<0.01:
+         return(1, prediction)
+     else:
+         return(0, prediction)
+ 
+ 
+ 
+```
