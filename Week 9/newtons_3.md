@@ -27,6 +27,4 @@ def newtons_nsteps(x, n):
         x = onestep(x)
         currentStep = currentStep + 1
     return(x)
-
-
 ```
