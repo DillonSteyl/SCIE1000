@@ -11,22 +11,20 @@ with open(devnull, "w") as f:
 class Tests(PythonTestCase):
 
 	def test_function_defined(self):
-		""" Function 'my_sign' is defined """
-		self.assertMethodDefined(attempt, "my_sign", 1)
+		""" Function 'negate' is defined """
+		self.assertMethodDefined(attempt, "negate", 1)
 			
 	def test_function_pos(self):
-		""" Function 'my_sign' returns "1" for positive input """
-		test_val = randint(1,80)
-		self.assertEqual(attempt.my_sign(test_val), 1)
+		""" Function 'negate' returns "10" for input "-10" """
+		self.assertEqual(attempt.negate(-10), 10)
 		
 	def test_function_zero(self):
-		""" Function 'my_sign' returns "0" for zero input """
-		self.assertEqual(attempt.my_sign(0), 0)
+		""" Function 'negate' returns "0" for zero input """
+		self.assertEqual(attempt.negate(0), 0)
 		
 	def test_function_neg(self):
-		""" Function 'my_sign' returns "-1" for negative input """
-		test_val = randint(-80,-1)
-		self.assertEqual(attempt.my_sign(test_val), -1)
+		""" Function 'negate' returns "-15" for input "15" """
+		self.assertEqual(attempt.negate(15), -15)
 				
 # Run the unit tests
 if __name__ == "__main__":
