@@ -63,7 +63,7 @@ def one_step(c, cdash, stepsize):
     nextc = round(c+cdash*stepsize,5)
     return (nextc)
 
-def check_for_rupture(c, cmax):
+def check_rupture(c, cmax):
     if c >= cmax:
         result = RUPTURE
     else:
@@ -81,7 +81,7 @@ while currentStep <= steps:
     c = one_step(c, cdash, stepsize)
     v = v + stepsize
     currentStep = currentStep + 1
-    rupture = check_for_rupture(c, cmax)
+    rupture = check_rupture(c, cmax)
     if (rupture == RUPTURE):
         print("The diode has ruptured at a voltage of", round(v,5), "volts.")
         currentStep = steps+1
