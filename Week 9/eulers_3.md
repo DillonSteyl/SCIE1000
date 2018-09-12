@@ -26,26 +26,27 @@ Number of steps (n): 3
 
 `Value of y at step 1: new y = 4 + 4*0.5 = 4 + 2 = 6`
 
-`New x value = 1 + 0.5`
+`New x value = 1 + 0.5 = 1.5`
 
 **Step 2:**
-
-`New x value = 1 + 0.5 = 1.5`
 
 `Fdash = 2*1.5 + 2 = 3 + 2 = 5`
 
 `Value of y at step 2: new y = 6 + 5*0.5 = 6 + 2.5 = 8.5`
 
-**Step 3:**
-
 `New x value = 1.5 + 0.5 = 2`
+
+**Step 3:**
 
 `Fdash = 2*2 + 2 = 4 + 2 = 6`
 
 `Value of y at step 3: new y = 8.5 + 6*0.5 = 8.5 + 3 = 11.5`
 
+`New x value = 2 + 0.5 = 2.5`
 
-So our final value for y is 13 after 3 steps (at x = 2.5). For interest, one function with this derivative is `y = x**2+2*x+1`. At x = 1, y is equal to 4, like in this example. At x = 2.5 (which is our final x value), the value of y is 12.25. This is pretty close to our approximated value of 11.5. 
+
+
+So our final value for y is 11.5 after 3 steps (at x = 2.5). For interest, one function with this derivative is `y = x**2+2*x+1`. At x = 1, y is equal to 4, like in this example. At x = 2.5 (which is our final x value), the value of y is 12.25. This is pretty close to our approximated value of 11.5. 
 
 
 
