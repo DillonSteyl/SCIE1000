@@ -14,7 +14,7 @@ class Tests(PythonTestCase):
 		""" Function 'fdash' is defined """
 		self.assertMethodDefined(attempt, "fdash", 1)
 			
-	def test_function_pos(self):
+	def test_function_10(self):
 		""" Function 'fdash' returns "0.82436" for input "10" """
 		self.assertEqual(attempt.negate(10), 0.82436)
 		
@@ -22,7 +22,7 @@ class Tests(PythonTestCase):
 		""" Function 'fdash' returns "0" for input "0""""
 		self.assertEqual(attempt.negate(0), 0)
 		
-	def test_function_neg(self):
+	def test_function_neg15(self):
 		""" Function 'fdash' returns "-0.35427" for input "-15" """
 		self.assertEqual(attempt.negate(-15), -0.35427)
 				
