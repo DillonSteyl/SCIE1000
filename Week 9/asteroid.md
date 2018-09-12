@@ -34,8 +34,9 @@ def onestep(x, y, h):
 def eulers(x, y, h, n):
     currentStep = 1
     while currentStep<=n:
-        x = x + h
+        
         y = onestep(x, y, h)
+        x = x + h
         currentStep = currentStep + 1
     return(y)
     
