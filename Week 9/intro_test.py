@@ -14,7 +14,7 @@ class Tests(PythonTestCase):
 		""" Function 'negate' is defined """
 		self.assertMethodDefined(attempt, "negate", 1)
 			
-	def test_function_pos(self):
+	def test_function_neg10(self):
 		""" Function 'negate' returns "10" for input "-10" """
 		self.assertEqual(attempt.negate(-10), 10)
 		
@@ -22,7 +22,7 @@ class Tests(PythonTestCase):
 		""" Function 'negate' returns "0" for zero input """
 		self.assertEqual(attempt.negate(0), 0)
 		
-	def test_function_neg(self):
+	def test_function_15(self):
 		""" Function 'negate' returns "-15" for input "15" """
 		self.assertEqual(attempt.negate(15), -15)
 				
