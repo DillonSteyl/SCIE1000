@@ -41,6 +41,22 @@ class Tests(PythonTestCase):
 	def test_function_1042036810(self):
 		""" Function 'onestep' returns "212.4265" for input "10.4,203.68,10" """
 		self.assertEqual(attempt.onestep(10.4,203.68,10), 212.4265)
+		
+	def test_function_defined3(self):
+		""" Function 'eulers' is defined """
+		self.assertMethodDefined(attempt, "eulers", 4)
+			
+	def test_function_one(self):
+		""" Function 'eulers' returns "10.8205" for input "0,10,0.5,10" """
+		self.assertEqual(attempt.pnestep(0,10,0.5,10), 10.8205)
+		
+	def test_function_two(self):
+		""" Function 'eulers' returns "13.42957" for input "12,12,0.1,12" """
+		self.assertEqual(attempt.onestep(12,12,0.1,12), 13.42957)
+		
+	def test_function_three(self):
+		""" Function 'eulers' returns "287.669" for input "38.2,95.9,0.1,100" """
+		self.assertEqual(attempt.onestep(38.2,95.9,0.1,100), 287.669)
 				
 # Run the unit tests
 if __name__ == "__main__":
