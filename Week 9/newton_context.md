@@ -1,123 +1,85 @@
-# Newton's Method (5) - LEDs
+# Newton's Method (5) - Voltages
 
 
 Capacitors are a crucial electrical component that are used in the development of both micro-electronic products and large scale circuit development. To summarise briefly, they consist of two conductive metal plates, and store energy, similar to a battery. 
 
-Between the two plates is a voltage difference. It is possible that the voltage difference across a capacitor is too high, and causes the component to rupture and fail. 
+Between the two plates is a voltage difference. It is possible that the voltage difference across a capacitor is too high, and causes the component to rupture and fail.  
 
-Suppose the voltage across a capacitor is given by 
-```python
-V(t) = K*e**(50*t)
-```
-where K is a constant. The initial voltage across the component is 20V.
+You have been given a particular capacitor whose maximum voltage difference is 10000V, and you want to know the current at which this occurs.
 
-We want to write a program that predicts the time the capacitor will rupture using Newton’s method, and also determine the current passing through the capacitor at the time of rupture. The maximum voltage difference permitted across the component is 10,000V, and the current across the capacitor will be given by
-```python
-Vdash(t) * Capacitance
-```
-where the capacitance is equivalent to 3 * 10^-6.
+The following equation gives the voltage difference given a current c. 
 
-Below are some tips for writing your program:
-1. Functions are recommended for this program. Consider where these would be helpful. 
-2. This question will require you to do some quick calculations prior to writing your program. Refer to the steps outlined in class on how to implement Newton’s method to ensure you are on the right track. 
-3. Vdash(t), the derivative of V(t), is equivalent to 50 times V(t). If you want the derivative of V(t) + k, where k is some constant, the derivative will still be Vdash(t).
-4. Use an initial estimate of … for the Newton’s method and apply 5 steps. 
+`V(c) = ce^(0.05c)*1000`
 
+It's derivative is as follows:
 
+`V'(c) = (50c + 1000)e^(0.05 c)`
 
+If we wanted to solve this using Newton's Method, then V(c) would be replaced with:
 
-Light emitting diodes (commonly referred to as LEDs) are a key component in electrical circuits. The relationship between the voltage and current through a diode is exponential, such that the current through the diode exponentially increases with its corresponding voltage. If the current passing through a diode is too high, the diode can rupture and break. This particular current value is known as the maximum forward diode current.
+`W(c) = ce^(0.05c)*1000-10000`
 
+Notice that when `W(c)` is equal to 0, that same `c` value will correspond with `V(c)` equalling 10000. Note that the derivative will stay the same (10000 has no `c` term, so it disappears when differentiated).
 
+It's not that hard to calculate the current for the maximum voltage difference for just one capacitor. But, you have been given a box of capacitors all with different maximum voltage differences but the same equation for voltage difference. So, this means that W(c) becomes:
 
-You have a diode that has the following equation to represent the **derivative** of its current, which is dependent on its voltage (v):
-```python
+`W(c) = ce^(0.05c)*1000 - max_voltage`
 
-cdash(v) = v*0.006*exp(3.2*v)
+where `max_voltage` is the maximum voltage difference for that capacitor. 
 
-```
+You want to find out which capacitors you can use through different circuits, all with different currents. 
 
-**Task:**
+**Task:** Write a function called `will_it_rupture(current, max_voltage)`, where `current` is the current you want to use through your circuit, and voltage is the maximum voltage difference for that particular capacitor. `will_it_rupture` will return two values, the first is 0 if the capacitor should not be used with that current, and 1 otherwise (that is, if the maximum voltage difference is less than or equal to the current used in the circuit, then it is not acceptable to use that capacitor). The second variable is the current at which the maximum voltage difference occurs for that capacitor. 
 
-You wish to write a program that will apply Euler's method to estimate the diode current. The program will take the following inputs from the user:
-1. The maximum forward diode current (cmax)
-2. The voltage to iterate up to when performing Euler's method (iterationTime)
-3. The step size to implement when using Euler's method (stepsize)
+Copy paste your code from the previous exercises. You want the `f`, `fdash`, `onestep` and `newtons` functions.
 
-The program will print the following message if the maximum forward diode current is reached:
+You will have to make the following changes to your existing functions before writing your `will_it_rupture` function:
 
-"The diode has ruptured at a voltage of (ANSWER HERE) volts."
+1. The `fdash` function should use the `V'(c)` equation given.
 
-The answer for the voltage needs to be rounded to 5 decimal places. If the maximum forward diode current is not reached, then the program will print:
+2. The `f` function should take in two variables as input: `f(x, max_voltage)`. The equation used should be the `W(c)` function. 
 
-"The diode has not ruptured."
+3. The `onestep` function should take in two variables as input: `onestep(x, max_voltage)`. The `f` function is called in this function, so that should be updated so that the `max_voltage` variable is also passed in.
 
-This will require you to implement the following steps when writing your program:
-1. Prompting the user for the appropriate input. Use the variable names provided above.
-2. Calculating the number of steps the program will iterate over from the user input. Call this variable 'steps'.
-3. Implementing Euler's method at each step. You must use the following functions from the previous Euler's method exercises: the 'fdash' function (modified to use cdash for this question) and the 'one_step' function. Keep the rounding included in these functions.
-4. Use a while loop to implement multiple steps of Euler's method, similar to the eulers function. At **each** step, check if the current is greater than or equal to the maximum forward diode current. If it is, you need to print the appropriate message, and also stop the program from running. You must write a function called 'check_rupture' 
-to implement at each step of your Euler's method, that will either return a result of RUPTURED or NOT_RUPTURED, depending on if the maximum forward diode current has been met or not. The result from this function 
-can then be checked using a conditional. If rupture has occurred, to stop the program from running after this point, 
-you can change your current step to a value greater than the total number of steps needed. This will prevent any while loop implementing your Euler's method to stop. This will mean you will need to write the line
-```python
-currentStep = steps+1
-```
-where steps is the number of steps being implemented by Euler's method. 
+4. The `newtons` function should take in four variables as input: `newtons(x, n, p, max_voltage)`. Again, since the `onestep` function has been updated to take in the `max_voltage` variable, the line where the `onestep` function is called needs to be update so that the `max_voltage` variable is passed in. Additionally, the `newtons` function should be changed to return only one variable: the final guess. It should no longer return the number of steps.  
 
-5. You will also need a condition to check that after Euler's method is completed, if there was no rupture, then you will print the appropriate message.
+For simplicity, set `n = 15` and `p = 1` for Newton's Method, and start with an initial guess of `x = 1`. You are still expected to round the output of the `f`, `fdash`, and `onestep` functions to 5 decimal places.
 
-The program includes the following variables already for you to use:
-
-NO_RUPTURE - Variable to return from the 'check_rupture' function if rupture has not occured
-
-RUPTURE - Variable to return from the 'check_rupture' function if rupture has occured
-
-currentStep - The first step of your Euler's method
-
-c - The initial current to implement in your first Euler's method step
-
-v - The initial voltage to implement in your first Euler's method step
+**Note:** We have written tests for all five of the functions, so you can check to see where your errors are. 
 
 # Solution
-```python
-from pylab import *
 
-NO_RUPTURE = 0;
-RUPTURE = 1;
-currentStep = 1
-c = 0.006
-v = 0
 
-def get_c_dash(v):
-    cdash = round(0.006*exp(3.2*v),5)
-    return (cdash)
-
-def one_step(c, cdash, stepsize):
-    nextc = round(c+cdash*stepsize,5)
-    return (nextc)
-
-def check_rupture(c, cmax):
-    if c >= cmax:
-        result = RUPTURE
+```
+def f(c, max_voltage):
+    y = round(c*exp(0.05*c)*1000 - max_voltage,5)
+    return(y)
+    
+def fdash(c):
+    d = round((50*c + 1000)*exp(0.05*c),5)
+    return(d)
+    
+def onestep(x, max_voltage):
+    newguess = round(x - f(x, max_voltage)/fdash(x),5)
+    return(newguess)
+    
+def newtons(x, n, p, max_voltage):
+    currentStep = 1
+    stop = 0
+    while stop==0 and currentStep <= n:
+        previous = x
+        x = onestep(x, max_voltage)
+        if 100*abs(previous - x)/previous < p:
+            stop = 1
+        currentStep = currentStep + 1
+    return(x)
+    
+def will_it_rupture(current, max_voltage):
+    guess = newtons(1, 15, 1, max_voltage)
+    if guess<=current:
+        return(0, guess)
     else:
-        result = NO_RUPTURE
-    return (result)
-
-cmax = float(input("Enter the maximum allowed current: "))
-iterationTime = float(input("Enter what voltage you would like to iterate up to: "))
-stepsize = float(input("Enter the step size: "))
-
-steps = iterationTime/stepsize
-
-while currentStep <= steps:
-    cdash = get_c_dash(v)
-    c = one_step(c, cdash, stepsize)
-    v = v + stepsize
-    currentStep = currentStep + 1
-    rupture = check_rupture(c, cmax)
-    if (rupture == RUPTURE):
-        print("The diode has ruptured at a voltage of", round(v,5), "volts.")
-        currentStep = steps+1
-if (rupture == NO_RUPTURE):
-    print("The diode has not ruptured.")
+        return(1, guess)
+    
+    
+```
