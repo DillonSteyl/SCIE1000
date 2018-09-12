@@ -45,7 +45,4 @@ def eulers(x, y, h, n):
          return(1, prediction)
      else:
          return(0, prediction)
- 
- 
- 
 ```
