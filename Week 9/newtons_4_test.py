@@ -57,6 +57,22 @@ class Tests(PythonTestCase):
 	def test_function_neg153(self):
 		""" Function 'onestep' returns "892.50339" for input "-15" """
 		self.assertEqual(attempt.onestep(-15), 892.50339)
+		
+	def test_function_defined4(self):
+		""" Function 'newtons_nsteps' is defined """
+		self.assertMethodDefined(attempt, "newtons_nsteps", 2)
+			
+	def test_function_104(self):
+		""" Function 'newtons_nsteps' returns "28.00077" for input "10, 3" """
+		self.assertEqual(attempt.newtons_nsteps(10,3), 28.00077)
+		
+	def test_function_zero4(self):
+		""" Function 'newtons_nsteps' returns "26.53449" for input "0, 15""""
+		self.assertEqual(attempt.newtons_nsteps(0, 15), 26.53449)
+		
+	def test_function_neg154(self):
+		""" Function 'newtons_nsteps' returns "29.85624" for input "-15, 48" """
+		self.assertEqual(attempt.newtons_nsteps(-15, 48), 29.85624)
 				
 # Run the unit tests
 if __name__ == "__main__":
