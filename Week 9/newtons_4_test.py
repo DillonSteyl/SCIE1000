@@ -75,10 +75,10 @@ class Tests(PythonTestCase):
 		self.assertEqual(b, 2)
 		
 	def test_function_neg154(self):
-		""" Function 'newtons' returns "26.53449, 51" for input "-15, 100, 0.1" """
-		a,b = attempt.newtons(-15,100,0.1)
-		self.assertEqual(a, 26.53449)
-		self.assertEqual(b, 51)
+		""" Function 'newtons' returns "26.5345, 8" for input "5, 100, 0.01" """
+		a,b = attempt.newtons(5,100,0.01)
+		self.assertEqual(a, 26.5345)
+		self.assertEqual(b, 8)
 				
 # Run the unit tests
 if __name__ == "__main__":
