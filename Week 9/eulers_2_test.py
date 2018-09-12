@@ -32,7 +32,7 @@ class Tests(PythonTestCase):
 			
 	def test_function_111(self):
 		""" Function 'onestep' returns "1.05256" for input "1,1,1" """
-		self.assertEqual(attempt.pnestep(1,1,1), 1.05256)
+		self.assertEqual(attempt.onestep(1,1,1), 1.05256)
 		
 	def test_function_101805(self):
 		""" Function 'onestep' returns "18.41218" for input "10,18,0.5" """
