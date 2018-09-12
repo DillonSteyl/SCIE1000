@@ -59,20 +59,26 @@ class Tests(PythonTestCase):
 		self.assertEqual(attempt.onestep(-15), 892.50339)
 		
 	def test_function_defined4(self):
-		""" Function 'newtons_nsteps' is defined """
-		self.assertMethodDefined(attempt, "newtons_nsteps", 2)
+		""" Function 'newtons' is defined """
+		self.assertMethodDefined(attempt, "newtons", 3)
 			
 	def test_function_104(self):
-		""" Function 'newtons_nsteps' returns "28.00077" for input "10, 3" """
-		self.assertEqual(attempt.newtons_nsteps(10,3), 28.00077)
+		""" Function 'newtons' returns "26.53469, 5" for input "10, 15, 1" """
+		a,b = attempt.newtons(10,15, 1)
+		self.assertEqual(a, 26.53469)
+		self.assertEqual(b, 5)
 		
 	def test_function_zero4(self):
-		""" Function 'newtons_nsteps' returns "26.53449" for input "0, 15""""
-		self.assertEqual(attempt.newtons_nsteps(0, 15), 26.53449)
+		""" Function 'newtons' returns "83.44563, 2" for input "0, 2, 0.5""""
+		a,b = attempt.newtons(0,2,0.5)
+		self.assertEqual(a, 83.44563)
+		self.assertEqual(b, 2)
 		
 	def test_function_neg154(self):
-		""" Function 'newtons_nsteps' returns "29.85624" for input "-15, 48" """
-		self.assertEqual(attempt.newtons_nsteps(-15, 48), 29.85624)
+		""" Function 'newtons' returns "26.53449, 51" for input "-15, 100, 0.1" """
+		a,b = attempt.newtons(-15,100,0.1)
+		self.assertEqual(a, 26.53449)
+		self.assertEqual(b, 51)
 				
 # Run the unit tests
 if __name__ == "__main__":
