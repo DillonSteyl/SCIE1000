@@ -12,6 +12,6 @@ The equation for the change in y at day t after the asteroid was discovered is:
 
 The starting `y` position of the asteroid is 100 million kilometers. The `y` position of Earth in 215 days is 150 million kilometers. 
 
-**Task:** Write a function called will_it_hit(h), that returns the number `1` if the asteroid is going to hit Earth in 215 days, and 0 otherwise. The Earth will be considered 'hit' if the asteroid gets within 0.001 million kilometers of Earth (so abs(earthy - asteroidy)<=0.1). The input for the function is `h`, which indicates the step size in days. So `h = 0.5` indicates that there are two steps of Euler's method per day, resulting in `215/0.5 = 530` steps of Euler's method.  Do not print anything. 
+**Task:** Write a function called will_it_hit(h), that returns the number `1` if the asteroid is going to hit Earth in 215 days, and 0 otherwise. The Earth will be considered 'hit' if the asteroid gets within 0.01 million kilometers of Earth (so abs(earthy - asteroidy)<=0.1). The input for the function is `h`, which indicates the step size in days. So `h = 0.5` indicates that there are two steps of Euler's method per day, resulting in `215/0.5 = 530` steps of Euler's method.  Do not print anything. 
 
 Use your code from the previous exercises. The only thing you will need to change is fdash. We have written tests for each of your functions (fdash, onestep, eulers, will_it_hit), to help you understand where errors might be. Good luck!
