@@ -41,6 +41,22 @@ class Tests(PythonTestCase):
 	def test_function_neg152(self):
 		""" Function 'f' returns "-5.35427" for input "-15" """
 		self.assertEqual(attempt.f(-15), -5.35427)
+		
+	def test_function_defined3(self):
+		""" Function 'onestep' is defined """
+		self.assertMethodDefined(attempt, "onestep", 1)
+			
+	def test_function_103(self):
+		""" Function 'onestep' returns "43.76983" for input "10" """
+		self.assertEqual(attempt.onestep(10), 43.76983)
+		
+	def test_function_zero3(self):
+		""" Function 'onestep' returns "100" for input "0""""
+		self.assertEqual(attempt.onestep(0), 100)
+		
+	def test_function_neg153(self):
+		""" Function 'onestep' returns "892.50339" for input "-15" """
+		self.assertEqual(attempt.onestep(-15), 892.50339)
 				
 # Run the unit tests
 if __name__ == "__main__":
