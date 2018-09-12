@@ -12,6 +12,8 @@ In this formula, the vertical lines indicate absolute value (that is, the value 
 
 **Hint:** Your while loop will stop when either the current step is greater than the maximum number of steps, or the percentage change is lower than the minimum percentage change. You will need to keep track of the previous guess. There are multiple ways to implement this function, so do whatever is most comfortable for you. 
 
+**Note:** You can assume that you will never be given an initial `x` value of 0.
+
 
 ```
 def f(x):
@@ -32,7 +34,7 @@ def newtons(x, n, p):
     while stop==0 and currentStep <= n:
         previous = x
         x = onestep(x)
-        if 100*abs(previous - x)/x < p:
+        if 100*abs(previous - x)/previous < p:
             stop = 1
         currentStep = currentStep + 1
     return(x, currentStep-1)
