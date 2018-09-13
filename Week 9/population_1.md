@@ -1,4 +1,4 @@
-# Modelling an Alien Invasion (1)
+# Alien Invasion (1)
 
 In the following exercises, you will combine your knowledge of arrays and loops to track the effects of a devestating alien invasion.
 
