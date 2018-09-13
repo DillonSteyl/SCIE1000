@@ -7,7 +7,7 @@ Between the two plates is a voltage difference. It is possible that the voltage 
 
 You have been given a particular capacitor whose maximum voltage difference is 10000V, and you want to know the current at which this occurs.
 
-The following equation gives the voltage difference given a current c. 
+The following equation gives the voltage difference (in volts) given a current c (in amps). 
 
 `V(c) = ce^(0.05c)*1000`
 
@@ -25,11 +25,11 @@ It's not that hard to calculate the current for the maximum voltage difference f
 
 `W(c) = ce^(0.05c)*1000 - max_voltage`
 
-where `max_voltage` is the maximum voltage difference for that capacitor. 
+where `max_voltage` is the maximum voltage difference for that capacitor in volts. 
 
 You want to find out which capacitors you can use through different circuits, all with different currents. 
 
-**Task:** Write a function called `will_it_rupture(current, max_voltage)`, where `current` is the current you want to use through your circuit, and voltage is the maximum voltage difference for that particular capacitor. `will_it_rupture` will return two values, the first is 0 if the capacitor should not be used with that current, and 1 otherwise (that is, if the maximum voltage difference is less than or equal to the current used in the circuit, then it is not acceptable to use that capacitor). The second variable is the current at which the maximum voltage difference occurs for that capacitor. 
+**Task:** Write a function called `will_it_rupture(current, max_voltage)`, where `current` is the current you want to use through your circuit in amps, and voltage is the maximum voltage difference for that particular capacitor in volts. `will_it_rupture` will return two values, the first is 0 if the capacitor should not be used with that current, and 1 otherwise (that is, if the maximum voltage difference is less than or equal to the current used in the circuit, then it is not acceptable to use that capacitor). The second variable is the current at which the maximum voltage difference occurs for that capacitor. 
 
 Copy paste your code from the previous exercises. You want the `f`, `fdash`, `onestep` and `newtons` functions.
 
