@@ -42,10 +42,10 @@ def eulers(x, y, h, n):
         currentStep = currentStep + 1
     return(y)
     
- def will_it_hit(h):
-     prediction = eulers(0, 160.195, h, 215/h)
-     if abs(prediction - 150)<0.01:
-         return(1, prediction)
-     else:
-         return(0, prediction)
+def will_it_hit(h):
+    prediction = eulers(0, 160.195, h, 215/h)
+    if abs(prediction - 150)<0.01:
+        return(1, prediction)
+    else:
+        return(0, prediction)
 ```
