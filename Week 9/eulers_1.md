@@ -8,7 +8,7 @@ Euler’s method is used to approximate a function when only the derivative and 
 
 If you want to calculate more steps, just reuse the formula but with your new `y` value. The new `x` value is also updated to `x+h`. 
 
-**Task:** To start, write a function called `fdash(x)`, that returns the value of the derivative at x. The formula for the derivative is:
+**Task:** To start, write a function called `fdash(x)`, that returns the value of the derivative at x. The formula for the derivative which we will be using as a placeholder is:
 
 `fdash = 0.05x * e^(0.05x)`
 
