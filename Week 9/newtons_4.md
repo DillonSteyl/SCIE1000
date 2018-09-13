@@ -8,7 +8,7 @@ Recall that percentage change is calculated using the following formula:
 
 In this formula, the vertical lines indicate absolute value (that is, the value is made positive no matter its value). You can use the abs(x) function to do this. 
 
-**Task:** Write a function called `newtons(x, n, p)` that uses Newton's method to guess the `x` value that corresponds to a zero value for the function. For the input, `n` is the maximum number of steps, and `p` is the minimum percentage change before the program stops making guesses. For the output, return the guess and the number of steps. Copy paste your code from the previous exercises, however you will not need to use the `newtons_nsteps` function anymore. 
+**Task:** Write a function called `newtons(x, n, p)` that uses Newton's method to guess the `x` value that corresponds to a zero value for the function. For the input, `n` is the maximum number of steps, and `p` is the minimum percentage change before the program stops making guesses. For the output, return the guess and the number of steps. Copy paste your code from the previous exercises, however you will not need to use the `newtons_nsteps` function anymore - it is recommended that you rename this `newtons` and rewrite it. 
 
 **Hint:** Your while loop will stop when either the current step is greater than the maximum number of steps, or the percentage change is lower than the minimum percentage change. You will need to keep track of the previous guess. There are multiple ways to implement this function, so do whatever is most comfortable for you. 
 
