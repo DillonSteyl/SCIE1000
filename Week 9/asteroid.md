@@ -20,7 +20,7 @@ As with the previous exercises, the output for the `fdash` and `onestep` functio
 
 Use your code from the previous exercises. The only thing you will need to change is `fdash`. We have written tests for each of your functions (`fdash`, `onestep`, `eulers`, `will_it_hit`), to help you understand where errors might be. Good luck!
 
-**Note:** All units for the `y` location of the asteroid should be in millions of kilometers. For example, will_it_hit(5) should give output (0, 148.26465).
+**Note:** All units for the `y` location of the asteroid should be in millions of kilometers. For example, will_it_hit(5) should give output (0, 151.72445).
 
 ```
 from pylab import *
