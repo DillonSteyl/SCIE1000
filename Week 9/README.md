@@ -5,7 +5,7 @@ No new python content this week. Instead, we introduce the concept of breaking d
 
 order. file_name "Title"
 
-1. intro "Week 9 Introduction"
+1. intro "Introduction"
 2. population_1 "Alien Invasion (1)"
 3. population_2 "Alien Invasion (2)"
 4. eulers_1 "Euler's Method (1)"
