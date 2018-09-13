@@ -4,7 +4,7 @@ It can be difficult to tell how many steps of Newton's method should be used to 
 
 Recall that percentage change is calculated using the following formula:
 
-`percentage change = |old value - new value| / old value   * 100`
+`percentage change = (|old value - new value| / old value )  * 100`
 
 In this formula, the vertical lines indicate absolute value (that is, the value is made positive no matter its value). You can use the abs(x) function to do this. 
 
