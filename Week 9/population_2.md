@@ -1,4 +1,4 @@
-# Modelling an Alien Invasion (2)
+# Alien Invasion (2)
 
 In the previous exercise, we wrote a program to model the population before a devastating alien invasion. Now, we will modify the program to model the population after the alien invasion.
 
@@ -22,11 +22,11 @@ You may find it useful to copy code from the previous exercise. Once again, you 
 
 Your task is to fill the `Pop` array with the correct population values using the same while loop as before. You should only use *one* while loop and *one* `Pop` array - the `Pop` array contains population values for both before and after the alien invasion.
 
-**Hint:** In the while loop, you should determine which model to use to calculate `Pop[t]` by using a *conditional*.
+**Hint:** In the while loop, you should determine which model to use to calculate `Pop[t]` by using a *conditional*. You should be using the pre-invasion equation when it is the time before the invasion, and the post-invasion formula after the start of the invasion. Check out question 9, week 5 if you have forgotten how to do this!
 
 Once again, plot `Pop` against `timeArray`, with the same title and labels as before (copy your plot code from the previous exercise if you wish!).
 
-Finally, plot a single red star (*) at the point of invasion `(tInvasion, invasionPop)` (see exercises from last week / google)!
+Finally, plot a single red star (`*`) at the point of invasion `(tInvasion, invasionPop)` (see exercises from last week / google)!
 
 ## Solution
 ```python
