@@ -19,7 +19,7 @@ This program takes the following as input:
 
 You should create an array that will hold the population values for each year from `t=0` to `t=tFinal`.
 
-To make this code easier to adapt for the next exercise, you should use the `zeros` function to create the empty `Pop` array. Then, use a `while` loop to go through the array and fill it with the correct population values for `t=0` to `t=tFinal`.
+To make this code easier to adapt for the next exercise, you should use the `zeros` function to create the empty `Pop` array. Then, use a `while` loop to go through the array and fill it with the correct population values for `t=0` to `t=tFinal`. While it is possible to complete this task without a `while` loop, it will be needed for the next exercise so you should use one now. 
 
 After the while loop is done, plot `Pop` against `timeArray`. Give the plot the following attributes:
 
