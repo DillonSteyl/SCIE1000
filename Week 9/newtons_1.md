@@ -8,7 +8,7 @@ Given an initial value `x(0)`:
 
 `x(i+1) = x(i) - f(x(i))/f'(x(i))`
 
-In words, the next guess (`x(i+1)`) is the current guess (`x(i)`), minus its y value (`f(x(i))`) divided by the derivative (`f'(x(i))`) at that point. Newton's method is applied until the guesses stop changing too much, or too many guesses have happened. You do not need to fully understand why this algorithm works in order to implement it in Python.
+In words, the next guess (`x(i+1)`) is the current guess (`x(i)`), minus its y value (`f(x(i))`), divided by the derivative (`f'(x(i))`) at that point. Newton's method is applied until the guesses stop changing too much, or too many guesses have happened. You do not need to fully understand why this algorithm works in order to implement it in Python.
 
 **Task:** To start, write two functions called `f(x)` and `fdash(x)` that calculate the value of the function at `x` and the derivative at `x`, respectively. The function and its derivative that we will be using as a placeholder are as follows:
 
