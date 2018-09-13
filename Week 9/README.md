@@ -6,14 +6,15 @@ No new python content this week. Instead, we introduce the concept of breaking d
 order. file_name "Title"
 
 1. intro "Week 9 Introduction"
-2. eulers_1 "Euler's Method (1)"
-3. eulers_2 "Euler's Method (2)"
-4. eulers_3 "Euler's Method (3)"
-5. (eulers context)
-6. newtons_1 "Newton's Method (1)"
-7. newtons_2 "Newton's Method (2)"
-8. newtons_3 "Newton's Method (3)"
-9. newtons_4 "Newton's Method (4)"
-10. (newtons context)
-11. population_1 "Modelling an Alien Invasion (1)"
-12. population_2 "Modelling an Alien Invasion (2)"
+2. population_1 "Alien Invasion (1)"
+3. population_2 "Alien Invasion (2)"
+4. eulers_1 "Euler's Method (1)"
+5. eulers_2 "Euler's Method (2)"
+6. eulers_3 "Euler's Method (3)"
+7. asteroid "Euler's Method (4) - Asteroids
+8. newtons_1 "Newton's Method (1)"
+9. newtons_2 "Newton's Method (2)"
+10. newtons_3 "Newton's Method (3)"
+11. newtons_4 "Newton's Method (4)"
+12. newtons_context "Newton's Method (5) - Voltages
+
