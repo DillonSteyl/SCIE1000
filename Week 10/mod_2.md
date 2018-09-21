@@ -38,7 +38,7 @@ Write a function called `convert_to_hours(minutes)` that takes the minutes as in
 
 So calling `convert_to_hours(135)` will return `2.0, 15`.
 
-**Hint:** There are many ways to find the hours, here is one: `converted_hours = floor(minutes/60)`. The floor function is likely new to you - it just rounds the number down to the nearest whole number. So in our example of `minutes = 135`, first minutes is divided by 60 to get `2.25`, then it is rounded down to the nearest whole number, which is `2`.
+**Hint:** There are many ways to find the hours, here is one: `converted_hours = floor(minutes/60)`. The floor function is likely new to you - it just rounds the number down to the nearest whole number (kind of like the `round` function except it always rounds down). So in our example of `minutes = 135`, first `minutes` is divided by 60 to get `2.25`, then it is rounded down to the nearest whole number, which is `2`.
 
 
 # Solution
