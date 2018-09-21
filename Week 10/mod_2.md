@@ -14,7 +14,7 @@ We use (12-hour-time):
 Not only does it start counting at 1 again halfway through the day, but unfortunately, the general public doesn't like to start counting at 0, so when the hour in 24-hour-time is 0 we must change it to 12 for 12-hour-time (for midnight and midday).
 
 Here is a function that converts the hour in 24-hour-time to 12-hour-time using the modulo operator:
-
+```
 from pylab import *
 
 def hour12(hour):
@@ -27,7 +27,7 @@ def hour12(hour):
     # otherwise, just use the converted hour
     else:
         return(converted_hour)
-        
+ ```       
 You may realise that the function could have been written without the modulo operator, but it would be a slightly longer function with more conditions. And we wanted to show you how it was done with the modulo operator - because in other cases that's just the easier way!
 
 **Task:** Your friend has decided that they don't like to count time in hours, only minutes. This has become quite inconvenient because every time you want to meet up with them to study, you need to convert from **minutes** to **hours AND minutes**. 
