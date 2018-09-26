@@ -1,4 +1,4 @@
-# The Modulo Operator (3)
+# Modulo Operator (3)
 
 Your eccentric friend has been placed in charge of a Time Machine you built together. They have decided that they don't like to count in years, only months. This makes it difficult to pack your clothes - what kind of weather should you expect if you don't know what month it is?
 
