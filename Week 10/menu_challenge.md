@@ -52,7 +52,7 @@ found = 0
 # the player starts with 3 lives
 lives = 3
 
-# this while loop runs so long as the treasure has not been found, and the player is not out of lives
+# this while loop runs as long as the treasure has not been found, and the player is not out of lives
 while found==0 and lives>0:
     
     # prints the position and detector reading for the player (Adding 1 so it goes from 1 to 10, instead of 0 to 9)
