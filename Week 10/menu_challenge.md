@@ -13,7 +13,7 @@ For each turn of the game, a set of messages is printed and the user is asked fo
 
 If the player decides to move, you must calculate their new position with the help of the `newPosition` function. You do not need to print anything.
 
-If the player decides to dig, you must first check if the buried treasure is at their location (has the same x and y values). If so, print the message "you found the treasure." and make sure the while loop finishes. If the buried treasure is not there, the player must lose a life and the program should print the messages ("Sorry, there is no treasure here.") and ("You have", lives,"remaining.").
+If the player decides to dig, you must first check if the buried treasure is at their location (has the same x and y values). If so, print the message "you found the treasure." and make sure the while loop finishes. If the buried treasure is not there, the player must lose a life and the program should print the messages ("Sorry, there is no treasure here.") and ("You have", lives,"lives remaining.").
 
 If the player enters any other number, do nothing and let the program loop back to the start of the while loop again. 
 
