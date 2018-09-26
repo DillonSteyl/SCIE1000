@@ -9,7 +9,7 @@ For each turn of the game you have 6 moves: left, up, right, down, dig, and stay
 
 **Task:** You must complete the code so that the program behaves properly. Most of it has been written for you. There are three functions in this program, and you are not expected to understand how they work - but you are welcome to try!
 
-For each turn of the game, a set of messages are printed and the user is asked for input. You do not need to change any of these messages.
+For each turn of the game, a set of messages is printed and the user is asked for input. You do not need to change any of these messages.
 
 If the player decides to move, you must calculate their new position with the help of the `newPosition` function. You do not need to print anything.
 
