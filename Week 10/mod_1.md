@@ -15,7 +15,7 @@ Here are some examples to get you used to the concept:
 0%3 = 0 # the remainder of 0 divided by 3 is 0
 ````
 
-This works for negative numbers as well. The result of a mod operation in Python will always be positive if `b` is positive, so it will tell you how much you must take away from `a` for it to be divisible by `b`.
+This works for negative numbers as well. The result of a mod operation in Python will always be positive if `b` is positive. It is a bit hard to visualise how remainders work with negative numbers, so think of it this way: `a%b`, when `a` is negative, will tell you how much you must take away from `a` for it to be divisible by `b`.
 
 ```
 -13%10 = 7 # You need to take 7 from -13 for it to be divisible by 10 (so -13-7 = -20, which is divisible by 10).
@@ -32,7 +32,7 @@ This can be a very handy tool. Let's see how it solves our even/odd number probl
 ````
 number = float(input("Enter the number: "))
 
-if number%2==0:
+if number%2 == 0:
     print (number, "is even")
 else:
     print(number, "is odd")
