@@ -1,4 +1,4 @@
-## Modulo Operator
+# Modulo Operator (1)
 
 Consider for a moment how you would write a program that can tell you if a number is even or odd. You could accomplish it by using some python functions (that you probably haven't learnt about yet), or maybe a while loop, but there is an easier way.
 
