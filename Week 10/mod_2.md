@@ -11,7 +11,7 @@ We use this (12-hour-time):
 
 `12, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11`
 
-There are two things to notice here. Firstly, in 12 hour time we start counting at 1 again halfway through the day. And secondly, the general public doesn't like to start counting at 0, so when the hour in 24-hour-time is 0 we must change it to 12 for 12-hour-time (for midnight and midday).
+There are two things to notice here. First, in 12 hour time we start counting at 1 again halfway through the day. And second, the general public doesn't like to start counting at 0, so when the hour in 24-hour-time is 0 we must change it to 12 for 12-hour-time (for midnight and midday).
 
 Here is a function that converts the hour in 24-hour-time to 12-hour-time using the modulo operator:
 ```
