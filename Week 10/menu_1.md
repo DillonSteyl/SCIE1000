@@ -19,7 +19,7 @@ print("Done.")
 
 Try running that program in Jupyter if you are unsure of its behaviour. 
 
-We can use this to create a program that presents a menu to the user:
+We can use this to create a program that presents a menu to the user, and has different behaviour depending on their choice:
 
 ```
 choice = 1
