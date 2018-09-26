@@ -2,7 +2,7 @@
 
 For this exercise you will make a buried treasure game. Here is the premise:
 
-You are on an island to find buried treasure. The only problem is that your treasure detector is broken. Your treasure detector is supposed to tell you how many moves away you are from the treasure. However, sometimes it gets it wrong by slightly underestimating or overestimating the distance.
+You are on an island to find buried treasure. The only problem is that your treasure detector is broken. Your treasure detector is supposed to tell you how many moves you are away from the treasure. However, sometimes it gets it wrong by slightly underestimating or overestimating the distance.
 
 For each turn of the game you have 6 moves: left, up, right, down, dig, and stay. The island is 10 meters by 10 meters, and each movement will move you by 1 meter. If you are on the edge of the island and choose to move into the ocean, you will swim around to the other side of the island. If you dig, you will find the buried treasure if it is there, otherwise you will lose a life. You have three chances to find the buried treasure before you will be too tired to dig anymore, and must go home. If you chose to stay put, nothing will happen and your treasure detector will have another go at finding the distance.
 
