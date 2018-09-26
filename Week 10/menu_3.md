@@ -4,7 +4,7 @@ You work in a bakery and the computer's register program has broken. Luckily, yo
 
 **Task:** Write a program that allows the user to enter product types and codes, and keeps a record of the total cost. Apply a special discount when applicable.
 
-Initially, print and introductory message (provided).
+Initially, print an introductory message (provided).
 
 In the while loop, first print the running total (initially this should be 0), and then prompt the employee to enter the type of product. If the product is a drink, the employee should enter the number '1'. If it is a freshly baked item, the employee should enter the number '2'. If it is a cabinet item, the employee should enter the number '3'. If there are no more items to buy, the employee should enter the number '0', and the program should print a final message (provided) before exiting. 
 
