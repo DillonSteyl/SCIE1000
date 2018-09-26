@@ -2,7 +2,7 @@
 
 Your eccentric friend has been placed in charge of a Time Machine you built together. They have decided that they don't like to count in years, only months. This makes it difficult to pack your clothes - what kind of weather should you expect if you don't know what month it is?
 
-**Task:** Write a function called `travel(current_month, num_months)` that outputs the season that you will arrive in. The `current_month` variable is the month you will travel from (from 0 to 11), and `num_months` is the number of months you will travel backward or forward in time. The output of the function should be 0 for autumn (months 2 to 4), 1 for winter (months 5 to 7), 2 for spring (months 8 to 10), and 3 for summer (months 11, 0, and 1). `num_month` will be positive if you are going forward in time, and negative if you are going backward. 
+**Task:** Write a function called `travel(current_month, num_months)` that outputs the season that you will arrive in. The `current_month` variable is the month you will travel from (from 0 to 11), and `num_months` is the number of months you will travel backward or forward in time. The output of the function should be 0 for autumn (months 2 to 4), 1 for winter (months 5 to 7), 2 for spring (months 8 to 10), and 3 for summer (months 11, 0, and 1). `num_months` will be positive if you are going forward in time, and negative if you are going backward. 
 
 It is important to note that we will start counting the months at 0, so January will be 0 and December will be 11. 
 
