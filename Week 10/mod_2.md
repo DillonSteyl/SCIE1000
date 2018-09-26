@@ -32,7 +32,7 @@ You may realise that the function could have been written without the modulo ope
 
 **Task:** Your friend has decided that they don't like to count time in hours, only minutes. This has become quite inconvenient because every time you want to meet up with them to study, you need to convert from **minutes** to **hours AND minutes**. 
 
-Here's an example: Your friend says they want to meet in 135 minutes. This means they want to meet in 2 hours and 15 minutes because `(2*60 + 15 = 135)`. 
+Here's an example: Your friend says they want to meet in 135 minutes. This means they want to meet in 2 hours and 15 minutes because `2*60 + 15 = 135`. 
 
 Write a function called `convert_to_hours(minutes)` that takes the minutes as input, and returns the actual hours and minutes until you need to meet with your friend. 
 
