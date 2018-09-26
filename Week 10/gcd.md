@@ -33,7 +33,7 @@ Given a and b:
 ````
 from pylab import *
 
-def gcd(a,b)
+def gcd(a,b):
     while a%b!=0:
         remainder = a%b
         a = b
