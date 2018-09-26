@@ -14,6 +14,19 @@ Here are some examples to get you used to the concept:
 124%5000 = 124 # the remainder of 124 divided by 5000 is 124
 0%3 = 0 # the remainder of 0 divided by 3 is 0
 ````
+
+This works for negative numbers as well. The result of a mod operation in Python will always be positive if `b` is positive, so it will tell you how much you must take away from `a` for it to be divisible by `b`.
+
+```
+-13%10 = 7 # You need to take 7 from -13 for it to be divisible by 10 (so -13-7 = -20, which is divisible by 10).
+```
+And you can put equations in there too, using brackets.
+
+```
+(3+8)%6 = 5 # because 3+8 = 11, and 11%6 is 5. 
+
+```
+
 This can be a very handy tool. Let's see how it solves our even/odd number problem.
 
 ````
@@ -27,7 +40,7 @@ else:
 ````
 First, Python evaluates `number%2`. For example, if `number` is 17, then `number%2` is 1 because `17%2` is equal to 1. Then, it checks if the result is equal to 0, just like how any other conditional statement would work. Then, if the condition is true (the remainder is 0), it prints the first statement, otherwise it prints the second statement. This works because when a number is even, its remainder when divided by 2 should be 0. When it is odd, its remainder should be 1. 
 
-Any number `a` that can be evenly divided by another number `b`, will have `a%b` equal to 0. Because a remainder of 0 means that there is no remainder. 
+Any number `a` that can be evenly divided by another number `b`, will have `a%b` equal to 0. Because a remainder of 0 means that there is no remainder at all. 
 
 **Task:** Write a program that takes a single number as input, and prints "This is a happy number." if divisible by 7, "Close enough." if its remainder when divided by 7 is 6, and prints "This is a sad number." otherwise.
 
