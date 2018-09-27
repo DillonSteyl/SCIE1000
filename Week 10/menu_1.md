@@ -1,6 +1,6 @@
 # While Loop Menus
 
-So far in SCIE1000, most while loops you have written have a counter (usually `i`), that starts counting at 0 or 1, and finishes at some number `n`. 
+So far in SCIE1000, most while loops you have written have a counter (usually `i`), that starts counting at 0 or 1, and finishes once `i` reaches some number `n`. 
 
 This isn't the only way to use while loops. There are two exercises for while loops in week 4 that use a different structure, titled 'Loops of Unknown Length'. For the following exercises we will be extending that concept.
 
