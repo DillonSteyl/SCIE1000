@@ -1,6 +1,6 @@
 # While Loop Menu (3)
 
-You work in a bakery and the computer's register program has broken. Luckily, you have time during your break to write a new one. 
+You work in a bakery and the computer's register program has stopped working. Luckily, you have time during your break to write a new one. 
 
 **Task:** Write a program that allows the user to enter product types and codes, and keeps a record of the total cost. Apply a special discount when applicable.
 
