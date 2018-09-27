@@ -11,9 +11,9 @@ For each turn of the game you have 6 moves: left, up, right, down, dig, and stay
 
 For each turn of the game, a set of messages is printed and the user is asked for input. You do not need to change any of these messages.
 
-If the player decides to move, you must calculate their new position with the help of the `newPosition` function. You do not need to print anything.
+If the player decides to move, you must calculate their new position with the help of the `newPosition` function. You do not need to print anything. For example, moving left means their y coordinate stays the same, and their x coordinate is one less, so x-1. 
 
-If the player decides to dig, you must first check if the buried treasure is at their location (has the same x and y values). If so, print the message "you found the treasure." and make sure the while loop finishes. If the buried treasure is not there, the player must lose a life and the program should print the messages ("Sorry, there is no treasure here.") and ("You have", lives,"lives remaining.").
+If the player decides to dig, you must first check if the buried treasure is at their location (has the same x and y values). If so, print the message ("you found the treasure.") and make sure the while loop finishes. If the buried treasure is not there, the player must lose a life and the program should print the messages ("Sorry, there is no treasure here.") and ("You have", lives,"lives remaining.").
 
 If the player enters any other number, do nothing and let the program loop back to the start of the while loop again. 
 
@@ -30,22 +30,25 @@ import random
 
 # this function returns a randomly chosen position for the buried treasure
 def makeTreasureCoords():
+    # choose a random number from 0 to 9 for the x and y coordinates
     return(random.randrange(10),random.randrange(10))
 
 # this function returns the reading from the broken treasure detector
 def detect(position_x, position_y, treasure_x, treasure_y):
+    # calculates the actual distance, and adds 1, 0 or -1 to get the 'broken' reading
     return(max(abs(position_x - treasure_x)+abs(position_y - treasure_y)+random.randrange(-1,2),0))
 
 # this function moves the player to the other side of the island, when necessary
 def newPosition(x, y):
+    # if the coordinate is not within the range of 0 to 9, then adjust it using %
     return(x%9, y%9)
 
 # the treasure coordinates are randomly generated
 treasure_x, treasure_y = makeTreasureCoords()
 
 # the player starts at this position
-position_x = 0
-position_y = 0
+position_x = 0 # this signifies the horizontal (x) coordinate
+position_y = 0 # this signifies the vertical (y) coordinate
 
 # found is set to 1 if the player has found the treasure, 0 otherwise
 found = 0
@@ -63,6 +66,7 @@ while found==0 and lives>0:
     print("Options: 1 - left, 2 - up, 3 - right, 4 - down, 5 - dig, any other number - stay.")
     move = float(input("Enter your choice: "))
     
+ 
     # the player digs for treasure
     if move==5:
     # checks if they found the treasure
