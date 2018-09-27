@@ -1,5 +1,20 @@
 # Week 10
 
+Things to do:
+
+1. Write tests
+- intro
+- mod 1
+- mod 2
+- mod 3
+- gcd
+- menu 1
+- menu 2
+- menu 3
+- menu challenge
+
+
+
 order. file_name "title"
 
 1. week10_intro "Introduction"
