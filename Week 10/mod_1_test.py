@@ -11,39 +11,68 @@ class Tests(PythonTestCase):
 		except KeyError:
 			pass
 			
-	def test1(self):
-		""" Prints ":)" once with input 1"""
-		user_input = "1"
-		expected = ":)"
+	def test7(self):
+		""" Prints "This is a happy number."  with input 7"""
+		user_input = "7"
+		expected = "This is a happy number."
 		with patch("builtins.input", return_value=user_input) as input_call:
 			with patch("sys.stdout", new=StringIO()) as output:
 				import attempt
 				self.assertEqual(output.getvalue().strip(), expected)
 				
-	def test2(self):
-		""" Prints ":)" twice with input 2 """
-		user_input = "2"
-		expected = ":)\n:)"
+	def test6(self):
+		""" Prints "Close enough." with input 6 """
+		user_input = "6"
+		expected = "Close enough."
 		with patch("builtins.input", return_value=user_input) as input_call:
 			with patch("sys.stdout", new=StringIO()) as output:
 				import attempt
 				self.assertEqual(output.getvalue().strip(), expected)
 				
-	def test0(self):
-		""" Prints nothing with input 0"""
-		user_input = "0"
+	def test4(self):
+		""" Prints "This is a sad number." with input 4"""
+		user_input = "4"
 		with patch("builtins.input", return_value=user_input) as input_call:
 			with patch("sys.stdout", new=StringIO()) as output:
 				import attempt
-				self.assertEqual(output.getvalue().strip(), "")
+				self.assertEqual(output.getvalue().strip(), "This is a sad number.")
 				
 	def test8(self):
-		""" Prints ":)" 8 times with input 8"""
+		""" Prints "This is a sad number." with input 8"""
 		user_input = "8"
 		with patch("builtins.input", return_value=user_input) as input_call:
 			with patch("sys.stdout", new=StringIO()) as output:
 				import attempt
-				self.assertEqual(output.getvalue().strip(), ":)\n:)\n:)\n:)\n:)\n:)\n:)\n:)")
+				self.assertEqual(output.getvalue().strip(), "This is a sad number.")
+	
+	def testneg7(self):
+		""" Prints "This is a happy number."  with input -7"""
+		user_input = "-7"
+		expected = "This is a happy number."
+		with patch("builtins.input", return_value=user_input) as input_call:
+			with patch("sys.stdout", new=StringIO()) as output:
+				import attempt
+				self.assertEqual(output.getvalue().strip(), expected)
+				
+	def testneg8(self):
+		""" Prints "Close enough." with input -8 """
+		user_input = "-8"
+		expected = "Close enough."
+		with patch("builtins.input", return_value=user_input) as input_call:
+			with patch("sys.stdout", new=StringIO()) as output:
+				import attempt
+				self.assertEqual(output.getvalue().strip(), expected)
+				
+	def test1234(self):
+		""" Prints "This is a sad number." with input 1234"""
+		user_input = "1234"
+		with patch("builtins.input", return_value=user_input) as input_call:
+			with patch("sys.stdout", new=StringIO()) as output:
+				import attempt
+				self.assertEqual(output.getvalue().strip(), "This is a sad number.")
+				
+				
+				
 
 # Run the unit tests
 if __name__ == "__main__":
