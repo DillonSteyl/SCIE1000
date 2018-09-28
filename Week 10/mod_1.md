@@ -38,11 +38,11 @@ else:
     print(number, "is odd")
 
 ````
-First, Python evaluates `number%2`. For example, if `number` is 17, then `number%2` is 1 because `17%2` is equal to 1. Then, it checks if the result is equal to 0, just like how any other conditional statement would work. Then, if the condition is true (the remainder is 0), it prints the first statement, otherwise it prints the second statement. This works because when a number is even, its remainder when divided by 2 should be 0. When it is odd, its remainder should be 1. 
+First, Python evaluates `number%2`. Then, it checks if the result is equal to 0, just like how any other conditional statement would work. If the condition is true (the remainder is 0), it prints the first statement. Otherwise it prints the second statement. This works because when a number is even, its remainder when divided by 2 should be 0. When it is odd, its remainder should be 1. 
 
-Any number `a` that can be evenly divided by another number `b`, will have `a%b` equal to 0. Because a remainder of 0 means that there is no remainder at all. 
+Any number `a` that can be evenly divided by another number `b`, will have `a%b` equal to 0.
 
-**Task:** Write a program that takes a single number as input, and prints "This is a happy number." if divisible by 7, "Close enough." if its remainder when divided by 7 is 6, and prints "This is a sad number." otherwise.
+**Task:** Write a program that takes a single number as input, and prints ("This is a happy number.") if divisible by 7, ("Close enough.") if its remainder when divided by 7 is 6, and prints ("This is a sad number.") otherwise.
 
 
 ## Solution
