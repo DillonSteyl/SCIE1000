@@ -2,6 +2,7 @@ from python_test_case import PythonTestCase, run_tests
 from unittest.mock import patch, call
 import sys
 from io import StringIO
+import random
 
 class Tests(PythonTestCase):
 
@@ -13,18 +14,37 @@ class Tests(PythonTestCase):
 			
 				
 	def testscenario1(self):
-		""" User enters [1, 3, 2, 3, 3, 3, 1, 0] and the program exits with a total of 13.0"""
-		user_input = ["1", "3", "2", "3", "3", "3", "1", "0"]
-		expected = "The total is 0\nThe total is 2.5\nThe total is 5.5\nThe total is 13.0\nThe final total is 13.0"
+		""" User enters [5, 5, 5] and the program exits with the user not finding the treasure"""
+		random.seed(1)
+		user_input = ["5", "5", "5"]
+		expected = "Your position is 1 1\nYour detector says the treasure is 10 moves away.\n"
+		expected += "Options: 1 - left, 2 - up, 3 - right, 4 - down, 5 - dig, any other number - stay.\n"
+		expected += "Sorry, there is no treasure here.\nYou have 2 of your lives remaining.\n"
+		expected += "Your position is 1 1\nYour detector says the treasure is 11 moves away.\n"
+		expected += "Options: 1 - left, 2 - up, 3 - right, 4 - down, 5 - dig, any other number - stay.\n"
+		expected += "Sorry, there is no treasure here.\nYou have 1 of your lives remaining.\n"
+		expected += "Your position is 1 1\nYour detector says the treasure is 10 moves away.\n"
+		expected += "Options: 1 - left, 2 - up, 3 - right, 4 - down, 5 - dig, any other number - stay.\n"
+		expected += "Sorry, there is no treasure here.\nYou have 0 of your lives remaining.\n"
+		expected += "You are out of lives, better luck next time!"
 		with patch("builtins.input", return_value=user_input) as input_call:
 			with patch("sys.stdout", new=StringIO()) as output:
 				import attempt
 				self.assertEqual(output.getvalue().strip(), expected)
 				
 	def testscenario2(self):
-		""" User enters [2, 5, 3, 2, 1, 2, 6, 0] and the program exits with a total of 11.0"""
-		user_input = ["2", "5", "3", "2", "1", "2", "6", "0"]
-		expected = "The total is 0\nThe total is 3.0\nThe total is 9.0\nThe total is 11.0\nThe final total is 11.0"
+		""" User enters [4, 3, 3, 5] and the program exits with the user finding the treasure after digging once."""
+		random.seed(1)
+		user_input = ["4", "3", "3", "5"]
+		expected = "Your position is 1 1\nYour detector says the treasure is 10 moves away.\n"
+		expected += "Options: 1 - left, 2 - up, 3 - right, 4 - down, 5 - dig, any other number - stay.\n"
+		expected += "Your position is 1 10\nYour detector says the treasure is 2 moves away.\n"
+		expected += "Options: 1 - left, 2 - up, 3 - right, 4 - down, 5 - dig, any other number - stay.\n"
+		expected += "Your position is 2 10\nYour detector says the treasure is 0 moves away.\n"
+		expected += "Options: 1 - left, 2 - up, 3 - right, 4 - down, 5 - dig, any other number - stay.\n"
+		expected += "Your position is 3 10\nYour detector says the treasure is 0 moves away.\n"
+		expected += "Options: 1 - left, 2 - up, 3 - right, 4 - down, 5 - dig, any other number - stay.\n"
+		expected += "You found the treasure!"
 		with patch("builtins.input", return_value=user_input) as input_call:
 			with patch("sys.stdout", new=StringIO()) as output:
 				import attempt
@@ -32,9 +52,26 @@ class Tests(PythonTestCase):
 				
 				
 	def testscenario3(self):
-		""" User enters [3, 0, 3, 2, 0, 1, 0, 0] and the program exits with a total of 11.5"""
-		user_input = ["3", "0", "3", "2", "0", "1", "0", "0"]
-		expected = "The total is 0\nThe total is 4.0\nThe total is 8.5\nThe total is 11.5\nThe final total is 11.5"
+		""" User enters [8, 8, 8, 2, 8, 8, 8, 5] and the program exits with the user finding the treasure, with lots of staying"""
+		random.seed(2)
+		user_input = ["8", "8", "8", "2", "8", "8", "8", "5"]
+		expected = "Your position is 1 1\nYour detector says the treasure is 0 moves away.\n"
+		expected += "Options: 1 - left, 2 - up, 3 - right, 4 - down, 5 - dig, any other number - stay.\n"
+		expected += "Your position is 1 1\nYour detector says the treasure is 1 moves away.\n"
+		expected += "Options: 1 - left, 2 - up, 3 - right, 4 - down, 5 - dig, any other number - stay.\n"
+		expected += "Your position is 1 1\nYour detector says the treasure is 0 moves away.\n"
+		expected += "Options: 1 - left, 2 - up, 3 - right, 4 - down, 5 - dig, any other number - stay.\n"
+		expected += "Your position is 1 1\nYour detector says the treasure is 2 moves away.\n"
+		expected += "Options: 1 - left, 2 - up, 3 - right, 4 - down, 5 - dig, any other number - stay.\n"
+		expected += "Your position is 1 2\nYour detector says the treasure is 1 moves away.\n"
+		expected += "Options: 1 - left, 2 - up, 3 - right, 4 - down, 5 - dig, any other number - stay.\n"
+		expected += "Your position is 1 2\nYour detector says the treasure is 0 moves away.\n"
+		expected += "Options: 1 - left, 2 - up, 3 - right, 4 - down, 5 - dig, any other number - stay.\n"
+		expected += "Your position is 1 2\nYour detector says the treasure is 0 moves away.\n"
+		expected += "Options: 1 - left, 2 - up, 3 - right, 4 - down, 5 - dig, any other number - stay.\n"
+		expected += "Your position is 1 2\nYour detector says the treasure is 1 moves away.\n"
+		expected += "Options: 1 - left, 2 - up, 3 - right, 4 - down, 5 - dig, any other number - stay.\n"
+		expected += "You found the treasure!"
 		with patch("builtins.input", return_value=user_input) as input_call:
 			with patch("sys.stdout", new=StringIO()) as output:
 				import attempt
