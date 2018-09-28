@@ -1,4 +1,4 @@
-# While Loop Menu (4) - Buried Treasure!
+# While Loop Menus (4) - Buried Treasure!
 
 For this exercise you will make a buried treasure game. Here is the premise:
 
