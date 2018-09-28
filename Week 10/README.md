@@ -3,11 +3,11 @@
 Things to do (mark off as they are done):
 
 1. Test in mypy
- - intro
- - mod 1
- - mod 2
- - mod 3
- - gcd
+ - intro // TESTED
+ - mod 1 // TESTED
+ - mod 2 // TESTED
+ - mod 3 // TESTED
+ - gcd // TESTED
  - menu 1
  - menu 2
  - menu 3
