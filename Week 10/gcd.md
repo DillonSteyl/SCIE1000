@@ -1,7 +1,5 @@
 # Modulo Operator (4) - Euclid's Algorithm
 
-# Note: test needs to be completely rewritten.
-
 For this question, you will write a program that implements an algorithm invented by Euclid, an ancient Greek mathematician, who was born around 325 BCE. The algorithm is known as Euclid's algorithm, and finds the greatest common divisor (gcd) for any pair of integers. The greatest common divisor for a pair of numbers is the largest number that divides both of them evenly. For example:
 
 ````
@@ -25,7 +23,6 @@ Given a and b:
 
 **Task:** Write a function called `gcd(a,b)` that finds the greatest common divisor of a and b using the algorithm given.
 
-
 ## Solution
 
 ````
@@ -37,6 +34,4 @@ def gcd(a,b):
         a = b
         b = remainder
     return(b)
-    
-  
 ````

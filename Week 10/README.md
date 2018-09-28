@@ -8,7 +8,7 @@ Things to do (mark off as they are done):
  - mod 2 // TESTED
  - mod 3 // TESTED
  - gcd // TESTED
- - menu 1
+ - menu 1 // TESTED
  - menu 2
  - menu 3
  - menu challenge

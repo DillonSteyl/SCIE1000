@@ -4,7 +4,6 @@ from unittest.mock import patch, call
 import sys
 from io import StringIO
 
-
 class Tests(PythonTestCase):
 
 	def setUp(self):

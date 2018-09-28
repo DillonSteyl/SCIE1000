@@ -46,6 +46,8 @@ If the user inputs 2: ask the user to input their favourite number, and print th
 
 If the user inputs 0: exit the while loop and print "Thanks!"
 
+## Solution
+
 ```
 choice = 1
 
@@ -55,4 +57,7 @@ while choice != 0:
         print("Hey, how are you?")
     elif choice == 2:
         favnumber = float(input("What is your favourite number: "))
-        print("Wow!", number, "is a great number!")
+        print("Wow!", favnumber, "is a great number!")
+
+print("Thanks!")
+```
