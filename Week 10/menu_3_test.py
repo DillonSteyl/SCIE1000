@@ -13,29 +13,28 @@ class Tests(PythonTestCase):
 			
 				
 	def testscenario1(self):
-		""" User enters [100, 3] and the program exits with a final balance of 103"""
-		user_input = ["100","3"]
-		expected = "Your balance is 103.0\nYou have closed your bank account with a final balance of 103.0"
+		""" User enters [1, 3, 2, 3, 3, 3, 1, 0] and the program exits with a total of 13.0"""
+		user_input = ["1", "3", "2", "3", "3", "3", "1", "0"]
+		expected = "The total is 0\nThe total is 2.5\nThe total is 5.5\nThe total is 13.0\nThe final total is 13.0"
 		with patch("builtins.input", return_value=user_input) as input_call:
 			with patch("sys.stdout", new=StringIO()) as output:
 				import attempt
 				self.assertEqual(output.getvalue().strip(), expected)
 				
-	def testscenario2(self):
-		""" User enters [100, 1, 50, 2, 20, 3] and the program exits with a final balance of 103"""
-		user_input = ["100","1", "50", "2", "20", "3"]
-		expected = "Your balance is 103.0\nYour balance is 157.59\nYour balance is 141.7177\n"
-		expected += "You have closed your bank account with a final balance of 141.7177"
+	def testscenario1(self):
+		""" User enters [2, 5, 3, 2, 1, 2, 6, 0] and the program exits with a total of 11.0"""
+		user_input = ["2", "5", "3", "2", "1", "2", "6", "0"]
+		expected = "The total is 0\nThe total is 3.0\nThe total is 9.0\nThe total is 11.0\nThe final total is 11.0"
 		with patch("builtins.input", return_value=user_input) as input_call:
 			with patch("sys.stdout", new=StringIO()) as output:
 				import attempt
 				self.assertEqual(output.getvalue().strip(), expected)
 				
-	def testscenario3(self):
-		""" User enters [100, 2, 103, 2, 100, 2, 100, 3] and the program exits with a final balance of 103"""
-		user_input = ["100","2", "103", "2", "100", "2", "100", "3"]
-		expected = "Your balance is 103.0\nYour balance is 0.0\nYour balance is -103.0\nYour balance is -209.09\n"
-		expected += "You have closed your bank account with a final balance of -209.09"
+				
+	def testscenario1(self):
+		""" User enters [3, 0, 3, 2, 0, 1, 0, 0] and the program exits with a total of 11.5"""
+		user_input = ["3", "0", "3", "2", "0", "1", "0", "0"]
+		expected = "The total is 0\nThe total is 4.0\nThe total is 8.5\nThe total is 11.5\nThe final total is 11.5"
 		with patch("builtins.input", return_value=user_input) as input_call:
 			with patch("sys.stdout", new=StringIO()) as output:
 				import attempt
