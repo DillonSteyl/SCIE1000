@@ -16,7 +16,7 @@ Unless you are very crafty, you will need conditionals in this function to handl
 
 ```
 def travel(current_month, num_months):
-    month = (current_month - num_months)%12
+    month = (current_month + num_months)%12
     if 2<=month<5:
         return(1)
     elif 5<=month<8:
