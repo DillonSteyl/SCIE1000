@@ -14,55 +14,55 @@ class Tests(PythonTestCase):
 			pass
 
 	def test_function_defined(self):
-		""" Function 'convert_to_hours' is defined """
+		""" Function 'travel' is defined """
 		with patch("builtins.input", return_value="1") as input_call:
 			import attempt
-			self.assertMethodDefined(attempt, "convert_to_hours", 1)
+			self.assertMethodDefined(attempt, "travel", 2)
 		
-	def test135(self):
-		""" Function returns (2.0, 15) with input 135 """
+	def test0and50(self):
+		""" Function returns 1 with input (0, 50). Answer: month 2 -> season 1.  """
 		with patch("builtins.input", return_value="1") as input_call:
 			import attempt
-			a, b = attempt.convert_to_hours(135)
-			self.assertEqual([a,b], [2.0, 15])
+			a = attempt.travel(0, 50)
+			self.assertEqual(a, 1)
 			
-	def test35(self):
-		""" Function returns (0, 35) with input 35 """
+	def test5andneg6(self):
+		""" Function returns 0 with input (5, -6). Answer: month 11 -> season 0.  """
 		with patch("builtins.input", return_value="1") as input_call:
 			import attempt
-			a, b = attempt.convert_to_hours(35)
-			self.assertEqual([a,b], [0, 35])
+			a = attempt.travel(5, -6)
+			self.assertEqual(a, 0)
 			
-	def test315(self):
-		""" Function returns (5.0, 15) with input 315 """
+	def test8andneg136(self):
+		""" Function returns 1 with input (8, -136). Answer: month 4 -> season 1.  """
 		with patch("builtins.input", return_value="1") as input_call:
 			import attempt
-			a, b = attempt.convert_to_hours(315)
-			self.assertEqual([a,b], [5.0, 15])
+			a = attempt.travel(8, -136)
+			self.assertEqual(a, 10)
 			
-	def test360(self):
-		""" Function returns (6.0, 0) with input 360 """
+	def test9andneg1(self):
+		""" Function returns 0 with input (9, -1). Answer: month 8 -> season 3.  """
 		with patch("builtins.input", return_value="1") as input_call:
 			import attempt
-			a, b = attempt.convert_to_hours(360)
-			self.assertEqual([a,b], [6.0, 15])
+			a = attempt.travel(9, -1)
+			self.assertEqual(a, 3)
 			
-	def test168(self):
-		""" Function returns (2.0, 48) with input 168 """
+	def test6and0(self):
+		""" Function returns 1 with input (6, 0). Answer: month 6 -> season 2.  """
 		with patch("builtins.input", return_value="1") as input_call:
 			import attempt
-			a, b = attempt.convert_to_hours(168)
-			self.assertEqual([a,b], [2.0, 48])
+			a = attempt.travel(6, 0)
+			self.assertEqual(a, 2)
 			
-	def test0(self):
-		""" Function returns (0.0, 0) with input 0 """
+	def test7and1024(self):
+		""" Function returns 1 with input (7, 1024). Answer: month 11 -> season 0.  """
 		with patch("builtins.input", return_value="1") as input_call:
 			import attempt
-			a, b = attempt.convert_to_hours(0)
-			self.assertEqual([a,b], [0.0, 0])
+			a = attempt.travel(7, 1024)
+			self.assertEqual(a, 0)
 			
 			
-	
+
 # Run the unit tests
 if __name__ == "__main__":
     run_tests(Tests)
