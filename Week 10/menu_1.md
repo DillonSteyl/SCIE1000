@@ -42,7 +42,7 @@ This gives us a lot of power. We can put large blocks of code in the conditional
 
 If the user inputs 1: print the message "Hey, how are you?"
 
-If the user inputs 2: ask the user to input their name, and print this message - ("Hey", username, "! My name is MyPyTutor, nice to meet you.")
+If the user inputs 2: ask the user to input their favourite number, and print this message - ("Wow!", favnumber, "is a great number!")
 
 If the user inputs 0: exit the while loop and print "Thanks!"
 
@@ -54,5 +54,5 @@ while choice != 0:
     if choice == 1:
         print("Hey, how are you?")
     elif choice == 2:
-        username = float(input("What is your name: "))
-        print("Hey", username, "! My name is MyPyTutor, nice to meet you.")
+        favnumber = float(input("What is your favourite number: "))
+        print("Wow!", number, "is a great number!")
