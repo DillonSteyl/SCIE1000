@@ -1,4 +1,4 @@
-# While Loop Menus
+# While Loop Menus (1)
 
 So far in SCIE1000, most while loops you have written have a counter (usually `i`), that starts counting at 0 or 1, and finishes once `i` reaches some number `n`. 
 
