@@ -1,4 +1,4 @@
-# While Loop Menu (3)
+# While Loop Menus (3)
 
 You work in a bakery and the computer's register program has stopped working. Luckily, you have time during your break to write a new one. 
 
