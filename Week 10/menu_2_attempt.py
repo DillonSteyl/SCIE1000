@@ -7,6 +7,7 @@ from pylab import *
 # print("You have closed your bank account with a final balance of", balance)
 
 #Input messages:
+# float(input("Enter your initial deposit: "))
 # float(input("Enter 1 for deposit, 2 for withdraw, and 3 to close the account"))
 # float(input("Enter the amount to deposit: "))
 # float(input("Enter the amount to withdraw: "))

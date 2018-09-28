@@ -16,6 +16,7 @@ Input 2: Ask the user to input a number, withdraw that amount from the bank acco
 
 Input 3: The user has elected to close their bank account. End the while loop and print a final message (provided). 
 
+## Solution
 
 ```
 from pylab import *

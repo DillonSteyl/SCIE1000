@@ -14,6 +14,8 @@ For each product type, an array of costs is provided in the program. The product
 
 **Note:** You can assume that the employees will always enter valid product codes. They are well trained!
 
+## Solution
+
 ```
 from pylab import *
 
@@ -45,7 +47,4 @@ while product_type!=0:
     
 
 print("The final total is", total)
-
-
-
 ```
