@@ -19,6 +19,15 @@ class Tests(PythonTestCase):
 			with patch("sys.stdout", new=StringIO()) as output:
 				import attempt
 				self.assertEqual(output.getvalue().strip(), expected)
+
+	def test14(self):
+		""" Prints "This is a happy number."  with input 14"""
+		user_input = "14"
+		expected = "This is a happy number."
+		with patch("builtins.input", return_value=user_input) as input_call:
+			with patch("sys.stdout", new=StringIO()) as output:
+				import attempt
+				self.assertEqual(output.getvalue().strip(), expected)
 				
 	def test6(self):
 		""" Prints "Close enough." with input 6 """

@@ -45,7 +45,7 @@ class Tests(PythonTestCase):
 		with patch("builtins.input", return_value="1") as input_call:
 			import attempt
 			a, b = attempt.convert_to_hours(360)
-			self.assertEqual([a,b], [6.0, 15])
+			self.assertEqual([a,b], [6.0, 0])
 			
 	def test168(self):
 		""" Function returns (2.0, 48) with input 168 """
@@ -60,9 +60,8 @@ class Tests(PythonTestCase):
 			import attempt
 			a, b = attempt.convert_to_hours(0)
 			self.assertEqual([a,b], [0.0, 0])
-			
-			
-	
+
+
 # Run the unit tests
 if __name__ == "__main__":
     run_tests(Tests)
