@@ -21,7 +21,7 @@ class Tests(PythonTestCase):
 				import attempt
 				self.assertEqual(output.getvalue().strip(), expected)
 				
-	def testscenario1(self):
+	def testscenario2(self):
 		""" User enters [2, 5, 3, 2, 1, 2, 6, 0] and the program exits with a total of 11.0"""
 		user_input = ["2", "5", "3", "2", "1", "2", "6", "0"]
 		expected = "The total is 0\nThe total is 3.0\nThe total is 9.0\nThe total is 11.0\nThe final total is 11.0"
@@ -31,7 +31,7 @@ class Tests(PythonTestCase):
 				self.assertEqual(output.getvalue().strip(), expected)
 				
 				
-	def testscenario1(self):
+	def testscenario3(self):
 		""" User enters [3, 0, 3, 2, 0, 1, 0, 0] and the program exits with a total of 11.5"""
 		user_input = ["3", "0", "3", "2", "0", "1", "0", "0"]
 		expected = "The total is 0\nThe total is 4.0\nThe total is 8.5\nThe total is 11.5\nThe final total is 11.5"
