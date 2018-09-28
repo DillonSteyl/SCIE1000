@@ -2,11 +2,19 @@
 
 Things to do:
 
-1. Write tests
-- menu 1
-- menu 2
-- menu 3
-- menu challenge
+1. Test in mypy
+ - intro
+ - mod 1
+ - mod 2
+ - mod 3
+ - gcd
+ - menu 1
+ - menu 2
+ - menu 3
+ - menu challenge
+2. Read through each exercise and check to make sure everything is explained clearly and spelling/grammar is alright
+3. tell shelley the good news
+ 
 
 
 
