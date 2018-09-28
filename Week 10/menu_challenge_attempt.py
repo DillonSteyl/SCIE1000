@@ -10,13 +10,13 @@ def makeTreasureCoords():
 
 # this function returns the reading from the broken treasure detector
 def detect(position_x, position_y, treasure_x, treasure_y):
-    # calculates the actual distance, and adds 1, 0 or -1 to get the 'broken' reading
+    # calculates the actual distance, and adds 1, 0 or -1 to get the 'broken' reading (but with a minimum of 0)
     return(max(abs(position_x - treasure_x)+abs(position_y - treasure_y)+random.randrange(-1,2),0))
 
 # this function moves the player to the other side of the island, when necessary
 def newPosition(x, y):
     # if the coordinate is not within the range of 0 to 9, then adjust it using %
-    return(x%9, y%9)
+    return(x%10, y%10)
 
 # the treasure coordinates are randomly generated
 treasure_x, treasure_y = makeTreasureCoords()
@@ -41,14 +41,20 @@ while found==0 and lives>0:
     print("Options: 1 - left, 2 - up, 3 - right, 4 - down, 5 - dig, any other number - stay.")
     move = float(input("Enter your choice: "))
     
-    
-    # moves the player left
+ 
+    # if the player has chosen to go left, update the new position
     if move==1:
-        # take 1 from position_x to get new x (because 'left' is x-1), pass it into newPosition to account for edge cases
+        # calculate new x and y, and then pass it into new Position to account for the edge of the island
         position_x, position_y = newPosition(position_x-1, position_y)
-        
-    ### ----------- This is where you should write your code ------------
-    # you need a condition for each remaining direction, and for digging
+    # --- YOUR CODE HERE ---
+    # you need a condition for each movement option
+    # and a condition for the digging option
+    # remember to update the found and/or lives variables when appropriate
+    
+    # print messages for your use:
+    # "You found the treasure!"
+    # "Sorry, there is no treasure here."
+    # "You have", lives, "of your lives remaining."
     
     
 # if the player has no lives left, let them know they lost
