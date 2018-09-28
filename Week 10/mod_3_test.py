@@ -38,7 +38,7 @@ class Tests(PythonTestCase):
 		with patch("builtins.input", return_value="1") as input_call:
 			import attempt
 			a = attempt.travel(8, -136)
-			self.assertEqual(a, 10)
+			self.assertEqual(a, 1)
 			
 	def test9andneg1(self):
 		""" Function returns 0 with input (9, -1). Answer: month 8 -> season 3.  """
