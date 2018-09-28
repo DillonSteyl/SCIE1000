@@ -29,13 +29,13 @@ while product_type!=0:
     print("The total is", total)
     product_type = float(input("Enter the product type (1 = drinks, 2 = fresh, 3 = cabinet, 0 to exit): "))
     if product_type == 1:
-        product_code = float(input("Enter the product code: "))
+        product_code = int(input("Enter the product code: "))
         total = total + drinks[product_code]
     elif product_type == 2:
-        product_code = float(input("Enter the product code: "))
+        product_code = int(input("Enter the product code: "))
         total = total + fresh[product_code]
     elif product_type == 3:
-        product_code = float(input("Enter the product code: "))
+        product_code = int(input("Enter the product code: "))
         if cabinet[product_code]>4:
             choice = float(input("Enter 1 for yes, 0 for no: "))
             if choice==1:
