@@ -14,26 +14,54 @@ class Tests(PythonTestCase):
 			pass
 
 	def test_function_defined(self):
-		""" Function 'prod' is defined """
+		""" Function 'convert_to_hours' is defined """
 		with patch("builtins.input", return_value="1") as input_call:
 			import attempt
-			self.assertMethodDefined(attempt, "prod", 2)
+			self.assertMethodDefined(attempt, "convert_to_hours", 1)
 		
-	def test_function(self):
-		""" Funtion 'prod' behaves as expected """
+	def test135(self):
+		""" Function returns (2.0, 15) with input 135 """
 		with patch("builtins.input", return_value="1") as input_call:
 			import attempt
-			val1 = randint(1,15)
-			val2 = randint(5,20)
-			self.assertEqual(attempt.prod(val1, val2), float(val1 * val2))
+			a, b = attempt.convert_to_hours(135)
+			self.assertEqual([a,b], [2.0, 15])
 			
-	def test_output(self):
-		""" Program correctly prints the product of the two provided numbers"""
-		user_input = [str(randint(1,15)), str(randint(5,20))]
-		with patch("builtins.input", side_effect=user_input) as input_call:
-			with patch("sys.stdout", new=StringIO()) as output:
-				import attempt
-				self.assertEqual(output.getvalue().strip(), str( float(int(user_input[0]) * int(user_input[1]) )))
+	def test35(self):
+		""" Function returns (0, 35) with input 35 """
+		with patch("builtins.input", return_value="1") as input_call:
+			import attempt
+			a, b = attempt.convert_to_hours(35)
+			self.assertEqual([a,b], [0, 35])
+			
+	def test315(self):
+		""" Function returns (5.0, 15) with input 315 """
+		with patch("builtins.input", return_value="1") as input_call:
+			import attempt
+			a, b = attempt.convert_to_hours(315)
+			self.assertEqual([a,b], [5.0, 15])
+			
+	def test360(self):
+		""" Function returns (6.0, 0) with input 360 """
+		with patch("builtins.input", return_value="1") as input_call:
+			import attempt
+			a, b = attempt.convert_to_hours(360)
+			self.assertEqual([a,b], [6.0, 15])
+			
+	def test168(self):
+		""" Function returns (2.0, 48) with input 168 """
+		with patch("builtins.input", return_value="1") as input_call:
+			import attempt
+			a, b = attempt.convert_to_hours(168)
+			self.assertEqual([a,b], [2.0, 48])
+			
+	def test0(self):
+		""" Function returns (0.0, 0) with input 0 """
+		with patch("builtins.input", return_value="1") as input_call:
+			import attempt
+			a, b = attempt.convert_to_hours(0)
+			self.assertEqual([a,b], [0.0, 0])
+			
+			
 	
 # Run the unit tests
 if __name__ == "__main__":
