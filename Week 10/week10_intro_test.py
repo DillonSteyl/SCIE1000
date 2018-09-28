@@ -11,39 +11,39 @@ class Tests(PythonTestCase):
 		except KeyError:
 			pass
 			
-	def test_true_1(self):
-		""" Prints 'You are not tall enough to ride' when height is less than 130 (1)"""
-		user_input = "112"
-		expected = "You are not tall enough to ride!"
+	def test1(self):
+		""" Prints ":)" once with input 1"""
+		user_input = "1"
+		expected = ":)"
 		with patch("builtins.input", return_value=user_input) as input_call:
 			with patch("sys.stdout", new=StringIO()) as output:
 				import attempt
 				self.assertEqual(output.getvalue().strip(), expected)
 				
-	def test_true_2(self):
-		""" Prints 'You are not tall enough to ride' when height is less than 130 (2)"""
-		user_input = "129"
-		expected = "You are not tall enough to ride!"
+	def test2(self):
+		""" Prints ":)" twice with input 2 """
+		user_input = "2"
+		expected = ":)\n:)"
 		with patch("builtins.input", return_value=user_input) as input_call:
 			with patch("sys.stdout", new=StringIO()) as output:
 				import attempt
 				self.assertEqual(output.getvalue().strip(), expected)
 				
-	def test_false_1(self):
-		""" Prints nothing if height is not less than 130 (1)"""
-		user_input = "130"
+	def test0(self):
+		""" Prints nothing with input 0"""
+		user_input = "0"
 		with patch("builtins.input", return_value=user_input) as input_call:
 			with patch("sys.stdout", new=StringIO()) as output:
 				import attempt
 				self.assertEqual(output.getvalue().strip(), "")
 				
-	def test_false_2(self):
-		""" Prints nothing if height is not less than 130 (2)"""
-		user_input = "156"
+	def test8(self):
+		""" Prints ":)" 8 times"""
+		user_input = "8"
 		with patch("builtins.input", return_value=user_input) as input_call:
 			with patch("sys.stdout", new=StringIO()) as output:
 				import attempt
-				self.assertEqual(output.getvalue().strip(), "")
+				self.assertEqual(output.getvalue().strip(), ":)\n:)\n:)\n:)\n:)\n:)\n:)\n:)")
 
 # Run the unit tests
 if __name__ == "__main__":
