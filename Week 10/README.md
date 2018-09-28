@@ -1,6 +1,6 @@
 # Week 10
 
-Things to do:
+Things to do (mark off as they are done):
 
 1. Test in mypy
  - intro
