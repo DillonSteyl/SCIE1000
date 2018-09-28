@@ -38,7 +38,7 @@ class Tests(PythonTestCase):
 				self.assertEqual(output.getvalue().strip(), "")
 				
 	def test8(self):
-		""" Prints ":)" 8 times"""
+		""" Prints ":)" 8 times with input 8"""
 		user_input = "8"
 		with patch("builtins.input", return_value=user_input) as input_call:
 			with patch("sys.stdout", new=StringIO()) as output:
