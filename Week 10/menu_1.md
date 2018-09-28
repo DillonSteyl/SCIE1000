@@ -44,5 +44,15 @@ If the user inputs 1: print the message "Hey, how are you?"
 
 If the user inputs 2: ask the user to input their name, and print this message - ("Hey", username, "! My name is MyPyTutor, nice to meet you.")
 
-If the user inputs anything else: exit the while loop and print "Thanks!"
+If the user inputs 0: exit the while loop and print "Thanks!"
 
+```
+choice = 1
+
+while choice != 0:
+    choice = float(input("Type 1 to say hi, 2 to introduce yourself, or 0 to exit the program: "))
+    if choice == 1:
+        print("Hey, how are you?")
+    elif choice == 2:
+        username = float(input("What is your name: "))
+        print("Hey", username, "! My name is MyPyTutor, nice to meet you.")
