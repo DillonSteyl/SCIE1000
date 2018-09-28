@@ -6,7 +6,7 @@ For this week there are two sets of exercises:
 2. (challenging) While Loop Menus. In this set of exercises we will expand on an alternative way to use while loops that we briefly went over in week 4. This content is helpful for the course (and can appear in exams and assignments sometimes), and for your programming in general. For the final exercise you will write a program that allows the user to play a buried treasure game. 
 
 
-**Task:** Write a program that takes a number `n` as input from the user, and prints ":)" `n` times. 
+**Task:** Write a program that takes a number `n` as input from the user, and prints `":)"`, `n` times. 
 
 
 ```
