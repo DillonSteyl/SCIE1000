@@ -9,7 +9,7 @@ Things to do (mark off as they are done):
  - mod 3 // TESTED
  - gcd // TESTED
  - menu 1 // TESTED
- - menu 2
+ - menu 2 // TESTED
  - menu 3
  - menu challenge
 2. Read through each exercise and check to make sure everything is explained clearly and spelling/grammar is alright
