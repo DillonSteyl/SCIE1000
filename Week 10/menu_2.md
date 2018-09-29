@@ -18,9 +18,11 @@ Input 3: The user has elected to close their bank account. End the while loop an
 
 **Important:** Input sequences for the tests are as follows:
 
-Input 1: 100, 3. Final balance: 103
-Input 2: 100, 1, 50, 2, 20, 3. Final balance: 141.7177
-Input 3: 100, 2, 103, 2, 100, 2, 100, 3. Final balance: -209.09
+Test 1: input 100, 3. Final balance: 103
+
+Test 2: input 100, 1, 50, 2, 20, 3. Final balance: 141.7177
+
+Test 3: input 100, 2, 103, 2, 100, 2, 100, 3. Final balance: -209.09
 
 ## Solution
 
