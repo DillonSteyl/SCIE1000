@@ -77,7 +77,7 @@ while found==0 and lives>0:
             # take a life because there is no treasure here
             print("Sorry, there is no treasure here.")
             lives = lives - 1
-            print("You have", lives,"remaining.")
+            print("You have", lives,"of your lives remaining.")
     # moves the player
     elif move==1:
         position_x, position_y = newPosition(position_x-1, position_y)
