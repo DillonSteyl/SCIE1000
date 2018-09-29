@@ -41,7 +41,7 @@ def detect(position_x, position_y, treasure_x, treasure_y):
 # this function moves the player to the other side of the island, when necessary
 def newPosition(x, y):
     # if the coordinate is not within the range of 0 to 9, then adjust it using %
-    return(x%9, y%9)
+    return(x%10, y%10)
 
 # the treasure coordinates are randomly generated
 treasure_x, treasure_y = makeTreasureCoords()
