@@ -27,7 +27,7 @@ class Tests(PythonTestCase):
 		expected += "Options: 1 - left, 2 - up, 3 - right, 4 - down, 5 - dig, any other number - stay.\n"
 		expected += "Sorry, there is no treasure here.\nYou have 0 of your lives remaining.\n"
 		expected += "You are out of lives, better luck next time!"
-		with patch("builtins.input", return_value=user_input) as input_call:
+		with patch("builtins.input", side_effect=user_input) as input_call:
 			with patch("sys.stdout", new=StringIO()) as output:
 				import attempt
 				self.assertEqual(output.getvalue().strip(), expected)
@@ -45,7 +45,7 @@ class Tests(PythonTestCase):
 		expected += "Your position is 3 10\nYour detector says the treasure is 0 moves away.\n"
 		expected += "Options: 1 - left, 2 - up, 3 - right, 4 - down, 5 - dig, any other number - stay.\n"
 		expected += "You found the treasure!"
-		with patch("builtins.input", return_value=user_input) as input_call:
+		with patch("builtins.input", side_effect=user_input) as input_call:
 			with patch("sys.stdout", new=StringIO()) as output:
 				import attempt
 				self.assertEqual(output.getvalue().strip(), expected)
@@ -72,7 +72,7 @@ class Tests(PythonTestCase):
 		expected += "Your position is 1 2\nYour detector says the treasure is 1 moves away.\n"
 		expected += "Options: 1 - left, 2 - up, 3 - right, 4 - down, 5 - dig, any other number - stay.\n"
 		expected += "You found the treasure!"
-		with patch("builtins.input", return_value=user_input) as input_call:
+		with patch("builtins.input", side_effect=user_input) as input_call:
 			with patch("sys.stdout", new=StringIO()) as output:
 				import attempt
 				self.assertEqual(output.getvalue().strip(), expected)

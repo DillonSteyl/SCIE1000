@@ -19,7 +19,7 @@ If the player enters any other number, do nothing and let the program loop back 
 
 Once the while loop ends, print the message ("You are out of lives, better luck next time!") if they have no lives left. Otherwise, print nothing.
 
-
+## Solution
 
 ```
 
