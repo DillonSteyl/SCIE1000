@@ -54,6 +54,15 @@ If the user inputs 0: exit the while loop and print "Thanks!"
 
 **Hint:** You will need a variable to control the flow of the while loop (like choice or finish), much like in the second program.
 
+**IMPORTANT:** You may encounter the error "Code did not finish, possible infinite loop". MyPyTutor gives this error when the program takes too long to run. Sometimes this can mean an infinite loop, other times it means that the code is just still running for other reasons. For these exercises, this will happen when your program asks for more input than needed (as in, your code asks for input three times when we only expected it to ask for input twice). This means you may have an error in your stopping condition. If you cannot figure out the error in your program, try running it in Jupyter. The input sequences in our tests are as follows:
+
+Test 1: input 0
+Test 2: input 1, 0
+Test 3: input 2, 5, 0
+Test 4: input 2, 5, 1, 0
+Test 5: input 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0
+Test 6: input 2, 5, 2, 8, 2, -132, 0
+
 ## Solution
 
 ```
