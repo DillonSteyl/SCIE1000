@@ -11,6 +11,6 @@ cabinet = array([4, 4, 4.5, 6, 3.5, 5, 3.5, 3.5])
 # "The final total is", total
 
 # input messages:
-# "Enter the product type (1 = drinks, 2 = fresh, 3 = cabinet, 0 to exit): "
-# "Enter the product code: " 
-# "Enter 1 for yes, 0 for no: "
+# float(input("Enter the product type (1 = drinks, 2 = fresh, 3 = cabinet, 0 to exit): "))
+# int(input("Enter the product code: ")) # we use int here instead of float. float will not work.
+# float(input("Enter 1 for yes, 0 for no: "))
