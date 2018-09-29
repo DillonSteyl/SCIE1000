@@ -8,7 +8,7 @@ It is important to note that we will start counting the months at 0, so January 
 
 For example, if the starting month is January (0), and you will be going forward 50 months (50), then the month will be March (2), because 50 months is 4 years + 2 months in the future. This would correspond with the operation `(0+50)%12`, which is equal to 2. March is in Autumn, so `travel(0, 50) = 1`. 
 
-For an example going back in time, if the starting month is June (5), and you will be going back 6 months (-6), then the output of the function should be 3, because 6 months prior to June (5) is December (11). This would correspond with the operation `(5-6)%12`, which is equal to 11. December is in Summer, so `travel(5, -6) = 0`.
+For an example going back in time, if the starting month is June (5), and you will be going back 6 months (-6), then the output of the function should be 1, because 6 months prior to June (5) is December (11). This would correspond with the operation `(5-6)%12`, which is equal to 11. December is in Summer, so `travel(5, -6) = 0`.
 
 Unless you are very crafty, you will need conditionals in this function to handle converting from the month to the season. 
 
