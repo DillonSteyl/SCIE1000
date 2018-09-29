@@ -14,6 +14,14 @@ For each product type, an array of costs is provided in the program. The product
 
 **Note:** You can assume that the employees will always enter valid product codes. They are well trained!
 
+**Important:** The input sequences are as follows:
+
+Test 1: input 1, 3, 2, 3, 3, 3, 1, 0. Final total is 13
+
+Test 2: input 2, 5, 3, 2, 1, 2, 6, 0. Final total is 11
+
+Test 3: input 3, 0, 3, 2, 0, 1, 0, 0. Final total is 11.5
+
 ## Solution
 
 ```
