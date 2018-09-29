@@ -19,6 +19,14 @@ If the player enters any other number, do nothing and let the program loop back 
 
 Once the while loop ends, print the message ("You are out of lives, better luck next time!") if they have no lives left. Otherwise, print nothing.
 
+**Important:** This program uses a random number generator. To ensure that the output is the same as ours, include the line `random.seed(n)` below the `import random` line in your program **only** if you run it in Jupyter. Input sequences and `n` values are as follows:
+
+Test 1: input 5, 5, 5. The player loses. `n = 1`
+
+Test 2: input 4, 3, 3, 5. The player wins. `n = 1`
+
+Test 3: input 8, 8, 8, 2, 8, 8, 8, 5. The player wins. `n = 2`
+
 ## Solution
 
 ```
