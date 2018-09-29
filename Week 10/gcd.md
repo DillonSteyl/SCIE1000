@@ -21,7 +21,7 @@ Given a and b:
     - `#` This loop will always eventually get to a%b=0 and finish on its own (thanks Euclid!), so no need to put in a counter like i
 2. Once the loop ends, the gcd is b
 
-**Task:** Write a function called `gcd(a,b)` that finds the greatest common divisor of a and b using the algorithm given.
+**Task:** Write a function called `gcd(a,b)` that returns the greatest common divisor of a and b using the algorithm given.
 
 ## Solution
 
