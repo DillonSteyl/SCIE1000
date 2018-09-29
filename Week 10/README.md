@@ -2,7 +2,7 @@
 
 Things to do (mark off as they are done):
 
-1. Test in mypy
+1. Test in mypy // DONE
  - intro // TESTED
  - mod 1 // TESTED
  - mod 2 // TESTED
@@ -10,8 +10,8 @@ Things to do (mark off as they are done):
  - gcd // TESTED
  - menu 1 // TESTED
  - menu 2 // TESTED
- - menu 3
- - menu challenge
+ - menu 3 // TESTED
+ - menu challenge // TESTED
 2. Read through each exercise and check to make sure everything is explained clearly and spelling/grammar is alright
 3. tell shelley the good news
  
