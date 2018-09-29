@@ -42,7 +42,7 @@ First, Python evaluates `number%2`. Then, it checks if the result is equal to 0,
 
 Any number `a` that can be evenly divided by another number `b`, will have `a%b` equal to 0.
 
-**Task:** Write a program that takes a single number as input, and prints ("This is a happy number.") if divisible by 7, ("Close enough.") if its remainder when divided by 7 is 6, and prints ("This is a sad number.") otherwise.
+**Task:** Write a program that takes a single number as input from the user, and prints ("This is a happy number.") if divisible by 7, ("Close enough.") if its remainder when divided by 7 is 6, and prints ("This is a sad number.") otherwise.
 
 
 ## Solution
