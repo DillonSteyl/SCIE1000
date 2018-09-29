@@ -34,9 +34,15 @@ while choice != 0:
 print("Done.")
 ```
 
-In both of these programs, we have used a variable to control the flow of the while loop (`finish` and `choice`), and have allowed the user to change this variable. 
+In both of these programs, we have used a variable to control the flow of the while loop (`finish` and `choice`), and have allowed the user to change this variable.
 
-This gives us a lot of power. We can put large blocks of code in the conditionals, allowing us to have lots of complex behaviour. 
+The things to notice about these two programs is that we have a designated 'exit number', or set of exit numbers. For the second program, we want to exit when the user enters 0. So, we make the while condition `choice!=0`, so that the while loop stops only when choice is equal to 0.
+
+In the first program, we did the reverse. The user enters any number other than 0 to exit the program, so the while loop condition is 'finish == 0'. So when they enter 0, the while loop will finish. 
+
+For both of these programs, we set the variables to a number that would allow the while loop to start. This inital number is meaningless, and doesn't result in anything other than entering the while loop. Imagine for the second program we set choice to 2, or 8, or -135. It would still behave exactly the same way.
+
+Controlling while loops like this gives us a lot of power. We can put large blocks of code in the conditionals, allowing us to have lots of complex behaviour. 
 
 **Task:** For the moment, just write a simple program that has the following menu options:
 
@@ -45,6 +51,8 @@ If the user inputs 1: print the message "Hey, how are you?"
 If the user inputs 2: ask the user to input their favourite number, and print this message - ("Wow!", favnumber, "is a great number!")
 
 If the user inputs 0: exit the while loop and print "Thanks!"
+
+**Hint:** You will need a variable to control the flow of the while loop (like choice or finish), much like in the second program.
 
 ## Solution
 
