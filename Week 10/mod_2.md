@@ -1,6 +1,5 @@
 # Modulo Operator (2)
 
-
 It may come as a surprise to you, but you actually use modular arithmetic every day (modular arithmetic means maths using the modulo operator)! For example, you use it when you want to tell the time. Despite there being 24 hours in a day, after midday we starting counting at 1 again.
 
 So instead of this (24-hour-time):
