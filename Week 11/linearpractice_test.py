@@ -97,7 +97,7 @@ class Tests(PythonTestCase):
 				
 	def test_output2(self):
 		""" Prints correct messages when only the m value is close enough."""
-        random.seed(2)
+		random.seed(2)
 		expected = "The m value is close enough, but the c value is not.\nThe actual m value is 9 and the actual c value is 13"
 		user_input = ["10", "0"]
 		with patch("builtins.input", return_value=user_input) as input_call:
@@ -108,7 +108,7 @@ class Tests(PythonTestCase):
 				
 	def test_output3(self):
 		""" Printing all the correct values. """
-        random.seed(3)
+		random.seed(3)
 		expected = "The c value is close enough, but the m value is not.\nThe actual m value is -5 and the actual c value is -5"
 		user_input = ["-10", "-7"]
 		with patch("builtins.input", return_value=user_input) as input_call:
@@ -119,7 +119,7 @@ class Tests(PythonTestCase):
 				
 	def test_output4(self):
 		""" Printing all the correct values. """
-        random.seed(4)
+		random.seed(4)
 		expected = "Both values are not close enough.\nThe actual m value is -5 and the actual c value is -3"
 		user_input = ["5", "5"]
 		with patch("builtins.input", return_value=user_input) as input_call:
@@ -130,4 +130,4 @@ class Tests(PythonTestCase):
 
 # Run the unit tests
 if __name__ == "__main__":
-    run_tests(Tests)
+	run_tests(Tests)
