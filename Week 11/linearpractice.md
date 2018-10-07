@@ -10,7 +10,7 @@ Step 1: Display a graph for the user with the given x and y arrays. Name the x a
 
 Step 2: Allow the user to input the m and c values, respectively.
 
-Step 3: Check to see if the values are in the appropriate range: 0.8*actual_value <= entered_value <= 1.20*actual_value
+Step 3: Check to see if the values are in the appropriate range: `0.8*actual_value <= entered_value <= 1.20*actual_value`
 
 Step 4: If the user got both the values correct, print the message ("Both values are correct!"). If the user only got the m value correct, print the message ("The m value is correct, but the c value is not."). If the user got only the c value correct, print the message ("The c value is correct, but the m value is not."). If the user got both values wrong, print the message ("Both values are incorrect").
 
