@@ -49,7 +49,6 @@ class Tests(PythonTestCase):
 		import attempt
 		g = gca()
 		self.assertEqual(gca().get_lines()[0].get_xdata().tolist(), attempt.x.tolist())
-		g.title("4")
 		clf()
 
 	@patch('builtins.input', side_effect = INPUT)
