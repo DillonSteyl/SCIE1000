@@ -6,6 +6,7 @@ from pylab import *
 import sys
 from io import StringIO
 from unittest.mock import patch, call
+import random
 
 INPUT = ["4", "5"]
 
@@ -83,6 +84,14 @@ class Tests(PythonTestCase):
         clf()
     
     
+    def test_output(self):
+		""" Printing all the correct values. """
+        random.seed(1)
+		expected = ""
+		with patch("builtins.input") as input_call:
+			with patch("sys.stdout", new=StringIO()) as output:
+				import attempt
+				self.assertEqual(output.getvalue().strip(), expected)
 
 # Run the unit tests
 if __name__ == "__main__":
