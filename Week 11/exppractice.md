@@ -25,7 +25,7 @@ Step 7: Finally, print the message ("The actual A0 value is", actual_A0, "and th
 
 
 # Solution
-
+```
 from pylab import *
 
 # Since we are randomly generating the questions, we need to use the random library
@@ -90,3 +90,4 @@ else:
         
 # tell the user the actual values
 print("The actual A0 value is", A0, "and the actual k value is", k)
+```
