@@ -2,7 +2,7 @@
 
 An exponential function has the following structure:
 
-` y = A0 * e^(k*(x)`
+` y = A0 * e^(k*x)`
 
 This is what we will be using for this exercise.
 
@@ -31,10 +31,10 @@ from pylab import *
 # Since we are randomly generating the questions, we need to use the random library
 import random
 
-# this function will randomly generate an m value between -0.15 and 0.15 (but not too small)
+# this function will randomly generate an m value between -0.2 and 0.2 (but not too small)
 def generate_k():
-    k = round(random.random()*0.3-0.15, 3)
-    if abs(k)<0.05:
+    k = round(random.random()*0.4-0.2, 3)
+    if abs(k)<0.04:
         return generate_k()
     else:      
         return(k)
