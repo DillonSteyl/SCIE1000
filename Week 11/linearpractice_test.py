@@ -86,7 +86,7 @@ class Tests(PythonTestCase):
     
     def test_output1(self):
 		""" Prints correct messages when both values are close enough. """
-        random.seed(1)
+		random.seed(1)
 		expected = "Both values are close enough!\nThe actual m value is -7 and the actual c value is -9"
 		user_input = ["-8", "-7"]
 		with patch("builtins.input", return_value=user_input) as input_call:
