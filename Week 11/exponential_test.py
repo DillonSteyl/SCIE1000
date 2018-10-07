@@ -98,7 +98,7 @@ class Tests(PythonTestCase):
 		""" Prints correct messages when both values are close enough. """
 		random.seed(1)
 		expected = "The A0 value is close enough.\nThe k value is close enough.\nThe actual A0 value is 17 and the actual k value is -0.11"
-		user_input = ["17", "-0.14"]
+		user_input = ["14", "-0.14"]
 		with patch("builtins.input", side_effect=user_input) as input_call:
 			with patch("sys.stdout", new=StringIO()) as output:
 				import attempt
@@ -120,7 +120,7 @@ class Tests(PythonTestCase):
 		""" Prints correct messages when only the A0 value is close enough. """
 		random.seed(3)
 		expected = "The A0 value is close enough.\nThe k value is incorrect.\nThe actual A0 value is 11 and the actual k value is -0.079"
-		user_input = ["11", "0.1"]
+		user_input = ["12", "0.1"]
 		with patch("builtins.input", side_effect=user_input) as input_call:
 			with patch("sys.stdout", new=StringIO()) as output:
 				import attempt
