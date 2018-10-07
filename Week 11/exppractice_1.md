@@ -66,7 +66,7 @@ plot(x, y, 'ko')
 grid(True)
 xlabel("x")
 ylabel("y")
-title("Linear Model")
+title("Exponential Model")
 show()
 
 # the user guesses the A0 and k values
