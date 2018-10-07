@@ -49,6 +49,22 @@ class Tests(PythonTestCase):
 		g = gca()
 		self.assertEqual(gca().get_lines()[0].get_xdata().tolist(), attempt.x.tolist())
 		clf()
+		
+	@patch('builtins.input', side_effect = INPUT)
+	def test_colour(self, input_call):
+		""" The plot uses the colour black """
+		import attempt
+		g = gca()
+		self.assertIn(g.get_lines()[0].get_color(), [(0.0, 0.0, 0.0, 1), 'k', 'black'])
+		clf()
+		
+	@patch('builtins.input', side_effect = INPUT)
+	def test_marker(self, input_call):
+		""" The plot uses round markers ("o")"""
+		import attempt
+		g = gca()
+		self.assertIn(g.get_lines()[0].get_marker(), "o")
+		clf()
 
 	@patch('builtins.input', side_effect = INPUT)
 	def test_y_data(self, input_call):
