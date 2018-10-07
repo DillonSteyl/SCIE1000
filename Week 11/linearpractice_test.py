@@ -7,7 +7,7 @@ import sys
 from io import StringIO
 from unittest.mock import patch, call
 
-INPUT = ["6000000000", "0.043", "12"]
+INPUT = ["4", "5"]
 
 class Tests(PythonTestCase):
 
@@ -22,7 +22,7 @@ class Tests(PythonTestCase):
         """ The graph has the correct title """
         import attempt
         g = gca()
-        self.assertEqual(g.get_title(), "Alien Invasion!")
+        self.assertEqual(g.get_title(), "Linear Model")
         savefig("output.png")
         clf()
 
@@ -31,7 +31,7 @@ class Tests(PythonTestCase):
         """ The x axis is labelled correctly """
         import attempt
         g = gca()
-        self.assertEqual(g.get_xlabel(), "Years")
+        self.assertEqual(g.get_xlabel(), "x")
         savefig("output.png")
         clf()
 
@@ -40,7 +40,7 @@ class Tests(PythonTestCase):
         """ The y axis is labelled correctly """
         import attempt
         g = gca()
-        self.assertEqual(g.get_ylabel(), "Population")
+        self.assertEqual(g.get_ylabel(), "y")
         savefig("output.png")
         clf()
 
@@ -49,7 +49,7 @@ class Tests(PythonTestCase):
         """ The plot uses the correct x values """
         import attempt
         g = gca()
-        self.assertEqual(gca().get_lines()[0].get_xdata().tolist(), list(range(13)))
+        self.assertEqual(gca().get_lines()[0].get_xdata().tolist(), attempt.x.tolist())
         savefig("output.png")
         clf()
 
@@ -58,19 +58,7 @@ class Tests(PythonTestCase):
         """ The plot uses the correct y values """
         import attempt
         g = gca()
-        self.assertEqual(gca().get_lines()[0].get_ydata().tolist(), [6000000000.0,
-                                                                    6263627369.103676,
-                                                                    6538837969.830772,
-                                                                    6826140744.99439,
-                                                                    7126066999.283436,
-                                                                    7439171381.7963705,
-                                                                    7766032911.745426,
-                                                                    8107256049.228093,
-                                                                    8463471813.04607,
-                                                                    8835338947.638811,
-                                                                    9223545141.289688,
-                                                                    9628808297.857553,
-                                                                    10051877864.385525])
+        self.assertEqual(gca().get_lines()[0].get_ydata().tolist(), attempt.y.tolist())
         savefig("output.png")
         clf()
 
@@ -93,6 +81,7 @@ class Tests(PythonTestCase):
         self.assertEquals(len(g.get_lines()), 1)
         savefig("output.png")
         clf()
+    
     
 
 # Run the unit tests
