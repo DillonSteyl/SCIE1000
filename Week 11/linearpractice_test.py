@@ -84,13 +84,48 @@ class Tests(PythonTestCase):
         clf()
     
     
-    def test_output(self):
-		""" Printing all the correct values. """
+    def test_output1(self):
+		""" Prints correct messages when both values are close enough. """
         random.seed(1)
-		expected = ""
-		with patch("builtins.input") as input_call:
+		expected = "Both values are close enough!\nThe actual m value is -7 and the actual c value is -9"
+		user_input = ["-8", "-7"]
+		with patch("builtins.input", return_value=user_input) as input_call:
 			with patch("sys.stdout", new=StringIO()) as output:
 				import attempt
+				clf()
+				self.assertEqual(output.getvalue().strip(), expected)
+				
+	def test_output2(self):
+		""" Prints correct messages when only the m value is close enough."""
+        random.seed(2)
+		expected = "The m value is close enough, but the c value is not.\nThe actual m value is 9 and the actual c value is 13"
+		user_input = ["10", "0"]
+		with patch("builtins.input", return_value=user_input) as input_call:
+			with patch("sys.stdout", new=StringIO()) as output:
+				import attempt
+				clf()
+				self.assertEqual(output.getvalue().strip(), expected)
+				
+	def test_output3(self):
+		""" Printing all the correct values. """
+        random.seed(3)
+		expected = "The c value is close enough, but the m value is not.\nThe actual m value is -5 and the actual c value is -5"
+		user_input = ["-10", "-7"]
+		with patch("builtins.input", return_value=user_input) as input_call:
+			with patch("sys.stdout", new=StringIO()) as output:
+				import attempt
+				clf()
+				self.assertEqual(output.getvalue().strip(), expected)
+				
+	def test_output4(self):
+		""" Printing all the correct values. """
+        random.seed(4)
+		expected = "Both values are not close enough.\nThe actual m value is -5 and the actual c value is -3"
+		user_input = ["5", "5"]
+		with patch("builtins.input", return_value=user_input) as input_call:
+			with patch("sys.stdout", new=StringIO()) as output:
+				import attempt
+				clf()
 				self.assertEqual(output.getvalue().strip(), expected)
 
 # Run the unit tests
