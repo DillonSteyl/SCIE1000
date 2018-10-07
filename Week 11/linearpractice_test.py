@@ -24,7 +24,6 @@ class Tests(PythonTestCase):
 		import attempt
 		g = gca()
 		self.assertEqual(g.get_title(), "Linear Model")
-		g.title("1")
 		savefig("output.png")
 		clf()
 
@@ -34,8 +33,6 @@ class Tests(PythonTestCase):
 		import attempt
 		g = gca()
 		self.assertEqual(g.get_xlabel(), "x")
-		g.title("2")
-		savefig("output.png")
 		clf()
 
 	@patch('builtins.input', side_effect = INPUT)
@@ -44,8 +41,6 @@ class Tests(PythonTestCase):
 		import attempt
 		g = gca()
 		self.assertEqual(g.get_ylabel(), "y")
-		g.title("3")
-		savefig("output.png")
 		clf()
 
 	@patch('builtins.input', side_effect = INPUT)
@@ -55,7 +50,6 @@ class Tests(PythonTestCase):
 		g = gca()
 		self.assertEqual(gca().get_lines()[0].get_xdata().tolist(), attempt.x.tolist())
 		g.title("4")
-		savefig("output.png")
 		clf()
 
 	@patch('builtins.input', side_effect = INPUT)
@@ -64,8 +58,6 @@ class Tests(PythonTestCase):
 		import attempt
 		g = gca()
 		self.assertEqual(gca().get_lines()[0].get_ydata().tolist(), attempt.y.tolist())
-		g.title("5")
-		savefig("output.png")
 		clf()
 
 	@patch('builtins.input', side_effect = INPUT)
@@ -76,8 +68,6 @@ class Tests(PythonTestCase):
 		if "show()" in open('attempt.py').read():
 			a = True
 		self.assertEquals(a,True) 
-		g.title("6")
-		savefig("output.png")
 		clf()
     
 	@patch('builtins.input', side_effect = INPUT)
@@ -86,8 +76,6 @@ class Tests(PythonTestCase):
 		import attempt
 		g = gca()
 		self.assertEquals(len(g.get_lines()), 1)
-		g.title("7")
-		savefig("output.png")
 		clf()
     
     
