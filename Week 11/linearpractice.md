@@ -11,7 +11,7 @@ Step 2: Allow the user to input the m and c values, respectively.
 
 Step 3: Check to see if the values are in the appropriate range: `actual_value-3 <= entered_value <= actual_value+3`
 
-Step 4: If the user got both the values correct, print the message ("Both values are close enough!"). If the user only got the m value correct, print the message ("The m value is close enough, but the c value is not."). If the user got only the c value correct, print the message ("The c value is close enough, but the m value is not."). If the user got both values wrong, print the message ("Both values are not close enough").
+Step 4: If the user got both the values correct, print the message ("Both values are close enough!"). If the user only got the m value correct, print the message ("The m value is close enough, but the c value is not."). If the user got only the c value correct, print the message ("The c value is close enough, but the m value is not."). If the user got both values wrong, print the message ("Both values are not close enough.").
 
 Step 5: Print the message ("The actual m value is", actual_m, "and the actual c value is", actual_c)
 
@@ -68,7 +68,7 @@ else:
     if c-3<=c_guess<= c+3:
         print("The c value is close enough, but the m value is not.")
     else:
-        print("Both values are not close enough")
+        print("Both values are not close enough.")
         
 # tell the user the actual values
 print("The actual m value is", m, "and the actual c value is", c)
