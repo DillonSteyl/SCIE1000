@@ -1,6 +1,6 @@
 # Sine Wave Modelling
 
-A sine wave has the following structure:
+Sine waves have the following structure:
 
 ` y = A*sin(2*pi*(x - D)/B) + C`
 
