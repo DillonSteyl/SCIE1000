@@ -66,6 +66,7 @@ class Tests(PythonTestCase):
 		if "show()" in open('attempt.py').read():
 			a = True
 		self.assertEquals(a,True)
+		savefig("output.png")
 		clf()
     
 	@patch('builtins.input', side_effect = INPUT)
