@@ -117,7 +117,7 @@ class Tests(PythonTestCase):
 				self.assertEqual(output.getvalue().strip(), expected)
 				
 	def test_output3(self):
-		""" Printing all the correct values. """
+		""" Prints correct messages when only the c value is close enough. """
 		random.seed(3)
 		expected = "The c value is close enough, but the m value is not.\nThe actual m value is -5 and the actual c value is -5"
 		user_input = ["-10", "-7"]
@@ -128,7 +128,7 @@ class Tests(PythonTestCase):
 				self.assertEqual(output.getvalue().strip(), expected)
 				
 	def test_output4(self):
-		""" Printing all the correct values. """
+		""" Prints correct messages when both values are wrong. """
 		random.seed(4)
 		expected = "Both values are not close enough.\nThe actual m value is -5 and the actual c value is -3"
 		user_input = ["5", "5"]
