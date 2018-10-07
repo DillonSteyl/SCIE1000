@@ -5,6 +5,8 @@ SCIE1000 contains a lot of modelling using linear equations. It's important to b
 
 **Task:** You will write a program that helps the user practice modelling with linear equations. The aim is to have a program that will generate a different data set each time for the user to model with a linear equation. The user enters their values for the linear model, and the program will check if they are close enough to the real values. 
 
+The functions to generate the random dataset are already written and used in the program. You do not need to understand how these work. All you need to do is complete the rest of the program as follows:
+
 Step 1: Display a graph for the user with the given x and y arrays. Name the x axis "x", and the y axis "y". Give the graph the title "Linear Model". Use black, circle markers ('o'), and no line. Use grid lines.
 
 Step 2: Allow the user to input the m and c values, respectively.
