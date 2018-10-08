@@ -3,9 +3,9 @@ from pylab import *
 # Since we are randomly generating the questions, we need to use the random library
 import random
 
-# this function will randomly generate an A value between 0 and 20
+# this function will randomly generate an A value between 1 and 20
 def generate_a():
-    return(random.randrange(0, 20))
+    return(random.randrange(1, 20))
 
 # this function will randomly generate a B value between 8 and 20
 def generate_b():
@@ -21,8 +21,8 @@ def generate_d(b):
 
 # this function will generate a data set using the a, b, c, d
 def generate_data(a, b, c, d):
-    # the x values will be randomly chosen from 0 to 25, there will be 60 of them
-    x = array([random.randrange(25) for i in range(60)])
+    # the x values will be randomly chosen from 0 to 25, there will be 100 of them
+    x = array([random.random()*25 for i in range(100)])
     # the y values will be calculated 
     # using y = asin(2pi(x-d)/b) + c as mu and a/10 as sigma in a guassian distribution
     y = array([random.gauss(a*sin(2*pi*(i - d)/b)+c, a/10) for i in x])
