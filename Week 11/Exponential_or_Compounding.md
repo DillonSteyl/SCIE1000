@@ -1,10 +1,11 @@
 
+# Exponential VS Compounding
 
 There are many different equations that can be used to model population growth, a few of which you learn about in SCIE1000. One important concept is that often times populations will grow proportional to the current population size. There are multiple simple models we use for this, such as exponential, and compounding. Recall, they look like this:
 
-Expontential: P<sub>i</sub> = P<sub>0</sub> x e<sup>k x i</sup>
+Expontential: `P(i) = P(0) * e^(k * i)`
 
-Compounding: P<sub>i</sub> = P<sub>i-1</sub> x (1+k)
+Compounding: `P(i) = P(i-1) * (1+k)`
 
 Here's the situation: while you are studying for SCIE1000 outside of class with your study group, your friend argues that these two formulas are interchangeable when k is constant. You aren't quite sure if they're right, because while they are both based on the same concept, why would we even need two different equations if they were essentially the same?
 
@@ -14,12 +15,13 @@ The title of your graph should be 'Exponential vs Compounding". The x-axis shoul
 
 After passing this exercise, take a moment to think about your results. Are the two equations interchangeable? Why or why not? And if not, which equation is most suitable for modelling the growth of a savings account that collects interest monthly, and which is most suitable for modelling a population of bacteria that multiplies rapidly with no limit on resources.
 
-**Hint 1:** The compounding formula can take another form when k is constant: P<sub>i</sub> = P<sub>0</sub> x (1+k)<sup>i</sup>
+**Hint 1:** The compounding formula can take another form when k is constant: P(i)= P(0) * (1+k)**i
+
 **Hint 2:** Don't forget the round() function. Example: round(2.24869231, 2) = 2.25
 
 **Solution**
 
-````
+```
 from pylab import *
 
 P = 100
@@ -27,14 +29,11 @@ k = 0.1
 n = 30
 time = arange(0, n)
 
-exponential = zeros(n)
-compounding = zeros(n)
+exponential = P*exp(k*time)
+compounding = P*(1+k)**(time)
 
-i = 0
-while i<n:
-    exponential[i] = P*exp(k*i)
-    compounding[i] = P*(1+k)**(i)
-    i = i + 1
+
+
 
 
 if round(compounding[n-1], 5) == round(exponential[n-1], 5):
@@ -51,4 +50,4 @@ ylabel("Amount")
 legend()
 show()
 
-````
+```
