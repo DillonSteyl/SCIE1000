@@ -1,10 +1,10 @@
 # Exponential Practice (1)
 
-An exponential function has the following structure:
+An exponential function has the following basic structure:
 
 ` y = A0 * e^(k*x)`
 
-This is what we will be using for this exercise.
+Exponential functions can be more complex (for example, including c and d values), but for this exercise we will only be using the basic exponential structure (where k and be positive or negative).
 
 **Task:** You will write a program that helps the user practice modelling with exponential equations. The aim is to have a program that will generate a different data set each time for the user to model with an exponential equation. The user enters their values for the exponential model, and the program will check if they are close enough to the real values.
 
@@ -12,7 +12,7 @@ The functions to generate the random dataset are already written and used in the
 
 Step 1: Display a graph for the user with the given x and y arrays. Name the x axis "x", and the y axis "y". Give the graph the title "Exponential Model". Use black, circle markers ('o'), and no line. Use grid lines.
 
-Step 2: Allow the user to input the A0 and k values, respectively.
+Step 2: Allow the user to input their guesses for the A0 and k values, respectively.
 
 Step 3: Check to see if the A0 value is in the appropriate range: actual_value-3 <= entered_value <= actual_value+3
 
@@ -36,9 +36,8 @@ import random
 def generate_k():
     k = round(random.random()*0.4-0.2, 3)
     if abs(k)<0.04:
-        return generate_k()
-    else:      
-        return(k)
+        return generate_k()     
+    return(k)
 
 # this function will randomly generate an A0 value between 0 and 20 (but not too small)
 def generate_A0():
