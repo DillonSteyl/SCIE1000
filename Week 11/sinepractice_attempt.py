@@ -31,7 +31,7 @@ def generate_data(a, b, c, d):
 # the a, b, c, d values are randomly generated
 a = generate_a()
 b = generate_b()
-c = generate_a()
+c = generate_c()
 d = generate_d(b)
 # the x and y arrays are randomly generated using a, b, c, d
 x, y = generate_data(a, b, c, d)
