@@ -32,10 +32,6 @@ time = arange(0, n)
 exponential = P*exp(k*time)
 compounding = P*(1+k)**(time)
 
-
-
-
-
 if round(compounding[n-1], 5) == round(exponential[n-1], 5):
     print("These two equations are interchangeable when k is constant.")
 else:
