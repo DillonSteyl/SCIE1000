@@ -26,7 +26,7 @@ Step 7: Check to see if the C value is in the appropriate range: actual_value-3 
 
 Step 8: If the user got the C value close enough, print the message ("The C value is close enough."). Otherwise, print the message ("The C value is incorrect.")
 
-Step 9: Check to see if the D value is in the appropriate range: actual_value-3 <= entered_value <= actual_value+3
+Step 9: Check to see if the D value is in the appropriate range: actual_value-2 <= entered_value <= actual_value+2
 
 Step 10: If the user got the D value close enough, print the message ("The D value is close enough."). Otherwise, print the message ("The D value is incorrect.")
 
@@ -47,9 +47,9 @@ from pylab import *
 # Since we are randomly generating the questions, we need to use the random library
 import random
 
-# this function will randomly generate an m value between -10 and 10
+# this function will randomly generate an a value between 1 and 20
 def generate_a():
-    return(random.randrange(0, 20))
+    return(random.randrange(1, 20))
 
 # this function will randomly generate a c value that is between m/2 and 3m/2
 def generate_b():
@@ -66,7 +66,7 @@ def generate_d(b):
 # this function will generate a data set using the m and c values provided
 def generate_data(a, b, c, d):
     # the x values will be randomly chosen from 0 to 25
-    x = array([random.randrange(25) for i in range(60)])
+    x = array([random.random()*25 for i in range(100)])
     # the y values will be calculated using y = mx+c + a random number scaled using m
     y = array([random.gauss(a*sin(2*pi*(i - d)/b)+c, a/10) for i in x])
     return x, y
@@ -83,7 +83,7 @@ plot(x, y, 'ko')
 grid(True)
 xlabel("x")
 ylabel("y")
-title("Linear Model")
+title("Sine Wave")
 show()
 
 # the user guesses the a, b, c, d values
