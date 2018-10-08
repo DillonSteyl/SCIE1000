@@ -15,7 +15,7 @@ The title of your graph should be 'Exponential vs Compounding". The x-axis shoul
 
 After passing this exercise, take a moment to think about your results. Are the two equations interchangeable? Why or why not? And if not, which equation is most suitable for modelling the growth of a savings account that collects interest monthly, and which is most suitable for modelling a population of bacteria that multiplies rapidly with no limit on resources.
 
-**Hint 1:** The compounding formula can take another form when k is constant: P(i)= P(0) * (1+k)**i
+**Hint 1:** The compounding formula can take another form when k is constant: `P(i)= P(0) * (1+k)**i`
 
 **Hint 2:** Don't forget the round() function. Example: round(2.24869231, 2) = 2.25
 
