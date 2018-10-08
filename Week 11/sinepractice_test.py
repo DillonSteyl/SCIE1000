@@ -8,7 +8,7 @@ from io import StringIO
 from unittest.mock import patch, call
 import random
 
-INPUT = ["4", "5"]
+INPUT = ["1", "2", "1", "2"]
 
 class Tests(PythonTestCase):
 
@@ -23,7 +23,7 @@ class Tests(PythonTestCase):
 		""" The graph has the correct title """
 		import attempt
 		g = gca()
-		self.assertEqual(g.get_title(), "Exponential Model")
+		self.assertEqual(g.get_title(), "Sine Wave")
 		clf()
 
 	@patch('builtins.input', side_effect = INPUT)
@@ -95,10 +95,11 @@ class Tests(PythonTestCase):
     
     
 	def test_output1(self):
-		""" Prints correct messages when both values are close enough. """
+		""" Prints correct messages when all values are close enough. """
 		random.seed(1)
-		expected = "The A0 value is close enough.\nThe k value is close enough.\nThe actual A0 value is 17 and the actual k value is -0.11"
-		user_input = ["14", "-0.14"]
+		expected = "The a value is close enough.\nThe b value is close enough.\nThe c value is close enough.\nThe d value is close enough."
+		expected += "\nActual values -- a: 4 -- b: 17 -- c: 2 -- d: 8"
+		user_input = ["3", "15", "1", "6"]
 		with patch("builtins.input", side_effect=user_input) as input_call:
 			with patch("sys.stdout", new=StringIO()) as output:
 				import attempt
@@ -106,10 +107,11 @@ class Tests(PythonTestCase):
 				self.assertEqual(output.getvalue().strip(), expected)
 				
 	def test_output2(self):
-		""" Prints correct messages when only the k value is close enough."""
+		""" Prints correct messages when only a and b are close enough. """
 		random.seed(2)
-		expected = "The A0 value is incorrect.\nThe k value is close enough.\nThe actual A0 value is 19 and the actual k value is 0.137"
-		user_input = ["15", "0.14"]
+		expected = "The a value is close enough.\nThe b value is close enough.\nThe c value is incorrect.\nThe d value is incorrect."
+		expected += "\nActual values -- a: 1 -- b: 9 -- c: 2 -- d: 5"
+		user_input = ["3", "12", "8", "2"]
 		with patch("builtins.input", side_effect=user_input) as input_call:
 			with patch("sys.stdout", new=StringIO()) as output:
 				import attempt
@@ -117,10 +119,11 @@ class Tests(PythonTestCase):
 				self.assertEqual(output.getvalue().strip(), expected)
 				
 	def test_output3(self):
-		""" Prints correct messages when only the A0 value is close enough. """
+		""" Prints correct messages when only c and d are close enough. """
 		random.seed(3)
-		expected = "The A0 value is close enough.\nThe k value is incorrect.\nThe actual A0 value is 11 and the actual k value is -0.079"
-		user_input = ["12", "0.1"]
+		expected = "The a value is incorrect.\nThe b value is incorrect.\nThe c value is close enough.\nThe d value is close enough."
+		expected += "\nActual values -- a: 7 -- b: 17 -- c: 17 -- d: 4"
+		user_input = ["11", "12", "20", "6"]
 		with patch("builtins.input", side_effect=user_input) as input_call:
 			with patch("sys.stdout", new=StringIO()) as output:
 				import attempt
@@ -128,10 +131,11 @@ class Tests(PythonTestCase):
 				self.assertEqual(output.getvalue().strip(), expected)
 				
 	def test_output4(self):
-		""" Prints correct messages when both values are wrong. """
+		""" Prints correct messages when all values are wrong. """
 		random.seed(4)
-		expected = "The A0 value is incorrect.\nThe k value is incorrect.\nThe actual A0 value is 2 and the actual k value is -0.079"
-		user_input = ["6", "0.02"]
+		expected = "The a value is incorrect.\nThe b value is incorrect.\nThe c value is incorrect.\nThe d value is incorrect."
+		expected += "\nActual values -- a: 7 -- b: 12 -- c: 3 -- d: 11"
+		user_input = ["20", "3", "8", "4"]
 		with patch("builtins.input", side_effect=user_input) as input_call:
 			with patch("sys.stdout", new=StringIO()) as output:
 				import attempt
