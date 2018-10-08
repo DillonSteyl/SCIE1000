@@ -7,9 +7,8 @@ import random
 def generate_k():
     k = round(random.random()*0.4-0.2, 3)
     if abs(k)<0.04:
-        return generate_k()
-    else:      
-        return(k)
+        return generate_k()    
+    return(k)
 
 # this function will randomly generate an A0 value between 0 and 20 (but not too small)
 def generate_A0():
