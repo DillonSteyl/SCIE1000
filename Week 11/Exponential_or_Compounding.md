@@ -1,5 +1,5 @@
 
-# Exponential VS Compounding
+# Exponential vs Compounding
 
 There are many different equations that can be used to model population growth, a few of which you learn about in SCIE1000. One important concept is that often times populations will grow proportional to the current population size. There are multiple simple models we use for this, such as exponential, and compounding. Recall, they look like this:
 
