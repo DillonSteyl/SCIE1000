@@ -22,7 +22,7 @@ def generate_data(k, A0):
     # the x values will be randomly chosen from 0 to 25
     x = array([random.randrange(25) for i in range(25)])
     
-    # the y values will be calculated using y = A0*exp(k*x) * a random number for scaling
+    # the y values will be calculated using y = A0*exp(k*x) * a random number to scatter
     y = array([A0*exp(k*i)*(0.9+random.random()*0.2) for i in x])
     return x, y
     
