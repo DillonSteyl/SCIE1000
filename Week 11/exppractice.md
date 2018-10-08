@@ -20,7 +20,7 @@ Step 4: If the user got the A0 value close enough, print the message ("The A0 va
 
 Step 5: Check to see if the k value is in the appropriate range: actual_value-0.03 <= entered_value <= actual_value+0.03
 
-Step 6: If the user for the k value close enough, print ("The k value is close enough.") Otherwise, print the message ("The k value is incorrect.")
+Step 6: If the user got the k value close enough, print the message ("The k value is close enough.") Otherwise, print the message ("The k value is incorrect.")
 
 Step 7: Finally, print the message ("The actual A0 value is", actual_A0, "and the actual k value is", actual_k)
 
