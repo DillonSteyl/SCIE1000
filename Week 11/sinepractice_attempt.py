@@ -24,7 +24,7 @@ def generate_data(a, b, c, d):
     # the x values will be randomly chosen from 0 to 25, there will be 100 of them
     x = array([random.random()*25 for i in range(100)])
     # the y values will be calculated 
-    # using y = asin(2pi(x-d)/b) + c as mu and a/10 as sigma in a guassian distribution
+    # using y = asin(2pi(x-d)/b) + c as mu and a/10 as sigma in a gaussian distribution
     y = array([random.gauss(a*sin(2*pi*(i - d)/b)+c, a/10) for i in x])
     return x, y
     
