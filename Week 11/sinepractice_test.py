@@ -98,8 +98,8 @@ class Tests(PythonTestCase):
 		""" Prints correct messages when all values are close enough. """
 		random.seed(1)
 		expected = "The a value is close enough.\nThe b value is close enough.\nThe c value is close enough.\nThe d value is close enough."
-		expected += "\nActual values -- a: 5 -- b: 17 -- c: 3 -- d: 8"
-		user_input = ["3", "15", "1", "6"]
+		expected += "\nActual values -- a: 5 -- b: 17 -- c: -16 -- d: 8"
+		user_input = ["3", "15", "-18", "6"]
 		with patch("builtins.input", side_effect=user_input) as input_call:
 			with patch("sys.stdout", new=StringIO()) as output:
 				import attempt
@@ -110,7 +110,7 @@ class Tests(PythonTestCase):
 		""" Prints correct messages when only a and b are close enough. """
 		random.seed(2)
 		expected = "The a value is close enough.\nThe b value is close enough.\nThe c value is incorrect.\nThe d value is incorrect."
-		expected += "\nActual values -- a: 2 -- b: 9 -- c: 3 -- d: 5"
+		expected += "\nActual values -- a: 2 -- b: 9 -- c: -15 -- d: 5"
 		user_input = ["3", "12", "8", "2"]
 		with patch("builtins.input", side_effect=user_input) as input_call:
 			with patch("sys.stdout", new=StringIO()) as output:
@@ -122,8 +122,8 @@ class Tests(PythonTestCase):
 		""" Prints correct messages when only c and d are close enough. """
 		random.seed(3)
 		expected = "The a value is incorrect.\nThe b value is incorrect.\nThe c value is close enough.\nThe d value is close enough."
-		expected += "\nActual values -- a: 8 -- b: 17 -- c: 18 -- d: 4"
-		user_input = ["2", "12", "21", "6"]
+		expected += "\nActual values -- a: 8 -- b: 17 -- c: 14 -- d: 4"
+		user_input = ["2", "12", "17", "6"]
 		with patch("builtins.input", side_effect=user_input) as input_call:
 			with patch("sys.stdout", new=StringIO()) as output:
 				import attempt
@@ -134,7 +134,7 @@ class Tests(PythonTestCase):
 		""" Prints correct messages when all values are wrong. """
 		random.seed(4)
 		expected = "The a value is incorrect.\nThe b value is incorrect.\nThe c value is incorrect.\nThe d value is incorrect."
-		expected += "\nActual values -- a: 8 -- b: 12 -- c: 4 -- d: 11"
+		expected += "\nActual values -- a: 8 -- b: 12 -- c: -14 -- d: 11"
 		user_input = ["20", "3", "8", "4"]
 		with patch("builtins.input", side_effect=user_input) as input_call:
 			with patch("sys.stdout", new=StringIO()) as output:
