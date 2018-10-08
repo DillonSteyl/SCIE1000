@@ -15,6 +15,4 @@ compounding = # use compounding to store your population values for the compound
 # remember to label your graph (x axis, y axis, and title)
 # include a legend!
 
-# do not modify (this code is necessary for MyPyTutor to show output):
-savefig("output.png")
 
