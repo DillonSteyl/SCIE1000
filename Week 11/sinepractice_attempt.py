@@ -19,7 +19,7 @@ def generate_c():
 def generate_d(b):
     return(random.randrange(0, b))
 
-# this function will generate a data set using the a, b, c, d
+# this function will generate a data set using a, b, c, d
 def generate_data(a, b, c, d):
     # the x values will be randomly chosen from 0 to 25, there will be 100 of them
     x = array([random.random()*25 for i in range(100)])
