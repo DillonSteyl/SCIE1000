@@ -15,4 +15,5 @@ compounding = # use compounding to store your population values for the compound
 # remember to label your graph (x axis, y axis, and title)
 # include a legend!
 
-
+# Do Not Modify Below This Line
+savefig("output.png")
