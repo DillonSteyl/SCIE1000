@@ -5,7 +5,7 @@ import random
 
 # this function will randomly generate an m value between -0.2 and 0.2 (but not too small)
 def generate_k():
-    k = round(random.random()*0.4-0.2, 3)
+    k = round(random.random()*0.3-0.15, 3)
     if abs(k)<0.04:
         return generate_k()    
     return(k)
