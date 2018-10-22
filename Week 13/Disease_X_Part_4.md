@@ -50,11 +50,11 @@ b = 0.5
 d = 0.0001
 stepSize = 0.1
 V = arange(1000000, 2000001, 50000)
-D = zeros(size(V))
+D = zeros(len(V))
 
 
 i = 0
-while i<size(V):
+while i<len(V):
     D[i] = runSimulation(weeks, N, a, b, d, V[i], stepSize)
     i = i + 1
 
