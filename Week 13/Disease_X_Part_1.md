@@ -19,7 +19,7 @@ Initial Infected (`I[0]`): 1
 
 Initial Susceptible (`S[0]`): 24999999
 
-Initial Deceased (`[D]`): 0
+Initial Deceased (`D[0]`): 0
 
 **Task:** Use the initial values given to see the effect of a single infected person on the population of Madagascar, using an SIRD model. Use a while loop to calculate the changes in each of the groups over 20 weeks, with a step size of 0.1 week (that's overall 201 steps including step 0). Then, print the number of deaths and the maximum number of people infected at once using the print statements provided. Plot a graph of the population over time, with all four population groups. 
 
