@@ -12,5 +12,3 @@ def runSimulation(weeks, N, a, b, d, v, stepSize):
 
 
 
-# do not modify (this code is necessary for MyPyTutor to show output):
-savefig("output.png")
