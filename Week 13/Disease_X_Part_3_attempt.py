@@ -6,7 +6,7 @@ def runSimulation(weeks, N, a, b, d, v, stepSize):
     
     #initialise and fill SIRD arrays
     
-    return yourDeathValueHere
+    return #yourDeathValueHere
 
 
 
