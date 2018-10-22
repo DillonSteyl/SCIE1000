@@ -1,10 +1,12 @@
+# Disease X (4)
+
 The government was unhappy with the amount of deaths that would occur despite the large amount of vaccinations. It is expensive to vaccinate the population at a rate of 1000000 people per week, but they are willing to provide more funding if it will have a big impact. They want you to investigate the effect of vaccination rate on deaths, so they will know how many people to vaccinate per week.
 
 **Task:** Plot a graph of the number of deaths for different vaccination rates. Start with 1000000, increasing by 50000 until 2000000 (inclusive).
 
 The title of your graph should be "Effect of vaccinations p/w on Deaths". The x-axis should be labelled "Vaccinations per week", and the y-axis should be labelled "Deaths". There should be no legend or print statements. 
 
-**Hint:** Now would be a good time to use the function you wrote in the previous exercise (you will have to copy paste it if you want to use it).
+**Hint:** Now would be a good time to use the function you wrote in the previous exercise (you will have to copy paste it if you want to use it). Just use it to input the values, and return the number of deaths. That's pretty easy!
 
 
 **Solution:**
