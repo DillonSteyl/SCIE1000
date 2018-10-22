@@ -1,4 +1,4 @@
-#Disease X (2)
+# Disease X (2)
 
 After running your simulation, you find that around 4500 people would die if no action is taken after a single person becomes infected. As well, at the peak of the pandemic, around half the population would be sick. You inform the government about this and they are very alarmed.
 
