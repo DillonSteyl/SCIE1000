@@ -2,7 +2,7 @@
 
 **Note:** For this question, you will be using a nested while loop - which is a while loop inside another while loop. This may be new for you, so a relevant example has been provided at the end of the question. However, we recommend that you try this exercise on your own first (perhaps in Jupyter or Spyder), as it can be very satisfying to figure something out yourself!
 
-The context for this challenge question is cryptography, a field of mathematics concerned with the encryption and decryption of messages, and the cracking of those encryptions. Specifically, you will write an algorithm that can help crack an RSA encryption, which is based on prime numbers. You will be given all the information you need to complete this exercise, but if you are interested in learning the purpose of your program, we have provided extra context information below. This extra context is optional, and you don't need to fully understand it to complete the question.
+The context for this challenge question is cryptography, a field of mathematics concerned with the encryption and decryption of messages, and the cracking of those encryptions. Specifically, you will write an algorithm that can help crack an RSA encryption, which is based on prime numbers. You will be given all the information you need to complete this exercise, but if you are interested in learning the purpose of your program, we have provided extra context information below. This extra context is optional, and you don't need to read it to complete the question.
 
 **Context:**
 
