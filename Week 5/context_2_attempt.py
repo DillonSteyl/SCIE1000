@@ -13,6 +13,4 @@ print("Friend B -- Avg:", avgB, "Max:", maxB, "Sum:", sumB)
 # calculate the diff array
 print("The maximum difference is", maxDiff)
 
-#calculate the slopes
-
 #print which party is most popular
