@@ -2,7 +2,7 @@
 
 **Task:** A program has been written but the functions have gone missing and there aren't any good comments! Define and write the functions so that the program passes all the tests. 
 
-**Note:** The returned values for the Exponential Equation need to be rounded. Please round the value of A0 (or P0, or whatever you name it) to 0 decimal places, and round the value of k to 5 decimal places. Use the round function! (`round(num, places)`, where num is the number you want to round and places is the number of decimal places).
+**Note:** Please use `exp` instead of `e**` when calculating exponentials in this question, as they may give slightly different answers. Additionally, we will not input any y1=0  or y2=0 values into the exponential function, so there's no need to worry about that. 
 
 To solve this you may want to try finding the formulas on paper first. Try it yourself before reading the hint below:
 
@@ -50,7 +50,7 @@ def getLinearEquation(x1, y1, x2, y2):
 def getExponentialEquation(x1, y1, x2, y2):
     k = log(y1/y2)/(x1-x2)
     A0 = y2/(exp(k*x2))
-    return(round(A0), round(k,5))
+    return(A0, k)
     
     
 x1 = float(input("What is the first x value: "))
