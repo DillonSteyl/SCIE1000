@@ -4,6 +4,8 @@
 
 You should have four functions: `f(x)`, `fdash(x)`, `onestep(x)`, and `newtons_nsteps(x, n)`. 
 
+**Reminder:** Only use `exp`, not `e**`.
+
 
 # Solution
 
