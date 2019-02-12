@@ -5,7 +5,7 @@ Radiometric dating is the process of comparing the ratio of these elements prese
 This half-life can then be used to determine how long ago the fossil was formed. For example, if the amount of Carbon-14 and Nitrogen-14 is equal, then half of the original Carbon-14 has decayed, so one half-life has past since the fossil was formed. 
 
 Your task is to write a program that will calculate the direct age of a fossil sample. It should include the following features:
-1. Prompt the user to input the percentage of isotopes found that are Carbon-14. The user should be asked to try running the program again if the value they enter is larger than 100. Also, percentages below or equal to 10% are not valid for this carbon-dating method, as it limits the validity of the result obtained, so any percentage lower than this should also not be accepted. Use 'carbon' as the variable name for this value. 
+1. Prompt the user to input the percentage of isotopes found that are Carbon-14. The user should be asked to try again **and** reprompted if the value they enter is larger than or equal to 100. This will require the use of a while loop menu. Also, percentages below or equal to 10% are not valid for this carbon-dating method, as it limits the validity of the result obtained, so any percentage lower than this should also not be accepted **and** reprompt the user to enter another value. Use 'carbon' as the variable name for this value. 
 2. Calculate the number of half-lives that have passed since the fossil was formed and display this on screen. Use 'halflives' as the variable name for this value. 
 3. Calculate the number of years that have passed since the fossil was formed and display this on screen. Use 'years' as the variable name for this value. 
 
