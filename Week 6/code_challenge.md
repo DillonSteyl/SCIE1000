@@ -4,7 +4,7 @@
 
 The context for this challenge question is cryptography, a field of mathematics concerned with the encryption and decryption of messages, and the cracking of those encryptions. Specifically, you will write an algorithm that can help crack an RSA encryption, which is based on prime numbers. You will be given all the information you need to complete this exercise, but if you are interested in learning the purpose of your program, we have provided extra context information below. This extra context is optional, and you don't need to fully understand it to complete the question.
 
-**Context: **
+**Context:**
 
 For computers to communicate with each other they must send messages, and often times these messages must remain a secret. Messages are encrypted by the sender, sent to the recipient, and then unlocked by the recipient using a 'key' that only the sender and recipient know. 
 
