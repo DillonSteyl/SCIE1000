@@ -8,6 +8,8 @@ Recall the formula for Euler's method is:
 
 Round the output to 5 decimal places. Do not print anything, call your onestep function, or ask for any input. You should have two functions defined in your code (`onestep` and `fdash`). 
 
+**Reminder:** Only use `exp`, not `e**`.
+
 
 # Solution
 
