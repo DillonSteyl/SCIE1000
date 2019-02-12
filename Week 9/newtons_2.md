@@ -12,6 +12,8 @@ Applying a single step of Newton's Method thus has the following form:
 
 Round the answer to 5 decimal places. 
 
+**Reminder:** Only use `exp`, not `e**`.
+
 # Solution
 
 ```from pylab import *
