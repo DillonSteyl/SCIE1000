@@ -49,7 +49,8 @@ class Tests(PythonTestCase):
 		with patch("builtins.input", return_value="4") as input_call:
 			import attempt
 			a,b = attempt.getExponentialEquation(0, 100, 10, 50)
-			self.assertEqual([a,b], [100.0, -0.06931])
+			self.assertAlmostEqual(a, 100)
+			self.assertAlmostEqual(b, -0.06931471805599453)
 			
 			
 	def test_exponential_behaviour2(self):
@@ -58,7 +59,8 @@ class Tests(PythonTestCase):
 		with patch("builtins.input", return_value="4") as input_call:
 			import attempt
 			a,b = attempt.getExponentialEquation(10, 10, 20, 30)
-			self.assertEqual([a,b], [3.0, 0.10986])
+			self.assertAlmostEqual(a, 3.3333333333333326)
+			self.assertAlmostEqual(b, 0.10986122886681098)
 			
 
 	def test_output1(self):
@@ -77,7 +79,7 @@ class Tests(PythonTestCase):
 		with patch("builtins.input", side_effect=user_input) as input_call:
 			with patch("sys.stdout", new=StringIO()) as output:
 				import attempt
-				expected = "The value of A0 is 10000.0 and the value of k is 0.01833\nThanks for using this program!"
+				expected = "The value of A0 is 10000.0 and the value of k is 0.0183258146374831\nThanks for using this program!"
 				self.assertEqual(output.getvalue().strip(), expected)
 				
 				
