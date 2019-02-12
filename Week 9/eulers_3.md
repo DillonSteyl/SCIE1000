@@ -8,6 +8,8 @@ The `fdash` and `onestep` functions already round their output, so you will not 
 
 **Hint:** One way of implementing this function is to use a while loop. 
 
+**Reminder:** Only use `exp`, not `e**`.
+
 **If you need help with Euler's method:**
 
 The following example of Euler’s method is given in case you do not understand how it works with multiple steps:
