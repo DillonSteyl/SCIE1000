@@ -14,7 +14,7 @@ class Tests(PythonTestCase):
 
 	def test_output(self):
 		""" Printing all the correct values. """
-		expected = "Friend A -- Avg: 49.25 Max: 73.0 Sum: 394.0\nFriend B -- Avg: 49.5 Max: 69.0 Sum: 396.0\nThe maximum difference is 6.0\nFriend A will have the most popular party."
+		expected = "Friend A -- Avg: 49.25 Max: 73.0 Sum: 394.0\nFriend B -- Avg: 49.5 Max: 69.0 Sum: 396.0\nThe maximum difference is 6.0\nFriend B will have the most popular party."
 		with patch("builtins.input") as input_call:
 			with patch("sys.stdout", new=StringIO()) as output:
 				import attempt
@@ -61,20 +61,6 @@ class Tests(PythonTestCase):
 			with patch("sys.stdout", new=StringIO()) as output:
 				import attempt
 				self.assertEqual(attempt.sumB, 396.0)
-     
-	def test_slopeA(self):
-		""" slopeA is the correct value."""		
-		with patch("builtins.input") as input_call:
-			with patch("sys.stdout", new=StringIO()) as output:
-				import attempt
-				self.assertEqual(attempt.slopeA, 9.0)
-        
-	def test_slopeB(self):
-		""" slopeB is the correct value."""		
-		with patch("builtins.input") as input_call:
-			with patch("sys.stdout", new=StringIO()) as output:
-				import attempt
-				self.assertEqual(round(attempt.slopeB,5), round(8.428571428571429,5))
         
 	def test_maxDiff(self):
 		""" maxDiff is the correct value."""		
