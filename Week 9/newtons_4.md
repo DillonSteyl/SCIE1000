@@ -14,6 +14,8 @@ In this formula, the vertical lines indicate absolute value (that is, the value 
 
 **Note:** You can assume that you will never be given an initial `x` value of 0.
 
+**Reminder:** Only use `exp`, not `e**`.
+
 
 ```
 def f(x):
