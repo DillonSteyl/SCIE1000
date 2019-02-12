@@ -7,24 +7,26 @@ A[i] = A[i-1]*0.6 + 18 + B[i-1]*(0.2), rounded to 0 decimal places
 B[i] = B[i-1]*0.4 + 25 + A[i-1]*(0.25), rounded to 0 decimal places
 ```
 
-The number of guests for Friend A at hour `i` is `A[i]`. The number of guests for Friend B at hour `i` is `B[i]`. These equations were made by making the prediction that 60% of Friend A's guests will stay at that party, 18 new guests would join, and 25% of the guests will switch to Friend B's party (the other 15% will go home). The same is said for Friend B, except with different values. 
+The number of guests for Friend A at hour `i` is `A[i]`. The number of guests for Friend B at hour `i` is `B[i]`. The equations look a bit complex, but you will learn how to write them towards the end of the course. You don't need to understand them to complete this exercise, but we will explain them in case you are interested. These equations were made by making the prediction that 60% of Friend A's guests will stay at that party (`A[i-1]*0.6`), 18 new guests would join (`18`), and 25% of the guests will switch to Friend B's party (`B[i-1]*(0.2)`). The remaining 15% will go home (so they are left out of the formula!). The same is said for Friend B, except with different values. 
 
 You want to analyse these two equations, finding the average, maximum, and total number of guests for both models. You also want to find the largest difference. 
 
-These equations are a bit complex, so you also want to simplify them. You decide that the best way is to model them with a linear equation. So you want your program to print the slope for each equation, based on the first and last values.
-
 **Task:**
 
-Given that the parties will last 8 hours and there are initially 10 guests at each party:
+Given that the parties will last 8 hours and there are initially 10 guests at each party in the first hour:
+
 1. Calculate the number of guests for Friend A and B, and store them in the arrays friendA and friendB, respectively.
-2. Calculate the average, max, and sum for each model. Print them using the message provided. Store them in the variables provided. 
-3. Calculate the difference between the number of people at each party for each hour. Store this in the array diff. Each value should be positive. 
+
+2. Calculate the average, max, and sum for each model. Store them using the following variable names: avgA, maxA, sumA, and avgB, maxB, sumB. Print them using the message provided.
+
+3. Calculate the difference between the number of people at each party for each hour. Store this in the array diff. Each value should be positive. See the hint if you need help with this.
+
 4. Print the maximum value in the diff array, using the message provided. Also store it in the variable maxDiff.
-5. Calculate the slopes for both models using the formula: `m = (ylast - yfirst)/(xlast - xfirst)`. In this scenario, y is the number of people, x is the hour. The hours start at 0 and end at 7. Store the slopes in the variables slopeA and slopeB
-6. Print the message "Friend X will have the most popular party.", where X is the friend with the highest slope value. If they are equal, print the message "The parties will be equally popular."
+
+5. Print the message "Friend X will have the most popular party.", where X is the friend with the highest average number of guests per hour. If they are equal, print the message "The parties will be equally popular."
 
 
-**Hint:** Depending on how you implement this, you may want to use the absolute function on arrays. The absolute function makes all values positive. This function will work on both numbers and arrays. Given an array or single variable A, the absolute function is `abs(A)`.
+**Hint:** Depending on how you implement this, you may want to use the absolute function on an array. The absolute function makes all values positive, and will work on both numbers and arrays. Given an array A, the absolute function is `abs(A)`. It will also work for expressions, so the absolute value of two arrays X and Y added together is `abs(X+Y)`.
 
 
 
@@ -59,12 +61,9 @@ maxDiff = max(diff)
 
 print("The maximum difference is", maxDiff)
 
-slopeB = (friendB[7]-friendB[0])/7
-slopeA = (friendA[7]-friendA[0])/7
-
-if slopeA>slopeB:
+if avgA>avgB:
     print("Friend A will have the most popular party.")
-elif slopeB>slopeA:
+elif avgB>avgA:
     print("Friend B will have the most popular party.")
 else:
     print("The parties will be equally popular.")
