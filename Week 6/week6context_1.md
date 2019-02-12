@@ -34,9 +34,9 @@ Enter the tumour size (mm):
 
 Enter the patient weight (kg):
 
-**Hint:** To do the ratio calculation, first the thickness of the bowel lining needs to be approximated. As mentioned, dividing the weight of the patient by 20 will suffice. Then, the tumorsize divided by the approximated thickness of the bowel lining will give the ration.
+**Hint:** To do the ratio calculation, first the thickness of the bowel lining needs to be approximated. As mentioned, dividing the weight of the patient by 20 will suffice. Then, the tumorsize divided by the approximated thickness of the bowel lining will give the ratio.
 
-You will need a function that will calculate the ration, some input statements to learn about the patient, and some conditionals to print the right message based on the ratio found.
+You will need a function that will calculate the ratio, some input statements to learn about the patient, and some conditionals to print the right message based on the ratio found.
 
 # Solution
 ```python
