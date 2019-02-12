@@ -29,11 +29,11 @@ It does this by using `A[i-1]`, which refers to the previous value calculated. A
 
 **Task:**
 
-You want to calculate the height of your plant throughout the year. The person who sold you the plant said the plant's growth will follow this equation, with `H(i)` being the height (cm) of the plant at month `i`:
+You want to calculate the height of your plant throughout the year. The person who sold you the plant said the plant's growth will follow this equation, with `i` being the current month:
 
 `Height of plant at month i = (height of plant the previous month) * (1.2 + 0.4*sin(2*pi*i/4))`, rounded to 0 decimal places. 
 
-Given that the plant will start at a height of 10cm (`H[0] = 10`), write a program that will calculate the plant's height for 12 months, including the initial month. Store it in an array named `height`. Do not print anything.
+Given that the plant will start at a height of 10cm (at month `i = 0`), write a program that will calculate the plant's height for 12 months, including the initial month. Store it in an array named `height`. Do not print anything.
 
 **Hint:** Recall, to access and edit elements in an array, you must use square brackets `[]`.
 
