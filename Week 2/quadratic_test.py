@@ -20,7 +20,7 @@ class Tests(PythonTestCase):
 			with patch("sys.stdout", new=StringIO()) as output:
 				import attempt
 				answer = output.getvalue().strip()
-				self.assertTrue(answer== expected1 or answer == expected2)
+				self.assertIn(answer, [expected1, expected2])
 
 	def test_output_2(self):
 		"For 2, 18 and -380, the value of x1 is 10.0 , and the value of x2 is -19.0"
@@ -32,7 +32,7 @@ class Tests(PythonTestCase):
 			with patch("sys.stdout", new=StringIO()) as output:
 				import attempt
 				answer = output.getvalue().strip()
-				self.assertTrue(answer== expected1 or answer == expected2)
+				self.assertIn(answer, [expected1, expected2])
 	def test_output_3(self):
 		"""For 5, 3, and -48 the value of x1 is 2.812876483254676 , and the value of x2 is -3.4128764832546765"""
 		user_input = ["5", "3", "-48"]
@@ -43,7 +43,7 @@ class Tests(PythonTestCase):
 			with patch("sys.stdout", new=StringIO()) as output:
 				import attempt
 				answer = output.getvalue().strip()
-				self.assertTrue(answer== expected1 or answer == expected2)
+				self.assertIn(answer, [expected1, expected2])
 
 
 # Run the unit tests
