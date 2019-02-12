@@ -8,19 +8,19 @@ It has already been proven that the asteroid will have the same `x` and `z` coor
 
 The equation for the change in `y` at day `t` after the asteroid was discovered is:
 
-`y'(t) = (-0.05t+5)*exp(0.002t)*0.05`
+`f'(t) = (-0.05t+5)*exp(0.002t)*0.05`
 
-In other words, this equation is the derivative of `y(t)`. The starting `y` position of the asteroid is 160.195 million kilometers, which occurs at `t = 0`. The `y` position of Earth in 215 days (`t = 215`) is 150 million kilometers. 
+The starting `y` position of the asteroid is 160.195 million kilometers, which occurs at `t = 0`, so `f(0) = 160.195` million kilometers. The `y` position of Earth in 215 days (`t = 215`) is 150 million kilometers, so `f(215) = 150` million kilometers.
 
 **Task:** Write a function called `will_it_hit(h)`, that returns the number `1` if the asteroid is going to hit Earth in 215 days, and `0` otherwise - along with the Euler's method prediction of the asteroid's `y` poistion. 
 
-The Earth will be considered 'hit' if the asteroid gets within 0.01 million kilometers of Earth (so `abs(earthy - asteroidy)<=0.1`). The input for the function is `h`, which indicates the step size in days. So `h = 0.5` indicates that there are two steps of Euler's method per day, resulting in `215/0.5 = 530` steps of Euler's method.
+The Earth will be considered 'hit' if the asteroid gets within 0.01 million kilometers of Earth (so `abs(earthy - asteroidy)<0.01`). The input for the function is `h`, which indicates the step size in days. The formula for the number of steps is `215/h`. For example, `h = 0.5` indicates that there are two steps of Euler's method per day, resulting in `215/0.5 = 530` steps of Euler's method.
 
 As with the previous exercises, the output for the `fdash` and `onestep` functions should be rounded to 5 decimal places. 
 
 Use your code from the previous exercises. The only thing you will need to change is `fdash`. We have written tests for each of your functions (`fdash`, `onestep`, `eulers`, `will_it_hit`), to help you understand where errors might be. Good luck!
 
-**Note:** All units for the `y` location of the asteroid should be in millions of kilometers. For example, will_it_hit(5) should give output (0, 151.72445).
+**Note:** All units for the `y` location of the asteroid should be in millions of kilometers - so instead of writing 150000000 for the location of the Earth, use 150. For another example, will_it_hit(5) should give output (0, 151.72445).
 
 **Reminder:** Only use `exp`, not `e**`. You will not pass the exercise if you use `e**`.
 
