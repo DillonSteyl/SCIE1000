@@ -2,7 +2,7 @@
 
 For computers to communicate with each other they must send messages, and often times these messages must remain a secret. Messages are encrypted by the sender, sent to the recipient, and then unlocked by the recipient using a 'key' that only the sender and recipient know. 
 
-The mathematical field of cryptography is concerned with the creation and cracking of encryptions - coming up with ways to encrypt/decrypt messages, and how to figure out keys for messages you don't know. Cryptography can have a significant impact on our lives, with various governments even restricting the export of cryptographic technology in the past by classifying it as a weapon. That's right! Mathetmathics has been classified as a type of weapon!
+The mathematical field of cryptography is concerned with the creation and cracking of encryptions - coming up with ways to encrypt/decrypt messages, and how to figure out keys for messages you don't know. Cryptography can have a significant impact on our lives, with various governments even restricting the export of cryptographic technology in the past by classifying it as a weapon. That's right! Mathemathics has been classified as a type of weapon!
 
 There are many different ways to encrypt and decrypt messages, and each method uses a particular type of key (think of keys as the thing that locks and unlocks a message, just like you would with your front door). There are generally two types of keys. Private keys and Public keys. For private keys, a 'key' (usually a string of letters or numbers) is used to encrypt the message, and then that same key is used to decrypt the message. 
 
