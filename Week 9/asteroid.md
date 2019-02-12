@@ -22,6 +22,8 @@ Use your code from the previous exercises. The only thing you will need to chang
 
 **Note:** All units for the `y` location of the asteroid should be in millions of kilometers. For example, will_it_hit(5) should give output (0, 151.72445).
 
+**Reminder:** Only use `exp`, not `e**`. You will not pass the exercise if you use `e**`.
+
 ```
 from pylab import *
 
