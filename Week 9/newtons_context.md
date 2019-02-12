@@ -46,6 +46,8 @@ For simplicity, set `n = 15` and `p = 1` for Newton's Method, and start with an 
 
 **Note:** We have written tests for all five of the functions, so you can check to see where your errors are. 
 
+**Reminder:** Only use `exp`, not `e**`.
+
 # Solution
 
 
