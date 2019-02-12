@@ -26,7 +26,7 @@ This is called a "prime factorisation" problem, and the task for this exercise i
 
 **Task:**
 
-For this exercise you will write a function named `primes` that takes a single number as input, and returns the two primes that are multiplied together to make that number. For example, given the number 35, your function must return the numbers 7 and 5. The order the nubmers are returned in is not important. 
+For this exercise you will write a function named `primes` that takes a single number as input, and returns the two primes that are multiplied together to make that number. For example, given the number 35, your function must return the numbers 7 and 5. The order the numbers are returned in is not important. 
 
 You can assume that the primes will all be less than 30 (so the biggest number we could give you is `841 = 29*29`). We have given you an array of all primes under 30 to help you out. You are welcome to write other functions to help complete the task, but it is not necessary. If you cannot find the two primes (not all numbers are made up of exactly two primes multiplied together), return -1, -1.
 
