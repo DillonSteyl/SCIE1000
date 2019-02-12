@@ -1,6 +1,6 @@
 # Euler's Method (3)
 
-Recall that after one step of Euler's function is calculated, the new `x` value is also updated to `x+h`. Note that it happens in that orde.r First the next `y` value is found, *then* the corresponding `x` value is updated.
+Recall that after one step of Euler's function is calculated, the new `x` value is also updated to `x+h`. Note that it happens in that order. First the next `y` value is found, *then* the corresponding `x` value is updated.
 
 **Task:** Write a function called `eulers(x, y, h, n)` that uses euler’s method `n` times with the given `x`, `y` and `h` values. It will return the final `y` value. Remember to copy paste your `onestep` and `fdash` functions. You are encouraged to use them in your `eulers` function, but it is up to you. 
 
