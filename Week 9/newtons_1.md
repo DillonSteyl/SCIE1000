@@ -18,6 +18,8 @@ In words, the next guess (`x(i+1)`) is the current guess (`x(i)`), minus its y v
 
 **Important:** Round the values to 5 decimal places. 
 
+**Reminder:** Only use `exp`, not `e**`, for these exercises.
+
 Don't print anything or ask for any user input. 
 
 # Solution
