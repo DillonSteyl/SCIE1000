@@ -13,6 +13,7 @@ class Tests(PythonTestCase):
 def testscenario1(self):
     """ User enters [50] and the program gives the correct output """
     expected = "The number of half-lives that have passed since the fossil was formed is 1.0\nThe number of years that have passed since the fossil was formed is 2865.0"
+    user_input = ["50"]
     with patch("builtins.input", side_effect=user_input) as input_call:
         with patch("sys.stdout", new=StringIO()) as output:
             import attempt
@@ -20,6 +21,7 @@ def testscenario1(self):
 
 def testscenario2(self):
     """ User enters [105, 25] and the program gives the correct output """
+    user_input = ["105", "25"]
     expected = "Please try again as this percentage is not valid.\nThe number of half-lives that have passed since the fossil was formed is 2.0\nThe number of years that have passed since the fossil was formed is 11460.0"
     with patch("builtins.input", side_effect=user_input) as input_call:
         with patch("sys.stdout", new=StringIO()) as output:
@@ -29,6 +31,7 @@ def testscenario2(self):
 def testscenario3(self):
     """ User enters [100, 10, 8, 12.5] and the program gives the correct output """
     expected = "Please try again as this percentage is not valid.\nPlease try again as this percentage is not valid.\nPlease try again as this percentage is not valid.\nThe number of half-lives that have passed since the fossil was formed is 3.0\nThe number of years that have passed since the fossil was formed is 17190.0"
+    user_input = ["100", "10", "8", "12.5"]
     with patch("builtins.input", side_effect=user_input) as input_call:
         with patch("sys.stdout", new=StringIO()) as output:
             import attempt
