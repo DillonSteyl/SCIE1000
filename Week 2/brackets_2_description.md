@@ -12,8 +12,8 @@ Jupyter is the environment that we use in tutorials, so we recommend that you us
 
 For MyPyTutor questions, you may find it useful to copy paste your code into your preferred environment if you get stuck. Then you can play around with the code, fix the problems quicker, and then copy paste it back into MyPyTutor to check your answer. 
 
-To help you develop your debugging skills, we have included some "Spot the Error' questions. The error can be anything, such as incorrect syntax, a typo, or a logical error. The program may not even produce an error message when run in Jupyter - just the wrong answer. Regardless, the program wont behave as it is supposed to, and your task is investigate the error and fix it!
+To help you develop your debugging skills, we have included some "Spot the Error' questions. These questions contain code that we have written, but they don't pass all the tests because they contain at least one error. The errors can be anything, such as incorrect syntax, typos, or logical errors. The program may not even produce an error message when run in Jupyter - just the wrong answer. Regardless, the program wont behave as it is supposed to, and your task is investigate the problem and fix it!
 
-**Task:** Find and fix the error in the following code.
+**Task:** Find and fix the error/s in the following code.
 
-**Hint:** For syntax errors, the error message will tell you what line the program failed on - so the error occured either on that line, or just before it. 
+**Hint:** For syntax erros, the error message will tell you what line the program failed on, and you can find the line numbers to the left of your code in MyPyTutor. Programs will sometimes fail on the line after the error, excluding blank lines, so keep an eye out!
