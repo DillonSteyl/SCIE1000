@@ -2,7 +2,7 @@
 
 When writing programs, it is often useful to prompt the user for input from the keyboard - this way, a program can be written so that it solves some general problem, and the user can enter different values each time the program is run. 
 
-To take user input from the keyboard, the `float(input("message")` functions can be used - Python will display the `message`, and allow the user to enter a value in response. 
+To take user input from the keyboard, the `float(input("message"))` functions can be used - Python will display the `message`, and allow the user to enter a value in response. 
 
 To assign this input to a variable, we use the following code:
 
