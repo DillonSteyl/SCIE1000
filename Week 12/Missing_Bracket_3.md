@@ -7,60 +7,63 @@
 ## Program
 ```python
 
-print("this is a program to model the fish population over time")
+from pylab import *
+
+print("This is a program to model the population of fish over time, with a growth rate of 0.05.")
 
 #growth value
-r = 1.35
+r = 0.05
 
 #initial number of fish
-init = eval(input("Input the initial number of fish: "))
+init = float(input("Input the initial number of fish: "))
 
 #carrying capacity
-k = eval(input("Input the carrying capacity of the fish population"))
+capacity = float(input("Input the carrying capacity of the fish population: "))
 
 #number of years to project for
-years = eval(input("Input the number of years to be modelled"))
+years = float(input("Input the number of years to be modelled: "))
 
-print("Year \t Number of Fish")
+print("Year - Number of Fish")
 
-i=0
-while i < years:
-    if i==0:
-        fish = init
-    else:
-         fish = (r*fish*(1-(fish/k))
-    print(i, "\t", round(fish))
+fish = init
+i=1
+while i <= years:
+    fish = init + r*init*(1-(init/capacity))
+    print(i, "  -  ", round(fish))
     i = i + 1
+    
+print("The fish population changed by", round(abs(fish-init)), "fish in", years, "years.")
 
 ```
 
 ## Solution
 ```python
+from pylab import *
 
-print("this is a program to model the fish population over time")
+print("This is a program to model the population of fish over time, with a growth rate of 0.05.")
 
 #growth value
-r = 1.35
+r = 0.05
 
 #initial number of fish
-init = eval(input("Input the initial number of fish: "))
+init = float(input("Input the initial number of fish: "))
 
 #carrying capacity
-k = eval(input("Input the carrying capacity of the fish population"))
+capacity = float(input("Input the carrying capacity of the fish population: "))
 
 #number of years to project for
-years = eval(input("Input the number of years to be modelled"))
+years = float(input("Input the number of years to be modelled: "))
 
-print("Year \t Number of Fish")
+print("Year - Number of Fish")
 
-i=0
-while i < years:
-    if i==0:
-        fish = init
-    else:
-         #missing bracket in fish population calculation
-         fish = (r*fish*(1-(fish/k)))
-    print(i, "\t", round(fish))
+fish = init
+i=1
+while i <= years:
+    # use the NEW fish value, not the initial fish value
+    fish = fish + r*fish*(1-(fish/capacity))
+    print(i, "  -  ", round(fish))
     i = i + 1
+    
+print("The fish population changed by", round(abs(fish-init)), "fish in", years, "years.")
 
 ```
