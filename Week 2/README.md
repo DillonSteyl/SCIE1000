@@ -4,10 +4,10 @@ Week 2 covers variables, basic python functions such as *sin* and *exp*, and err
 
 Order. File "Title":
 
-1. "Introduction to Variables"
-2. "Operators"
-3. "Python Functions"
-4. "The Input Function"
-5. "Estimating BSA"
+1. variables_introduction "Introduction to Variables"
+2. operators "Operators"
+3. python_functions "Python Functions"
+4. input_function "The Input Function"
+5. bsa_estimation "Estimating BSA"
 6. "Spot The Error"
-7. "Solving Quadratics"
+7. quadratics "Solving Quadratics"
