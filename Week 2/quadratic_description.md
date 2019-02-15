@@ -10,7 +10,11 @@ Since this is the first week, we will go easy on you -  so the question is only 
 
 ``` 0 = a*x**2 + b*x + c ```
 
-Ask the user for input and store the numbers as a, b, and c. Print the answers at the end given the print statement we provide. 
+Ask the user for input and store the numbers as a, b, and c - in that order. Calculate and store the two values for x as x1 and x2. Print the answers at the end given the print statement we provide. 
+
+**Note:** You may recall that sometimes there is no real solution for a quadratic formula. However, you can assume that we won't make your program solve a problem like that - so you don't need to think about it.
+
+Try to complete this question without the hints first!
 
 **Hint 1:** In case you have forgotten, your formulas should look like this, but using Python's operators.
 
@@ -20,7 +24,7 @@ x2 = (-b - (b<sup>2</sup> - 4ac)<sup>0.5</sup>)/(2a)
 
 **Hint 2:** Remember, you must use an asterisk (\*) between the variables and/or numbers you are multiplying, you can't leave it out like you can on paper!
 
-Note: Python can handle imaginary numbers (where you take the square root of a negative number) perfectly fine, so don't worry about that. 
+
 
 ## Solution
 ```python
