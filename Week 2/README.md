@@ -10,4 +10,4 @@ Order. File "Title":
 4. input_function "The Input Function"
 5. bsa_estimation "Estimating BSA"
 6. "Spot The Error"
-7. quadratics "Solving Quadratics"
+7. quadratics "Challenge: Solving Quadratics"
