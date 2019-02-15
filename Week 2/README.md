@@ -9,5 +9,5 @@ Order. File "Title":
 3. python_functions "Python Functions"
 4. input_function "The Input Function"
 5. bsa_estimation "Estimating BSA"
-6. "Spot The Error"
+6. brackets_2 "Spot The Error"
 7. quadratics "Challenge: Solving Quadratics"
