@@ -12,7 +12,7 @@ variable = float(input("message"))
 
 This line of code contains four important parts: `variable`, `float`, `input`, and `message`. First, `input` tells Python to display the `message` to the user - essentially whatever is written between the quotation marks, like a print statement. The user will enter something into the box or line provided, and press enter. Then, `float` tells Python that this input should be a number. And finally, the number is stored using the `variable` name provided.
 
-That can be a bit confusing at first. Let's take a look at a simple example:
+That can be a bit confusing at first, but it's actually super easy to use. Let's take a look at a simple example:
 
 
 ```python
