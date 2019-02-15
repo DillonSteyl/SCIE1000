@@ -22,3 +22,6 @@ while i <= years:
     fish = init + r*init*(1-(init/capacity))
     print(i, "  -  ", round(fish))
     i = i + 1
+    
+print("The fish population changed by", round(abs(fish-init)), "fish in", years, "years.")
+
