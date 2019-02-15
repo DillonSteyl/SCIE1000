@@ -16,4 +16,4 @@ To help you develop your debugging skills, we have included some "Spot the Error
 
 **Task:** Find and fix the error/s in the following code.
 
-**Hint:** For syntax erros, the error message will tell you what line the program failed on, and you can find the line numbers to the left of your code in MyPyTutor. Programs will sometimes fail on the line after the error, excluding blank lines, so keep an eye out!
+**Hint:** For syntax errors, the error message will tell you what line the program failed on, and you can find the line numbers to the left of your code in MyPyTutor. Programs will sometimes fail on the line after the error, excluding blank lines, so keep an eye out!
