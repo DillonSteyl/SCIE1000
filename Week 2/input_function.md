@@ -10,7 +10,7 @@ To assign this input to a variable, we use the following code:
 variable = float(input("message"))
 ```
 
-Python will take the input from the user, turn it into a number, and assign the number to the `variable`. Let's take a look at a simple example:
+Python will take the input from the user (by allowing the user to type something on the keyboard and finish by pressing enter), turn it into a number, and assign the number to the `variable`. Let's take a look at a simple example:
 ```python
 number = float(input("Give me a number: "))
 print(number, "squared is", number**2)
