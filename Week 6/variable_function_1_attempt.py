@@ -7,8 +7,8 @@ def time_dilation(t, V):
     return(dilation)
 
 #input for time_dilation function
-time = eval(input("Enter the time: "))
-velocity = eval(input("Enter the velocity: "))
+time = float(input("Enter the time: "))
+velocity = float(input("Enter the velocity: "))
 
 time_dilation(time, velocity)
 
