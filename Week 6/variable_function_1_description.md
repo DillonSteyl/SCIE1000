@@ -1,4 +1,4 @@
-# Spot the Error
+# Spot the Error (2)
 
 This is a program to solve the equation for time dilation in the form
 `t' = t * sqrt( 1 - (V^2/c^2)`
