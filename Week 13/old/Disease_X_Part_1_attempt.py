@@ -25,3 +25,8 @@ D = # Deceased array - initialize as array of 0's with the same length as time
 # you can find the max infected at once by getting the max value of the infected array
 print("The total number of deaths is", yourDeathValueHere)
 print("The maximum number of people infected at once is", yourMaxValueHere)
+
+#plot the graph here (there should be four lines)
+
+# do not modify (this code is necessary for MyPyTutor to show output):
+savefig("output.png")
