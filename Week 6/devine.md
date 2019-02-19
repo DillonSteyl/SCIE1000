@@ -9,19 +9,3 @@ The formula (roughly converted to work with centimetres instead of feet and inch
 **Task:** Write a function `IBW` which calculates the Ideal Body Weight of a person. It should take two inputs. The first input should be `sex`, with 1 representing female and 0 representing male. The second input should be `height` in centimetres.
 
 If you copy the finished program and test it elsewhere, you might notice that there is a big problem with this formula. Fun fact: it isn't based on *any* population data. Apparently, it has been based on the *estimations* of Dr. Devine's mentor. A known issue with the Devine formula is that it suggests an IBW that is far too low for women, especially shorter women. 
-
-## Solution
-```python
-# Write function here:
-def IBW(s,h):
-    if s == 1:
-        ibw = 45.5 + (0.9 * (h - 152) )
-    elif s == 0:
-        ibw = 50 + (0.9 * (h - 152) )
-    return(ibw)
-
-# Do not modify:
-sex = float(input("Enter 1 for female, 0 for male: "))
-height = float(input("Enter height in cm: "))
-print("Ideal weight:", IBW(sex,height), "kg.")
-```
