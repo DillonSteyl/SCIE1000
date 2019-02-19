@@ -30,4 +30,4 @@ The functions to generate the random dataset are already written and used in the
 
 **Step 10**: If the user got the D value close enough, print the message ("The D value is close enough."). Otherwise, print the message ("The D value is incorrect.")
 
-**Step 11**: Finally, print the message ("Actual values -- a:", actual_a, "-- b:", actual_b,"-- c:", actual_c, "-- d:",actual_d)
+**Step 11**: Finally, print the message ("Actual values -- a:", a, "-- b:", b,"-- c:", c, "-- d:", d)
