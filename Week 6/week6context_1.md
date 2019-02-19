@@ -37,24 +37,3 @@ Enter the patient weight (kg):
 **Hint:** To do the ratio calculation, first the thickness of the bowel lining needs to be approximated. As mentioned, dividing the weight of the patient by 20 will suffice. Then, the tumorsize divided by the approximated thickness of the bowel lining will give the ratio.
 
 You will need a function that will calculate the ratio, some input statements to learn about the patient, and some conditionals to print the right message based on the ratio found.
-
-# Solution
-```python
-from pylab import *
-
-def ratio(tumoursize, weight):
-    thickness = weight/20
-    ratio = tumoursize/thickness
-    return(ratio)
-
-tumoursize = float(input("Enter the tumour size (mm): "))
-weight = float(input("Enter the patient weight (kg): "))
-result = ratio(tumoursize, weight)
-
-if result < 0.5:
-    print("The chance of receiving a true positive and negative result from the FOBT screen are 50% and 95% respectively.")
-elif result <= 1.5:
-    print("The chance of receiving a true positive and negative result from the FOBT screen are 75% and 95% respectively.")
-else:
-    print("The tumour is now in stage III or IV.")
-```
