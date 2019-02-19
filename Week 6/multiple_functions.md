@@ -39,21 +39,3 @@ To calculate the weight of a person on a different planet, first you must conver
 You should not have anything else in your program besides the import pylab statement and the three functions. 
 
 **Hint:** In case you have forgotten, to convert from pounds to kilograms you must divide by 2.2.
-
-
-```
-
-from pylab import *
-
-def toKilograms(pounds):
-    kilos = pounds / 2.2
-    return(kilos)
-    
-def weightOnMars(pounds):
-    return(toKilograms(pounds)*0.38)
-    
-def weightOnMoon(pounds):
-    return(toKilograms(pounds)*0.16)
-
-
-```
