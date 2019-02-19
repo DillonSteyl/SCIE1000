@@ -35,16 +35,3 @@ Give me a number: 4
 * "Enter height: " for height
 
 Do not forget the space after the colon!
-
-## Solution:
-```python
-from pylab import *
-
-# Take width as input:
-width = float(input("Enter width: "))
-# Take height as input:
-height = float(input("Enter height: "))
-
-area = width*height
-print("The area of the rectangle is:", area)
-```
