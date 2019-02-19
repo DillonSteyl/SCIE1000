@@ -51,28 +51,3 @@ Number of steps (n): 3
 
 
 So our final value for y is 11.5 after 3 steps (at x = 2.5). For interest, one function with this derivative is `y = x**2+2*x+1`. At x = 1, y is equal to 4, like in this example. At x = 2.5 (which is our final x value), the value of y is 12.25. This is pretty close to our approximated value of 11.5. 
-
-
-
-# Solution
-
-```
-from pylab import *
-
-def fdash(x):
-    d = round(0.05 * x * exp(0.05 * x),5)
-    return(d)
-
-def onestep(x, y, h):
-    nexty = round(y + fdash(x)*h,5)
-    return(nexty)
-    
-def eulers(x, y, h, n):
-    currentStep = 1
-    while currentStep<=n:
-       y = onestep(x, y, h)
-       x = x + h
-       currentStep = currentStep + 1
-    return(y)
-
-```
