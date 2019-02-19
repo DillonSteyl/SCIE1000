@@ -23,28 +23,3 @@ Test 1: input 100, 3. Final balance: 103
 Test 2: input 100, 1, 50, 2, 20, 3. Final balance: 141.7177
 
 Test 3: input 100, 2, 103, 2, 100, 2, 100, 3. Final balance: -209.09
-
-## Solution
-
-```
-from pylab import *
-
-balance = float(input("Enter your initial deposit: "))
-
-choice = 1
-
-while choice != 3:
-    balance = balance * 1.03
-    print("Your balance is", balance)
-    choice = float(input("Enter 1 for deposit, 2 for withdraw, and 3 to close the account"))
-    if choice == 1:
-        amount = float(input("Enter the amount to deposit: "))
-        balance = balance + amount
-    elif choice == 2:
-        amount = float(input("Enter the amount to withdraw: "))
-        balance = balance - amount
-        
-print("You have closed your bank account with a final balance of", balance)
-
-
-```
