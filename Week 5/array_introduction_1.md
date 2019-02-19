@@ -26,9 +26,3 @@ Some important notes:
 
 **Task:** Create an array which contains the first 5 square numbers (1, 4, 9, 16, 25), and assign it the the variable `squares`.
 
-## Solution
-```python
-from pylab import *
-
-squares = array([1, 4, 9, 16, 25])
-```
