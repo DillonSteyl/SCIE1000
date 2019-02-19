@@ -27,19 +27,3 @@ print("You are", age, "years old!")
 
 **Task:** Modify this program so that it calculates the area of a rectangle with width `13` and height `22` - do this by creating two variables, `width` and `height`, and assigning the appropriate values to them. Take note of how the rest of the program works!
 
-## Solution
-```python
-from pylab import *
-
-# create variables here:
-width = 13
-height = 22
-
-# output (no need to modify):
-area = width * height
-print("Width:", width)
-print("Height:", height)
-print("Area:", area)
-
-```
-
