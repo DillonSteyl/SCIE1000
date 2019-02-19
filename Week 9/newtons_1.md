@@ -22,19 +22,3 @@ In words, the next guess (`x(i+1)`) is the current guess (`x(i)`), minus its y v
 
 Don't print anything or ask for any user input. 
 
-# Solution
-
-```
-from pylab import *
-
-def f(x):
-    y = round(exp(0.05*x)*(0.05*x)-5,5)
-    return(y)
-    
-def fdash(x):
-    d = round(exp(0.05*x)*(0.0025*x+0.05),5)
-    return(d)
-
-
-```
-
