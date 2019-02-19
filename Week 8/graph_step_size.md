@@ -17,32 +17,3 @@ This will require the following steps:
 After you have completed the exercise, observe the efect of different step sizes on the appearances of the lines. With small step sizes, the line looks like the corresponding function. With larger step sizes, the lines will look jagged. With step sizes that are much to large, the line does no correspond well to the function at all. It's important to choose a step size that accurately displays the function, but does not take too long for the program to run. 
 
 **Note:** You must plot the lines in the order x1, x2, x3, otherwise some tests may be failed.
-
-## Solution
-```python
-from pylab import *
-
-# Create your time arrays here:
-t1 = arange(0,10.51,0.01)
-t2 = arange(0,10.6,0.15)
-t3 = arange(0,11,0.5)
-
-# Create your models for position here:
-x1 = 0.5*sin(4*pi*(t1-0.125))
-x2 = 0.5*sin(4*pi*(t2-0.125))+2
-x3 = 0.5*sin(4*pi*(t3-0.125))+4
-
-# Produce your plot here:
-plot(t1, x1, label='0.01s Samples')
-plot(t2, x2, label='0.15s Samples')
-plot(t3, x3, label='0.5s Samples')
-
-title("Oscillation of a spring")
-xlabel("Time (s)")
-
-legend()
-show()
-
-# Do Not Modify Below This Line
-savefig("output.png")
-```
