@@ -10,14 +10,3 @@ Remember, before you run your code in any exercise, tutorial, or other class, ma
 3. It has a way of getting from the beginning to the end (for this example, we are counting up by 1 and will be sure to reach 12)
 
 If you forget to fulfil the third criteria, you may run into an infinite loop!
-
-### Solution
-```python
-from pylab import *
-
-i = 1
-while i <=12:
-    print("Average temperature for month", i, "is", 3*sin((i+2)*2*pi/12)+25)
-    i = i + 1
-```
-
