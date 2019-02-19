@@ -50,20 +50,3 @@ Plot a point where the two lines intercept (at x = 4, y = 8), using an asterisk 
 
 **Hint:** That's three times you must use the plot function. Two lines and one point. 
 For testing purposes, plot y1, y2 and then the point (in that order!).
-
-
-# Solution
-
-```
-from pylab import *
-
-x = arange(0, 10.1)
-y1 = x + 4
-y2 = -0.5*x + 10
-
-plot(x, y1)
-plot(x, y2)
-plot(4, 8, '*')
-show()
-
-```
