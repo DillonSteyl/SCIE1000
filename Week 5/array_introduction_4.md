@@ -17,15 +17,3 @@ So the format is `arrayname[index] = new value`. In the example given above, we 
 
 **Task:** Modify this program so that it prints the squares array, updates the squares array so it has the correct values, and then prints the squares array again.
 
-## Solution
-```python
-from pylab import *
-
-squares = array([0, 4, 9, 15, 25, 36, 49, 64, 81, 121])
-print(squares)
-squares[0] = 1
-squares[3] = 16
-squares[9] = 100
-print(squares)
-```
-
