@@ -11,15 +11,3 @@ Happy New Year!
 ```
 
 **Hint:** As usual, you should define a variable that you can use to count through the loop. However, since you're counting *down*, you'll be subtracting from this variable instead of adding to it.
-
-## Solution
-```python
-from pylab import *
-
-i = 3
-while i >= 1:
-    print(i)
-    i = i - 1
-    
-print("Happy New Year!")
-```
