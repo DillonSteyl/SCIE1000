@@ -15,17 +15,3 @@ To reiterate, the formula for the new month is: `(current month + months travell
 Unless you are very crafty, you will need conditionals in this function to handle converting from the month to the season. 
 
 **Hint:** There is no need to write different code for going back in time vs going forward in time. Notice how in the examples the same formula is used either way. The modulo operator will work exactly how we want it to in either case, because it handles negative values just fine.
-
-```
-def travel(current_month, num_months):
-    month = (current_month + num_months)%12
-    if 2<=month<5:
-        return(1)
-    elif 5<=month<8:
-        return(2)
-    elif 8<=month<11:
-        return(3)
-    else:
-        return(0)
-
-```
