@@ -23,20 +23,3 @@ x1 = (-b + (b<sup>2</sup> - 4ac)<sup>0.5</sup>)/(2a)
 x2 = (-b - (b<sup>2</sup> - 4ac)<sup>0.5</sup>)/(2a)
 
 **Hint 2:** Remember, you must use an asterisk (\*) between the variables and/or numbers you are multiplying, you can't leave it out like you can on paper!
-
-
-
-## Solution
-```python
-from pylab import *
-
-a = float(input("The value of a: "))
-b = float(input("The value of b: "))
-c = float(input("The value of c: "))
-
-x1 = (-b + (b**2 - 4*a*c)**0.5)/(2*a)
-x2 = (-b - (b**2 - 4*a*c)**0.5)/(2*a)
-
-print("The value of x1 is", x1, ", and the value of x2 is", x2)
-
-```
