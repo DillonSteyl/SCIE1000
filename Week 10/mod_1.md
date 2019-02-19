@@ -41,21 +41,3 @@ Any number `a` that can be evenly divided by another number `b`, will have `a%b`
 
 **Task:** Write a program that takes a single number as input from the user, and prints ("This is a happy number.") if divisible by 7, ("Close enough.") if its remainder when divided by 7 is 6, and prints ("This is a sad number.") otherwise.
 
-
-## Solution
-````
-from pylab import *
-
-number = float(input("Enter the number: "))
-
-if number%7==0:
-    print("This is a happy number.")
-elif number%7==6:
-    print("Close enough.")
-else:
-    print("This is a sad number.")
-
-
-````
-
-
