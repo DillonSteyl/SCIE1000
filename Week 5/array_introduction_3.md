@@ -20,13 +20,3 @@ Middle element is: 9
 ```
 
 **Task:** Modify this program so that it prints the first and fourth prime. To do this, replace the comments `#?#` with the appropriate index.
-
-## Solution
-```python
-from pylab import *
-
-primes = array([2,3,5,7,11])
-print("First prime:", primes[0])
-print("Fourth prime:", primes[3])
-```
-
