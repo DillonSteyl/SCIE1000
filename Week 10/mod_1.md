@@ -15,12 +15,9 @@ Here are some examples to get you used to the concept:
 0%3 = 0 # the remainder of 0 divided by 3 is 0
 ````
 
-This works for negative numbers as well. The result of a mod operation in Python will always be positive if `b` is positive. It is a bit hard to visualise how remainders work with negative numbers, so think of it this way: `a%b`, when `a` is negative, will tell you how much you must take away from `a` for it to be divisible by `b`.
+(This works for negative numbers as well, but it's a bit hard to understand and it is not important for these exercises.)
 
-```
--13%10 = 7 # You need to take 7 from -13 for it to be divisible by 10 (so -13-7 = -20, which is divisible by 10).
-```
-And you can put equations in there too, using brackets.
+Like with anything in Python, you can use an expression instead of a single variable or number, using brackets.
 
 ```
 (3+8)%6 = 5 # because 3+8 = 11, and 11%6 is 5. 
