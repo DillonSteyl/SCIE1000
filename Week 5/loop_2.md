@@ -37,18 +37,4 @@ Given that the plant will start at a height of 10cm (at month `i = 0`), write a 
 
 **Hint:** Recall, to access and edit elements in an array, you must use square brackets `[]`.
 
-## Solution
-
-```
-from pylab import *
-
-height = zeros(int(12))
-height[0] = 10
-
-i = 1
-while i<12:
-    height[i] = round(height[i-1]*(1.2+0.4*sin(2*pi*i/4)))
-    i = i + 1
-```
-
 
