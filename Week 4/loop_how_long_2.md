@@ -9,19 +9,3 @@ For example, if the user enters 2, 5, 4, then 0, the answer should be 40. You ca
 The input message has been provided for you.
 
 **Hint:** You will need one variable to store the user's input, and another variable to keep track of your big multiplied number.
-
-```
-from pylab import *
-
-number = 1
-usersNumber = 1
-while usersNumber!=0:
-    usersNumber = float(input("Give me a number, or enter 0 to exit the program: "))
-    if usersNumber!=0:
-        number = number*usersNumber
-
-
-print("The final answer is", number)
-
-
-```
