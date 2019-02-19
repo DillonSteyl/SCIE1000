@@ -85,23 +85,3 @@ This example of nested while loops just prints the numbers in the array, but for
 Once you have found two numbers that satisfy that condition, you do not need to search anymore. Once you have found them, you just need to return the two numbers. If you have cycled through every combination and have not found them, remember to return -1, -1. This will happen at the end of your function, outside of the while loops. 
 
 If you are struggling, open up Jupyter and test your code in there!
-
-# Solution
-
-```
-from pylab import *
-
-def primes(n):
-    P = array([2,3,5,7,11,13,17,19,23,29])
-    i = 0
-    while i < len(P):
-        j = 0
-        while j< len(P):
-            if P[i]*P[j]==n:
-                return(P[i],P[j])
-            j = j + 1
-        i = i + 1
-    return(-1,-1)
-
-
-```
