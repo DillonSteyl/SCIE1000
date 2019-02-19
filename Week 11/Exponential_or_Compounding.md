@@ -18,32 +18,3 @@ After passing this exercise, take a moment to think about your results. Are the 
 **Hint 1:** The compounding formula can take another form when k is constant: `P(i)= P(0) * (1+k)**i`
 
 **Hint 2:** Don't forget the round() function. Example: round(2.24869231, 2) = 2.25
-
-**Solution**
-
-```
-from pylab import *
-
-P = 100
-k = 0.1
-n = 30
-time = arange(0, n)
-
-exponential = P*exp(k*time)
-compounding = P*(1+k)**(time)
-
-if round(compounding[n-1], 5) == round(exponential[n-1], 5):
-    print("These two equations are interchangeable when k is constant.")
-else:
-    print("These two equations are not interchangeable.")
-
-plot(time, exponential, label="Exponential")
-plot(time, compounding, label="Compounding")
-
-title("Exponential vs Compounding")
-xlabel("Time")
-ylabel("Amount")
-legend()
-show()
-
-```
