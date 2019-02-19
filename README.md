@@ -18,16 +18,28 @@ Things to test for:
 Hopefully, we can get each exercise tested by at least two people independently. For each week, put your name next to it if you have started testing that week's exercises. Striek through your ~~name~~ once you have finished testing it. We will aim for two names next to each week.
 
 Week 1
+
 Week 2
+
 Week 3
+
 Week 4
+
 Week 5
+
 Week 6
+
 Week 8
+
 Week 9
+
 Week 10
+
 Week 11
+
 Week 12
+
 Week 13
+
 
 
