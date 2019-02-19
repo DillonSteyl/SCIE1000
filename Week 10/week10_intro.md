@@ -7,16 +7,3 @@ For this week there are two sets of exercises:
 
 
 **Task:** Write a program that takes a number `n` as input from the user, and prints `":)"`, `n` times. 
-
-
-```
-from pylab import *
-
-n = float(input("Give me a number: "))
-
-i = 0
-while i<n:
-    print(":)")
-    i = i + 1
-
-```
