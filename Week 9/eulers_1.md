@@ -17,14 +17,3 @@ This can be a bit daunting at first, so we will start with the easiest part: wri
 Round the output to 5 decimal places. Do not print anything, call your function, or ask for any input. 
 
 **Important:** For this set of exercises, make sure to use the `exp` function instead of `e**`, otherwise you will sometimes get slightly different answers!
-
-# Solution
-
-```
-from pylab import *
-
-def fdash(x):
-    d = round(0.05 * x * exp(0.05 * x),5)
-    return(d)
-
-```
