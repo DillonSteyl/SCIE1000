@@ -22,16 +22,3 @@ Given a and b:
 2. Once the loop ends, the gcd is b
 
 **Task:** Write a function called `gcd(a,b)` that returns the greatest common divisor of a and b using the algorithm given.
-
-## Solution
-
-````
-from pylab import *
-
-def gcd(a,b):
-    while a%b!=0:
-        remainder = a%b
-        a = b
-        b = remainder
-    return(b)
-````
