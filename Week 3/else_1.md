@@ -36,15 +36,3 @@ Finished!
 ```
 
 **Task:** Modify this program so that it prints the message "You are not tall enough to ride!" if the value of the `height` variable is strictly *less* than 130, and prints the message "You are tall enough to ride." otherwise.
-
-## Solution
-```python
-from pylab import *
-
-height = float(input("Enter your height. "))
-if height < 130:
-    print("You are not tall enough to ride!")
-else:
-    print("You are tall enough to ride.")
-
-```
