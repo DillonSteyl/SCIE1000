@@ -14,14 +14,6 @@ There are three different problems for you this week. You can do them in any ord
 
 **Task:** Here's an easy one. Write a function called `negate` that takes a number as input, and returns that number multiplied by negative 1. 
 
-# Solution
-
-```
-def negate(x):
-    return(-x)
-
-```
-
 
 
 
