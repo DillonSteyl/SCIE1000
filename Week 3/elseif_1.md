@@ -41,16 +41,3 @@ Finished!
 * "You can legally drink in Australia!" if the age is over or equal to 18, but under 21.
 * "You are under the legal drinking age." if the age is under 18.
 
-## Solution
-```python
-from pylab import *
-
-age = float(input("Enter your age: "))
-if age >= 21:
-    print("You can legally drink, even in America!")
-elif age >= 18:
-    print("You can legally drink in Australia!")
-else:
-    print("You are under the legal drinking age.")
-
-```
