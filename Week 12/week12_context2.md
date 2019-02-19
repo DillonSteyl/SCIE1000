@@ -6,7 +6,7 @@ To cool natural gas to form LNG, other chemical substances such as propane and e
 
 The balanced chemical equation for the combustion of ethylene is
 
-C2H4(g)+3O2(g)->2CO2(g)+2H2(l)
+C2H4(g)+3O2(g)->2CO2(g)+2H2(l),
 
 where CO2 (Carbon Dioxide) is a product of the combustion that has negative environmental effects. 
 
