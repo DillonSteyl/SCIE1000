@@ -19,18 +19,3 @@ Assuming the trial is run for 30 days, we want to determine the mass of each gro
 2. The formula for percentage growth rate after t interations is `X*(1+p)**t`, where X is your inital population and p is your percentage growth rate expressed as a decimal (for example, 5% is expressed as 0.05). 
 
 Remember, store the final values for the mass in the arrays group1, group2, and group3. Store the growth difference array in an array called growth_diff. Do not print anything.
-
-## Solution
-```python
-from pylab import *
-
-trial_days = 30 # A variable you might wish to use in your code
-group1 = array([100.0,110.0,120.0,130.0,140.0,150.0])
-group2 = array([100.0,110.0,120.0,130.0,140.0,150.0])
-group3 = array([100.0,110.0,120.0,130.0,140.0,150.0])
-
-group1 = group1 + (trial_days*0.5)
-group2 = group2*(1.01)**trial_days
-group3 = group3 + ((trial_days/3)*1.8)
-growth_diff = group2-group3
-```
