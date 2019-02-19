@@ -26,22 +26,3 @@ Notice that despite having three points, a triangle needs four points to be draw
 **Task:**
 
 Draw a square where the top left corner has coordinates (3, 3), and the square has height and width equal to 2. Start from the top left corner and go **clockwise**. You do not need to print anything.
-
-
-
-# Solution
-
-```
-
-from pylab import *
-
-x = array([3, 5, 5, 3, 3])
-y = array([3, 3, 1, 1, 3])
-
-plot(x, y)
-
-show()
-
-
-```
-
