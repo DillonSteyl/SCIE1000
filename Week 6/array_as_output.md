@@ -7,17 +7,3 @@ Just like how you can use arrays as input, you can also have arrays as output!
 Example: calling `fill_array(4, 5)` should return [5, 5, 5, 5].
 
 **Hint:** Remember that you can use the zeros function to create an array of any length, and you can use operations on arrays to change all the numbers in the array at once. 
-
-# Solution
-
-```
-from pylab import *
-
-def fill_array(length, num):
-    A = zeros(int(length))
-    A = A + num
-    return(A)
-
-
-```
-
