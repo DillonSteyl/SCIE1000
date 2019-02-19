@@ -26,13 +26,3 @@ You can return any number of things in a function. They just need to be separate
 **Task:** Write a function called 'powers' that takes one number as input, and returns the inverse, square, and cube, in that order. Call the function with `2` as input, and the outputs need to be assigned to the variables `inverse`, `square`, and `cube`, respectively.
 
 **Hint:** The inverse of a number is that number to the power of -1. The square is that number to the power of 2. The cube is that number to the power of 3. 
-
-```
-from pylab import *
-
-def powers(n):
-    return(n**-1, n**2, n**3)
-    
-inverse, square, cube = powers(2)
-
-```
