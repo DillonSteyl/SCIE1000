@@ -50,14 +50,3 @@ Pretty neat! Multiplication, addition, subtraction, division, and exponentiation
 
 **Task:** Make an array filled with the values 1, 4, 9, 16 and assign it to the array `squares`. Make another array filled with the values 1, 8, 27, 64 and assign it to the array `cubes`.
 Now, take the square root of the `squares` array, take the cube root of the `cubes` array, and add them together and assign them to the variable `result`. 
-
-## Solution
-```python
-from pylab import *
-
-squares = array([1,4,9,16])
-cubes = array([1,8,27,64])
-
-result = squares**(1/2) + cubes**(1/3)
-```
-
