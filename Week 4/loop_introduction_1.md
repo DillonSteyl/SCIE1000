@@ -40,13 +40,3 @@ Take special note of this line in the program: `i = i + 1`. This line of code si
 4 squared: 16
 ```
 Make sure the program doesn't loop forever!
-
-## Solution
-```python
-from pylab import *
-
-i = 1
-while i <= 4:
-    print(i, "squared:", i**2)
-    i = i + 1
-```
