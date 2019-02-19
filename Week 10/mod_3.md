@@ -10,9 +10,11 @@ For example, if the starting month is January (0), and you will be going forward
 
 For an example going back in time, if the starting month is June (5), and you will be going back 6 months (-6), then the output of the function should be 1, because 6 months prior to June (5) is December (11). This would correspond with the operation `(5-6)%12`, which is equal to 11. December is in Summer, so `travel(5, -6) = 0`.
 
+To reiterate, the formula for the new month is: `(current month + months travelling in time) % 12`
+
 Unless you are very crafty, you will need conditionals in this function to handle converting from the month to the season. 
 
-**Hint:** There is no need to write different code for going back in time vs going forward in time. Notice how in the examples the same formula is used either way. The modulo operator will work exactly how we want it to in either case. 
+**Hint:** There is no need to write different code for going back in time vs going forward in time. Notice how in the examples the same formula is used either way. The modulo operator will work exactly how we want it to in either case, because it handles negative values just fine.
 
 ```
 def travel(current_month, num_months):
