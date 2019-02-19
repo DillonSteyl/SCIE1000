@@ -17,13 +17,3 @@ Python also includes the `pi` constant, which approximates the value of mathemat
 * e<sup>3</sup>
 * The sine of 2 (radians)
 * The natural log of 5
-
-## Solution
-```python
-from pylab import *
-
-print( sqrt(6) )
-print( exp(3) )
-print( sin(2) )
-print( log(5) )
-```
