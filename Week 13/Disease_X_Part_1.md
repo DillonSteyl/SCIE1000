@@ -27,7 +27,7 @@ Since the step size is not equal to 1, you must multiply the changes in the popu
 
 Once you have the arrays calculated, modify the included print statements to print the **total number of deaths**, the **maximum number of infected people during a single step**, and **the step number (index) for when that maximum occurred**.
 
-**Hint:** You can use the `highest(A)` function you wrote in the first exercise to find the index (step number) when the maximum occurred.
+**Hint:** You can use the `highest(A)` function you wrote in the first exercise to find the index (step number) for when the maximum occurred. Make sure you copy paste the function to the top of your code (below the import statement). 
 
 **Solution**
 
