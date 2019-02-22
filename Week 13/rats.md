@@ -4,7 +4,7 @@ A scientist is running an experiment using rats, which involves the rats moving 
 
 They have asked you to run a simulation based on their predictions about the rat behaviour, and have provided you with all the information you need.
 
-There are four cages, names A, B, C, and D, containing 100 rats in total. The scientist says the simulation should be modelled over 51 steps, including the first step. At each step, the rats may move between cages with probabilities given as follows:
+There are four cages, names A, B, C, and D, containing 100 rats in total. The scientist says the simulation should be modelled over 51 steps, including the first step (step 0). At each step, the rats may move between cages with probabilities given as follows:
 
 From - To: Probability
 
@@ -16,9 +16,9 @@ B - A: 10%
 
 B - C: 5%
 
-B - D: 40%
+B - D: 20%
 
-C - A: 30%
+C - A: 40%
 
 C - B: 10%
 
@@ -30,9 +30,9 @@ Cage: Probability
 
 A: 70%
 
-B: 45%
+B: 65%
 
-C: 60%
+C: 50%
 
 D: 100%
 
