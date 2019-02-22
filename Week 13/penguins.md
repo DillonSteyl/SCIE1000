@@ -4,11 +4,11 @@ The Galápagos penguin, endemic to the Galápagos Islands, is an endangered spec
 
 Recently, an ecologist has raised concerns about the impact of climate change on the Galápagos penguin population. While the penguins are spread out over multiple islands, the ecologist is most concerned about the penguins on Isabela island. The tip of Isabela island crosses the equator, making the penguins on the northern tip of Isabela island the only penguins found north of the equator. 
 
-The penguins do not have a regular breeding season, and instead breed when food is abundant. Their main source of food, which consists mostly of fish, is brought in by cool ocean currents. Thus, the availability of their food is dependent on varying weather patterns - which can be affected by climate change. 
+The penguins breed between May and January, but only when food is abundant. Their main source of food, which consists mostly of fish, is brought in by cool ocean currents. Thus, the availability of their food is dependent on varying weather patterns - which can be affected by climate change. 
 
 You must work with your ecologist colleague to model the population of penguins. They have already written a small program that models the amount of fish available to the penguins, and have provided you with the following information to help you model the penguin population:
 
-Time to model: The populations will be modelled over 5 years, with a step size of 3 months, referred to as a 'quarter'. So there will be `5*3+1 = 16` steps, including the initial step.
+Time to model: The populations will be modelled with a step every 3 months, referred to as a 'quarter', for a total of 16 quarters (including quarter 0, the initial quarter).
 
 Fish: modelled as a percentage instead of number of individuals. 100 percent means there is enough fish for all penguins to be happy. 0 percent means that the penguins will not breed, but can still eat. The equation is provided.
 
