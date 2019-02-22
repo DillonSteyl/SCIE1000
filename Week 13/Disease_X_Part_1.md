@@ -25,14 +25,23 @@ Initial Deceased (`D[0]`): 0
 
 Since the step size is not equal to 1, you must multiply the changes in the population by the step size to get the correct answer. 
 
-Once you have the arrays calculated, modify the included print statements to print the **total number of deaths** and the **maximum number of infected people during a single step**.
+Once you have the arrays calculated, modify the included print statements to print the **total number of deaths**, the **maximum number of infected people during a single step**, and **the step number (index) for when that maximum occurred**.
 
-**Hint:** You can use the `max(A)` function to print the maximum value of an array `A`.
+**Hint:** You can use the `highest(A)` function you wrote in the first exercise to find the index (step number) when the maximum occurred.
 
 **Solution**
 
 ```python
 from pylab import *
+
+def highest(A):
+    highestIndex = 0
+    i = 1
+    while i < len(A):
+        if A[i]> A[highestIndex]:
+            highestIndex = i
+        i = i + 1
+    return(highestIndex)
 
 weeks = 20
 N = 25000000
@@ -60,6 +69,8 @@ while i<numSteps-1:
     D[i+1] = D[i] + stepSize*(d*I[i])
     i = i+ 1
 
+maxIndex = highest(I)
+
 print("The total number of deaths is", D[numSteps-1])
-print("The maximum number of people infected at once is", max(I))
+print("The maximum number of people infected at once is", I[maxIndex], "which occurred at step", maxIndex)
 ```
