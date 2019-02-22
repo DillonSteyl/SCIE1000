@@ -27,5 +27,6 @@ while i<16:
     i = i + 1
     
 maxIndex = highest(F)
+penguinsAtMax = P[maxIndex]
 
-print("The quarter with the highest number of fish is", maxIndex, "with", P[maxIndex], "penguins on the island at the time.")
+print("The quarter with the highest number of fish is", maxIndex, "with", penguinsAtMax, "penguins on the island at the time.")
