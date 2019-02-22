@@ -20,8 +20,13 @@ D = # Deceased array - initialize as array of 0's with the same length as time
 
 # put a while loop here that fills the population arrays
 
+
+# calculate the index for when the maximum number of infected people occurred
+maxIndex = # use the highest(A) function you wrote earlier
+
 # here are the print statements
 # you can find the total deaths by getting the last value of the death array
-# you can find the max infected at once by getting the max value of the infected array
+# you can find the maximum number of infected people by using the maxIndex 
+
 print("The total number of deaths is", yourDeathValueHere)
-print("The maximum number of people infected at once is", yourMaxValueHere)
+print("The maximum number of people infected at once is", yourMaxValueHere, "which occurred at step", maxIndex)
