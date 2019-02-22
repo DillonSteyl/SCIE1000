@@ -50,13 +50,15 @@ C: 30
 D: 10
 
 
-**Task:** Using the given probabilities, model the number of rats in each cage over 51 steps, including the first step. Store the number of rats in each cage using the variables A, B, C, and D. Print the maximum number of rats in each cage during a single step, and the step number for when that maximum first occurs. Finally, print the cage that has the most rats during the final step, using the print statement provided.
+**Task:** Using the given probabilities, model the number of rats in each cage over 51 steps, including the first step. Store the number of rats in each cage using the variables A, B, C, and D. Print the final number of rats in each cage using the print statements provided. Finally, print the maximum number of rats in each cage during a single step, and the step number for when that maximum first occurs. Store the max index values using the variables provided. 
 
-Since it is a simulation, the number of rats in each cage does not need to be rounded. 
+Since it is a simulation, the number of rats in each cage does not need to be rounded while the values are being calculated. However, they do need to be rounded when printing the values.  
 
 **Hint 1:** For example, the number of rats in cage A at step i is given by the equation: 
 
 `A[i] = A[i-1]*0.7 + B[i-1]*0.1 + C[i-1]*0.3`
+
+That's 70% of rats in cage A staying, 10% of rats from cage B moving to cage A, and 30% of rats from cage C moving to cage A. 
 
 **Hint 2:** Again, it may be useful for you to copy your highest(A) function just below the import statement.
 
