@@ -8,11 +8,23 @@ The penguins do not have a regular breeding season, and instead breed when food 
 
 You must work with your ecologist colleague to model the population of penguins. They have already written a small program that models the amount of fish available to the penguins, and have provided you with the following information to help you model the penguin population:
 
-Time to model: The populations will be modelled over 5 years, with a step size of 3 months. So there will be `5*3+1 = 16` steps, including theinitial step.
+Time to model: The populations will be modelled over 5 years, with a step size of 3 months, referred to as a 'quarter'. So there will be `5*3+1 = 16` steps, including the initial step.
 
 Fish: modelled as a percentage instead of number of individuals. 100 percent means there is enough fish for all penguins to be happy. 0 percent means that the penguins will not breed, but can still eat. The equation is provided.
 
 Initial population of penguins: 600 (an educated guess by the ecologist)
 
-Breeding rate: with X number of penguins, there will be approximately X/3 breeding pairs, which will produce one offspring over three months. So the breeding rate is `current_penguins/3 * current_fish/100`.
+Breeding rate: with X number of penguins, there will be approximately X/6 breeding pairs ready to breed, which will produce one offspring each quarter. So the breeding rate is `current_penguins/6 * current_fish/100` each quarter.
+
+Death/Migration rate: The ecologists predicts that 20% of the penguins will die each year, and that the net migration rate will be -20%. This comes to a change in population of 40% less penguins per year, or 10% less penguins per quarter.
+
+The result of this information is the following equation:
+
+`P[i] = P[i-1]*0.90 + (P[i-1]/6) * (F[i-1]/100)`,
+
+where `P[i]` is the number of penguins at step i, and `F[i]` is the number of fish at step i. 
+
+**Task:** Edit the program so that it also calculates the number of penguins each quarter, and stores it in the array `P`. Find the quarter for when the fish oopulation is at its highest percentage, and print the penguin population for this quarter, with the print statement provided. 
+
+**Hint:** It will be helpful to use the `highest(A)` function you wrote in the previous exercise to find the index (quarter) for the highest number of fish. Make sure to copy it into your code underneath the import statement.
 
