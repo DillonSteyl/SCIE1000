@@ -27,6 +27,7 @@ Probabilities not listed are 0%. The probabilities for rats remaining in their c
 
 
 Cage: Probability
+
 A: 70%
 
 B: 45%
