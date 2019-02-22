@@ -14,9 +14,9 @@ Fish: modelled as a percentage instead of number of individuals. 100 percent mea
 
 Initial population of penguins: 600 (an educated guess by the ecologist)
 
-Breeding rate: with X number of penguins, there will be approximately X/6 breeding pairs ready to breed, which will produce one offspring each quarter. So the breeding rate is `current_penguins/6 * current_fish/100` each quarter.
+Breeding rate: with X number of penguins, there will be approximately X/6 breeding pairs ready to breed, which will produce one offspring each quarter - a simplification of their real breeding patterns. So the breeding rate is `current_penguins/6 * current_fish/100` each quarter.
 
-Death/Migration rate: The ecologists predicts that 20% of the penguins will die each year, and that the net migration rate will be -20%. This comes to a change in population of 40% less penguins per year, or 10% less penguins per quarter.
+Death/Migration rate: The ecologists predicts that 20% of the penguins will die each year, and that the net migration rate will be -20%. This comes to a change in population of 40% less penguins per year, or 10% less penguins per quarter. So, 90% of the penguin population is sustained each quarter.
 
 The result of this information is the following equation:
 
