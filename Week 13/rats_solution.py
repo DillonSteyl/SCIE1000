@@ -8,6 +8,7 @@ def highest(A):
             highestIndex = i
         i = i + 1
     return(highestIndex)
+
 steps = 51
 A = zeros(steps)
 B = zeros(steps)
