@@ -22,30 +22,55 @@ class Tests(PythonTestCase):
 
     def test_output(self):
         """Prints correct values."""
-        expected = "The quarter with the highest number of fish is 4 with 628.0 penguins on the island at the time."
+        expected = "The final number of rats in each cage are:\nA - 1.0\nB - 1.0\nC - 0.0\nD - 98.0\nThe largest number of rats in a cage A is 42.0 at step 1\nThe largest number of rats in a cage B is 26.0 at step 3\nThe largest number of rats in a cage C is 30.0 at step 0\nThe largest number of rats in a cage D is 98.0 at step 50"
         out = f.getvalue()
         self.assertAlmostEqual(out.strip(), expected)
 
-    def test_fish_end(self):
-        """The last value for the fish array is correct"""		
-        self.assertAlmostEqual(attempt.F[-1], 0)
+    def test_A_end(self):
+        """The last value for the A array is correct"""		
+        self.assertAlmostEqual(attempt.A[-1], 0.7681781208002938)
+		
+	def test_B_end(self):
+        """The last value for the B array is correct"""		
+        self.assertAlmostEqual(attempt.B[-1], 0.6612439216799161)
+		
+	def test_C_end(self):
+        """The last value for the C array is correct"""		
+        self.assertAlmostEqual(attempt.C[-1], 0.2605369800631443)
+		
+	def test_D_end(self):
+        """The last value for the D array is correct"""		
+        self.assertAlmostEqual(attempt.D[-1], 98.31004097745667)
 
-    def test_penguin_end(self):
-        """the last value for the penguin array is correct """
-        self.assertAlmostEqual(attempt.P[-1], 390.75510334276015)
-
-    def test_fish_start(self):
-        """The first value for the fish array is correct"""		
-        self.assertAlmostEqual(attempt.F[0], 50)
-
-    def test_penguin_end(self):
-        """The first value for the penguin array is correct"""
-        self.assertAlmostEqual(attempt.P[0], 600)
+    def test_B_start(self):
+        """The first value for the B array is correct"""		
+        self.assertAlmostEqual(attempt.B[0], 20)
+		
+	def test_C_start(self):
+        """The first value for the C array is correct"""		
+        self.assertAlmostEqual(attempt.C[0], 30)
+		
+	def test_D_start(self):
+        """The first value for the D array is correct"""		
+        self.assertAlmostEqual(attempt.D[0], 10)
+		
+	def test_A_start(self):
+        """The first value for the A array is correct"""		
+        self.assertAlmostEqual(attempt.A[0], 40)
 
     def test_lengths(self):
-        """ The arrays all have the correct lengths """
-        self.assertEqual(size(attempt.P), 16)
-	self.assertEqual(size(attempt.F), 16)
+        """The arrays all have the correct lengths """
+        self.assertEqual(size(attempt.A), 51)
+		self.assertEqual(size(attempt.B), 51)
+		self.assertEqual(size(attempt.C), 51)
+		self.assertEqual(size(attempt.D), 51)
+		
+	def test_maxIndex(self):
+        """The maxIndex variables are correct"""		
+        self.assertEqual(attempt.maxIndexA, 1)
+		self.assertEqual(attempt.maxIndexB, 3)
+		self.assertEqual(attempt.maxIndexC, 0)
+		self.assertEqual(attempt.maxIndexD, 50)
 
 		
 # Run the unit tests
