@@ -16,18 +16,13 @@ Z = zeros(steps)
 W[0] = 12
 Z[0] = 40
 
-a = 0.4
-b = 0.025
-c = 1
-d = 0.03
+i = 1
 
-i = 0
-
-while i<steps-1:
-    dZ = 0.4*Z[i] - 0.025*Z[i]*W[i]
-    dW = -1*W[i] + 0.03*Z[i]*W[i]
-    Z[i+1] = Z[i] + 0.1*dZ
-    W[i+1] = W[i] + 0.1*dW
+while i<steps:
+    dZ = 0.4*Z[i-1] - 0.025*Z[i-1]*W[i-1]
+    dW = -1*W[i-1] + 0.03*Z[i-1]*W[i-1]
+    Z[i] = Z[i-1] + 0.1*dZ
+    W[i] = W[i-1] + 0.1*dW
     i = i + 1
     
     
