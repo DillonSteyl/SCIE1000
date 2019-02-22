@@ -9,17 +9,13 @@ def highest(A):
         i = i + 1
     return(highestIndex)
 
-
 F = zeros(16)
 P = zeros(16)
-
 
 F[0] = 50
 P[0] = 600
 
-
 i = 1
-
 
 while i<16:
     F[i] = max(-2*i*(i-8) + 50, 0)
