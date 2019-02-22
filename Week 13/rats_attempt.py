@@ -4,6 +4,10 @@ from pylab import *
 steps = 51 # a variable for you to use
 
 # initialise the arrays here
+A = #yourcodehere
+B = #yourcodehere
+C = #yourcodehere
+D = #yourcodehere
 
 # fill in the initial values
 
