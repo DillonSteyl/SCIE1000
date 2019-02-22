@@ -4,7 +4,7 @@ The questions for this week involve systems of differential equations, which are
 
 While this first exercise will not involve differential equations, it will help you complete the remaining exercises for this week. So make sure you get it right before moving on. 
 
-**Task:** Write a function named `highest(A)` that returns the index of the highest element in the array A. If there are multiple elements in the array that are equally high, return the index of the first element with that value. You can assume that the array will not be empty. 
+**Task:** Write a function named `highest(A)` that returns the index of the highest element in the array A. If there are multiple elements in the array that are equally high, return the index where that high value first occurs. You can assume that the array will not be empty. 
 
 Here are a couple examples:
 
