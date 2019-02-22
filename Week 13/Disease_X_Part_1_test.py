@@ -22,7 +22,7 @@ class Tests(PythonTestCase):
 
     def test_output(self):
         """Prints correct values."""
-        expected = "The total number of deaths is 4943.620965569647\nThe maximum number of people infected at once is 12299582.792824812"
+        expected = "The total number of deaths is 4943.620965569647\nThe maximum number of people infected at once is 12299582.792824812 which occurred at step 100"
         out = f.getvalue()
         self.assertAlmostEqual(out.strip(), expected)
 
