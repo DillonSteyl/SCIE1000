@@ -1,5 +1,5 @@
 from pylab import *
 
 def highest(A):
-    highestIndex = 0
+    # your code here
    
