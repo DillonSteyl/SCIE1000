@@ -1,4 +1,4 @@
-# Spot the Error
+# Spot the Error (1)
 
 This is a program to solve the positive form quadratic formula, given input for a, b and c for a quadratic formula
 `0 = ax^2 + bx + c`
