@@ -12,12 +12,12 @@ Things to test for:
 2. Check for edge cases. Make loops last a bit longer or a bit shorter, try > instead of >=, etc. Add extra tests if you can pass the exercise when you shouldn't.
 3. Do all the test cases use clear communication? Check the communication for when the test case is passed and failed. If the code takes input, the test case must communicate to the student the input values used if the test is failed. Output should be clearly communicated (any important numbers, print statements don't need to be communicated).
 4. Check that the code provided by the attempt file is correct. 
-5. Check for grammar and spelling in the description, attempt, and test files. 
+5. Check for correct grammar and spelling in the description, attempt, and test files. 
 6. Check that the solution file is accurate. 
 
-Hopefully, we can get each exercise tested by at least two people independently. For each week, put your name next to it if you have started testing that week's exercises. Striek through your ~~name~~ once you have finished testing it. We will aim for two names next to each week.
+Hopefully, we can get each exercise tested by at least two people independently. For each week, put your name next to it if you have started testing that week's exercises. Strike through your ~~name~~ once you have finished testing it. We will aim for two names next to each week.
 
-Week 1
+Week 1 ~~SASKIA~~
 
 Week 2
 
