@@ -12,8 +12,8 @@ Order. File "Title":
 6. Nesting 2 "Nesting (2)"
 7. Loop How Long 1 "Loops of Unknown Length (1)"
 8. Loop How Long 2 "Loops of Unknown Length (2)"
-9. Brackets 3 (from spotting errors) "Spot the Error (1)" 
-10. Initialising loops 2 (from spotting errors) "Spot the Error (2)" 
-11. Double equals 1 (from spotting errors) "Spot the Error (3)" 
+9. Brackets 3 "Spot the Error (1)" 
+10. Initialising loops 2 "Spot the Error (2)" 
+11. Double equals 1 "Spot the Error (3)" 
 12. Loop Challenge "Challenge: Go Team!"
 
