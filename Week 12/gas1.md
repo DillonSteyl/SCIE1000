@@ -2,13 +2,16 @@
 
 Liquified Natural Gas (LNG) is natural gas (mostly composed of methane) that has been chilled to a liquid form. Australia is one of the world’s largest LNG exporters, and LNG is a highly sought-after resource due to its ease of transportation and high energy density. 
 
-To cool natural gas to form LNG, other chemical substances such as propane and ethylene are required to be used as refrigerants. These substances are highly flammable, and the material used to contain these substances is flame-resistant in the event of gas ignition.
+To cool natural gas to form LNG, other chemical substances such as propane and ethylene are required to be used as refrigerants. These substances are highly flammable, and the material used to contain these substances is flame-resistant in the event of gas ignition. Combustion of these flammable substances needs to be well understood when one wants to transport them.
 
-The balanced chemical equation for the combustion of ethylene is
+The balanced chemical equation for the combustion of ethylene (C2H4) is
 
 C2H4(g)+3O2(g)->2CO2(g)+2H2(l),
 
 where CO2 (Carbon Dioxide) is a product of the combustion that has negative environmental effects. 
+
+
+
 
 Suppose you are an environmental scientist hired by an LNG production company and you are investigating the potential environmental consequences of a recent ethylene ignition incident at the company’s plant. Your task is to write a program that calculates the amount of CO2 produced by the combustion of a user indicated amount of ethylene gas. This will require the following steps:
 
