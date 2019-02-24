@@ -15,4 +15,14 @@ Week 3: andorchallenge, and, elseif
 
 Week 5: context 2, loop 2
 
-Week 6: Exercise 6.7 (Spot the error). Exercise 6.12 (second spot the error) all the way up to exercise 6.19 (code challenge). 
+Week 6: Exercise 6.7 (Spot the error (1)). Exercise 6.12 (spot the error (2)) all the way up to exercise 6.19 (code challenge). 
+
+Week 9: All Eulers and Newtons exercises. 
+
+Week 10: mod 1, mod 2
+
+Week 11: sine practice
+
+Week 12: Everything (not done yet)
+
+Week 13: Everything (not tested yet)
