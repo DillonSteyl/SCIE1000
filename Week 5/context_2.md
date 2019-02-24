@@ -15,7 +15,7 @@ You want to analyse these two equations, finding the average, maximum, and total
 
 Given that the parties will last 8 hours and there are initially 10 guests at each party in the first hour:
 
-1. Calculate the number of guests for Friend A and B, and store them in the arrays friendA and friendB, respectively.
+1. Calculate the number of guests for Friend A and B, and store them in the arrays friendA and friendB, respectively. Do not forget to round each value to zero decimal places as they are calculated.
 
 2. Calculate the average, max, and sum for each model. Store them using the following variable names: avgA, maxA, sumA, and avgB, maxB, sumB. Print them using the message provided.
 
