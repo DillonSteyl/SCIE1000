@@ -19,4 +19,4 @@ Python also includes the `pi` constant, which approximates the value of mathemat
 * The natural log of 5
 
 
-**Hint:** Remember to use the print function to print the values! For example, if we asked you to print the log (based 10) of 500, your code would be `print(log10(500))`. 
+**Hint:** Remember to use the print function to print the values! For example, if we asked you to print the log (base 10) of 500, your code would be `print(log10(500))`. 
