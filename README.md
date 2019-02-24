@@ -19,7 +19,7 @@ Hopefully, we can get each exercise tested by at least two people independently.
 
 Week 1 ~~SASKIA~~
 
-Week 2
+Week 2 SASKIA
 
 Week 3
 
