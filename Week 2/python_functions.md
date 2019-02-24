@@ -17,3 +17,6 @@ Python also includes the `pi` constant, which approximates the value of mathemat
 * e<sup>3</sup>
 * The sine of 2 (radians)
 * The natural log of 5
+
+
+**Hint:** Remember to use the print function to print the values! For example, if we asked you to print the log (based 10) of 500, your code would be `print(log10(500))`. 
