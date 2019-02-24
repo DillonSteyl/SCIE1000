@@ -10,6 +10,9 @@ Each exercise will have four associated files. The description file will end in 
 Exercises that have been updated for 2019:
 
 Week 2: exercises 3-7
+
 Week 3: andorchallenge, and, elseif
+
 Week 5: context 2, loop 2
+
 Week 6: Exercise 6.7 (Spot the error). Exercise 6.12 (second spot the error) all the way up to exercise 6.19 (code challenge). 
