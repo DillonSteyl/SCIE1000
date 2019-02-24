@@ -9,26 +9,15 @@ So, you must write a program that makes sure the user inputs a valid percentage 
 
 When they have finally entered a valid percentage, use your function from the previous exercise to tell the user how old their fossil is, using the print statement provided. 
 
-**Hint:** You will need a while loop to repeatedly ask the user for input until it is correct. See week 4 for 'loops of unknown length' or week 10 for 'while loop menus' if you are unsure how to do this.
+Here is an example of the program being used with input 9, 118, 50 from the user:
+`
+Please enter the percentage of isotopes from the sample found to be Carbon-14: 9
+Please try again as this percentage is not valid.
+Please enter the percentage of isotopes from the sample found to be Carbon-14: 118
+Please try again as this percentage is not valid.
+Please enter the percentage of isotopes from the sample found to be Carbon-14: 50
+The number of years that have passed since the fossil was formed is approximately 5730.0
+`
 
-# Solution
-```python
-from pylab import *
+**Hint:** You will need to use a while loop to repeatedly ask the user for input until it is correct. See week 4 for 'loops of unknown length' or week 10 for 'while loop menus' if you are unsure how to do this.
 
-def calculate_age(carbon):
-    halflives = log(carbon/100)/log(0.5)
-    years = halflives*5730
-    return(years)
-
-flag = 1
-
-while flag == 1:
-    carbon = float(input("Please enter the percentage of isotopes from the sample found to be Carbon-14: "))
-    if carbon < 100 and carbon > 10:
-        flag = 0
-    else:
-        print("Please try again as this percentage is not valid.")
-
-years = calculate_age(carbon)
-print("The number of years that have passed since the fossil was formed is approximately", round(years))
-```
