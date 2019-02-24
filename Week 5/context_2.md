@@ -7,7 +7,7 @@ A[i] = A[i-1]*0.6 + 18 + B[i-1]*(0.2), rounded to 0 decimal places
 B[i] = B[i-1]*0.4 + 25 + A[i-1]*(0.25), rounded to 0 decimal places
 ```
 
-The number of guests for Friend A at hour `i` is `A[i]`. The number of guests for Friend B at hour `i` is `B[i]`. The equations look a bit complex, but you will learn how to write them towards the end of the course. You don't need to understand them to complete this exercise, but we will explain them in case you are interested. These equations were made by making the prediction that 60% of Friend A's guests will stay at that party (`A[i-1]*0.6`), 18 new guests would join (`18`), and 25% of the guests will switch to Friend B's party (`B[i-1]*(0.2)`). The remaining 15% will go home (so they are left out of the formula!). The same is said for Friend B, except with different values. 
+The number of guests for Friend A at hour `i` is `A[i]`. The number of guests for Friend B at hour `i` is `B[i]`. The equations look a bit complex, but you will learn how to write them towards the end of the course. You don't need to understand them to complete this exercise, but we will explain them in case you are interested. These equations were made by making the prediction that 60% of Friend A's guests will stay at that party (`A[i-1]*0.6`), 18 new guests would join (`18`), and 20% of the guests at Friend B's party will switch to Friend A's party (`B[i-1]*(0.2)`). The same is said for Friend B, except with different values. 
 
 You want to analyse these two equations, finding the average, maximum, and total number of guests for both models. You also want to find the largest difference. 
 
