@@ -11,7 +11,7 @@ Week 3 covers conditionals. This might be a good time to start asking the studen
 5. Else 2 (What Else? (2))
 6. Elif 1 (Else If (1))
 7. Elif 2 (Else If (2))
-8. Missing Colon 1 - from the Spotting the Error folder (Spot the Error)
+8. Missing Colon 1 (Spot the Error)
 9. And (The 'and' Operator)
 10. Or (The 'or' Operator)
 11. And Or Challenge (Challenge: Roller Coaster!)
