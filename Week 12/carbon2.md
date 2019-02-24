@@ -11,19 +11,14 @@ When they have finally entered a valid percentage, use your function from the pr
 
 Here is an example of the program being used with input 9, 118, 50 from the user:
 
-`
+```
 Please enter the percentage of isotopes from the sample found to be Carbon-14: 9
-
 Please try again as this percentage is not valid.
-
 Please enter the percentage of isotopes from the sample found to be Carbon-14: 118
-
 Please try again as this percentage is not valid.
-
 Please enter the percentage of isotopes from the sample found to be Carbon-14: 50
-
 The number of years that have passed since the fossil was formed is approximately 5730.0
-`
+```
 
 **Hint:** You will need to use a while loop to repeatedly ask the user for input until it is correct. See week 4 for 'loops of unknown length' or week 10 for 'while loop menus' if you are unsure how to do this.
 
