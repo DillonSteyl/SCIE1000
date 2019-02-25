@@ -12,7 +12,7 @@ where CO2 (Carbon Dioxide) is a product of the combustion that has negative envi
 
 Suppose you are an environmental scientist hired by an LNG production company and you are investigating the potential environmental consequences of a recent ethylene ignition incident at the company's plant. You wish to write a program that will assist you and other users in understanding the consequences of ethylene ignitions. 
 
-**Task:** To begin, write a function called `ideal_gas_n(V)` that takes as input the volume of a gas in litres, and returns the number of moles. To do this, you will need to make use of the ideal gas law, which is as follows:
+**Task:** To begin, write a function called `ideal_gas_n(V)` that takes as input the volume of a gas in cubic meters, and returns the number of moles. To do this, you will need to make use of the ideal gas law, which is as follows:
 
 `PV = nRT`,
 
