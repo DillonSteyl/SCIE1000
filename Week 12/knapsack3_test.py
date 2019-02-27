@@ -24,6 +24,12 @@ class Tests(PythonTestCase):
 		with patch("builtins.input", return_value="1") as input_call:
 			import attempt
 			self.assertMethodDefined(attempt, "best_item", 3)
+			
+	def test_function_knapsack(self):
+		""" Function 'knapsack' is defined """
+		with patch("builtins.input", return_value="1") as input_call:
+			import attempt
+			self.assertMethodDefined(attempt, "knapsack", 3)
 		
 	def test_function1(self):
 		""" Function vpw returns 2.5 with input V = [3,5,2], W = [6,2,1] and i = 1 """
@@ -97,6 +103,15 @@ class Tests(PythonTestCase):
 		with patch("builtins.input", return_value="1") as input_call:
 			import attempt
 			self.assertEqual(attempt.best_item([4,7],[2,3],2), 0)
+			
+	def test_knapsack1(self):
+		""" Knapsack function has correct output for example scenario 1 """
+		with patch("builtins.input", return_value="1") as input_call:
+			import attempt
+			a, b, c = attempt.best_item([5, 11, 7],[2,4,3],5)
+			self.assertEqual(a, [11])
+			self.assertEqual(b, [4])
+			self.assertEqual(c, 11)
 	
 # Run the unit tests
 if __name__ == "__main__":
