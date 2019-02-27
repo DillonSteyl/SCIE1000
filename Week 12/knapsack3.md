@@ -5,6 +5,7 @@ With the functions you have written so far, you are able to identify the item th
 You are now ready to write the final function. Here is the full algorithm in words:
 ```
 Given V (list of values), W (list of weights), m (maximum weight of knapsack):
+
 space = m # variable for keeping track of the space left in the knapsack
 knapsack_value = 0 # variable for keeping track of the value of the knapsack
 KV = empty array (length 0) # array for keeping track of the value of items added to the knapsack
