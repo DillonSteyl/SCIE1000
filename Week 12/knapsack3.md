@@ -42,13 +42,17 @@ return KV, KW, and knapsack_value
 Some input-output examples:
 
 1. Input: `V = [5, 11, 7]`, `W = [2, 4, 3]`, m = 5
+
 Output: `KV = [11]`, `KW = [4]`, knapsack_value = 11 (notice that this isn't the best answer, but it is the one your algorithm will produce)
 
 2. Input: `V = [1, 3, 4, 5, 6, 7]`, `W = [20, 1, 2, 1, 2, 3]`, m = 6
+
 Output: `KV = [5, 6, 3, 4]`, `KW = [1, 2, 1, 2]`, knapsack_value = 18
 
 3. Input: `V = [25, 64, 16, 4]`, `W = [4, 8, 3.5, 1]`, m = 16.5
+
 Output: `KV = [64, 25, 16, 4]`, `KW = [8, 4, 3.5, 1]`, knapsack_value = 109
 
 4. Input: `V = [15, 13, 13, 12, 11, 9, 9, 9, 4, 3, 2]`, `W = [5, 2, 7, 3, 5, 2, 4, 6, 1, 1, 1]`, m = 10
+
 Output: `KV = [13, 9, 4, 12, 3, 2]`, `KW = [2, 2, 1, 3, 1, 1]`, knapsack_value = 43
