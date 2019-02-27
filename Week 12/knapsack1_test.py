@@ -14,26 +14,40 @@ class Tests(PythonTestCase):
 			pass
 
 	def test_function_defined(self):
-		""" Function 'cylVolume' is defined """
+		""" Function 'vpw' is defined """
 		with patch("builtins.input", return_value="1") as input_call:
 			import attempt
-			self.assertMethodDefined(attempt, "cylVolume", 2)
+			self.assertMethodDefined(attempt, "vpw", 3)
 		
-	def test_function(self):
-		""" Funtion 'cylVolume' behaves as expected """
+	def test_function1(self):
+		""" Function returns 2.5 with input V = [3,5,2], W = [6,2,1] and i = 1 """
 		with patch("builtins.input", return_value="1") as input_call:
 			import attempt
-			r = randint(1,15)
-			h = randint(5,20)
-			self.assertEqual(attempt.cylVolume(r, h), pi*r**2 * h )
+			self.assertEqual(attempt.vpw([3,5,6],[6,2,1],1), 2.5)
 			
-	def test_output(self):
-		""" Program correctly prints the volume of the cylinder with radius and height specified by the user """
-		user_input = [str(randint(1,15)), str(randint(5,20))]
-		with patch("builtins.input", side_effect=user_input) as input_call:
-			with patch("sys.stdout", new=StringIO()) as output:
-				import attempt
-				self.assertEqual(output.getvalue().strip(), str( attempt.cylVolume(int(user_input[0]), int(user_input[1])) ) )
+	def test_function2(self):
+		""" Function returns 0.5 with input V = [3,5,2], W = [6,2,1] and i = 0 """
+		with patch("builtins.input", return_value="1") as input_call:
+			import attempt
+			self.assertEqual(attempt.vpw([3,5,6],[6,2,1],0),0.5)
+			
+	def test_function3(self):
+		""" Function returns 2 with input V = [3,5,2], W = [6,2,1] and i = 2 """
+		with patch("builtins.input", return_value="1") as input_call:
+			import attempt
+			self.assertEqual(attempt.vpw([3,5,6],[6,2,1],2), 2)
+			
+	def test_function4(self):
+		""" Function returns 3/7 with input V = [7,6,5,4,3], W = [3,4,5,6,7] and i = 4 """
+		with patch("builtins.input", return_value="1") as input_call:
+			import attempt
+			self.assertAlmostEqual(attempt.vpw([7,6,5,4,3],[3,4,5,6,7],4), 3/7)
+			
+	def test_function5(self):
+		""" Function returns 1 with input V = [7,6,5,4,3], W = [3,4,5,6,7] and i = 2 """
+		with patch("builtins.input", return_value="1") as input_call:
+			import attempt
+			self.assertAlmostEqual(attempt.vpw([7,6,5,4,3],[3,4,5,6,7],2), 1)
 	
 # Run the unit tests
 if __name__ == "__main__":
