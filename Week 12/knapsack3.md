@@ -25,7 +25,7 @@ repeat while best_index is not equal to -1:
         # add the item to the knapsack
         KV, KW updated to the output of add_item(KV, KW, V[best_index], W[best_index])
         
-        # update the knapsack values
+        # update the knapsack space and value
         space is updated to space minus the weight of the item
         knapsack_value is updated to knapsack_value plus the value of the item
         
