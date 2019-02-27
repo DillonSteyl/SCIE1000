@@ -14,7 +14,7 @@ Below is a brief description of a greedy algorithm for the basic knapsack proble
 You are given a knapsack with a maximum weight, a list of items with values in dollars, and their corresponding weights in kilograms.
 
 Repeat until you can't fit anything else into the knapsack:
-- Find the item on the list with the highest number of dollars per kilogram, and can fit in the remaining space in the knapsack.
+- Find the item on the list with the highest number of dollars per kilogram, that can fit in the remaining space in the knapsack.
 - Put it in the knapsack
 - Remove it from the list
 
