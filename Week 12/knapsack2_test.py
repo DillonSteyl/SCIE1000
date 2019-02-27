@@ -91,6 +91,12 @@ class Tests(PythonTestCase):
 		with patch("builtins.input", return_value="1") as input_call:
 			import attempt
 			self.assertEqual(attempt.best_item([],[],18), -1)
+			
+	def test_function11(self):
+		""" Function best_item returns 0 with input V = [4,7], W = [2,3] and space = 2 """
+		with patch("builtins.input", return_value="1") as input_call:
+			import attempt
+			self.assertEqual(attempt.best_item([4,7],[2,3],2), 0)
 	
 # Run the unit tests
 if __name__ == "__main__":
