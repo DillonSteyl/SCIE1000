@@ -36,9 +36,9 @@ def add_item(KV, KW, iV, iW):
     
     # we use j, so as to not confuse it with i
     j = 0
-    # go through each item in the lists
+    # go through each item in the list
     while j<len(KV):
-        # add it to the new lists
+        # add it to the new arrays
         newKV[j] = KV[j]
         newKW[j] = KW[j]
         j = j + 1
