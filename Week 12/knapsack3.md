@@ -10,8 +10,4 @@ Repeat until you can't fit anything else into the knapsack:
 - Put it in the knapsack
 - Remove it from the list
 
-With the functions you have written so far, you are able to identify the item that needs to be placed in the knapsack next. For the rest of the algorithm, you need some functions that will help you add the item to the knapsack, and remove it from the list. 
-
-**Task:** Write two functions `remove_item(V,W,i)` and `add_item(KV, KW, iV, iW)`, described below:
-
-`remove_item(V,W,i)` takes as input the list of values V, the list of weights W, and the index for the item to remove i. It returns two lists, newV and newW, that 
+With the functions you have written so far, you are able to identify the item that needs to be placed in the knapsack next. For the rest of the algorithm, you need some functions that will help you add the item to the knapsack, and remove it from the list. We have written these for you! There are easier ways to write these functions, but they require programming concepts that are beyond the scope of this course. This way, you are welcome to read this functions and see how we've done it. 
