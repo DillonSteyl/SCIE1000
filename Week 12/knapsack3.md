@@ -16,12 +16,12 @@ KW = empty array (length 0) # array for keeping track of the weight of items add
 best_index = 0
 
 # keep adding items until we can't anymore. 
-repeat while best_index is not equal to negative 1:
+repeat while best_index is not equal to -1:
     # get the index of the next item to add to the knapsack
     best_index is updated to the output of best_item(V,W,space)
     
     # if there is an item that can be added to the knapsack
-    if best_index is not equal to 1:
+    if best_index is not equal to -1:
         # add the item to the knapsack
         KV, KW updated to the output of add_item(KV, KW, V[best_index], W[best_index])
         
