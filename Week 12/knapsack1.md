@@ -22,6 +22,6 @@ Done!
 
 This algorithm works because it tries to fit items into the knapsack based on their value per weight - which is the goal overall. You want the knapsack to have the highest value possible with a maximum weight. It can sometimes leave unfilled space in the knapsack, which sometimes means it's not the best answer. Regardless, it works pretty well for simple problems!
 
-We will help you write this algorithm step by step over the next few exercises. For now, we will just write a function that finds an item's value per weight.
+We will help you write this algorithm step by step over the next few exercises. For now, you will just write a function that finds an item's value per weight.
 
 **Task:** Write a function called `vpw(V, W, i)` that takes in a list of values `V`, and list of values `W`, and an index `i`, and outputs the value per weight of the item with index `i`.
