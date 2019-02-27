@@ -108,10 +108,46 @@ class Tests(PythonTestCase):
 		""" Knapsack function has correct output for example scenario 1 """
 		with patch("builtins.input", return_value="1") as input_call:
 			import attempt
-			a, b, c = attempt.best_item([5, 11, 7],[2,4,3],5)
+			a, b, c = attempt.knapsack([5, 11, 7],[2,4,3],5)
 			self.assertEqual(a, [11])
 			self.assertEqual(b, [4])
 			self.assertEqual(c, 11)
+			
+	def test_knapsack2(self):
+		""" Knapsack function has correct output for example scenario 2 """
+		with patch("builtins.input", return_value="1") as input_call:
+			import attempt
+			a, b, c = attempt.knapsack([1, 3, 4, 5, 6, 7],[20, 1, 2, 1, 2, 3],6)
+			self.assertEqual(a, [5, 6, 3, 4])
+			self.assertEqual(b, [1, 2, 1, 2])
+			self.assertEqual(c, 18)
+			
+	def test_knapsack3(self):
+		""" Knapsack function has correct output for example scenario 3 """
+		with patch("builtins.input", return_value="1") as input_call:
+			import attempt
+			a, b, c = attempt.knapsack([25, 64, 16, 4],[4, 8, 3.5, 1],16.5)
+			self.assertEqual(a, [64, 25, 16, 4])
+			self.assertEqual(b, [8, 4, 3.5, 1])
+			self.assertEqual(c, 109)
+			
+	def test_knapsack4(self):
+		""" Knapsack function has correct output for example scenario 4 """
+		with patch("builtins.input", return_value="1") as input_call:
+			import attempt
+			a, b, c = attempt.knapsack([15, 13, 13, 12, 11, 9, 9, 9, 4, 3, 2],[5, 2, 7, 3, 5, 2, 4, 6, 1, 1, 1],10)
+			self.assertEqual(a, [13, 9, 4, 12, 3, 2])
+			self.assertEqual(b, [2, 2, 1, 3, 1, 1])
+			self.assertEqual(c, 43)
+			
+	def test_knapsack4(self):
+		""" Knapsack function has correct output for a mystery scenario """
+		with patch("builtins.input", return_value="1") as input_call:
+			import attempt
+			a, b, c = attempt.knapsack([15, 13, 13, 12, 11, 9, 9, 9, 4, 3, 2, 64, 16, 4, 25],[5, 2, 7, 3, 5, 2, 4, 6, 1, 1, 1, 4, 8, 3.5, 1],20)
+			self.assertEqual(a, [25.0, 64.0, 13.0, 9.0, 4.0, 12.0, 3.0, 15.0, 2.0])
+			self.assertEqual(b, [1.0, 4.0, 2.0, 2.0, 1.0, 3.0, 1.0, 5.0, 1.0])
+			self.assertEqual(c, 147)
 	
 # Run the unit tests
 if __name__ == "__main__":
