@@ -24,4 +24,4 @@ This algorithm works because it tries to fit items into the knapsack based on th
 
 We will help you write this algorithm step by step over the next few exercises. For now, you will just write a function that finds an item's value per weight.
 
-**Task:** Write a function called `vpw(V, W, i)` that takes in a list of values `V`, and list of values `W`, and an index `i`, and outputs the value per weight of the item with index `i`.
+**Task:** Write a function called `vpw(V, W, i)` that takes in a list of values `V`, and a list of values `W`, and an index `i`, and outputs the value per weight of the item with index `i`.
