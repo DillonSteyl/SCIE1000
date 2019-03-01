@@ -18,4 +18,5 @@ def mySum(n):
 
 **Task:** Write a function that takes a number as input, and returns the factorial of that number. Name your function `factorial`.
 
-**Hint:** The factorial of n is all the integers from 1 to n multiplied together. So the factorial of 3 is `1*2*3 = 6`.  
+**Hint 1:** The factorial of n is all the integers from 1 to n multiplied together. So the factorial of 3 is `1*2*3 = 6`.  
+**Hint 2:** The factorial of 0 is 1. Make sure your function returns 1 if the input is 0. 
