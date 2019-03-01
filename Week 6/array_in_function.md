@@ -17,6 +17,6 @@ def multiply(A):
     
  ```
  
- **Task:** Write a function that returns how many times the number n occurs in array A. Name the function `how_many`. 
+ **Task:** Write a function that returns how many times the number n occurs in array A. Name the function `how_many(A,n)`. 
  
  **Hint:** For this you will need a conditional, inside a while loop, inside a function! And that function needs to take multiple inputs!
