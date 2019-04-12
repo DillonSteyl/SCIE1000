@@ -16,7 +16,9 @@ Repeat until you can't fit anything else into the knapsack:
     Put it in the knapsack
     Remove it from the list of items
 
-Done! ```
+Done! 
+
+```
 
 This algorithm works because it tries to fit items into the knapsack based on their value per weight. It can sometimes leave unfilled space in the knapsack, which sometimes means it's not the best answer, but it works pretty well for simple problems!
 
