@@ -11,8 +11,7 @@ best_index = -1
 
 for the index of each item in the knapsack:
     if the current item can fit in the remaining space:   
-        # we update best_index if this is the first item we've found that fits, or we have found a better item
-        if (best_index is equal to -1) or (the vpw of item i is greater than or equal to the vpw of item best_index):
+        if (best_index is equal to -1) or (vpw of the current item >= vpw of item with index best_index):
                update best_index to current index
     
 return best_index
