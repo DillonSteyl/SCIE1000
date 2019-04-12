@@ -2,11 +2,10 @@
 
 With the functions you have written so far, you are able to identify the item that needs to be placed in the knapsack next. For the rest of the algorithm, you need some functions that will help you add the item to the knapsack, and remove it from the list. We have written these for you! There are easier ways to write these functions, but they require programming concepts that are beyond the scope of this course. This way, you are welcome to read these functions and see how we've done it. 
 
-You are now ready to write the final function. Here is the full algorithm in words:
+You are now ready to write the final function. Here is the full algorithm:
 ```
-Given V (list of values), W (list of weights), m (maximum weight of knapsack):
+Given V (list of values), W (list of weights), space (maximum weight of knapsack):
 
-space = m # variable for keeping track of the space left in the knapsack
 knapsack_value = 0 # variable for keeping track of the value of the knapsack
 KV = empty array (length 0) # array for keeping track of the value of items added to the knapsack
 KW = empty array (length 0) # array for keeping track of the weight of items added to the knapsack
