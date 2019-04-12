@@ -2,7 +2,7 @@
 
 **Note:** For this task, you will need to use your `vpw` function from the previous exercise. Remember to copy paste it into the code - we will be testing for it.
 
-For this exercise you will write a function that finds the best item in the list of items, based on each item's value per weight. We want the function to return the index of the best item, or -1 if no item can fit in the knapsack. If multiple items have the best value per weight, the index of the last one in the list should be returned. Below is the pseudocode for this algorithm. Notice how we have started to use some variables.
+For this exercise you will write a function that finds the best item in the list of items, based on each item's value per weight. We want the function to return the index of the best item, or -1 if no more items can fit in the knapsack. If multiple items have the best value per weight, the index of the last one in the list should be returned. Below is the pseudocode for this algorithm. Notice how we have started to use some variables.
 
 ```
 Given V (list of values), W (list of weights), and space (remaining space in knapsack):
