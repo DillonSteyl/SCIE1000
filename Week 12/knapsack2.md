@@ -17,7 +17,7 @@ for the index of each item in the knapsack:
 return best_index
 ```
 
-The pseudocode says to cycle through the index of each item in the knapsack, but doesn't explicitly tell you how to do it! A while loop would work well there, with a variable keeping track of the index of the current item.
+The pseudocode says to cycle through the index of each item in the knapsack, but doesn't explicitly tell you how to do it! A while loop would work well there, with a variable keeping track of the index of the current item (from 0 to just less than the length of V or W).
 
 **Task:** Write a function called `best_item(V,W,space)` that takes as input a list of values `V`, a list of weights `W`, and the remaining space in the knapsack `space`. As output, the function should return the index of the item with the highest value per weight, that fits in the remaining space. If there is no item that fits in the remaining space, return -1. If there are multiple items that have the highest value per weight, return the last one of those items in the list. If the lists are empty, return -1. 
 
