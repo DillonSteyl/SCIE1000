@@ -26,5 +26,3 @@ while i is less than the length of V:
 return best_index
 ```
 
-**Note:** You may have noticed that we have initially set best_index to -1. While it doesn't actually happen in the function, you are allowed to use negative indices with arrays. For example, the element in an array with index -1 is the last element in the array.
-
