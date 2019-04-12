@@ -9,14 +9,14 @@ There are many algorithms designed to solve this problem, to varying degrees of 
 Below is a brief description of a greedy algorithm for the basic knapsack problem. It follows the basic structure of a program, but uses only words and indentation - the beginning of pseudocode! We will give you more detailed pseudocode later on.
 
 **The Greedy Algorithm:**
-Given a list of items with values in dollars, their corresponding weights in kilograms, and a maximum knapsack weight in kilograms:
+```Given a list of items with values in dollars, their corresponding weights in kilograms, and a maximum knapsack weight in kilograms:
 
 Repeat until you can't fit anything else into the knapsack:
     Find the item on the list with the highest number of dollars per kilogram, that can fit in the remaining space in the knapsack
     Put it in the knapsack
     Remove it from the list of items
 
-Done! 
+Done! ```
 
 This algorithm works because it tries to fit items into the knapsack based on their value per weight. It can sometimes leave unfilled space in the knapsack, which sometimes means it's not the best answer, but it works pretty well for simple problems!
 
