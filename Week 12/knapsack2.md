@@ -1,4 +1,4 @@
-# Knapsack Problem 2
+# Knapsack Problem (2)
 
 For this task, you will need to use your `vpw` function from the previous exercise. Remember to copy paste it into the code - we will be testing for it.
 
