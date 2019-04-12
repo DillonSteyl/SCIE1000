@@ -65,8 +65,8 @@ def knapsack(V,W,m):
     while best_index!=-1:
         best_index = best_item(V,W,space)
         if best_index!=-1:
-            KV, KW = add_item(KV, KW, V[best_index], W[best_index])
+            KV, KW = add_item(KV,KW,V[best_index], W[best_index])
             space = space - W[best_index]
             knapsack_value = knapsack_value + V[best_index]
-            V, W = remove_i
+            V, W = remove_item(V,W,best_index)
     return(KV, KW, knapsack_value)
