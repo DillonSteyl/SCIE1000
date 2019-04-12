@@ -36,7 +36,7 @@ return KV, KW, and knapsack_value
 
 **Task:** Write a function called `knapsack(V,W,m)` that takes as input a list of values `V`, a list of weights `W`, and the maximum weight of the knapsack `m`. As output, return the list of values of items put into the knapsack `KV`, the list of weights of those items `KW`, and the total value of the knapsack `knapsack_value`.
 
-**Hint:** To create an empty array, simply use the array function but without any elements. For example, `A = array([])` will create an array of length 0. 
+**Hint:** To create an empty array, simply use the array function but without putting any elements in the array. For example, `A = array([])` will create an array of length 0. 
 
 Some input-output examples:
 
