@@ -1,6 +1,6 @@
 # Introduction
 
-The questions for this week involve systems of differential equations and other similat types of models, which are used in applications like predator prey modelling and infectious disease modelling.
+The questions for this week involve systems of differential equations and other similar types of models, which are used in applications like predator prey modelling and infectious disease modelling.
 
 While this first exercise will not involve differential equations, it will help you complete the remaining exercises for this week. So make sure you get it right before moving on. 
 
