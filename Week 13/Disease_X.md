@@ -1,4 +1,4 @@
-# Disease X (1)
+# Disease X
 
 
 You have been hired by the City of Atlantis to assist them in making decisions about infectious diseases. After learning about a new infectious disease, called Disease X, that has appeared in parts of Madagascar, you are worried that an outbreak could severely impact the city's population. 
