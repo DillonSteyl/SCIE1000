@@ -1,6 +1,6 @@
 # Whales vs Zooplankton
 
-The bow-head whale feeds primarily on zooplankton by swimming forward with its mouth open and capturing the small organisms in the water. The whale and zooplankton populations are closely related, as changed in one results in changes in the other. In fact, the whales and the zooplankton form a predator prey relationship, and the change in their populations for a specific area can be modelled using the following equations:
+The bow-head whale feeds primarily on zooplankton by swimming forward with its mouth open and capturing the small organisms in the water. The whale and zooplankton populations are closely related, as changes in one results in changes in the other. In fact, the whales and the zooplankton form a predator prey relationship, and the change in their populations for a specific area can be modelled using the following equations:
 
 `W' = -W + 0.03*Z*W`
 `Z' = 0.4*Z - 0.025*Z*W`
