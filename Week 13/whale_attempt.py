@@ -8,7 +8,7 @@ Z = #your code here
 W[0] = 12
 Z[0] = 40
 
-#your code here to fill in the W ans Z arrays
+#your code here to fill in the W and Z arrays
 
     
     
