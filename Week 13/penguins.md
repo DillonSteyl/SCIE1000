@@ -24,7 +24,7 @@ The result of this information is the following equation:
 
 where `P[i]` is the number of penguins at step i, and `F[i]` is the number of fish at step i. 
 
-**Task:** Edit the program so that it also calculates the number of penguins each quarter, and stores it in the array `P`. Find the quarter for when the fish oopulation is at its highest percentage, and print the penguin population for this quarter, with the print statement provided. 
+**Task:** Edit the program so that it also calculates the number of penguins each quarter, and stores it in the array `P`. Find the quarter for when the fish population is at its highest percentage, and print the penguin population for this quarter, with the print statement provided. 
 
 **Hint:** It will be helpful to use the `highest(A)` function you wrote in the previous exercise to find the index (quarter) for the highest number of fish. Make sure to copy it into your code underneath the import statement.
 
