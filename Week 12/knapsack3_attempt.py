@@ -5,6 +5,8 @@ from pylab import *
 #your best_item function here
 
 # removes the item at index i from arrays V and W
+# example of how to call this function:
+# V, W = remove_item(V,W,i)
 def remove_item(V,W,i):
     # initialise the new lists of values and weights. They are shorter by 1
     newV = zeros(len(V)-1)
@@ -29,6 +31,8 @@ def remove_item(V,W,i):
     return(newV, newW)
 
 # adds the item with value iV and weight iW to the knapsack value and weight arrays
+# example of how to call this function:
+# KV, KW = add_item(KV,KW,iV, iW)
 def add_item(KV, KW, iV, iW):
     # initialise the new lists of knapsack values and weights. They are longer by 1
     newKV = zeros(len(KV)+1)
