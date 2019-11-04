@@ -14,7 +14,7 @@ i = 1
 
 #fill in the arrays
 while i<16:
-    F[i] = max(-2*i*(i-8) + 50, 0)
+    F[i] = max(-2*i*(i-8) + 50, 0) #fish formula, do not edit
     P[i] = # your code here
     i = i + 1
     
