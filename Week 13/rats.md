@@ -1,6 +1,6 @@
 # Rats!
 
-A scientist is running an experiment using rats, which involves the rats moving between cages connected by tunnels. The rats are treated well, and the cages are made comfortable. The scientist has made each cage and tunnel different, to see what choices the rats will make. The scientist has made a predictions about how the rats will make choices, and would like to know if their predictions line up with their experimental results.
+A scientist is running an experiment using rats, which involves the rats moving between cages connected by tunnels. The rats are treated well, and the cages are made comfortable. The scientist has made each cage and tunnel different, to see what choices the rats will make. The scientist has made predictions about how the rats will make choices, and would like to know if their predictions line up with their experimental results.
 
 They have asked you to run a simulation based on their predictions about the rat behaviour, and have provided you with all the information you need.
 
