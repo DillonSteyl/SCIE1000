@@ -30,15 +30,15 @@ class Tests(PythonTestCase):
         """The last value for the A array is correct"""		
         self.assertAlmostEqual(attempt.A[-1], 0.7681781208002938)
 		
-	def test_B_end(self):
+    def test_B_end(self):
         """The last value for the B array is correct"""		
         self.assertAlmostEqual(attempt.B[-1], 0.6612439216799161)
 		
-	def test_C_end(self):
+    def test_C_end(self):
         """The last value for the C array is correct"""		
         self.assertAlmostEqual(attempt.C[-1], 0.2605369800631443)
 		
-	def test_D_end(self):
+    def test_D_end(self):
         """The last value for the D array is correct"""		
         self.assertAlmostEqual(attempt.D[-1], 98.31004097745667)
 
@@ -46,31 +46,31 @@ class Tests(PythonTestCase):
         """The first value for the B array is correct"""		
         self.assertAlmostEqual(attempt.B[0], 20)
 		
-	def test_C_start(self):
+    def test_C_start(self):
         """The first value for the C array is correct"""		
         self.assertAlmostEqual(attempt.C[0], 30)
 		
-	def test_D_start(self):
+    def test_D_start(self):
         """The first value for the D array is correct"""		
         self.assertAlmostEqual(attempt.D[0], 10)
 		
-	def test_A_start(self):
+    def test_A_start(self):
         """The first value for the A array is correct"""		
         self.assertAlmostEqual(attempt.A[0], 40)
 
     def test_lengths(self):
         """The arrays all have the correct lengths """
         self.assertEqual(size(attempt.A), 51)
-		self.assertEqual(size(attempt.B), 51)
-		self.assertEqual(size(attempt.C), 51)
-		self.assertEqual(size(attempt.D), 51)
+        self.assertEqual(size(attempt.B), 51)
+        self.assertEqual(size(attempt.C), 51)
+        self.assertEqual(size(attempt.D), 51)
 		
-	def test_maxIndex(self):
+    def test_maxIndex(self):
         """The maxIndex variables are correct"""		
         self.assertEqual(attempt.maxIndexA, 1)
-		self.assertEqual(attempt.maxIndexB, 3)
-		self.assertEqual(attempt.maxIndexC, 0)
-		self.assertEqual(attempt.maxIndexD, 50)
+        self.assertEqual(attempt.maxIndexB, 3)
+        self.assertEqual(attempt.maxIndexC, 0)
+        self.assertEqual(attempt.maxIndexD, 50)
 
 		
 # Run the unit tests

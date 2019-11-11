@@ -8,8 +8,9 @@ def best_item(V,W,space):
     
     i = 0
     while i<len(V):
-        if W[i]<=space and vpw(V,W,i)>=vpw(V,W,best_index):
-            best_index = i
+        if W[i]<=space:
+            if best_index==-1 or vpw(V,W,i)>=vpw(V,W,best_index):
+                best_index = i
         i = i + 1
         
     return(best_index)

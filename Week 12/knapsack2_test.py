@@ -29,19 +29,19 @@ class Tests(PythonTestCase):
 		""" Function vpw returns 2.5 with input V = [3,5,2], W = [6,2,1] and i = 1 """
 		with patch("builtins.input", return_value="1") as input_call:
 			import attempt
-			self.assertEqual(attempt.vpw([3,5,6],[6,2,1],1), 2.5)
+			self.assertEqual(attempt.vpw([3,5,2],[6,2,1],1), 2.5)
 			
 	def test_function2(self):
 		""" Function vpw returns 0.5 with input V = [3,5,2], W = [6,2,1] and i = 0 """
 		with patch("builtins.input", return_value="1") as input_call:
 			import attempt
-			self.assertEqual(attempt.vpw([3,5,6],[6,2,1],0),0.5)
+			self.assertEqual(attempt.vpw([3,5,2],[6,2,1],0),0.5)
 			
 	def test_function3(self):
 		""" Function vpw returns 2 with input V = [3,5,2], W = [6,2,1] and i = 2 """
 		with patch("builtins.input", return_value="1") as input_call:
 			import attempt
-			self.assertEqual(attempt.vpw([3,5,6],[6,2,1],2), 2)
+			self.assertEqual(attempt.vpw([3,5,2],[6,2,1],2), 2)
 			
 	def test_function4(self):
 		""" Function vpw returns 3/7 with input V = [7,6,5,4,3], W = [3,4,5,6,7] and i = 4 """
@@ -66,19 +66,19 @@ class Tests(PythonTestCase):
 		""" Function best_item returns -1 with input V = [3,5,2], W = [6,2,1] and space = 0 """
 		with patch("builtins.input", return_value="1") as input_call:
 			import attempt
-			self.assertEqual(attempt.best_item([3,5,6],[6,2,1],0), -1)
+			self.assertEqual(attempt.best_item([3,5,2],[6,2,1],0), -1)
 			
 	def test_function7(self):
 		""" Function best_item returns 2 with input V = [3,5,2], W = [6,2,1] and space = 1 """
 		with patch("builtins.input", return_value="1") as input_call:
 			import attempt
-			self.assertEqual(attempt.best_item([3,5,6],[6,2,1],1), 2)
+			self.assertEqual(attempt.best_item([3,5,2],[6,2,1],1), 2)
 			
 	def test_function8(self):
 		""" Function best_item returns 1 with input V = [3,5,2], W = [6,2,1] and space = 2 """
 		with patch("builtins.input", return_value="1") as input_call:
 			import attempt
-			self.assertEqual(attempt.best_item([3,5,6],[6,2,1],2), 1)
+			self.assertEqual(attempt.best_item([3,5,2],[6,2,1],2), 1)
 			
 	def test_function9(self):
 		""" Function best_item returns 2 with input V = [10,5,15], W = [4,2,6] and space = 7 """
@@ -100,4 +100,4 @@ class Tests(PythonTestCase):
 	
 # Run the unit tests
 if __name__ == "__main__":
-    run_tests
+    run_tests(Tests)

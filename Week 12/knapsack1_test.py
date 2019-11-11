@@ -35,7 +35,7 @@ class Tests(PythonTestCase):
 		""" Function returns 2 with input V = [3,5,2], W = [6,2,1] and i = 2 """
 		with patch("builtins.input", return_value="1") as input_call:
 			import attempt
-			self.assertEqual(attempt.vpw([3,5,6],[6,2,1],2), 2)
+			self.assertEqual(attempt.vpw([3,5,2],[6,2,1],2), 2)
 			
 	def test_function4(self):
 		""" Function returns 3/7 with input V = [7,6,5,4,3], W = [3,4,5,6,7] and i = 4 """

@@ -30,7 +30,7 @@ class Tests(PythonTestCase):
         """The last value for the W array is correct"""		
         self.assertAlmostEqual(attempt.W[-1], 9.494852380803035)
 		
-	def test_Z_end(self):
+    def test_Z_end(self):
         """The last value for the Z array is correct"""		
         self.assertAlmostEqual(attempt.Z[-1], 41.47999849170943)
 
@@ -38,19 +38,19 @@ class Tests(PythonTestCase):
         """The first value for the W array is correct"""		
         self.assertAlmostEqual(attempt.W[0], 12)
 		
-	def test_Z_start(self):
+    def test_Z_start(self):
         """The first value for the Z array is correct"""		
         self.assertAlmostEqual(attempt.Z[0], 40)
 
     def test_lengths(self):
         """The arrays all have the correct lengths """
         self.assertEqual(size(attempt.Z), 201)
-		self.assertEqual(size(attempt.W), 201)
+        self.assertEqual(size(attempt.W), 201)
 		
-	def test_maxIndex(self):
+    def test_maxIndex(self):
         """The maxIndex variables are correct"""		
         self.assertEqual(attempt.maxIndexZ, 113)
-		self.assertEqual(attempt.maxIndexW, 134)
+        self.assertEqual(attempt.maxIndexW, 134)
 
 		
 # Run the unit tests

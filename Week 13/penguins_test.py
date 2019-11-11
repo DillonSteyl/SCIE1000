@@ -24,7 +24,7 @@ class Tests(PythonTestCase):
         """Prints correct values."""
         expected = "The quarter with the highest number of fish is 4 with 628.0 penguins on the island at the time."
         out = f.getvalue()
-        self.assertAlmostEqual(out.strip(), expected)
+        self.assertEqual(out.strip(), expected)
 
     def test_fish_end(self):
         """The last value for the fish array is correct"""		
@@ -45,8 +45,7 @@ class Tests(PythonTestCase):
     def test_lengths(self):
         """ The arrays all have the correct lengths """
         self.assertEqual(size(attempt.P), 16)
-	self.assertEqual(size(attempt.F), 16)
-
+        self.assertEqual(size(attempt.F), 16)
 		
 # Run the unit tests
 if __name__ == "__main__":
