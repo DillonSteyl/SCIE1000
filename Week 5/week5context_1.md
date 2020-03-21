@@ -19,3 +19,5 @@ Assuming the trial is run for 30 days, we want to determine the mass of each gro
 2. The formula for percentage growth rate after t interations is `X*(1+p)**t`, where X is your inital population and p is your percentage growth rate expressed as a decimal (for example, 5% is expressed as 0.05). 
 
 Remember, store the final values for the mass in the arrays group1, group2, and group3. Store the growth difference array in an array called growth_diff. Do not print anything.
+
+**Important:** This question can be solved without a while loop! Use the formulas given in the hints.
